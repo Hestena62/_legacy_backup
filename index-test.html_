@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hesten's Learning - Accessible Personalized Education</title>
+  <meta name="description"
+    content="Empowering students with neuro-diverse learning needs through adaptive, distraction-free education tools." />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Open+Dyslexic&family=Inter:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@400;700&display=swap"
+    rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["var(--site-font-family, 'Inter')", "sans-serif"],
+            dyslexic: ['"Open Dyslexic"', 'sans-serif'],
+            mono: ['"Roboto Mono"', 'monospace'],
+            playful: ['"Comic Neue"', 'cursive'],
+          },
+          colors: {
+            'primary': 'var(--color-primary, #4F46E5)',
+            'primary-dark': 'var(--color-primary-dark, #4338CA)',
+            'secondary': 'var(--color-secondary, #EC4899)',
+            'accent': 'var(--color-accent, #8B5CF6)',
+            'success': '#10B981',
+            'base-bg': 'var(--color-base-bg, #F3F4F6)',
+            'content-bg': 'var(--color-content-bg, #FFFFFF)',
+            'text-default': 'var(--color-text-default, #1F2937)',
+            'text-muted': 'var(--color-text-muted, #6B7280)',
+            'focus-ring': 'var(--color-focus-ring, #F59E0B)',
+          }
+        },
+      },
+    };
+
+    const defaultSettings = {
+      theme: 'light',
+      fontSize: 1.0,
+      lineHeight: 1.6,
+      letterSpacing: 0,
+      saturation: 1.0,
+      fontFamily: 'Inter',
+      reducedMotion: window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+      readingMask: false,
+      focusMode: false,
+      highlightLinks: false,
+      bigCursor: false,
+      ttsEnabled: true
+    };
+
+    const STORAGE_KEY = 'hl_a11y_v7';
+    let currentSettings = loadSettings();
+
+    function loadSettings() {
+      try {
+        const stored = localStorage.getItem(STORAGE_KEY);
+        return stored ? { ...defaultSettings, ...JSON.parse(stored) } : defaultSettings;
+      } catch (e) { return defaultSettings; }
+    }
+
+    function saveSettings(settings) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(settings));
+      currentSettings = settings;
+      applySettings(settings);
+    }
+
+    function applySettings(settings) {
+      const root = document.documentElement;
+      root.style.setProperty('--site-font-size', `${settings.fontSize}rem`);
+      root.style.setProperty('--site-line-height', settings.lineHeight);
+      root.style.setProperty('--site-letter-spacing', `${settings.letterSpacing}em`);
+      root.style.setProperty('--site-saturation', settings.saturation);
+
+      let fontName = settings.fontFamily || 'Inter';
+      if (fontName.includes(' ') || fontName === 'Open Dyslexic') fontName = `"${fontName}"`;
+      root.style.setProperty('--site-font-family', fontName);
+
+      const body = document.body;
+      if (!body) return;
+
+      body.classList.remove('light', 'dark', 'high-contrast', 'calm', 'focus-active', 'reduced-motion', 'highlight-links', 'big-cursor');
+      body.classList.add(settings.theme);
+
+      if (settings.reducedMotion) body.classList.add('reduced-motion');
+      if (settings.focusMode) body.classList.add('focus-active');
+      if (settings.highlightLinks) body.classList.add('highlight-links');
+      if (settings.bigCursor) body.classList.add('big-cursor');
+
+      const mask = document.getElementById('reading-mask');
+      if (mask) settings.readingMask ? mask.classList.remove('hidden') : mask.classList.add('hidden');
+    }
+
+    applySettings(currentSettings);
+  </script>
+
+  <style>
+    :root {
+      --site-font-size: 1rem;
+      --site-line-height: 1.6;
+      --site-letter-spacing: normal;
+      --site-saturation: 1;
+      --site-font-family: 'Inter', sans-serif;
+    }
+
+    html {
+      filter: saturate(var(--site-saturation));
+    }
+
+    body {
+      background-color: var(--color-base-bg);
+      color: var(--color-text-default);
+      font-size: var(--site-font-size);
+      line-height: var(--site-line-height);
+      letter-spacing: var(--site-letter-spacing);
+      font-family: var(--site-font-family);
+      transition: background-color 0.3s ease, color 0.3s ease, letter-spacing 0.3s ease;
+    }
+
+    /* Enhanced Accessibility Classes */
+    .highlight-links a,
+    .highlight-links button:not(.cat-btn):not(#a11y-toggle-button):not(.theme-picker) {
+      text-decoration: underline 3px var(--color-primary) !important;
+      text-underline-offset: 4px;
+      font-weight: 800 !important;
+    }
+
+    .big-cursor,
+    .big-cursor * {
+      cursor: url('data:image/svg+xml;utf8,<svg width="48" height="48" viewBox="0 0 24 24" fill="%234F46E5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z"/></svg>') 10 10, auto !important;
+    }
+
+    .focus-active header,
+    .focus-active footer,
+    .focus-active #announcement-bar,
+    .focus-active .hero-decor,
+    .focus-active #grid-section>div:first-child,
+    .focus-active .cat-btn-container {
+      display: none !important;
+    }
+
+    .light {
+      --color-primary: #4F46E5;
+      --color-base-bg: #F8FAFC;
+      --color-content-bg: #FFFFFF;
+      --color-text-default: #111827;
+      --color-focus-ring: #F59E0B;
+    }
+
+    .dark {
+      --color-primary: #818CF8;
+      --color-base-bg: #0F172A;
+      --color-content-bg: #1E293B;
+      --color-text-default: #F3F4F6;
+      --color-focus-ring: #FDBA74;
+    }
+
+    .high-contrast {
+      --color-primary: #FFFF00;
+      --color-base-bg: #000000;
+      --color-content-bg: #000000;
+      --color-text-default: #FFFF00;
+      --color-focus-ring: #FFFFFF;
+    }
+
+    .calm {
+      --color-primary: #4C7B8B;
+      --color-base-bg: #E7F0DC;
+      --color-content-bg: #F5F7F8;
+      --color-text-default: #2C3E50;
+      --color-focus-ring: #A0BFE0;
+    }
+
+    #reading-mask {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.7);
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    #reading-guide {
+      position: absolute;
+      width: 100%;
+      height: 140px;
+      background: rgba(255, 255, 255, 0.1);
+      border-top: 4px solid var(--color-focus-ring);
+      border-bottom: 4px solid var(--color-focus-ring);
+      box-shadow: 0 0 0 5000px rgba(0, 0, 0, 0.85);
+      cursor: ns-resize;
+      pointer-events: auto;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .reduced-motion * {
+      animation: none !important;
+      transition: none !important;
+    }
+
+    #toast-container {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 10000;
+    }
+
+    .grade-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+
+    /* Modal Styling */
+    .modal-backdrop {
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(4px);
+    }
+  </style>
+</head>
+
+<body class="antialiased flex flex-col min-h-screen">
+
+  <a href="#main-content"
+    class="absolute left-[-9999px] focus:left-4 focus:top-4 bg-primary text-white p-4 z-[10000] font-bold rounded-lg shadow-xl">Skip
+    to Main Content</a>
+
+  <!-- Accessibility Button -->
+  <button id="a11y-toggle-button"
+    class="fixed bottom-6 right-6 z-[60] w-16 h-16 bg-primary text-white rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all flex items-center justify-center border-4 border-white dark:border-gray-800"
+    aria-label="Accessibility Menu">
+    <i class="fas fa-universal-access text-2xl"></i>
+  </button>
+
+  <!-- Accessibility Panel -->
+  <aside id="a11y-panel"
+    class="fixed top-0 left-0 h-full w-80 md:w-96 bg-content-bg shadow-2xl z-[70] transform -translate-x-full transition-transform duration-300 overflow-y-auto p-6 border-r-4 border-primary hidden"
+    role="dialog" aria-label="Accessibility Options">
+    <div class="flex justify-between items-center mb-6 pb-4 border-b">
+      <h2 class="text-xl font-bold text-primary flex items-center gap-2">
+        <i class="fas fa-sliders-h"></i> Display Settings
+      </h2>
+      <button id="a11y-close" class="bg-base-bg p-2 rounded-lg hover:text-red-500 transition-colors"><i
+          class="fas fa-times"></i></button>
+    </div>
+
+    <div class="space-y-8">
+
+      <!-- Section 1: Visual Theme -->
+      <div>
+        <label class="block text-xs font-black uppercase mb-3 tracking-widest text-text-muted">Color Theme</label>
+        <div class="grid grid-cols-2 gap-3">
+          <button data-theme="light"
+            class="theme-picker p-4 rounded-xl border-2 border-gray-200 bg-white text-gray-800 text-xs font-bold transition-all hover:border-primary focus:ring-2 focus:ring-primary focus:outline-none">Light</button>
+          <button data-theme="dark"
+            class="theme-picker p-4 rounded-xl border-2 border-gray-800 bg-gray-900 text-white text-xs font-bold transition-all hover:border-primary focus:ring-2 focus:ring-primary focus:outline-none">Dark</button>
+          <button data-theme="calm"
+            class="theme-picker p-4 rounded-xl border-2 border-emerald-100 bg-emerald-50 text-emerald-900 text-xs font-bold transition-all hover:border-primary focus:ring-2 focus:ring-primary focus:outline-none">Calm</button>
+          <button data-theme="high-contrast"
+            class="theme-picker p-4 rounded-xl border-2 border-black bg-black text-yellow-400 text-xs font-bold transition-all hover:border-primary focus:ring-2 focus:ring-primary focus:outline-none">Contrast</button>
+        </div>
+      </div>
+
+      <!-- Section 2: Text Adjustments -->
+      <div class="bg-base-bg p-5 rounded-2xl space-y-5">
+        <label class="block text-xs font-black uppercase tracking-widest text-text-muted mb-2">Typography</label>
+
+        <!-- Font Family -->
+        <div>
+          <select id="font-select"
+            class="w-full p-3 rounded-xl bg-content-bg border-2 border-transparent focus:border-primary outline-none font-bold text-sm shadow-sm">
+            <option value="Inter">Standard Sans</option>
+            <option value="Open Dyslexic">Dyslexic Friendly</option>
+            <option value="Comic Neue">Playful (Rounded)</option>
+            <option value="Roboto Mono">Fixed Width</option>
+          </select>
+        </div>
+
+        <!-- Size -->
+        <div>
+          <div class="flex justify-between mb-2">
+            <span class="text-xs font-bold">Text Size</span>
+            <span id="size-display" class="text-xs font-mono font-bold text-primary">100%</span>
+          </div>
+          <input type="range" id="size-slider" min="0.8" max="1.8" step="0.1"
+            class="w-full accent-primary h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer">
+        </div>
+
+        <!-- Line Height -->
+        <div>
+          <div class="flex justify-between mb-2">
+            <span class="text-xs font-bold">Line Spacing</span>
+            <span id="lh-display" class="text-xs font-mono font-bold text-primary">1.6</span>
+          </div>
+          <input type="range" id="lh-slider" min="1.0" max="2.4" step="0.1"
+            class="w-full accent-primary h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer">
+        </div>
+
+        <!-- Letter Spacing -->
+        <div>
+          <div class="flex justify-between mb-2">
+            <span class="text-xs font-bold">Letter Spacing</span>
+            <span id="ls-display" class="text-xs font-mono font-bold text-primary">Normal</span>
+          </div>
+          <input type="range" id="ls-slider" min="0" max="0.3" step="0.05"
+            class="w-full accent-primary h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer">
+        </div>
+      </div>
+
+      <!-- Section 3: Visual Tools -->
+      <div class="space-y-4">
+        <label class="block text-xs font-black uppercase tracking-widest text-text-muted mb-2">Visual Aids</label>
+
+        <button id="toggle-focus"
+          class="w-full flex items-center justify-between bg-base-bg p-4 rounded-xl group hover:bg-gray-200 hover:dark:bg-gray-700 transition">
+          <span class="text-sm font-bold flex items-center gap-3"><i class="fas fa-bullseye text-primary w-5"></i> Focus
+            Mode</span>
+          <div class="w-12 h-6 bg-gray-300 dark:bg-gray-600 rounded-full relative transition-colors toggle-bg">
+            <div class="dot absolute top-1 left-1 bg-white w-4 h-4 rounded-full transition-all"></div>
+          </div>
+        </button>
+
+        <button id="toggle-mask"
+          class="w-full flex items-center justify-between bg-base-bg p-4 rounded-xl group hover:bg-gray-200 hover:dark:bg-gray-700 transition">
+          <span class="text-sm font-bold flex items-center gap-3"><i class="fas fa-highlighter text-primary w-5"></i>
+            Reading Guide</span>
+          <div class="w-12 h-6 bg-gray-300 dark:bg-gray-600 rounded-full relative transition-colors toggle-bg">
+            <div class="dot absolute top-1 left-1 bg-white w-4 h-4 rounded-full transition-all"></div>
+          </div>
+        </button>
+
+        <button id="toggle-links"
+          class="w-full flex items-center justify-between bg-base-bg p-4 rounded-xl group hover:bg-gray-200 hover:dark:bg-gray-700 transition">
+          <span class="text-sm font-bold flex items-center gap-3"><i class="fas fa-link text-primary w-5"></i> Highlight
+            Links</span>
+          <div class="w-12 h-6 bg-gray-300 dark:bg-gray-600 rounded-full relative transition-colors toggle-bg">
+            <div class="dot absolute top-1 left-1 bg-white w-4 h-4 rounded-full transition-all"></div>
+          </div>
+        </button>
+
+        <button id="toggle-cursor"
+          class="w-full flex items-center justify-between bg-base-bg p-4 rounded-xl group hover:bg-gray-200 hover:dark:bg-gray-700 transition">
+          <span class="text-sm font-bold flex items-center gap-3"><i class="fas fa-mouse-pointer text-primary w-5"></i>
+            Big Cursor</span>
+          <div class="w-12 h-6 bg-gray-300 dark:bg-gray-600 rounded-full relative transition-colors toggle-bg">
+            <div class="dot absolute top-1 left-1 bg-white w-4 h-4 rounded-full transition-all"></div>
+          </div>
+        </button>
+      </div>
+
+      <!-- Section 4: Display Settings -->
+      <div class="bg-base-bg p-5 rounded-2xl space-y-4">
+        <label class="block text-xs font-black uppercase tracking-widest text-text-muted mb-2">Display Comfort</label>
+
+        <div>
+          <div class="flex justify-between mb-2">
+            <span class="text-xs font-bold">Saturation</span>
+            <span id="sat-display" class="text-xs font-mono font-bold text-primary">Normal</span>
+          </div>
+          <div class="flex gap-2">
+            <button id="sat-mono"
+              class="flex-1 py-2 rounded-lg bg-gray-200 text-xs font-bold hover:bg-primary hover:text-white transition">Mono</button>
+            <button id="sat-norm"
+              class="flex-1 py-2 rounded-lg bg-gray-200 text-xs font-bold hover:bg-primary hover:text-white transition bg-primary text-white">Normal</button>
+            <button id="sat-high"
+              class="flex-1 py-2 rounded-lg bg-gray-200 text-xs font-bold hover:bg-primary hover:text-white transition">Vivid</button>
+          </div>
+        </div>
+      </div>
+
+      <button id="reset-btn"
+        class="w-full py-4 rounded-xl border-2 border-dashed border-red-200 text-red-400 text-sm font-bold hover:bg-red-50 hover:border-red-400 hover:text-red-500 transition-colors">
+        <i class="fas fa-undo-alt mr-2"></i> Reset All Settings
+      </button>
+    </div>
+  </aside>
+
+  <!-- Info Modal -->
+  <div id="info-modal" class="fixed inset-0 z-[100] flex items-center justify-center p-4 hidden" role="dialog"
+    aria-modal="true">
+    <div id="modal-overlay" class="absolute inset-0 modal-backdrop"></div>
+    <div
+      class="relative bg-content-bg w-full max-w-2xl rounded-[2.5rem] shadow-2xl p-8 md:p-12 overflow-y-auto max-h-[90vh] border-4 border-primary/20">
+      <button id="modal-close"
+        class="absolute top-6 right-6 w-10 h-10 bg-base-bg rounded-full flex items-center justify-center hover:text-red-500 transition-colors">
+        <i class="fas fa-times"></i>
+      </button>
+      <div id="modal-content" class="space-y-6">
+        <!-- Dynamic Content -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Reading Mask -->
+  <div id="reading-mask" class="hidden">
+    <div id="reading-guide" style="top: 40%">
+      <div
+        class="bg-primary text-white px-3 py-1 mr-6 rounded-full text-[10px] font-black tracking-tighter animate-pulse">
+        DRAG TO MOVE</div>
+    </div>
+  </div>
+
+  <!-- Announcement -->
+  <div id="announcement-bar"
+    class="bg-primary text-white py-2 px-4 text-center text-[10px] font-black tracking-[0.2em] uppercase relative z-50">
+    <i class="fas fa-sparkles mr-2"></i> Adaptive Learning Environment v2.5 Active
+  </div>
+
+  <header class="bg-content-bg border-b sticky top-0 z-50 transition-colors shadow-sm">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <div
+          class="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center text-white shadow-lg group-hover:rotate-6 transition-transform">
+          <i class="fas fa-graduation-cap text-2xl"></i>
+        </div>
+        <div class="hidden sm:block">
+          <span class="block font-playful text-xl font-black leading-none">Hesten's</span>
+          <span class="block text-[10px] font-bold tracking-widest text-text-muted uppercase">Learning Center</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex gap-10 font-black text-sm uppercase tracking-wide">
+        <a href="#" class="text-primary border-b-4 border-primary pb-1">Dashboard</a>
+        <a href="#" class="text-text-muted hover:text-primary transition-colors">Curriculum</a>
+        <a href="#" class="text-text-muted hover:text-primary transition-colors">Resources</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <div class="relative hidden lg:block">
+          <input type="text" id="live-search" placeholder="Search grades or skills..."
+            class="bg-base-bg border-2 border-transparent focus:border-primary rounded-2xl py-2 px-12 text-sm font-bold w-64 transition-all"
+            aria-label="Search">
+          <i class="fas fa-search absolute left-5 top-1/2 -translate-y-1/2 text-text-muted text-xs"></i>
+        </div>
+        <button
+          class="w-10 h-10 rounded-full bg-base-bg flex items-center justify-center text-text-muted hover:text-primary transition-colors"><i
+            class="fas fa-user-circle text-2xl"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="flex-grow">
+    <!-- Hero -->
+    <section class="hero-decor relative overflow-hidden py-20 md:py-32 bg-gradient-to-b from-primary/10 to-transparent">
+      <div class="container mx-auto px-4 text-center relative z-10">
+        <span
+          class="inline-flex items-center gap-2 bg-white dark:bg-gray-800 px-4 py-1.5 rounded-full shadow-sm text-[10px] font-black text-primary mb-8 border border-primary/20 tracking-widest uppercase">
+          <span class="w-2 h-2 bg-success rounded-full animate-ping"></span> Live Adaptive Platform
+        </span>
+        <h1 class="text-5xl md:text-7xl font-black mb-8 leading-[1.1] font-playful max-w-4xl mx-auto tracking-tight">
+          Education that <span class="text-primary underline decoration-wavy decoration-secondary">Adapts</span> to You.
+        </h1>
+        <p class="text-xl text-text-muted max-w-2xl mx-auto mb-12 leading-relaxed font-medium">
+          Remove barriers, reduce overstimulation, and learn at your own pace with our neuro-diverse friendly
+          curriculum.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-8 md:gap-16 mb-12">
+          <div class="text-center">
+            <div class="text-3xl font-black text-primary">14+</div>
+            <div class="text-[10px] font-bold text-text-muted uppercase tracking-widest">Grade Levels</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-black text-primary">200+</div>
+            <div class="text-[10px] font-bold text-text-muted uppercase tracking-widest">Skills Taught</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-black text-primary">100%</div>
+            <div class="text-[10px] font-bold text-text-muted uppercase tracking-widest">Accessible</div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-5">
+          <a href="#grid-section"
+            class="px-10 py-5 bg-primary text-white font-black rounded-2xl shadow-xl shadow-primary/30 hover:shadow-primary/40 hover:-translate-y-1 transition-all uppercase tracking-widest text-sm">Explore
+            Curriculum</a>
+          <button onclick="document.getElementById('a11y-toggle-button').click()"
+            class="px-10 py-5 bg-white dark:bg-gray-800 text-text-default font-black rounded-2xl shadow-lg border-2 border-gray-100 dark:border-gray-700 hover:bg-gray-50 transition-all uppercase tracking-widest text-sm">A11y
+            Tools</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grid Section -->
+    <section id="grid-section" class="container mx-auto px-4 py-16">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <h2 class="text-3xl font-black font-playful mb-3">Choose Your Path</h2>
+          <p class="text-text-muted font-bold">Select a grade level to see specifically adapted content.</p>
+        </div>
+
+        <div class="cat-btn-container flex gap-2 overflow-x-auto pb-2 scrollbar-hide" role="tablist">
+          <button data-cat="all"
+            class="cat-btn active px-6 py-2.5 rounded-xl bg-primary text-white font-black text-xs uppercase tracking-widest shadow-lg"
+            role="tab" aria-selected="true">All Grades</button>
+          <button data-cat="elem"
+            class="cat-btn px-6 py-2.5 rounded-xl bg-base-bg text-text-muted font-black text-xs uppercase tracking-widest hover:bg-gray-200 transition-all"
+            role="tab">Elementary</button>
+          <button data-cat="middle"
+            class="cat-btn px-6 py-2.5 rounded-xl bg-base-bg text-text-muted font-black text-xs uppercase tracking-widest hover:bg-gray-200 transition-all"
+            role="tab">Middle</button>
+          <button data-cat="high"
+            class="cat-btn px-6 py-2.5 rounded-xl bg-base-bg text-text-muted font-black text-xs uppercase tracking-widest hover:bg-gray-200 transition-all"
+            role="tab">High School</button>
+        </div>
+      </div>
+
+      <div id="grid-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        <!-- JS Injected Cards -->
+      </div>
+
+      <div id="empty-state" class="hidden py-32 text-center">
+        <div
+          class="w-24 h-24 bg-base-bg rounded-full flex items-center justify-center mx-auto mb-6 text-4xl text-text-muted">
+          <i class="fas fa-search"></i>
+        </div>
+        <h3 class="text-2xl font-black mb-2">No results found</h3>
+        <p class="text-text-muted font-medium">Try broadening your search or category.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white dark:bg-gray-900 border-t py-12 transition-colors">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 bg-primary/20 text-primary rounded-xl flex items-center justify-center">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <span class="font-black text-lg">&copy; 2025 Hesten's Learning</span>
+        </div>
+        <div class="flex flex-wrap justify-center gap-8 text-xs font-black uppercase tracking-widest text-text-muted">
+          <button onclick="openPopup('privacy')" class="hover:text-primary transition-colors">Privacy</button>
+          <button onclick="openPopup('terms')" class="hover:text-primary transition-colors">Terms</button>
+          <button onclick="openPopup('a11y')" class="hover:text-primary transition-colors">A11y Statement</button>
+          <button onclick="openPopup('contact')" class="hover:text-primary transition-colors">Contact</button>
+        </div>
+        <div class="flex gap-4">
+          <a href="#"
+            class="w-10 h-10 rounded-full bg-base-bg flex items-center justify-center hover:bg-primary hover:text-white transition-all"><i
+              class="fab fa-facebook-f"></i></a>
+          <a href="#"
+            class="w-10 h-10 rounded-full bg-base-bg flex items-center justify-center hover:bg-primary hover:text-white transition-all"><i
+              class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast-container"></div>
+
+  <script>
+    const levels = [
+      { id: 'pre-k', cat: 'elem', title: 'Pre-K', desc: 'Introduction to letter shapes, counting to ten, and sensory play.', icon: 'fas fa-shapes', skills: ['Social Skills', 'Letters', 'Play'] },
+      { id: 'kinder', cat: 'elem', title: 'Kindergarten', desc: 'Phonics foundations, early word building, and basic addition.', icon: 'fas fa-puzzle-piece', skills: ['Reading', 'Math', 'Drawing'] },
+      { id: 'grade-1', cat: 'elem', title: 'Grade 1', desc: 'Reading fluency, sentence structure, and subtraction strategies.', icon: 'fas fa-pencil-alt', skills: ['Literacy', 'Numbers', 'Science'] },
+      { id: 'grade-2', cat: 'elem', title: 'Grade 2', desc: 'Multi-paragraph writing and introduction to multiplication.', icon: 'fas fa-book-open', skills: ['Logic', 'Writing', 'History'] },
+      { id: 'grade-3', cat: 'elem', title: 'Grade 3', desc: 'Division, fractions, and structured essay writing.', icon: 'fas fa-calculator', skills: ['Fractions', 'Composition', 'Civics'] },
+      { id: 'grade-4', cat: 'elem', title: 'Grade 4', desc: 'Ecosystems, state geography, and complex math problems.', icon: 'fas fa-flask', skills: ['Biology', 'Geometry', 'Geography'] },
+      { id: 'grade-6', cat: 'middle', title: 'Grade 6', desc: 'Ratios, integers, and world geography with mapping.', icon: 'fas fa-globe-americas', skills: ['Algebra Prep', 'Earth Science'] },
+      { id: 'grade-8', cat: 'middle', title: 'Grade 8', desc: 'Linear equations, physical sciences, and civics.', icon: 'fas fa-landmark', skills: ['Civics', 'Physics', 'Equations'] },
+      { id: 'grade-10', cat: 'high', title: 'Grade 10', desc: 'Geometry theorems, world history, and chemistry basics.', icon: 'fas fa-atom', skills: ['Chemistry', 'History', 'Proof'] },
+      { id: 'grade-12', cat: 'high', title: 'Grade 12', desc: 'Capstone projects, calculus prep, and life readiness.', icon: 'fas fa-user-graduate', skills: ['Finance', 'Research', 'Career'] }
+    ];
+
+    const popupContent = {
+      privacy: {
+        title: "Privacy Policy",
+        body: `
+          <h4 class="text-xl font-black">Your Data, Your Control</h4>
+          <p class="text-text-muted leading-relaxed">At Hesten's Learning, we believe privacy is a fundamental right. We do not sell your data. Most of your preferences are stored locally on your device to ensure maximum privacy.</p>
+          <ul class="space-y-2 list-disc pl-5 text-text-muted">
+            <li>No tracking cookies for advertising.</li>
+            <li>Local storage used for accessibility settings only.</li>
+            <li>Encrypted data transmission for all account features.</li>
+          </ul>
+        `
+      },
+      terms: {
+        title: "Terms of Service",
+        body: `
+          <h4 class="text-xl font-black">Community Guidelines</h4>
+          <p class="text-text-muted leading-relaxed">By using this platform, you agree to foster a respectful and inclusive learning environment.</p>
+          <ul class="space-y-2 list-disc pl-5 text-text-muted">
+            <li>Educational use only.</li>
+            <li>No harassment or exclusionary behavior.</li>
+            <li>Content is protected by intellectual property laws.</li>
+          </ul>
+        `
+      },
+      a11y: {
+        title: "Accessibility Statement",
+        body: `
+          <h4 class="text-xl font-black">Inclusion by Design</h4>
+          <p class="text-text-muted leading-relaxed">We strive to exceed WCAG 2.1 Level AA standards. Our platform is built specifically for neuro-diverse learners.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="p-4 bg-base-bg rounded-2xl">
+              <h5 class="font-bold mb-1">Visual Supports</h5>
+              <p class="text-xs">Dyslexic fonts, high contrast, and reading guides.</p>
+            </div>
+            <div class="p-4 bg-base-bg rounded-2xl">
+              <h5 class="font-bold mb-1">Cognitive Load</h5>
+              <p class="text-xs">Focus mode to remove distractions.</p>
+            </div>
+          </div>
+        `
+      },
+      contact: {
+        title: "Contact Us",
+        body: `
+          <p class="text-text-muted mb-4">Have questions? Our support team is here to help you on your learning journey.</p>
+          <form class="space-y-4" onsubmit="event.preventDefault(); showToast('Message sent! We will reply soon.'); closePopup();">
+            <input type="text" placeholder="Your Name" class="w-full p-4 bg-base-bg rounded-2xl border-2 border-transparent focus:border-primary outline-none font-bold" required>
+            <input type="email" placeholder="Email Address" class="w-full p-4 bg-base-bg rounded-2xl border-2 border-transparent focus:border-primary outline-none font-bold" required>
+            <textarea placeholder="How can we help?" rows="4" class="w-full p-4 bg-base-bg rounded-2xl border-2 border-transparent focus:border-primary outline-none font-bold" required></textarea>
+            <button type="submit" class="w-full py-4 bg-primary text-white font-black rounded-2xl uppercase tracking-widest text-sm shadow-lg shadow-primary/20">Send Message</button>
+          </form>
+        `
+      }
+    };
+
+    let activeCat = 'all';
+    let searchQuery = '';
+
+    function openPopup(key) {
+      const data = popupContent[key];
+      if (!data) return;
+      const modal = document.getElementById('info-modal');
+      const content = document.getElementById('modal-content');
+      content.innerHTML = `
+        <h3 class="text-3xl font-black font-playful text-primary mb-2">${data.title}</h3>
+        <div class="h-1 w-20 bg-secondary rounded-full mb-6"></div>
+        ${data.body}
+      `;
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closePopup() {
+      document.getElementById('info-modal').classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    function showToast(message) {
+      const toast = document.createElement('div');
+      toast.className = 'bg-gray-900 text-white px-6 py-3 rounded-2xl shadow-2xl mb-4 animate-bounce font-bold text-sm flex items-center gap-3';
+      toast.innerHTML = `<i class="fas fa-check-circle text-success"></i> ${message}`;
+      document.getElementById('toast-container').appendChild(toast);
+      setTimeout(() => toast.remove(), 3000);
+    }
+
+    function speak(text) {
+      if (!window.speechSynthesis) return;
+      window.speechSynthesis.cancel();
+      const msg = new SpeechSynthesisUtterance(text);
+      msg.rate = 0.9;
+      window.speechSynthesis.speak(msg);
+    }
+
+    function renderGrid() {
+      const container = document.getElementById('grid-container');
+      const emptyState = document.getElementById('empty-state');
+      if (!container) return;
+
+      const filtered = levels.filter(l => {
+        const matchesCat = activeCat === 'all' || l.cat === activeCat;
+        const matchesSearch = l.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          l.desc.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          l.skills.some(s => s.toLowerCase().includes(searchQuery.toLowerCase()));
+        return matchesCat && matchesSearch;
+      });
+
+      container.innerHTML = filtered.map((l, i) => `
+        <article class="grade-card group bg-content-bg rounded-[2.5rem] p-8 border border-gray-100 dark:border-gray-800 transition-all duration-300 relative overflow-hidden flex flex-col h-full" style="animation: fadeInUp 0.5s ease forwards ${i * 0.05}s; opacity: 0;">
+          <div class="flex items-start justify-between mb-6">
+            <div class="w-14 h-14 rounded-2xl bg-primary/10 text-primary flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+              <i class="${l.icon}"></i>
+            </div>
+            <button onclick="speak('${l.desc}')" class="w-10 h-10 rounded-full bg-base-bg text-text-muted hover:text-primary hover:bg-primary/10 transition-all" title="Listen to description">
+              <i class="fas fa-volume-up"></i>
+            </button>
+          </div>
+          
+          <h3 class="font-playful text-2xl font-black mb-2">${l.title}</h3>
+          <p class="text-text-muted text-sm leading-relaxed mb-6 flex-grow">${l.desc}</p>
+          
+          <div class="flex flex-wrap gap-2 mb-8">
+            ${l.skills.map(s => `<span class="px-3 py-1 bg-base-bg text-[10px] font-black uppercase tracking-widest text-text-muted rounded-full">${s}</span>`).join('')}
+          </div>
+
+          <a href="#" class="w-full py-4 bg-primary/5 hover:bg-primary text-primary hover:text-white rounded-2xl text-center font-black text-xs uppercase tracking-[0.2em] transition-all flex items-center justify-center gap-3">
+            Enter Grade <i class="fas fa-arrow-right"></i>
+          </a>
+        </article>
+      `).join('');
+
+      container.classList.toggle('hidden', filtered.length === 0);
+      if (emptyState) emptyState.classList.toggle('hidden', filtered.length > 0);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      applySettings(currentSettings);
+
+      const panel = document.getElementById('a11y-panel');
+      const toggleBtn = document.getElementById('a11y-toggle-button');
+      const closeBtn = document.getElementById('a11y-close');
+      const modalClose = document.getElementById('modal-close');
+      const modalOverlay = document.getElementById('modal-overlay');
+
+      if (toggleBtn) {
+        toggleBtn.onclick = () => {
+          panel.classList.remove('hidden');
+          setTimeout(() => panel.classList.remove('-translate-x-full'), 10);
+        };
+      }
+
+      if (closeBtn) {
+        closeBtn.onclick = () => {
+          panel.classList.add('-translate-x-full');
+          setTimeout(() => panel.classList.add('hidden'), 300);
+        };
+      }
+
+      if (modalClose) modalClose.onclick = closePopup;
+      if (modalOverlay) modalOverlay.onclick = closePopup;
+
+      document.querySelectorAll('.theme-picker').forEach(btn => {
+        btn.onclick = () => {
+          saveSettings({ ...currentSettings, theme: btn.dataset.theme });
+          showToast(`Switched to ${btn.dataset.theme} theme`);
+        };
+      });
+
+      const updateToggleUI = (id, active) => {
+        const btn = document.getElementById(id);
+        if (!btn) return;
+        const dot = btn.querySelector('.dot');
+        const bg = btn.querySelector('.toggle-bg') || btn;
+        if (active) {
+          dot.classList.add('translate-x-6');
+          bg.classList.add('bg-primary');
+          bg.classList.remove('bg-gray-300');
+        } else {
+          dot.classList.remove('translate-x-6');
+          bg.classList.remove('bg-primary');
+          bg.classList.add('bg-gray-300');
+        }
+      };
+
+      const maskToggle = document.getElementById('toggle-mask');
+      if (maskToggle) {
+        maskToggle.onclick = () => {
+          const newVal = !currentSettings.readingMask;
+          saveSettings({ ...currentSettings, readingMask: newVal });
+          updateToggleUI('toggle-mask', newVal);
+        };
+      }
+
+      const focusToggle = document.getElementById('toggle-focus');
+      if (focusToggle) {
+        focusToggle.onclick = () => {
+          const newVal = !currentSettings.focusMode;
+          saveSettings({ ...currentSettings, focusMode: newVal });
+          updateToggleUI('toggle-focus', newVal);
+        };
+      }
+
+      const slider = document.getElementById('size-slider');
+      const sizeDisplay = document.getElementById('size-display');
+      if (slider) {
+        slider.value = currentSettings.fontSize;
+        if (sizeDisplay) sizeDisplay.innerText = Math.round(currentSettings.fontSize * 100) + '%';
+        slider.oninput = (e) => {
+          const val = parseFloat(e.target.value);
+          if (sizeDisplay) sizeDisplay.innerText = Math.round(val * 100) + '%';
+          saveSettings({ ...currentSettings, fontSize: val });
+        };
+      }
+
+      // New Line Height Slider
+      const lhSlider = document.getElementById('lh-slider');
+      const lhDisplay = document.getElementById('lh-display');
+      if (lhSlider) {
+        lhSlider.value = currentSettings.lineHeight;
+        if (lhDisplay) lhDisplay.innerText = currentSettings.lineHeight;
+        lhSlider.oninput = (e) => {
+          const val = parseFloat(e.target.value);
+          if (lhDisplay) lhDisplay.innerText = val;
+          saveSettings({ ...currentSettings, lineHeight: val });
+        };
+      }
+
+      // New Letter Spacing Slider
+      const lsSlider = document.getElementById('ls-slider');
+      const lsDisplay = document.getElementById('ls-display');
+      if (lsSlider) {
+        lsSlider.value = currentSettings.letterSpacing;
+        if (lsDisplay) lsDisplay.innerText = currentSettings.letterSpacing === 0 ? 'Normal' : currentSettings.letterSpacing + 'em';
+        lsSlider.oninput = (e) => {
+          const val = parseFloat(e.target.value);
+          if (lsDisplay) lsDisplay.innerText = val === 0 ? 'Normal' : val + 'em';
+          saveSettings({ ...currentSettings, letterSpacing: val });
+        };
+      }
+
+      // Link Highlight Toggle
+      const linksToggle = document.getElementById('toggle-links');
+      if (linksToggle) {
+        linksToggle.onclick = () => {
+          const newVal = !currentSettings.highlightLinks;
+          saveSettings({ ...currentSettings, highlightLinks: newVal });
+          updateToggleUI('toggle-links', newVal);
+        };
+      }
+
+      // Cursor Toggle
+      const cursorToggle = document.getElementById('toggle-cursor');
+      if (cursorToggle) {
+        cursorToggle.onclick = () => {
+          const newVal = !currentSettings.bigCursor;
+          saveSettings({ ...currentSettings, bigCursor: newVal });
+          updateToggleUI('toggle-cursor', newVal);
+        };
+      }
+
+      // Saturation Buttons
+      const satMono = document.getElementById('sat-mono');
+      const satNorm = document.getElementById('sat-norm');
+      const satHigh = document.getElementById('sat-high');
+
+      const updateSatUI = (val) => {
+        [satMono, satNorm, satHigh].forEach(b => {
+          if (b) b.classList.remove('bg-primary', 'text-white');
+          if (b) b.classList.add('bg-gray-200', 'text-gray-800');
+        });
+        const active = val === 0 ? satMono : (val > 1 ? satHigh : satNorm);
+        if (active) {
+          active.classList.remove('bg-gray-200', 'text-gray-800');
+          active.classList.add('bg-primary', 'text-white');
+        }
+        const satDisplay = document.getElementById('sat-display');
+        if (satDisplay) satDisplay.innerText = val === 0 ? 'Mono' : val > 1 ? 'Vivid' : 'Normal';
+      };
+
+      if (satMono) satMono.onclick = () => { saveSettings({ ...currentSettings, saturation: 0 }); updateSatUI(0); };
+      if (satNorm) satNorm.onclick = () => { saveSettings({ ...currentSettings, saturation: 1 }); updateSatUI(1); };
+      if (satHigh) satHigh.onclick = () => { saveSettings({ ...currentSettings, saturation: 2 }); updateSatUI(2); };
+
+      const fontSel = document.getElementById('font-select');
+      if (fontSel) {
+        fontSel.value = currentSettings.fontFamily.replace(/"/g, ''); // strip quotes if saved
+        fontSel.onchange = (e) => {
+          saveSettings({ ...currentSettings, fontFamily: e.target.value });
+          showToast('Typeface updated');
+        };
+      }
+
+      updateToggleUI('toggle-links', currentSettings.highlightLinks);
+      updateToggleUI('toggle-cursor', currentSettings.bigCursor);
+      updateSatUI(currentSettings.saturation);
+
+      const resetBtn = document.getElementById('reset-btn');
+      if (resetBtn) {
+        resetBtn.onclick = () => {
+          localStorage.removeItem(STORAGE_KEY);
+          window.location.reload();
+        };
+      }
+
+      document.querySelectorAll('.cat-btn').forEach(btn => {
+        btn.onclick = () => {
+          document.querySelectorAll('.cat-btn').forEach(b => {
+            b.classList.remove('active', 'bg-primary', 'text-white', 'shadow-lg');
+            b.classList.add('bg-base-bg', 'text-text-muted');
+          });
+          btn.classList.add('active', 'bg-primary', 'text-white', 'shadow-lg');
+          activeCat = btn.dataset.cat;
+          renderGrid();
+        };
+      });
+
+      const liveSearch = document.getElementById('live-search');
+      if (liveSearch) {
+        liveSearch.oninput = (e) => {
+          searchQuery = e.target.value;
+          renderGrid();
+        };
+      }
+
+      const guide = document.getElementById('reading-guide');
+      if (guide) {
+        let isDragging = false;
+        const onStart = () => isDragging = true;
+        const onEnd = () => isDragging = false;
+        const onMove = (e) => {
+          if (!isDragging) return;
+          const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+          const y = (clientY / window.innerHeight) * 100;
+          guide.style.top = Math.min(Math.max(y - 5, 0), 90) + '%';
+        };
+        guide.addEventListener('mousedown', onStart);
+        guide.addEventListener('touchstart', onStart);
+        document.addEventListener('mouseup', onEnd);
+        document.addEventListener('touchend', onEnd);
+        document.addEventListener('mousemove', onMove);
+        document.addEventListener('touchmove', onMove, { passive: false });
+      }
+
+      updateToggleUI('toggle-mask', currentSettings.readingMask);
+      updateToggleUI('toggle-focus', currentSettings.focusMode);
+      renderGrid();
+    });
+  </script>
+
+  <style>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</body>
+
+</html>
