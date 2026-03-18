@@ -86,7 +86,6 @@
                 </div>
 
                 <div class="flex flex-wrap justify-center items-center gap-6">
-                    <div class="gtranslate_wrapper"></div>
                     <a href="https://www.buymeacoffee.com/hestena62l" target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center gap-2 bg-[#FFDD00] text-black px-5 py-2.5 rounded-full font-bold font-['Cookie',cursive] text-lg hover:bg-[#ffe44d] transition-all shadow-lg hover:shadow-[#FFDD00]/30 transform hover:-translate-y-1 font-handwriting">
                         <img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="" class="h-5 w-5" loading="lazy">
                         <span>Buy me a coffee</span>
@@ -107,6 +106,28 @@
         <button id="message-ok-button" class="bg-primary text-white px-6 py-2 rounded-full font-bold hover:bg-secondary transition-colors shadow-md w-full text-sm">OK</button>
     </div>
 </div>
+
+<!-- Floating Feedback Button -->
+<button onclick="window.location.href='mailto:admin@hestena62.com?subject=Site Feedback'" class="fixed bottom-6 left-6 z-[60] bg-indigo-600 text-white w-12 h-12 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform transform print:hidden" title="Send Feedback">
+    <i class="fas fa-comment-dots text-xl"></i>
+</button>
+
+<!-- Recent Pages Panel -->
+<div id="recent-pages-panel" class="fixed bottom-24 left-6 w-64 bg-content-bg rounded-xl shadow-2xl transform scale-90 opacity-0 pointer-events-none transition-all duration-300 z-50 border-t-8 border-blue-500 origin-bottom-left">
+    <div class="p-4">
+        <div class="flex justify-between items-center mb-2">
+            <h3 class="font-bold text-text-default gap-2 flex items-center"><i class="fas fa-history text-blue-600"></i> Recent</h3>
+            <button id="recent-close" class="text-text-secondary hover:text-red-500"><i class="fas fa-times"></i></button>
+        </div>
+        <ul id="recent-pages-list" class="space-y-2 mt-3 text-sm">
+            <li class="text-text-secondary text-xs italic">No recent pages.</li>
+        </ul>
+    </div>
+</div>
+<!-- Floating Recent Button (Added dynamically to fixed tools if applicable or standalone) -->
+<button id="recent-toggle" class="fixed bottom-20 left-6 z-[60] bg-blue-600 text-white w-10 h-10 rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-transform transform print:hidden" title="Recent Pages">
+    <i class="fas fa-history"></i>
+</button>
 
 <!-- GTranslate Settings -->
 <script>
@@ -206,7 +227,7 @@
         // Citation
         const cb = document.getElementById('cite-gen');
         if (cb) cb.onclick = () => {
-            document.getElementById('cite-result').value = `${document.getElementById('cite-title').value || document.title}. (${new Date().getFullYear()}). Hesten's Learning.`;
+             document.getElementById('cite-result').value = `${document.getElementById('cite-title').value || document.title}. (${new Date().getFullYear()}). Hesten's Learning.`;
         };
 
         // Scroll Top
@@ -215,6 +236,46 @@
             window.addEventListener('scroll', () => sb.classList.toggle('opacity-0', window.scrollY < 300));
             sb.onclick = () => window.scrollTo({top:0, behavior:'smooth'});
         }
+        
+        // Recent Pages Tracking
+        const trackRecentPage = () => {
+            try {
+                const url = window.location.pathname + window.location.search;
+                const title = document.title.replace(" - Hesten's Learning", ""); // Clean title
+                
+                // Don't track index or empty
+                if(url === '/' || url === '/index.php') return;
+
+                let history = JSON.parse(localStorage.getItem('hl_recent_pages') || '[]');
+                
+                // Remove existing if duplicate
+                history = history.filter(p => p.url !== url);
+                
+                // Add to start
+                history.unshift({ url, title });
+                
+                // Keep only 5
+                if(history.length > 5) history = history.slice(0, 5);
+                
+                localStorage.setItem('hl_recent_pages', JSON.stringify(history));
+                
+                // Update UI
+                const list = document.getElementById('recent-pages-list');
+                if (list) {
+                    if (history.length === 0) return;
+                    list.innerHTML = '';
+                    history.forEach(p => {
+                        const li = document.createElement('li');
+                        li.innerHTML = `<a href="${p.url}" class="block truncate text-primary hover:underline hover:text-secondary p-1 rounded hover:bg-base-bg transition-colors">${p.title}</a>`;
+                        list.appendChild(li);
+                    });
+                }
+            } catch(e) { console.warn('Recent pages err', e); }
+        };
+        trackRecentPage();
+        
+        // Setup Recent Pages Toggle
+        setup('recent-toggle', 'recent-pages-panel', 'recent-close');
 
         // PWA Service Worker Registration
         if ('serviceWorker' in navigator) {
@@ -230,6 +291,6 @@
             const s = window.loadSettings ? window.loadSettings() : (window.currentSettings || {});
             window.syncPanelInputs(s);
         }
-    });
+    }); // End DOMContentLoaded
 </script>
 <script src="/JS/standard.js"></script>

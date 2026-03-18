@@ -164,6 +164,10 @@
             </div>
             <div>
                 <label class="block text-xs font-bold text-text-default mb-1">Text Size</label>
+                <div class="flex items-center gap-2 mb-2">
+                    <button class="flex-1 bg-base-bg p-2 rounded border hover:border-primary text-text-default flex items-center justify-center gap-1 font-bold" onclick="const s = document.getElementById('panel-size'); s.value = Math.max(0.8, parseFloat(s.value) - 0.1); updateGlobalSetting('fontSize', s.value)"><i class="fas fa-search-minus"></i> A-</button>
+                    <button class="flex-1 bg-base-bg p-2 rounded border hover:border-primary text-text-default flex items-center justify-center gap-1 font-bold" onclick="const s = document.getElementById('panel-size'); s.value = Math.min(2.0, parseFloat(s.value) + 0.1); updateGlobalSetting('fontSize', s.value)"><i class="fas fa-search-plus"></i> A+</button>
+                </div>
                 <input type="range" id="panel-size" class="w-full accent-primary" min="0.8" max="2.0" step="0.1"
                     oninput="updateGlobalSetting('fontSize', this.value)">
             </div>
@@ -191,6 +195,18 @@
                 <label class="block text-xs font-bold text-text-default mb-1">Reading Mask Opacity</label>
                 <input type="range" id="panel-mask-opacity" class="w-full accent-primary" min="0.1" max="0.95" step="0.05"
                     oninput="updateGlobalSetting('maskOpacity', this.value)">
+            </div>
+            <div>
+                <h3 class="font-bold text-text-secondary mb-2 uppercase text-xs">Color Overlay</h3>
+                <select id="panel-color-overlay" onchange="updateGlobalSetting('colorOverlay', this.value)"
+                    class="w-full p-2 rounded bg-base-bg border text-text-default">
+                    <option value="none">None</option>
+                    <option value="rgba(255, 255, 0, 0.15)">Pale Yellow</option>
+                    <option value="rgba(173, 216, 230, 0.15)">Pale Blue</option>
+                    <option value="rgba(144, 238, 144, 0.15)">Pale Green</option>
+                    <option value="rgba(255, 182, 193, 0.15)">Pale Pink</option>
+                    <option value="rgba(216, 191, 216, 0.15)">Pale Purple</option>
+                </select>
             </div>
             <div>
                 <h3 class="font-bold text-text-secondary mb-2 uppercase text-xs">Text Alignment</h3>
@@ -264,10 +280,27 @@
     </div>
 
  <!-- Announcement Bar -->
-    <div id="announcement-bar" class="bg-primary text-white text-center py-2 px-8 relative transition-colors duration-300 shadow-md z-40" role="status">
-        <p class="text-sm font-medium"><i class="fas fa-hammer mr-2"></i> Work in Progress: We are updating sections daily. Have question please email me at <a href="mailto:admin@hestena62.com">admin@hestena62.com</a></p>
-        <button id="close-announcement" class="absolute right-2 top-1/2 transform -translate-y-1/2 text-white/80 hover:text-white p-2 rounded-full" aria-label="Close announcement" type="button"><i class="fas fa-times"></i></button>
+    <div id="announcement-bar" class="hidden bg-primary text-white text-center py-2 px-8 relative transition-colors duration-300 shadow-md z-40" role="status">
+        <p class="text-sm font-medium"><i class="fas fa-hammer mr-2"></i> Work in Progress: We are updating sections daily. Have question please email me at <a href="mailto:admin@hestena62.com" class="underline hover:text-blue-200">admin@hestena62.com</a></p>
+        <button id="close-announcement" class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white/80 hover:text-white p-2 rounded-full transition-colors" aria-label="Close announcement" type="button"><i class="fas fa-times"></i></button>
     </div>
+    <script>
+        // Announcement Bar Logic
+        const annBar = document.getElementById('announcement-bar');
+        const annClose = document.getElementById('close-announcement');
+        // Change this version string to force the announcement to show again for all users
+        const ANN_VERSION = 'v1.0'; 
+        
+        if (annBar && annClose) {
+            if (localStorage.getItem('hl_announcement_dismissed') !== ANN_VERSION) {
+                annBar.classList.remove('hidden');
+            }
+            annClose.onclick = () => {
+                annBar.classList.add('hidden');
+                localStorage.setItem('hl_announcement_dismissed', ANN_VERSION);
+            };
+        }
+    </script>
 
     <header
         class="glass-header sticky top-0 z-40 transition-colors duration-300 print:hidden shadow-sm">
@@ -284,9 +317,9 @@
                         class="flex items-center px-3 py-2 border rounded text-text-default border-gray-400 hover:text-primary transition-colors"><i
                             class="fas fa-bars"></i></button>
                 </div>
-                <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden transition-all duration-300 gap-6"
+                <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden transition-all duration-300 gap-4"
                     id="nav-content">
-                    <div class="text-sm lg:flex-grow flex flex-col lg:flex-row gap-2 lg:gap-8 mt-4 lg:mt-0 font-medium">
+                    <div class="text-sm lg:flex-grow flex flex-col lg:flex-row gap-2 lg:gap-6 mt-4 lg:mt-0 font-medium whitespace-nowrap">
                         <a href="/" class="nav-link-animated block lg:inline-block text-text-default hover:text-primary transition-colors"><i
                                 class="fas fa-home mr-1"></i> Home</a>
                         <a href="/learning.php"
@@ -297,15 +330,48 @@
                         <a href="/library" class="nav-link-animated block lg:inline-block text-text-default hover:text-primary transition-colors"><i
                                 class="fas fa-book-open mr-1"></i> Library</a>
                     </div>
-                    <div class="relative mt-4 lg:mt-0">
-                        <form action="/search.php" method="GET" class="flex items-center group">
+                    <div class="flex items-center gap-4 mt-4 lg:mt-0 w-full lg:w-auto">
+                        <div class="gtranslate_wrapper relative z-50"></div>
+                        <form action="/search.php" method="GET" class="flex items-center group relative w-full lg:w-auto">
                             <input type="text" name="q" placeholder="Search..."
-                                class="bg-base-bg text-text-default rounded-full py-2 pl-10 pr-4 focus:ring-2 focus:ring-primary w-full lg:w-48 border border-gray-200 dark:border-gray-700" />
-                            <i class="fas fa-search absolute left-3 text-gray-400 group-hover:text-primary"></i>
+                                class="bg-base-bg text-text-default rounded-full py-2 pl-10 pr-4 focus:ring-2 focus:ring-primary w-full lg:w-48 border border-gray-200 dark:border-gray-700 transition-all duration-300" />
+                            <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 group-hover:text-primary transition-colors"></i>
                         </form>
                     </div>
                 </div>
             </nav>
+            
+            <!-- Breadcrumbs -->
+            <?php
+            // Calculate breadcrumbs based on the URL with a fallback for local testing
+            $uri = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '';
+            $parts = explode('?', $uri)[0]; // Remove query string
+            $parts = array_filter(explode('/', $parts));
+            
+            if (!empty($parts) && basename($uri) !== 'index.php' && $uri !== '/' && $uri !== '') {
+                echo '<nav class="mt-4 text-sm text-text-secondary flex items-center gap-2 overflow-x-auto whitespace-nowrap pb-1 print:hidden" aria-label="Breadcrumb">';
+                echo '<a href="/" class="hover:text-primary transition-colors"><i class="fas fa-home"></i></a>';
+                
+                $path = '';
+                $total = count($parts);
+                $i = 0;
+                
+                foreach ($parts as $part) {
+                    $i++;
+                    $path .= '/' . $part;
+                    $name = ucwords(str_replace(['-', '.php', '.html'], [' ', '', ''], $part));
+                    
+                    echo '<span class="text-gray-400 mx-1"><i class="fas fa-chevron-right text-[10px]"></i></span>';
+                    
+                    if ($i === $total) {
+                        echo '<span class="text-text-default font-medium text-emerald-600 dark:text-emerald-400 truncate max-w-[200px]" aria-current="page">' . htmlspecialchars($name) . '</span>';
+                    } else {
+                        echo '<a href="' . htmlspecialchars($path) . '" class="hover:text-primary transition-colors truncate max-w-[150px]">' . htmlspecialchars($name) . '</a>';
+                    }
+                }
+                echo '</nav>';
+            }
+            ?>
         </div>
     </header>
 

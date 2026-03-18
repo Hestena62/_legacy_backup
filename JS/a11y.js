@@ -139,6 +139,27 @@ function applySettings(s) {
     
     // Stop Animations
     toggleClass(b, 'stop-animations', !!s.stopAnimations);
+    
+    // Color Overlay (Irlen Syndrome/Reading Tints)
+    let overlay = document.getElementById('a11y-color-overlay');
+    if (s.colorOverlay && s.colorOverlay !== 'none') {
+        if (!overlay) {
+            overlay = document.createElement('div');
+            overlay.id = 'a11y-color-overlay';
+            overlay.style.position = 'fixed';
+            overlay.style.top = '0';
+            overlay.style.left = '0';
+            overlay.style.width = '100vw';
+            overlay.style.height = '100vh';
+            overlay.style.pointerEvents = 'none';
+            overlay.style.zIndex = '9998'; // Just below highest interactive elements
+            document.body.appendChild(overlay);
+        }
+        overlay.style.backgroundColor = s.colorOverlay;
+        overlay.style.display = 'block';
+    } else if (overlay) {
+        overlay.style.display = 'none';
+    }
 
     // Sync Panel UI
     syncPanelInputs(s);
@@ -166,15 +187,17 @@ function syncPanelInputs(s) {
     if (el('panel-word-spacing')) el('panel-word-spacing').value = s.wordSpacing;
     if (el('panel-mask-opacity')) el('panel-mask-opacity').value = s.maskOpacity;
     if (el('panel-stop-animations')) el('panel-stop-animations').checked = !!s.stopAnimations;
+    if (el('panel-color-overlay')) el('panel-color-overlay').value = s.colorOverlay || 'none';
 }
 
 // --- Text-to-Speech Logic ---
 function initTTS() {
-    // Placeholder for any speech synthesis setup
+    // If TTS is enabled, listen for text selection
+    document.addEventListener('mouseup', handleTextSelection);
 }
 
 function enableTTS() {
-    document.addEventListener('mouseup', handleTextSelection);
+    initTTS();
 }
 
 function disableTTS() {
@@ -257,9 +280,13 @@ window.syncPanelInputs = syncPanelInputs;
 // Apply immediately on load
 // Wait for DOM
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => applySettings(currentSettings));
+    document.addEventListener('DOMContentLoaded', () => {
+        applySettings(currentSettings);
+        initDictionaryTooltip();
+    });
 } else {
     applySettings(currentSettings);
+    initDictionaryTooltip();
 }
 
 // Listen for internal system updates
@@ -268,3 +295,76 @@ window.addEventListener('settings-changed', (e) => {
     window.currentSettings = currentSettings;
     applySettings(currentSettings);
 });
+
+// --- Double-Click Dictionary Tooltip ---
+function initDictionaryTooltip() {
+    document.addEventListener('dblclick', async (e) => {
+        // Only fetch if they double-clicked text
+        const selection = window.getSelection();
+        const word = selection.toString().trim();
+        
+        // Don't trigger on empty or very long selections (likely not a single word)
+        if (!word || word.length > 30 || word.includes(' ')) return;
+
+        // Try to fetch definition from free dictionary API
+        try {
+            const res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(word)}`);
+            if (!res.ok) return; // Word not found or API error
+            
+            const data = await res.json();
+            if (data && data.length > 0 && data[0].meanings && data[0].meanings.length > 0) {
+                const meaning = data[0].meanings[0];
+                const def = meaning.definitions[0].definition;
+                const partOfSpeech = meaning.partOfSpeech;
+                
+                showDictionaryTooltip(e.clientX, e.clientY, word, partOfSpeech, def);
+            }
+        } catch (err) {
+            console.error('Dictionary fetch failed:', err);
+        }
+    });
+}
+
+function showDictionaryTooltip(x, y, word, partOfSpeech, definition) {
+    // Remove existing
+    const existing = document.getElementById('dict-tooltip');
+    if (existing) existing.remove();
+
+    const tooltip = document.createElement('div');
+    tooltip.id = 'dict-tooltip';
+    tooltip.className = 'fixed z-[100] bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 p-4 rounded-lg shadow-2xl max-w-sm border border-gray-200 dark:border-gray-700 animate-fade-in-up';
+    
+    // Position it
+    let top = y + 20;
+    let left = x;
+    
+    // Bounds check
+    if (left + 300 > window.innerWidth) left = window.innerWidth - 320;
+    if (top + 150 > window.innerHeight) top = y - 160;
+    
+    tooltip.style.top = `${top}px`;
+    tooltip.style.left = `${left}px`;
+    
+    tooltip.innerHTML = `
+        <div class="flex justify-between items-start mb-2">
+            <div>
+                <h4 class="font-bold text-lg text-primary capitalize">${word}</h4>
+                <span class="text-xs text-text-secondary italic">${partOfSpeech}</span>
+            </div>
+            <button onclick="this.parentElement.parentElement.remove()" class="text-gray-400 hover:text-red-500"><i class="fas fa-times"></i></button>
+        </div>
+        <p class="text-sm leading-relaxed">${definition}</p>
+    `;
+    
+    document.body.appendChild(tooltip);
+
+    // Click outside to close
+    setTimeout(() => {
+        document.addEventListener('click', function closeTooltip(e) {
+            if (!tooltip.contains(e.target)) {
+                tooltip.remove();
+                document.removeEventListener('click', closeTooltip);
+            }
+        });
+    }, 100);
+}

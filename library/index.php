@@ -1090,24 +1090,60 @@ include '../src/header.php';
             </div>
 
             <!-- Action Buttons -->
-            <div class="mt-8 pt-6 border-t flex flex-wrap gap-4">
-                <a id="modal-read-online-link" href="#"
-                    class="flex-1 bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white py-3 px-6 rounded-xl font-bold text-center shadow-lg transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
-                    <i class="fas fa-book-open"></i> Read Online
-                </a>
+            <div class="mt-8 pt-6 border-t flex flex-col gap-4">
+                <div class="flex flex-wrap gap-4">
+                    <a id="modal-read-online-link" href="#"
+                        class="flex-1 bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white py-3 px-6 rounded-xl font-bold text-center shadow-lg transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                        <i class="fas fa-book-open"></i> Read Online
+                    </a>
 
-                <div class="flex gap-2">
-                    <a id="modal-pdf-link" href="#" class="bg-base-bg hover:bg-primary/10 text-text-default p-3 rounded-xl border transition-colors tooltip-btn" title="Download PDF">
-                        <i class="fas fa-file-pdf text-red-500"></i>
-                    </a>
-                    <a id="modal-epub-link" href="#" class="bg-base-bg hover:bg-primary/10 text-text-default p-3 rounded-xl border transition-colors tooltip-btn" title="Download ePUB">
-                        <i class="fas fa-book text-blue-500"></i>
-                    </a>
-                    <a id="modal-mobi-link" href="#" class="bg-base-bg hover:bg-primary/10 text-text-default p-3 rounded-xl border transition-colors tooltip-btn" title="Download MOBI">
-                        <i class="fas fa-tablet-alt text-orange-500"></i>
-                    </a>
+                    <div class="flex gap-2">
+                        <a id="modal-pdf-link" href="#" class="bg-base-bg hover:bg-primary/10 text-text-default p-3 rounded-xl border transition-colors tooltip-btn" title="Download PDF">
+                            <i class="fas fa-file-pdf text-red-500"></i>
+                        </a>
+                        <a id="modal-epub-link" href="#" class="bg-base-bg hover:bg-primary/10 text-text-default p-3 rounded-xl border transition-colors tooltip-btn" title="Download ePUB">
+                            <i class="fas fa-book text-blue-500"></i>
+                        </a>
+                        <a id="modal-mobi-link" href="#" class="bg-base-bg hover:bg-primary/10 text-text-default p-3 rounded-xl border transition-colors tooltip-btn" title="Download MOBI">
+                            <i class="fas fa-tablet-alt text-orange-500"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Disclaimer Button -->
+                <div class="flex self-start">
+                    <button onclick="openDisclaimerModal()" class="text-sm text-text-secondary hover:text-primary transition-colors flex items-center gap-1">
+                        <i class="fas fa-exclamation-circle text-yellow-500"></i> View Disclaimer
+                    </button>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+
+<!-- Disclaimer Modal -->
+<div id="disclaimerModal"
+    class="fixed inset-0 z-[60] flex items-center justify-center bg-black/80 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300"
+    onclick="closeDisclaimerModal()">
+    <div class="bg-content-bg border rounded-2xl shadow-2xl w-full max-w-md p-6 m-4 relative"
+        onclick="event.stopPropagation()">
+        
+        <button onclick="closeDisclaimerModal()"
+            class="absolute top-4 right-4 z-10 w-8 h-8 rounded-full bg-base-bg text-text-default hover:bg-primary hover:text-white transition-colors flex items-center justify-center border shadow-sm">
+            <i class="fas fa-times"></i>
+        </button>
+        
+        <div class="text-center mb-4">
+            <i class="fas fa-exclamation-triangle text-4xl text-yellow-500 mb-2"></i>
+            <h3 class="text-2xl font-bold text-text-default">Disclaimer</h3>
+        </div>
+        <p class="text-text-secondary text-sm leading-relaxed mb-6 text-center">
+            The books and materials in this digital library are provided for educational and informational purposes only. Hesten's Learning makes no claims of ownership over third-party content. Please ensure your use of these materials complies with applicable copyright laws before downloading.
+        </p>
+        <div class="flex justify-center">
+            <button onclick="closeDisclaimerModal()" class="bg-gradient-to-r from-primary to-secondary text-white py-2 px-6 rounded-xl font-bold shadow-lg hover:opacity-90 transition-opacity">
+                I Understand
+            </button>
         </div>
     </div>
 </div>
@@ -1214,9 +1250,28 @@ include '../src/header.php';
         setTimeout(() => modal.classList.add('hidden'), 300);
     }
 
+    window.openDisclaimerModal = function () {
+        const disclaimerModal = document.getElementById('disclaimerModal');
+        disclaimerModal.classList.remove('hidden');
+        setTimeout(() => disclaimerModal.classList.remove('opacity-0'), 10);
+    }
+
+    window.closeDisclaimerModal = function () {
+        const disclaimerModal = document.getElementById('disclaimerModal');
+        disclaimerModal.classList.add('opacity-0');
+        setTimeout(() => disclaimerModal.classList.add('hidden'), 300);
+    }
+
     // Close on Escape
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') closeModal();
+        if (e.key === 'Escape') {
+            const disclaimerModal = document.getElementById('disclaimerModal');
+            if (disclaimerModal && !disclaimerModal.classList.contains('hidden')) {
+                closeDisclaimerModal();
+            } else {
+                closeModal();
+            }
+        }
     });
 </script>
 
