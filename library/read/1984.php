@@ -19,7 +19,7 @@ include '../../src/header.php';
     padding: 2rem;
   }
 
-/* Progress Bar */
+  /* Progress Bar */
   #progress-bar-container {
     position: fixed;
     top: 0;
@@ -74,7 +74,7 @@ include '../../src/header.php';
     text-align: left;
   }
 
- /* Tooltip Styling (Preserved) */
+  /* Tooltip Styling (Preserved) */
   .tooltip {
     position: relative;
     display: inline-block;
@@ -85,7 +85,7 @@ include '../../src/header.php';
     font-weight: 600;
   }
 
-.tooltip .tooltiptext {
+  .tooltip .tooltiptext {
     visibility: hidden;
     width: 240px;
     background-color: var(--color-content-bg, #ffffff);
@@ -3810,7 +3810,7 @@ include '../../src/header.php';
           It was the middle of the morning, and Winston had left the cubicle to go
           to the lavatory.
 
-          <p>A solitary figure was coming towards him from the other end of the long,
+        <p>A solitary figure was coming towards him from the other end of the long,
           brightly-lit corridor. It was the girl with dark hair. Four days had gone
           past since the evening when he had run into her outside the junk-shop.
           As she came nearer he saw that her right arm was in a sling, not noticeable
@@ -3819,37 +3819,37 @@ include '../../src/header.php';
           on which the plots of novels were 'roughed in'. It was a common accident
           in the Fiction Department.</p>
 
-          <p>They were perhaps four metres apart when the girl stumbled and fell almost
+        <p>They were perhaps four metres apart when the girl stumbled and fell almost
           flat on her face. A sharp cry of pain was wrung out of her. She must have
           fallen right on the injured arm. Winston stopped short. The girl had risen
           to her knees. Her face had turned a milky yellow colour against which her
           mouth stood out redder than ever. Her eyes were fixed on his, with an
           appealing expression that looked more like fear than pain.</p>
 
-          <p>A curious emotion stirred in Winston's heart. In front of him was an enemy
+        <p>A curious emotion stirred in Winston's heart. In front of him was an enemy
           who was trying to kill him: in front of him, also, was a human creature,
           in pain and perhaps with a broken bone. Already he had instinctively
           started forward to help her. In the moment when he had seen her fall on
           the bandaged arm, it had been as though he felt the pain in his own body.</p>
 
-          <p>'You're hurt?' he said.</p>
+        <p>'You're hurt?' he said.</p>
 
-          <p>'It's nothing. My arm. It'll be all right in a second.'</p>
+        <p>'It's nothing. My arm. It'll be all right in a second.'</p>
 
-          <p>She spoke as though her heart were fluttering. She had certainly turned
+        <p>She spoke as though her heart were fluttering. She had certainly turned
           very pale.</p>
 
-          <p>'You haven't broken anything?'</p>
+        <p>'You haven't broken anything?'</p>
 
-          <p>'No, I'm all right. It hurt for a moment, that's all.'</p>
+        <p>'No, I'm all right. It hurt for a moment, that's all.'</p>
 
-          <p>She held out her free hand to him, and he helped her up. She had regained
+        <p>She held out her free hand to him, and he helped her up. She had regained
           some of her colour, and appeared very much better.</p>
 
-          <p>'It's nothing,' she repeated shortly. 'I only gave my wrist a bit of a
+        <p>'It's nothing,' she repeated shortly. 'I only gave my wrist a bit of a
           bang. Thanks, comrade!'</p>
 
-          <p>And with that she walked on in the direction in which she had been going,
+        <p>And with that she walked on in the direction in which she had been going,
           as briskly as though it had really been nothing. The whole incident could
           not have taken as much as half a minute. Not to let one's feelings appear
           in one's face was a habit that had acquired the status of an instinct,
@@ -3862,14 +3862,14 @@ include '../../src/header.php';
           pocket and felt it with the tips of his fingers. It was a scrap of paper
           folded into a square.</p>
 
-          <p>While he stood at the urinal he managed, with a little more fingering, to
+        <p>While he stood at the urinal he managed, with a little more fingering, to
           get it unfolded. Obviously there must be a message of some kind written on
           it. For a moment he was tempted to take it into one of the water-closets
           and read it at once. But that would be shocking folly, as he well knew.
           There was no place where you could be more certain that the telescreens
           were watched continuously.</p>
 
-          <p>He went back to his cubicle, sat down, threw the fragment of paper
+        <p>He went back to his cubicle, sat down, threw the fragment of paper
           casually among the other papers on the desk, put on his spectacles and
           hitched the speakwrite towards him. 'Five minutes,' he told himself,
           'five minutes at the very least!' His heart bumped in his breast with
@@ -3877,7 +3877,7 @@ include '../../src/header.php';
           mere routine, the rectification of a long list of figures, not needing
           close attention.</p>
 
-          <p>Whatever was written on the paper, it must have some kind of political
+        <p>Whatever was written on the paper, it must have some kind of political
           meaning. So far as he could see there were two possibilities. One, much
           the more likely, was that the girl was an agent of the Thought Police,
           just as he had feared. He did not know why the Thought Police should
@@ -3897,20 +3897,20 @@ include '../../src/header.php';
           kept his voice from trembling as he murmured his figures into the
           speakwrite.</p>
 
-          <p>He rolled up the completed bundle of work and slid it into the pneumatic
+        <p>He rolled up the completed bundle of work and slid it into the pneumatic
           tube. Eight minutes had gone by. He re-adjusted his spectacles on his nose,
           sighed, and drew the next batch of work towards him, with the scrap of
           paper on top of it. He flattened it out. On it was written, in a large
           unformed handwriting:</p>
 
-          <p>I LOVE YOU.</p>
+        <p>I LOVE YOU.</p>
 
-          <p>For several seconds he was too stunned even to throw the incriminating
+        <p>For several seconds he was too stunned even to throw the incriminating
           thing into the memory hole. When he did so, although he knew very well the
           danger of showing too much interest, he could not resist reading it once
           again, just to make sure that the words were really there.</p>
 
-          <p>For the rest of the morning it was very difficult to work. What was even
+        <p>For the rest of the morning it was very difficult to work. What was even
           worse than having to focus his mind on a series of niggling jobs was the
           need to conceal his agitation from the telescreen. He felt as though a
           fire were burning in his belly. Lunch in the hot, crowded, noise-filled
@@ -3922,12 +3922,13 @@ include '../../src/header.php';
           Brother's head, two metres wide, which was being made for the occasion by
           his daughter's troop of Spies. The irritating thing was that in the racket
           of voices Winston could hardly hear what Parsons was saying, and was
-          constantly having to ask for some <span class="tooltip"><strong>fatuous</strong><span class="tooltiptext">Silly and pointless</span></span> remark to be repeated. Just once
+          constantly having to ask for some <span class="tooltip"><strong>fatuous</strong><span
+              class="tooltiptext">Silly and pointless</span></span> remark to be repeated. Just once
           he caught a glimpse of the girl, at a table with two other girls at the
           far end of the room. She appeared not to have seen him, and he did not
           look in that direction again.</p>
 
-          <p>The afternoon was more bearable. Immediately after lunch there arrived a
+        <p>The afternoon was more bearable. Immediately after lunch there arrived a
           delicate, difficult piece of work which would take several hours and
           necessitated putting everything else aside. It consisted in falsifying a
           series of production reports of two years ago, in such a way as to cast
@@ -3949,7 +3950,7 @@ include '../../src/header.php';
           telescreen so long as you kept silent--that he was able to think
           continuously.</p>
 
-          <p>It was a physical problem that had to be solved: how to get in touch with
+        <p>It was a physical problem that had to be solved: how to get in touch with
           the girl and arrange a meeting. He did not consider any longer the
           possibility that she might be laying some kind of trap for him. He knew
           that it was not so, because of her unmistakable agitation when she handed
@@ -3970,7 +3971,7 @@ include '../../src/header.php';
           he went over them one by one, as though laying out a row of instruments
           on a table.</p>
 
-          <p>Obviously the kind of encounter that had happened this morning could not
+        <p>Obviously the kind of encounter that had happened this morning could not
           be repeated. If she had worked in the Records Department it might have
           been comparatively simple, but he had only a very dim idea whereabouts in
           the building the Fiction Department lay, and he had no pretext for going
@@ -3990,7 +3991,7 @@ include '../../src/header.php';
           endured for, say, thirty seconds, it might be possible to exchange a few
           words.</p>
 
-          <p>For a week after this, life was like a restless dream. On the next day she
+        <p>For a week after this, life was like a restless dream. On the next day she
           did not appear in the canteen until he was leaving it, the whistle having
           already blown. Presumably she had been changed on to a later shift. They
           passed each other without a glance. On the day after that she was in the
@@ -4008,7 +4009,7 @@ include '../../src/header.php';
           of Oceania: worst and likeliest of all, she might simply have changed her
           mind and decided to avoid him.</p>
 
-          <p>The next day she reappeared. Her arm was out of the sling and she had a
+        <p>The next day she reappeared. Her arm was out of the sling and she had a
           band of sticking-plaster round her wrist. The relief of seeing her was
           so great that he could not resist staring directly at her for several
           seconds. On the following day he very nearly succeeded in speaking to her.
@@ -4030,7 +4031,7 @@ include '../../src/header.php';
           hallucination of himself smashing a pick-axe right into the middle of it.
           The girl's table filled up a few minutes later.</p>
 
-          <p>But she must have seen him coming towards her, and perhaps she would take
+        <p>But she must have seen him coming towards her, and perhaps she would take
           the hint. Next day he took care to arrive early. Surely enough, she was at
           a table in about the same place, and again alone. The person immediately
           ahead of him in the queue was a small, swiftly-moving, beetle-like man
@@ -4047,7 +4048,7 @@ include '../../src/header.php';
           suspected of having tripped him up. But it was all right. Five seconds
           later, with a thundering heart, Winston was sitting at the girl's table.</p>
 
-          <p>He did not look at her. He unpacked his tray and promptly began eating.
+        <p>He did not look at her. He unpacked his tray and promptly began eating.
           It was all-important to speak at once, before anyone else came, but now
           a terrible fear had taken possession of him. A week had gone by since
           she had first approached him. She would have changed her mind, she must
@@ -4064,36 +4065,36 @@ include '../../src/header.php';
           watery stuff into their mouths, and between spoonfuls exchanged the few
           necessary words in low expressionless voices.</p>
 
-          <p>'What time do you leave work?'</p>
+        <p>'What time do you leave work?'</p>
 
-          <p>'Eighteen-thirty.'</p>
+        <p>'Eighteen-thirty.'</p>
 
-          <p>'Where can we meet?'</p>
+        <p>'Where can we meet?'</p>
 
-          <p>'Victory Square, near the monument.'</p>
+        <p>'Victory Square, near the monument.'</p>
 
-          <p>'It's full of telescreens.'</p>
+        <p>'It's full of telescreens.'</p>
 
-          <p>'It doesn't matter if there's a crowd.'</p>
+        <p>'It doesn't matter if there's a crowd.'</p>
 
-          <p>'Any signal?'</p>
+        <p>'Any signal?'</p>
 
-          <p>'No. Don't come up to me until you see me among a lot of people. And don't
+        <p>'No. Don't come up to me until you see me among a lot of people. And don't
           look at me. Just keep somewhere near me.'</p>
 
-          <p>'What time?'</p>
+        <p>'What time?'</p>
 
-          <p>'Nineteen hours.'</p>
+        <p>'Nineteen hours.'</p>
 
-          <p>'All right.'</p>
+        <p>'All right.'</p>
 
-          <p>Ampleforth failed to see Winston and sat down at another table. They did
+        <p>Ampleforth failed to see Winston and sat down at another table. They did
           not speak again, and, so far as it was possible for two people sitting on
           opposite sides of the same table, they did not look at one another. The
           girl finished her lunch quickly and made off, while Winston stayed to
           smoke a cigarette.</p>
 
-          <p>Winston was in Victory Square before the appointed time. He wandered round
+        <p>Winston was in Victory Square before the appointed time. He wandered round
           the base of the enormous fluted column, at the top of which Big Brother's
           statue gazed southward towards the skies where he had vanquished the
           Eurasian aeroplanes (the Eastasian aeroplanes, it had been, a few years
@@ -4114,7 +4115,7 @@ include '../../src/header.php';
           Winston followed. As he ran, he gathered from some shouted remarks that
           a convoy of Eurasian prisoners was passing.</p>
 
-          <p>Already a dense mass of people was blocking the south side of the square.
+        <p>Already a dense mass of people was blocking the south side of the square.
           Winston, at normal times the kind of person who gravitates to the outer
           edge of any kind of scrimmage, shoved, butted, squirmed his way forward
           into the heart of the crowd. Soon he was within arm's length of the girl,
@@ -4126,7 +4127,7 @@ include '../../src/header.php';
           had broken through, sweating a little. He was next to the girl. They were
           shoulder to shoulder, both staring fixedly in front of them.</p>
 
-          <p>A long line of trucks, with wooden-faced guards armed with sub-machine
+        <p>A long line of trucks, with wooden-faced guards armed with sub-machine
           guns standing upright in each corner, was passing slowly down the street.
           In the trucks little yellow men in shabby greenish uniforms were squatting,
           jammed close together. Their sad, Mongolian faces gazed out over the sides
@@ -4141,39 +4142,40 @@ include '../../src/header.php';
           moving, a mere murmur easily drowned by the din of voices and the rumbling
           of the trucks.</p>
 
-          <p>'Can you hear me?'</p>
+        <p>'Can you hear me?'</p>
 
-          <p>'Yes.'</p>
+        <p>'Yes.'</p>
 
-          <p>'Can you get Sunday afternoon off?'</p>
+        <p>'Can you get Sunday afternoon off?'</p>
 
-          <p>'Yes.'</p>
+        <p>'Yes.'</p>
 
-          <p>'Then listen carefully. You'll have to remember this. Go to Paddington
+        <p>'Then listen carefully. You'll have to remember this. Go to Paddington
           Station----'</p>
 
-          <p>With a sort of military precision that astonished him, she outlined the
+        <p>With a sort of military precision that astonished him, she outlined the
           route that he was to follow. A half-hour railway journey; turn left outside
           the station; two kilometres along the road; a gate with the top bar
           missing; a path across a field; a grass-grown lane; a track between bushes;
           a dead tree with moss on it. It was as though she had a map inside her
           head. 'Can you remember all that?' she murmured finally.</p>
 
-          <p>'Yes.'</p>
+        <p>'Yes.'</p>
 
-          <p>'You turn left, then right, then left again. And the gate's got no top bar.'</p>
+        <p>'You turn left, then right, then left again. And the gate's got no top bar.'</p>
 
-          <p>'Yes. What time?'</p>
+        <p>'Yes. What time?'</p>
 
-          <p>'About fifteen. You may have to wait. I'll get there by another way. Are
+        <p>'About fifteen. You may have to wait. I'll get there by another way. Are
           you sure you remember everything?'</p>
 
-          <p>'Yes.'</p>
+        <p>'Yes.'</p>
 
-          <p>'Then get away from me as quick as you can.'</p>
+        <p>'Then get away from me as quick as you can.'</p>
 
-          <p>She need not have told him that. But for the moment they could not
-          <span class="tooltip"><strong>extricate</strong><span class="tooltiptext">Free (someone or something) from a constraint or difficulty</span></span> themselves from the crowd. The trucks were still filing past,
+        <p>She need not have told him that. But for the moment they could not
+          <span class="tooltip"><strong>extricate</strong><span class="tooltiptext">Free (someone or something) from a
+              constraint or difficulty</span></span> themselves from the crowd. The trucks were still filing past,
           the people still insatiably gaping. At the start there had been a few boos
           and hisses, but it came only from the Party members among the crowd, and
           had soon stopped. The prevailing emotion was simply curiosity. Foreigners,
@@ -4190,9 +4192,10 @@ include '../../src/header.php';
           crossed in front of him, as though he were used to having them bound
           together. It was almost time for Winston and the girl to part. But at the
           last moment, while the crowd still hemmed them in, her hand felt for his
-          and gave it a fleeting squeeze.</p>
+          and gave it a fleeting squeeze.
+        </p>
 
-          <p>It could not have been ten seconds, and yet it seemed a long time that
+        <p>It could not have been ten seconds, and yet it seemed a long time that
           their hands were clasped together. He had time to learn every detail
           of her hand. He explored the long fingers, the shapely nails, the
           work-hardened palm with its row of callouses, the smooth flesh under the
@@ -4218,7 +4221,7 @@ include '../../src/header.php';
           seemed to kiss one's skin. It was the second of May. From somewhere deeper
           in the heart of the wood came the droning of ring-doves.
 
-          <p>He was a bit early. There had been no difficulties about the journey, and
+        <p>He was a bit early. There had been no difficulties about the journey, and
           the girl was so evidently experienced that he was less frightened than he
           would normally have been. Presumably she could be trusted to find a safe
           place. In general you could not assume that you were much safer in the
@@ -4238,7 +4241,7 @@ include '../../src/header.php';
           with 'in-laws' in the country, and, as they freely explained to Winston,
           to get hold of a little black-market butter.</p>
 
-          <p>The lane widened, and in a minute he came to the footpath she had told him
+        <p>The lane widened, and in a minute he came to the footpath she had told him
           of, a mere cattle-track which plunged between the bushes. He had no watch,
           but it could not be fifteen yet. The bluebells were so thick underfoot
           that it was impossible not to tread on them. He knelt down and began
@@ -4251,7 +4254,7 @@ include '../../src/header.php';
           round was to show guilt. He picked another and another. A hand fell
           lightly on his shoulder.</p>
 
-          <p>He looked up. It was the girl. She shook her head, evidently as a warning
+        <p>He looked up. It was the girl. She shook her head, evidently as a warning
           that he must keep silent, then parted the bushes and quickly led the way
           along the narrow track into the wood. Obviously she had been that way
           before, for she dodged the boggy bits as though by habit. Winston followed,
@@ -4271,43 +4274,43 @@ include '../../src/header.php';
           knoll surrounded by tall saplings that shut it in completely. The girl
           stopped and turned.</p>
 
-          <p>'Here we are,' she said.</p>
+        <p>'Here we are,' she said.</p>
 
-          <p>He was facing her at several paces' distance. As yet he did not dare move
+        <p>He was facing her at several paces' distance. As yet he did not dare move
           nearer to her.</p>
 
-          <p>'I didn't want to say anything in the lane,' she went on, 'in case there's
+        <p>'I didn't want to say anything in the lane,' she went on, 'in case there's
           a mike hidden there. I don't suppose there is, but there could be. There's
           always the chance of one of those swine recognizing your voice. We're all
           right here.'</p>
 
-          <p>He still had not the courage to approach her. 'We're all right here?'
+        <p>He still had not the courage to approach her. 'We're all right here?'
           he repeated stupidly.</p>
 
-          <p>'Yes. Look at the trees.' They were small ashes, which at some time had
+        <p>'Yes. Look at the trees.' They were small ashes, which at some time had
           been cut down and had sprouted up again into a forest of poles, none of
           them thicker than one's wrist. 'There's nothing big enough to hide a mike
           in. Besides, I've been here before.'</p>
 
-          <p>They were only making conversation. He had managed to move closer to her
+        <p>They were only making conversation. He had managed to move closer to her
           now. She stood before him very upright, with a smile on her face that
           looked faintly ironical, as though she were wondering why he was so slow
           to act. The bluebells had cascaded on to the ground. They seemed to have
           fallen of their own accord. He took her hand.</p>
 
-          <p>'Would you believe,' he said, 'that till this moment I didn't know what
+        <p>'Would you believe,' he said, 'that till this moment I didn't know what
           colour your eyes were?' They were brown, he noted, a rather light shade of
           brown, with dark lashes. 'Now that you've seen what I'm really like,
           can you still bear to look at me?'</p>
 
-          <p>'Yes, easily.'</p>
+        <p>'Yes, easily.'</p>
 
-          <p>'I'm thirty-nine years old. I've got a wife that I can't get rid of. I've
+        <p>'I'm thirty-nine years old. I've got a wife that I can't get rid of. I've
           got varicose veins. I've got five false teeth.'</p>
 
-          <p>'I couldn't care less,' said the girl.</p>
+        <p>'I couldn't care less,' said the girl.</p>
 
-          <p>The next moment, it was hard to say by whose act, she was in his arms.
+        <p>The next moment, it was hard to say by whose act, she was in his arms.
           At the beginning he had no feeling except sheer incredulity. The youthful
           body was strained against his own, the mass of dark hair was against his
           face, and yes! actually she had turned her face up and he was kissing the
@@ -4322,45 +4325,45 @@ include '../../src/header.php';
           bluebell out of her hair. She sat against him, putting her arm round his
           waist.</p>
 
-          <p>'Never mind, dear. There's no hurry. We've got the whole afternoon. Isn't
+        <p>'Never mind, dear. There's no hurry. We've got the whole afternoon. Isn't
           this a splendid hide-out? I found it when I got lost once on a community
           hike. If anyone was coming you could hear them a hundred metres away.'</p>
 
-          <p>'What is your name?' said Winston.</p>
+        <p>'What is your name?' said Winston.</p>
 
-          <p>'Julia. I know yours. It's Winston--Winston Smith.'</p>
+        <p>'Julia. I know yours. It's Winston--Winston Smith.'</p>
 
-          <p>'How did you find that out?'</p>
+        <p>'How did you find that out?'</p>
 
-          <p>'I expect I'm better at finding things out than you are, dear. Tell me,
+        <p>'I expect I'm better at finding things out than you are, dear. Tell me,
           what did you think of me before that day I gave you the note?'</p>
 
-          <p>He did not feel any temptation to tell lies to her. It was even a sort of
+        <p>He did not feel any temptation to tell lies to her. It was even a sort of
           love-offering to start off by telling the worst.</p>
 
-          <p>'I hated the sight of you,' he said. 'I wanted to rape you and then murder
+        <p>'I hated the sight of you,' he said. 'I wanted to rape you and then murder
           you afterwards. Two weeks ago I thought seriously of smashing your head in
           with a cobblestone. If you really want to know, I imagined that you had
           something to do with the Thought Police.'</p>
 
-          <p>The girl laughed delightedly, evidently taking this as a
+        <p>The girl laughed delightedly, evidently taking this as a
           tribute to the excellence of her disguise.</p>
 
-          <p>'Not the Thought Police! You didn't honestly think that?'</p>
+        <p>'Not the Thought Police! You didn't honestly think that?'</p>
 
-          <p>'Well, perhaps not exactly that. But from your general appearance--merely
+        <p>'Well, perhaps not exactly that. But from your general appearance--merely
           because you're young and fresh and healthy, you understand--I thought that
           probably----'</p>
 
-          <p>'You thought I was a good Party member. Pure in word and deed. Banners,
+        <p>'You thought I was a good Party member. Pure in word and deed. Banners,
           processions, slogans, games, community hikes all that stuff. And you
           thought that if I had a quarter of a chance I'd denounce you as a
           thought-criminal and get you killed off?'</p>
 
-          <p>'Yes, something of that kind. A great many young girls are like that,
+        <p>'Yes, something of that kind. A great many young girls are like that,
           you know.'</p>
 
-          <p>'It's this bloody thing that does it,' she said, ripping off the scarlet
+        <p>'It's this bloody thing that does it,' she said, ripping off the scarlet
           sash of the Junior Anti-Sex League and flinging it on to a bough. Then,
           as though touching her waist had reminded her of something, she felt in
           the pocket of her overalls and produced a small slab of chocolate. She
@@ -4373,9 +4376,9 @@ include '../../src/header.php';
           had stirred up some memory which he could not pin down, but which was
           powerful and troubling.</p>
 
-          <p>'Where did you get this stuff?' he said.</p>
+        <p>'Where did you get this stuff?' he said.</p>
 
-          <p>'Black market,' she said indifferently. 'Actually I am that sort of girl,
+        <p>'Black market,' she said indifferently. 'Actually I am that sort of girl,
           to look at. I'm good at games. I was a troop-leader in the Spies. I do
           voluntary work three evenings a week for the Junior Anti-Sex League. Hours
           and hours I've spent pasting their bloody rot all over London. I always
@@ -4383,21 +4386,21 @@ include '../../src/header.php';
           I never shirk anything. Always yell with the crowd, that's what I say.
           It's the only way to be safe.'</p>
 
-          <p>The first fragment of chocolate had melted on Winston's tongue. The taste
+        <p>The first fragment of chocolate had melted on Winston's tongue. The taste
           was delightful. But there was still that memory moving round the edges of
           his consciousness, something strongly felt but not reducible to definite
           shape, like an object seen out of the corner of one's eye. He pushed it
           away from him, aware only that it was the memory of some action which he
           would have liked to undo but could not.</p>
 
-          <p>'You are very young,' he said. 'You are ten or fifteen years younger than
+        <p>'You are very young,' he said. 'You are ten or fifteen years younger than
           I am. What could you see to attract you in a man like me?'</p>
 
-          <p>'It was something in your face. I thought I'd take a chance. I'm good at
+        <p>'It was something in your face. I thought I'd take a chance. I'm good at
           spotting people who don't belong. As soon as I saw you I knew you were
           against THEM.'</p>
 
-          <p>THEM, it appeared, meant the Party, and above all the Inner Party, about
+        <p>THEM, it appeared, meant the Party, and above all the Inner Party, about
           whom she talked with an open jeering hatred which made Winston feel uneasy,
           although he knew that they were safe here if they could be safe anywhere.
           A thing that astonished him about her was the coarseness of her language.
@@ -4415,10 +4418,10 @@ include '../../src/header.php';
           go quietly. Presently they had reached the edge of the little wood. She
           stopped him.</p>
 
-          <p>'Don't go out into the open. There might be someone watching. We're all
+        <p>'Don't go out into the open. There might be someone watching. We're all
           right if we keep behind the boughs.'</p>
 
-          <p>They were standing in the shade of hazel bushes. The sunlight, filtering
+        <p>They were standing in the shade of hazel bushes. The sunlight, filtering
           through innumerable leaves, was still hot on their faces. Winston looked
           out into the field beyond, and underwent a curious, slow shock of
           recognition. He knew it by sight. An old, close-bitten pasture, with a
@@ -4428,21 +4431,21 @@ include '../../src/header.php';
           masses like women's hair. Surely somewhere nearby, but out of sight,
           there must be a stream with green pools where dace were swimming?</p>
 
-          <p>'Isn't there a stream somewhere near here?' he whispered.</p>
+        <p>'Isn't there a stream somewhere near here?' he whispered.</p>
 
-          <p>'That's right, there is a stream. It's at the edge of the next field,
+        <p>'That's right, there is a stream. It's at the edge of the next field,
           actually. There are fish in it, great big ones. You can watch them lying
           in the pools under the willow trees, waving their tails.'</p>
 
-          <p>'It's the Golden Country--almost,' he murmured.</p>
+        <p>'It's the Golden Country--almost,' he murmured.</p>
 
-          <p>'The Golden Country?'</p>
+        <p>'The Golden Country?'</p>
 
-          <p>'It's nothing, really. A landscape I've seen sometimes in a dream.'</p>
+        <p>'It's nothing, really. A landscape I've seen sometimes in a dream.'</p>
 
-          <p>'Look!' whispered Julia.</p>
+        <p>'Look!' whispered Julia.</p>
 
-          <p>A thrush had alighted on a bough not five metres away, almost at the level
+        <p>A thrush had alighted on a bough not five metres away, almost at the level
           of their faces. Perhaps it had not seen them. It was in the sun, they in
           the shade. It spread out its wings, fitted them carefully into place
           again, ducked its head for a moment, as though making a sort of obeisance
@@ -4471,11 +4474,11 @@ include '../../src/header.php';
           both of them sighed deeply. The bird took fright and fled with a clatter
           of wings.</p>
 
-          <p>Winston put his lips against her ear. 'NOW,' he whispered.</p>
+        <p>Winston put his lips against her ear. 'NOW,' he whispered.</p>
 
-          <p>'Not here,' she whispered back. 'Come back to the hide-out. It's safer.'</p>
+        <p>'Not here,' she whispered back. 'Come back to the hide-out. It's safer.'</p>
 
-          <p>Quickly, with an occasional crackle of twigs, they threaded their way back
+        <p>Quickly, with an occasional crackle of twigs, they threaded their way back
           to the clearing. When they were once inside the ring of saplings she turned
           and faced him. They were both breathing fast, but the smile had reappeared
           round the corners of her mouth. She stood looking at him for an instant,
@@ -4487,42 +4490,44 @@ include '../../src/header.php';
           his eyes were anchored by the freckled face with its faint, bold smile.
           He knelt down before her and took her hands in his.</p>
 
-          <p>'Have you done this before?'</p>
+        <p>'Have you done this before?'</p>
 
-          <p>'Of course. Hundreds of times--well, scores of times, anyway.'</p>
+        <p>'Of course. Hundreds of times--well, scores of times, anyway.'</p>
 
-          <p>'With Party members?'</p>
+        <p>'With Party members?'</p>
 
-          <p>'Yes, always with Party members.'</p>
+        <p>'Yes, always with Party members.'</p>
 
-          <p>'With members of the Inner Party?'</p>
+        <p>'With members of the Inner Party?'</p>
 
-          <p>'Not with those swine, no. But there's plenty that WOULD if they got half
+        <p>'Not with those swine, no. But there's plenty that WOULD if they got half
           a chance. They're not so holy as they make out.'</p>
 
-          <p>His heart leapt. Scores of times she had done it: he wished it had been
+        <p>His heart leapt. Scores of times she had done it: he wished it had been
           hundreds--thousands. Anything that hinted at corruption always filled him
           with a wild hope. Who knew, perhaps the Party was rotten under the surface,
           its cult of strenuousness and self-denial simply a sham concealing
-          <span class="tooltip"><strong>iniquity</strong><span class="tooltiptext">Immoral or grossly unfair behavior</span></span>. If he could have infected the whole lot of them with leprosy or
+          <span class="tooltip"><strong>iniquity</strong><span class="tooltiptext">Immoral or grossly unfair
+              behavior</span></span>. If he could have infected the whole lot of them with leprosy or
           syphilis, how gladly he would have done so! Anything to rot, to weaken, to
-          undermine! He pulled her down so that they were kneeling face to face.</p>
+          undermine! He pulled her down so that they were kneeling face to face.
+        </p>
 
-          <p>'Listen. The more men you've had, the more I love you. Do you understand
+        <p>'Listen. The more men you've had, the more I love you. Do you understand
           that?'</p>
 
-          <p>'Yes, perfectly.'</p>
+        <p>'Yes, perfectly.'</p>
 
-          <p>'I hate purity, I hate goodness! I don't want any virtue to exist anywhere.
+        <p>'I hate purity, I hate goodness! I don't want any virtue to exist anywhere.
           I want everyone to be corrupt to the bones.'</p>
 
-          <p>'Well then, I ought to suit you, dear. I'm corrupt to the bones.'</p>
+        <p>'Well then, I ought to suit you, dear. I'm corrupt to the bones.'</p>
 
-          <p>'You like doing this? I don't mean simply me: I mean the thing in itself?'</p>
+        <p>'You like doing this? I don't mean simply me: I mean the thing in itself?'</p>
 
-          <p>'I adore it.'</p>
+        <p>'I adore it.'</p>
 
-          <p>That was above all what he wanted to hear. Not merely the love of one
+        <p>That was above all what he wanted to hear. Not merely the love of one
           person but the animal instinct, the simple undifferentiated desire: that
           was the force that would tear the Party to pieces. He pressed her down
           upon the grass, among the fallen bluebells. This time there was no
@@ -4532,14 +4537,14 @@ include '../../src/header.php';
           the discarded overalls and pulled them partly over her. Almost immediately
           they fell asleep and slept for about half an hour.</p>
 
-          <p>Winston woke first. He sat up and watched the freckled face, still
+        <p>Winston woke first. He sat up and watched the freckled face, still
           peacefully asleep, pillowed on the palm of her hand. Except for her mouth,
           you could not call her beautiful. There was a line or two round the eyes,
           if you looked closely. The short dark hair was extraordinarily thick and
           soft. It occurred to him that he still did not know her surname or where
           she lived.</p>
 
-          <p>The young, strong body, now helpless in sleep, awoke in him a pitying,
+        <p>The young, strong body, now helpless in sleep, awoke in him a pitying,
           protecting feeling. But the mindless tenderness that he had felt under
           the hazel tree, while the thrush was singing, had not quite come back.
           He pulled the overalls aside and studied her smooth white flank. In the
@@ -4561,7 +4566,7 @@ include '../../src/header.php';
           'We can come here once again,' said Julia. 'It's generally safe to use any
           hide-out twice. But not for another month or two, of course.'
 
-          <p>As soon as she woke up her demeanour had changed. She became alert and
+        <p>As soon as she woke up her demeanour had changed. She became alert and
           business-like, put her clothes on, knotted the scarlet sash about her
           waist, and began arranging the details of the journey home. It seemed
           natural to leave this to her. She obviously had a practical cunning which
@@ -4573,7 +4578,7 @@ include '../../src/header.php';
           general principle. She would leave first, and Winston was to wait half an
           hour before following her.</p>
 
-          <p>She had named a place where they could meet after work, four evenings
+        <p>She had named a place where they could meet after work, four evenings
           hence. It was a street in one of the poorer quarters, where there was an
           open market which was generally crowded and noisy. She would be hanging
           about among the stalls, pretending to be in search of shoelaces or
@@ -4582,19 +4587,19 @@ include '../../src/header.php';
           recognition. But with luck, in the middle of the crowd, it would be
           safe to talk for a quarter of an hour and arrange another meeting.</p>
 
-          <p>'And now I must go,' she said as soon as he had mastered his instructions.
+        <p>'And now I must go,' she said as soon as he had mastered his instructions.
           'I'm due back at nineteen-thirty. I've got to put in two hours for the
           Junior Anti-Sex League, handing out leaflets, or something. Isn't it
           bloody? Give me a brush-down, would you? Have I got any twigs in my hair?
           Are you sure? Then good-bye, my love, good-bye!'</p>
 
-          <p>She flung herself into his arms, kissed him almost violently, and a moment
+        <p>She flung herself into his arms, kissed him almost violently, and a moment
           later pushed her way through the saplings and disappeared into the wood
           with very little noise. Even now he had not found out her surname or her
           address. However, it made no difference, for it was inconceivable that
           they could ever meet indoors or exchange any kind of written communication.</p>
 
-          <p>As it happened, they never went back to the clearing in the wood. During
+        <p>As it happened, they never went back to the clearing in the wood. During
           the month of May there was only one further occasion on which they actually
           succeeded in making love. That was in another hiding-place known to Julia,
           the belfry of a ruinous church in an almost-deserted stretch of country
@@ -4604,7 +4609,9 @@ include '../../src/header.php';
           place every evening and never for more than half an hour at a time. In the
           street it was usually possible to talk, after a fashion. As they drifted
           down the crowded pavements, not quite abreast and never looking at one
-          another, they carried on a curious, <span class="tooltip"><strong>intermittent</strong><span class="tooltiptext">Occurring at irregular intervals; not continuous or steady</span></span> conversation which flicked
+          another, they carried on a curious, <span class="tooltip"><strong>intermittent</strong><span
+              class="tooltiptext">Occurring at irregular intervals; not continuous or steady</span></span> conversation
+          which flicked
           on and off like the beams of a lighthouse, suddenly nipped into silence
           by the approach of a Party uniform or the proximity of a telescreen, then
           taken up again minutes later in the middle of a sentence, then abruptly
@@ -4623,7 +4630,7 @@ include '../../src/header.php';
           warm face. But there was some powdery stuff that got in the way of his
           lips. Both of their faces were thickly coated with plaster.</p>
 
-          <p>There were evenings when they reached their rendezvous and then had to
+        <p>There were evenings when they reached their rendezvous and then had to
           walk past one another without a sign, because a patrol had just come round
           the corner or a helicopter was hovering overhead. Even if it had been
           less dangerous, it would still have been difficult to find time to meet.
@@ -4642,14 +4649,14 @@ include '../../src/header.php';
           of bomb fuses, in a draughty, ill-lit workshop where the knocking of
           hammers mingled drearily with the music of the telescreens.</p>
 
-          <p>When they met in the church tower the gaps in their fragmentary
+        <p>When they met in the church tower the gaps in their fragmentary
           conversation were filled up. It was a blazing afternoon. The air in the
           little square chamber above the bells was hot and stagnant, and smelt
           overpoweringly of pigeon dung. They sat talking for hours on the dusty,
           twig-littered floor, one or other of them getting up from time to time to
           cast a glance through the arrowslits and make sure that no one was coming.</p>
 
-          <p>Julia was twenty-six years old. She lived in a hostel with thirty other
+        <p>Julia was twenty-six years old. She lived in a hostel with thirty other
           girls ('Always in the stink of women! How I hate women!' she said
           parenthetically), and she worked, as he had guessed, on the novel-writing
           machines in the Fiction Department. She enjoyed her work, which consisted
@@ -4661,7 +4668,7 @@ include '../../src/header.php';
           finished product. She 'didn't much care for reading,' she said. Books were
           just a commodity that had to be produced, like jam or bootlaces.</p>
 
-          <p>She had no memories of anything before the early sixties and the only
+        <p>She had no memories of anything before the early sixties and the only
           person she had ever known who talked frequently of the days before the
           Revolution was a grandfather who had disappeared when she was eight. At
           school she had been captain of the hockey team and had won the gymnastics
@@ -4677,22 +4684,22 @@ include '../../src/header.php';
           furtively by proletarian youths who were under the impression that they
           were buying something illegal.</p>
 
-          <p>'What are these books like?' said Winston curiously.</p>
+        <p>'What are these books like?' said Winston curiously.</p>
 
-          <p>'Oh, ghastly rubbish. They're boring, really. They only have six plots,
+        <p>'Oh, ghastly rubbish. They're boring, really. They only have six plots,
           but they swap them round a bit. Of course I was only on the kaleidoscopes.
           I was never in the Rewrite Squad. I'm not literary, dear--not even enough
           for that.'</p>
 
-          <p>He learned with astonishment that all the workers in Pornosec, except the
+        <p>He learned with astonishment that all the workers in Pornosec, except the
           heads of the departments, were girls. The theory was that men, whose sex
           instincts were less controllable than those of women, were in greater
           danger of being corrupted by the filth they handled.</p>
 
-          <p>'They don't even like having married women there,' she added. Girls are
+        <p>'They don't even like having married women there,' she added. Girls are
           always supposed to be so pure. Here's one who isn't, anyway.</p>
 
-          <p>She had had her first love-affair when she was sixteen, with a Party member
+        <p>She had had her first love-affair when she was sixteen, with a Party member
           of sixty who later committed suicide to avoid arrest. 'And a good job too,'
           said Julia, 'otherwise they'd have had my name out of him when he
           confessed.' Since then there had been various others. Life as she saw it
@@ -4713,19 +4720,21 @@ include '../../src/header.php';
           unalterable, like the sky, not rebelling against its authority but simply
           evading it, as a rabbit dodges a dog.</p>
 
-          <p>They did not discuss the possibility of getting married. It was too remote
+        <p>They did not discuss the possibility of getting married. It was too remote
           to be worth thinking about. No imaginable committee would ever sanction
           such a marriage even if Katharine, Winston's wife, could somehow have been
           got rid of. It was hopeless even as a daydream.</p>
 
-          <p>'What was she like, your wife?' said Julia.</p>
+        <p>'What was she like, your wife?' said Julia.</p>
 
-          <p>'She was--do you know the Newspeak word GOODTHINKFUL? Meaning naturally
-          <span class="tooltip"><strong>orthodox</strong><span class="tooltiptext">Conforming to what is generally accepted as right or true</span></span>, incapable of thinking a bad thought?'</p>
+        <p>'She was--do you know the Newspeak word GOODTHINKFUL? Meaning naturally
+          <span class="tooltip"><strong>orthodox</strong><span class="tooltiptext">Conforming to what is generally
+              accepted as right or true</span></span>, incapable of thinking a bad thought?'
+        </p>
 
-          <p>'No, I didn't know the word, but I know the kind of person, right enough.'</p>
+        <p>'No, I didn't know the word, but I know the kind of person, right enough.'</p>
 
-          <p>He began telling her the story of his married life, but curiously enough
+        <p>He began telling her the story of his married life, but curiously enough
           she appeared to know the essential parts of it already. She described
           to him, almost as though she had seen or felt it, the stiffening of
           Katharine's body as soon as he touched her, the way in which she still
@@ -4734,31 +4743,33 @@ include '../../src/header.php';
           talking about such things: Katharine, in any case, had long ceased to be
           a painful memory and became merely a distasteful one.</p>
 
-          <p>'I could have stood it if it hadn't been for one thing,' he said. He told
+        <p>'I could have stood it if it hadn't been for one thing,' he said. He told
           her about the frigid little ceremony that Katharine had forced him to go
           through on the same night every week. 'She hated it, but nothing would
           make her stop doing it. She used to call it--but you'll never guess.'</p>
 
-          <p>'Our duty to the Party,' said Julia promptly.</p>
+        <p>'Our duty to the Party,' said Julia promptly.</p>
 
-          <p>'How did you know that?'</p>
+        <p>'How did you know that?'</p>
 
-          <p>'I've been at school too, dear. Sex talks once a month for the
+        <p>'I've been at school too, dear. Sex talks once a month for the
           over-sixteens. And in the Youth Movement. They rub it into you for years.
           I dare say it works in a lot of cases. But of course you can never tell;
           people are such hypocrites.'</p>
 
-          <p>She began to enlarge upon the subject. With Julia, everything came back
+        <p>She began to enlarge upon the subject. With Julia, everything came back
           to her own sexuality. As soon as this was touched upon in any way she was
           capable of great acuteness. Unlike Winston, she had grasped the inner
           meaning of the Party's sexual puritanism. It was not merely that the sex
           instinct created a world of its own which was outside the Party's control
           and which therefore had to be destroyed if possible. What was more
-          important was that sexual <span class="tooltip"><strong>privation</strong><span class="tooltiptext">A state in which things that are essential for human well-being such as food and warmth are scarce or lacking</span></span> induced hysteria, which was desirable
+          important was that sexual <span class="tooltip"><strong>privation</strong><span class="tooltiptext">A state in
+              which things that are essential for human well-being such as food and warmth are scarce or
+              lacking</span></span> induced hysteria, which was desirable
           because it could be transformed into war-fever and leader-worship. The way
           she put it was:</p>
 
-          <p>'When you make love you're using up energy; and afterwards you feel happy
+        <p>'When you make love you're using up energy; and afterwards you feel happy
           and don't give a damn for anything. They can't bear you to feel like that.
           They want you to be bursting with energy all the time. All this marching
           up and down and cheering and waving flags is simply sex gone sour. If
@@ -4766,7 +4777,7 @@ include '../../src/header.php';
           and the Three-Year Plans and the Two Minutes Hate and all the rest of
           their bloody rot?'</p>
 
-          <p>That was very true, he thought. There was a direct intimate connexion
+        <p>That was very true, he thought. There was a direct intimate connexion
           between chastity and political orthodoxy. For how could the fear, the
           hatred, and the lunatic credulity which the Party needed in its members be
           kept at the right pitch, except by bottling down some powerful instinct
@@ -4780,15 +4791,17 @@ include '../../src/header.php';
           of the Thought Police. It was a device by means of which everyone could be
           surrounded night and day by informers who knew him intimately.</p>
 
-          <p>Abruptly his mind went back to Katharine. Katharine would unquestionably
+        <p>Abruptly his mind went back to Katharine. Katharine would unquestionably
           have denounced him to the Thought Police if she had not happened to be too
-          stupid to detect the <span class="tooltip"><strong>unorthodoxy</strong><span class="tooltiptext">The quality of being contrary to what is usual, traditional, or accepted</span></span> of his opinions. But what really recalled
+          stupid to detect the <span class="tooltip"><strong>unorthodoxy</strong><span class="tooltiptext">The quality
+              of being contrary to what is usual, traditional, or accepted</span></span> of his opinions. But what
+          really recalled
           her to him at this moment was the stifling heat of the afternoon, which
           had brought the sweat out on his forehead. He began telling Julia of
           something that had happened, or rather had failed to happen, on another
           sweltering summer afternoon, eleven years ago.</p>
 
-          <p>It was three or four months after they were married. They had lost their
+        <p>It was three or four months after they were married. They had lost their
           way on a community hike somewhere in Kent. They had only lagged behind
           the others for a couple of minutes, but they took a wrong turning, and
           presently found themselves pulled up short by the edge of an old chalk
@@ -4803,10 +4816,10 @@ include '../../src/header.php';
           the same root. He had never seen anything of the kind before, and he called
           to Katharine to come and look at it.</p>
 
-          <p>'Look, Katharine! Look at those flowers. That clump down near the bottom.
+        <p>'Look, Katharine! Look at those flowers. That clump down near the bottom.
           Do you see they're two different colours?'</p>
 
-          <p>She had already turned to go, but she did rather fretfully come back for
+        <p>She had already turned to go, but she did rather fretfully come back for
           a moment. She even leaned out over the cliff face to see where he was
           pointing. He was standing a little behind her, and he put his hand on
           her waist to steady her. At this moment it suddenly occurred to him how
@@ -4817,30 +4830,32 @@ include '../../src/header.php';
           of the afternoon. The sun blazed down upon them, the sweat tickled his
           face. And the thought struck him...</p>
 
-          <p>'Why didn't you give her a good shove?' said Julia. 'I would have.'</p>
+        <p>'Why didn't you give her a good shove?' said Julia. 'I would have.'</p>
 
-          <p>'Yes, dear, you would have. I would, if I'd been the same person then as
+        <p>'Yes, dear, you would have. I would, if I'd been the same person then as
           I am now. Or perhaps I would--I'm not certain.'</p>
 
-          <p>'Are you sorry you didn't?'</p>
+        <p>'Are you sorry you didn't?'</p>
 
-          <p>'Yes. On the whole I'm sorry I didn't.'</p>
+        <p>'Yes. On the whole I'm sorry I didn't.'</p>
 
-          <p>They were sitting side by side on the dusty floor. He pulled her closer
+        <p>They were sitting side by side on the dusty floor. He pulled her closer
           against him. Her head rested on his shoulder, the pleasant smell of her
           hair conquering the pigeon dung. She was very young, he thought, she
           still expected something from life, she did not understand that to push
           an inconvenient person over a cliff solves nothing.</p>
 
-          <p>'Actually it would have made no difference,' he said.</p>
+        <p>'Actually it would have made no difference,' he said.</p>
 
-          <p>'Then why are you sorry you didn't do it?'</p>
+        <p>'Then why are you sorry you didn't do it?'</p>
 
-          <p>'Only because I prefer a positive to a negative. In this game that we're
+        <p>'Only because I prefer a positive to a negative. In this game that we're
           playing, we can't win. Some kinds of failure are better than other kinds,
           that's all.'</p>
 
-          <p>He felt her shoulders give a wriggle of <span class="tooltip"><strong>dissent</strong><span class="tooltiptext">The expression or holding of opinions at variance with those previously or officially held</span></span>. She always contradicted
+        <p>He felt her shoulders give a wriggle of <span class="tooltip"><strong>dissent</strong><span
+              class="tooltiptext">The expression or holding of opinions at variance with those previously or officially
+              held</span></span>. She always contradicted
           him when he said anything of this kind. She would not accept it as a law
           of nature that the individual is always defeated. In a way she realized
           that she herself was doomed, that sooner or later the Thought Police would
@@ -4852,36 +4867,37 @@ include '../../src/header.php';
           the moment of declaring war on the Party it was better to think of yourself
           as a corpse.</p>
 
-          <p>'We are the dead,' he said.</p>
+        <p>'We are the dead,' he said.</p>
 
-          <p>'We're not dead yet,' said Julia prosaically.</p>
+        <p>'We're not dead yet,' said Julia prosaically.</p>
 
-          <p>'Not physically. Six months, a year--five years, conceivably. I am afraid
+        <p>'Not physically. Six months, a year--five years, conceivably. I am afraid
           of death. You are young, so presumably you're more afraid of it than I am.
           Obviously we shall put it off as long as we can. But it makes very little
           difference. So long as human beings stay human, death and life are the
           same thing.'</p>
 
-          <p>'Oh, rubbish! Which would you sooner sleep with, me or a skeleton? Don't
+        <p>'Oh, rubbish! Which would you sooner sleep with, me or a skeleton? Don't
           you enjoy being alive? Don't you like feeling: This is me, this is my hand,
           this is my leg, I'm real, I'm solid, I'm alive! Don't you like THIS?'</p>
 
-          <p>She twisted herself round and pressed her bosom against him. He could feel
+        <p>She twisted herself round and pressed her bosom against him. He could feel
           her breasts, ripe yet firm, through her overalls. Her body seemed to be
           pouring some of its youth and vigour into his.</p>
 
-          <p>'Yes, I like that,' he said.</p>
+        <p>'Yes, I like that,' he said.</p>
 
-          <p>'Then stop talking about dying. And now listen, dear, we've got to fix
+        <p>'Then stop talking about dying. And now listen, dear, we've got to fix
           up about the next time we meet. We may as well go back to the place in
           the wood. We've given it a good long rest. But you must get there by a
           different way this time. I've got it all planned out. You take the
           train--but look, I'll draw it out for you.'</p>
 
-          <p>And in her practical way she scraped together a small square of dust,
+        <p>And in her practical way she scraped together a small square of dust,
           and with a twig from a pigeon's nest began drawing a map on the floor.
         </p>
-      </div></p>
+      </div>
+      </p>
 
       <!-- Chapter 13 -->
       <div id="chapter-13" class="chapter-section">
@@ -4894,13 +4910,13 @@ include '../../src/header.php';
           glass paperweight which he had bought on his last visit gleamed softly out
           of the half-darkness.
 
-          <p>In the fender was a battered tin oilstove, a saucepan, and two cups,
+        <p>In the fender was a battered tin oilstove, a saucepan, and two cups,
           provided by Mr Charrington. Winston lit the burner and set a pan of water
           to boil. He had brought an envelope full of Victory Coffee and some
           saccharine tablets. The clock's hands said seventeen-twenty: it was
           nineteen-twenty really. She was coming at nineteen-thirty.</p>
 
-          <p>Folly, folly, his heart kept saying: conscious, gratuitous, suicidal folly.
+        <p>Folly, folly, his heart kept saying: conscious, gratuitous, suicidal folly.
           Of all the crimes that a Party member could commit, this one was the least
           possible to conceal. Actually the idea had first floated into his head in
           the form of a vision, of the glass paperweight mirrored by the surface
@@ -4917,7 +4933,7 @@ include '../../src/header.php';
           out of existence as he did so, added that there were two entries to the
           house, one of them through the back yard, which gave on an alley.</p>
 
-          <p>Under the window somebody was singing. Winston peeped out, secure in the
+        <p>Under the window somebody was singing. Winston peeped out, secure in the
           protection of the muslin curtain. The June sun was still high in the sky,
           and in the sun-filled court below, a monstrous woman, solid as a Norman
           pillar, with brawny red forearms and a sacking apron strapped about her
@@ -4926,12 +4942,12 @@ include '../../src/header.php';
           babies' diapers. Whenever her mouth was not corked with clothes pegs she
           was singing in a powerful contralto:</p>
 
-<p>It was only an 'opeless fancy.
+        <p>It was only an 'opeless fancy.
           It passed like an Ipril dye,
           But a look an' a word an' the dreams they stirred!
           They 'ave stolen my 'eart awye!</p>
 
-<p>The tune had been haunting London for weeks past. It was one of countless
+        <p>The tune had been haunting London for weeks past. It was one of countless
           similar songs published for the benefit of the proles by a sub-section of
           the Music Department. The words of these songs were composed without any
           human intervention whatever on an instrument known as a versificator.
@@ -4941,7 +4957,7 @@ include '../../src/header.php';
           and somewhere in the far distance a faint roar of traffic, and yet the
           room seemed curiously silent, thanks to the absence of a telescreen.</p>
 
-          <p>Folly, folly, folly! he thought again. It was inconceivable that they could
+        <p>Folly, folly, folly! he thought again. It was inconceivable that they could
           frequent this place for more than a few weeks without being caught. But
           the temptation of having a hiding-place that was truly their own, indoors
           and near at hand, had been too much for both of them. For some time
@@ -4955,18 +4971,18 @@ include '../../src/header.php';
           at Julia as they drifted towards one another in the crowd, but from the
           short glance he gave her it seemed to him that she was paler than usual.</p>
 
-          <p>'It's all off,' she murmured as soon as she judged it safe to speak.
+        <p>'It's all off,' she murmured as soon as she judged it safe to speak.
           'Tomorrow, I mean.'</p>
 
-          <p>'What?'</p>
+        <p>'What?'</p>
 
-          <p>'Tomorrow afternoon. I can't come.'</p>
+        <p>'Tomorrow afternoon. I can't come.'</p>
 
-          <p>'Why not?'</p>
+        <p>'Why not?'</p>
 
-          <p>'Oh, the usual reason. It's started early this time.'</p>
+        <p>'Oh, the usual reason. It's started early this time.'</p>
 
-          <p>For a moment he was violently angry. During the month that he had known
+        <p>For a moment he was violently angry. During the month that he had known
           her the nature of his desire for her had changed. At the beginning there
           had been little true sensuality in it. Their first love-making had been
           simply an act of the will. But after the second time it was different. The
@@ -4997,66 +5013,66 @@ include '../../src/header.php';
           postpone it: and yet instead, every now and again, by a conscious, wilful
           act, one chose to shorten the interval before it happened.</p>
 
-          <p>At this moment there was a quick step on the stairs. Julia burst into the
+        <p>At this moment there was a quick step on the stairs. Julia burst into the
           room. She was carrying a tool-bag of coarse brown canvas, such as he had
           sometimes seen her carrying to and fro at the Ministry. He started forward
           to take her in his arms, but she disengaged herself rather hurriedly,
           partly because she was still holding the tool-bag.</p>
 
-          <p>'Half a second,' she said. 'Just let me show you what I've brought. Did
+        <p>'Half a second,' she said. 'Just let me show you what I've brought. Did
           you bring some of that filthy Victory Coffee? I thought you would. You
           can chuck it away again, because we shan't be needing it. Look here.'</p>
 
-          <p>She fell on her knees, threw open the bag, and tumbled out some spanners
+        <p>She fell on her knees, threw open the bag, and tumbled out some spanners
           and a screwdriver that filled the top part of it. Underneath were a number
           of neat paper packets. The first packet that she passed to Winston had a
           strange and yet vaguely familiar feeling. It was filled with some kind of
           heavy, sand-like stuff which yielded wherever you touched it.</p>
 
-          <p>'It isn't sugar?' he said.</p>
+        <p>'It isn't sugar?' he said.</p>
 
-          <p>'Real sugar. Not saccharine, sugar. And here's a loaf of bread--proper
+        <p>'Real sugar. Not saccharine, sugar. And here's a loaf of bread--proper
           white bread, not our bloody stuff--and a little pot of jam. And here's a
           tin of milk--but look! This is the one I'm really proud of. I had to wrap
           a bit of sacking round it, because----'</p>
 
-          <p>But she did not need to tell him why she had wrapped it up. The smell was
+        <p>But she did not need to tell him why she had wrapped it up. The smell was
           already filling the room, a rich hot smell which seemed like an emanation
           from his early childhood, but which one did occasionally meet with even
           now, blowing down a passage-way before a door slammed, or diffusing itself
           mysteriously in a crowded street, sniffed for an instant and then lost
           again.</p>
 
-          <p>'It's coffee,' he murmured, 'real coffee.'</p>
+        <p>'It's coffee,' he murmured, 'real coffee.'</p>
 
-          <p>'It's Inner Party coffee. There's a whole kilo here,' she said.</p>
+        <p>'It's Inner Party coffee. There's a whole kilo here,' she said.</p>
 
-          <p>'How did you manage to get hold of all these things?'</p>
+        <p>'How did you manage to get hold of all these things?'</p>
 
-          <p>'It's all Inner Party stuff. There's nothing those swine don't have,
+        <p>'It's all Inner Party stuff. There's nothing those swine don't have,
           nothing. But of course waiters and servants and people pinch things,
           and--look, I got a little packet of tea as well.'</p>
 
-          <p>Winston had squatted down beside her. He tore open a corner of the packet.</p>
+        <p>Winston had squatted down beside her. He tore open a corner of the packet.</p>
 
-          <p>'It's real tea. Not blackberry leaves.'</p>
+        <p>'It's real tea. Not blackberry leaves.'</p>
 
-          <p>'There's been a lot of tea about lately. They've captured India, or
+        <p>'There's been a lot of tea about lately. They've captured India, or
           something,' she said vaguely. 'But listen, dear. I want you to turn your
           back on me for three minutes. Go and sit on the other side of the bed.
           Don't go too near the window. And don't turn round till I tell you.'</p>
 
-          <p>Winston gazed abstractedly through the muslin curtain. Down in the yard
+        <p>Winston gazed abstractedly through the muslin curtain. Down in the yard
           the red-armed woman was still marching to and fro between the washtub and
           the line. She took two more pegs out of her mouth and sang with deep
           feeling:</p>
 
-<p>They sye that time 'eals all things,
+        <p>They sye that time 'eals all things,
           They sye you can always forget;
           But the smiles an' the tears acrorss the years
           They twist my 'eart-strings yet!</p>
 
-<p>She knew the whole drivelling song by heart, it seemed. Her voice floated
+        <p>She knew the whole drivelling song by heart, it seemed. Her voice floated
           upward with the sweet summer air, very tuneful, charged with a sort of
           happy melancholy. One had the feeling that she would have been perfectly
           content, if the June evening had been endless and the supply of clothes
@@ -5067,14 +5083,14 @@ include '../../src/header.php';
           oneself. Perhaps it was only when people were somewhere near the starvation
           level that they had anything to sing about.</p>
 
-          <p>'You can turn round now,' said Julia.</p>
+        <p>'You can turn round now,' said Julia.</p>
 
-          <p>He turned round, and for a second almost failed to recognize her. What he
+        <p>He turned round, and for a second almost failed to recognize her. What he
           had actually expected was to see her naked. But she was not naked. The
           transformation that had happened was much more surprising than that. She
           had painted her face.</p>
 
-          <p>She must have slipped into some shop in the proletarian quarters and bought
+        <p>She must have slipped into some shop in the proletarian quarters and bought
           herself a complete set of make-up materials. Her lips were deeply reddened,
           her cheeks rouged, her nose powdered; there was even a touch of something
           under the eyes to make them brighter. It was not very skilfully done, but
@@ -5088,14 +5104,14 @@ include '../../src/header.php';
           kitchen, and a woman's cavernous mouth. It was the very same scent that
           she had used; but at the moment it did not seem to matter.</p>
 
-          <p>'Scent too!' he said.</p>
+        <p>'Scent too!' he said.</p>
 
-          <p>'Yes, dear, scent too. And do you know what I'm going to do next? I'm
+        <p>'Yes, dear, scent too. And do you know what I'm going to do next? I'm
           going to get hold of a real woman's frock from somewhere and wear it
           instead of these bloody trousers. I'll wear silk stockings and high-heeled
           shoes! In this room I'm going to be a woman, not a Party comrade.'</p>
 
-          <p>They flung their clothes off and climbed into the huge mahogany bed. It
+        <p>They flung their clothes off and climbed into the huge mahogany bed. It
           was the first time that he had stripped himself naked in her presence.
           Until now he had been too much ashamed of his pale and meagre body, with
           the varicose veins standing out on his calves and the discoloured patch
@@ -5106,7 +5122,7 @@ include '../../src/header.php';
           Winston had occasionally slept in one in his boyhood: Julia had never been
           in one before, so far as she could remember.</p>
 
-          <p>Presently they fell asleep for a little while. When Winston woke up the
+        <p>Presently they fell asleep for a little while. When Winston woke up the
           hands of the clock had crept round to nearly nine. He did not stir, because
           Julia was sleeping with her head in the crook of his arm. Most of her
           make-up had transferred itself to his own face or the bolster, but a light
@@ -5122,42 +5138,42 @@ include '../../src/header.php';
           never have been a time when that seemed ordinary? Julia woke up, rubbed
           her eyes, and raised herself on her elbow to look at the oilstove.</p>
 
-          <p>'Half that water's boiled away,' she said. 'I'll get up and make some
+        <p>'Half that water's boiled away,' she said. 'I'll get up and make some
           coffee in another moment. We've got an hour. What time do they cut the
           lights off at your flats?'</p>
 
-          <p>'Twenty-three thirty.'</p>
+        <p>'Twenty-three thirty.'</p>
 
-          <p>'It's twenty-three at the hostel. But you have to get in earlier than that,
+        <p>'It's twenty-three at the hostel. But you have to get in earlier than that,
           because--Hi! Get out, you filthy brute!'</p>
 
-          <p>She suddenly twisted herself over in the bed, seized a shoe from the floor,
+        <p>She suddenly twisted herself over in the bed, seized a shoe from the floor,
           and sent it hurtling into the corner with a boyish jerk of her arm, exactly
           as he had seen her fling the dictionary at Goldstein, that morning during
           the Two Minutes Hate.</p>
 
-          <p>'What was it?' he said in surprise.</p>
+        <p>'What was it?' he said in surprise.</p>
 
-          <p>'A rat. I saw him stick his beastly nose out of the wainscoting. There's a
+        <p>'A rat. I saw him stick his beastly nose out of the wainscoting. There's a
           hole down there. I gave him a good fright, anyway.'</p>
 
-          <p>'Rats!' murmured Winston. 'In this room!'</p>
+        <p>'Rats!' murmured Winston. 'In this room!'</p>
 
-          <p>'They're all over the place,' said Julia indifferently as she lay down
+        <p>'They're all over the place,' said Julia indifferently as she lay down
           again. 'We've even got them in the kitchen at the hostel. Some parts of
           London are swarming with them. Did you know they attack children? Yes,
           they do. In some of these streets a woman daren't leave a baby alone for
           two minutes. It's the great huge brown ones that do it. And the nasty
           thing is that the brutes always----'</p>
 
-          <p>'DON'T GO ON!' said Winston, with his eyes tightly shut.</p>
+        <p>'DON'T GO ON!' said Winston, with his eyes tightly shut.</p>
 
-          <p>'Dearest! You've gone quite pale. What's the matter? Do they make you feel
+        <p>'Dearest! You've gone quite pale. What's the matter? Do they make you feel
           sick?'</p>
 
-          <p>'Of all horrors in the world--a rat!'</p>
+        <p>'Of all horrors in the world--a rat!'</p>
 
-          <p>She pressed herself against him and wound her limbs round him, as though
+        <p>She pressed herself against him and wound her limbs round him, as though
           to reassure him with the warmth of her body. He did not reopen his eyes
           immediately. For several moments he had had the feeling of being back in a
           nightmare which had recurred from time to time throughout his life. It was
@@ -5170,13 +5186,13 @@ include '../../src/header.php';
           up without discovering what it was: but somehow it was connected with what
           Julia had been saying when he cut her short.</p>
 
-          <p>'I'm sorry,' he said, 'it's nothing. I don't like rats, that's all.'</p>
+        <p>'I'm sorry,' he said, 'it's nothing. I don't like rats, that's all.'</p>
 
-          <p>'Don't worry, dear, we're not going to have the filthy brutes in here.
+        <p>'Don't worry, dear, we're not going to have the filthy brutes in here.
           I'll stuff the hole with a bit of sacking before we go. And next time we
           come here I'll bring some plaster and bung it up properly.'</p>
 
-          <p>Already the black instant of panic was half-forgotten. Feeling slightly
+        <p>Already the black instant of panic was half-forgotten. Feeling slightly
           ashamed of himself, he sat up against the bedhead. Julia got out of bed,
           pulled on her overalls, and made the coffee. The smell that rose from the
           saucepan was so powerful and exciting that they shut the window lest
@@ -5192,58 +5208,58 @@ include '../../src/header.php';
           light. He took it out of her hand, fascinated, as always, by the soft,
           rainwatery appearance of the glass.</p>
 
-          <p>'What is it, do you think?' said Julia.</p>
+        <p>'What is it, do you think?' said Julia.</p>
 
-          <p>'I don't think it's anything--I mean, I don't think it was ever put to any
+        <p>'I don't think it's anything--I mean, I don't think it was ever put to any
           use. That's what I like about it. It's a little chunk of history that
           they've forgotten to alter. It's a message from a hundred years ago, if
           one knew how to read it.'</p>
 
-          <p>'And that picture over there'--she nodded at the engraving on the opposite
+        <p>'And that picture over there'--she nodded at the engraving on the opposite
           wall--'would that be a hundred years old?'</p>
 
-          <p>'More. Two hundred, I dare say. One can't tell. It's impossible to discover
+        <p>'More. Two hundred, I dare say. One can't tell. It's impossible to discover
           the age of anything nowadays.'</p>
 
-          <p>She went over to look at it. 'Here's where that brute stuck his nose out,'
+        <p>She went over to look at it. 'Here's where that brute stuck his nose out,'
           she said, kicking the wainscoting immediately below the picture. 'What is
           this place? I've seen it before somewhere.'</p>
 
-          <p>'It's a church, or at least it used to be. St Clement Danes its name was.'
+        <p>'It's a church, or at least it used to be. St Clement Danes its name was.'
           The fragment of rhyme that Mr Charrington had taught him came back into
           his head, and he added half-nostalgically: "Oranges and lemons, say the
           bells of St Clement's!"</p>
 
-          <p>To his astonishment she capped the line:</p>
+        <p>To his astonishment she capped the line:</p>
 
-<p>'You owe me three farthings, say the bells of St Martin's,
+        <p>'You owe me three farthings, say the bells of St Martin's,
           When will you pay me? say the bells of Old Bailey----'</p>
 
-<p>'I can't remember how it goes on after that. But anyway I remember it ends
+        <p>'I can't remember how it goes on after that. But anyway I remember it ends
           up, "Here comes a candle to light you to bed, here comes a chopper to chop
           off your head!"'</p>
 
-          <p>It was like the two halves of a countersign. But there must be another
+        <p>It was like the two halves of a countersign. But there must be another
           line after 'the bells of Old Bailey'. Perhaps it could be dug out of
           Mr Charrington's memory, if he were suitably prompted.</p>
 
-          <p>'Who taught you that?' he said.</p>
+        <p>'Who taught you that?' he said.</p>
 
-          <p>'My grandfather. He used to say it to me when I was a little girl. He was
+        <p>'My grandfather. He used to say it to me when I was a little girl. He was
           vaporized when I was eight--at any rate, he disappeared. I wonder what a
           lemon was,' she added inconsequently. 'I've seen oranges. They're a kind
           of round yellow fruit with a thick skin.'</p>
 
-          <p>'I can remember lemons,' said Winston. 'They were quite common in the
+        <p>'I can remember lemons,' said Winston. 'They were quite common in the
           fifties. They were so sour that it set your teeth on edge even to smell
           them.'</p>
 
-          <p>'I bet that picture's got bugs behind it,' said Julia. 'I'll take it down
+        <p>'I bet that picture's got bugs behind it,' said Julia. 'I'll take it down
           and give it a good clean some day. I suppose it's almost time we were
           leaving. I must start washing this paint off. What a bore! I'll get the
           lipstick off your face afterwards.'</p>
 
-          <p>Winston did not get up for a few minutes more. The room was darkening. He
+        <p>Winston did not get up for a few minutes more. The room was darkening. He
           turned over towards the light and lay gazing into the glass paperweight.
           The inexhaustibly interesting thing was not the fragment of coral but the
           interior of the glass itself. There was such a depth of it, and yet it was
@@ -5271,7 +5287,7 @@ include '../../src/header.php';
           been crossed out--but it was one name shorter. It was enough. Syme had
           ceased to exist: he had never existed.
 
-          <p>The weather was baking hot. In the labyrinthine Ministry the windowless,
+        <p>The weather was baking hot. In the labyrinthine Ministry the windowless,
           air-conditioned rooms kept their normal temperature, but outside the
           pavements scorched one's feet and the stench of the Tubes at the rush hours
           was a horror. The preparations for Hate Week were in full swing, and the
@@ -5289,7 +5305,7 @@ include '../../src/header.php';
           there were enormous explosions which no one could explain and about which
           there were wild rumours.</p>
 
-          <p>The new tune which was to be the theme-song of Hate Week (the Hate Song,
+        <p>The new tune which was to be the theme-song of Hate Week (the Hate Song,
           it was called) had already been composed and was being endlessly plugged
           on the telescreens. It had a savage, barking rhythm which could not exactly
           be called music, but resembled the beating of a drum. Roared out by
@@ -5309,7 +5325,7 @@ include '../../src/header.php';
           with comradely exhortations and giving out from every fold of his body what
           seemed an inexhaustible supply of acrid-smelling sweat.</p>
 
-          <p>A new poster had suddenly appeared all over London. It had no caption,
+        <p>A new poster had suddenly appeared all over London. It had no caption,
           and represented simply the monstrous figure of a Eurasian soldier, three
           or four metres high, striding forward with expressionless Mongolian face
           and enormous boots, a submachine gun pointed from his hip. From whatever
@@ -5332,7 +5348,7 @@ include '../../src/header.php';
           an old couple who were suspected of being of foreign extraction had their
           house set on fire and perished of suffocation.</p>
 
-          <p>In the room over Mr Charrington's shop, when they could get there, Julia
+        <p>In the room over Mr Charrington's shop, when they could get there, Julia
           and Winston lay side by side on a stripped bed under the open window,
           naked for the sake of coolness. The rat had never come back, but the bugs
           had multiplied hideously in the heat. It did not seem to matter. Dirty or
@@ -5341,7 +5357,7 @@ include '../../src/header.php';
           and make love with sweating bodies, then fall asleep and wake to find that
           the bugs had rallied and were massing for the counter-attack.</p>
 
-          <p>Four, five, six--seven times they met during the month of June. Winston
+        <p>Four, five, six--seven times they met during the month of June. Winston
           had dropped his habit of drinking gin at all hours. He seemed to have lost
           the need for it. He had grown fatter, his varicose ulcer had subsided,
           leaving only a brown stain on the skin above his ankle, his fits of
@@ -5376,7 +5392,7 @@ include '../../src/header.php';
           fragment. But he could never recall more than a few lines of any one
           rhyme.</p>
 
-          <p>Both of them knew--in a way, it was never out of their minds that what
+        <p>Both of them knew--in a way, it was never out of their minds that what
           was now happening could not last long. There were times when the fact of
           impending death seemed as palpable as the bed they lay on, and they would
           cling together with a sort of despairing sensuality, like a damned soul
@@ -5401,7 +5417,7 @@ include '../../src/header.php';
           an unconquerable instinct, just as one's lungs will always draw the next
           breath so long as there is air available.</p>
 
-          <p>Sometimes, too, they talked of engaging in active rebellion against the
+        <p>Sometimes, too, they talked of engaging in active rebellion against the
           Party, but with no notion of how to take the first step. Even if the
           fabulous Brotherhood was a reality, there still remained the difficulty
           of finding one's way into it. He told her of the strange intimacy that
@@ -5433,7 +5449,7 @@ include '../../src/header.php';
           against it by secret disobedience or, at most, by isolated acts of
           violence such as killing somebody or blowing something up.</p>
 
-          <p>In some ways she was far more acute than Winston, and far less susceptible
+        <p>In some ways she was far more acute than Winston, and far less susceptible
           to Party propaganda. Once when he happened in some connexion to mention
           the war against Eurasia, she startled him by saying casually that in her
           opinion the war was not happening. The rocket bombs which fell daily on
@@ -5467,7 +5483,7 @@ include '../../src/header.php';
           unimportant. 'Who cares?' she said impatiently. 'It's always one bloody
           war after another, and one knows the news is all lies anyway.'</p>
 
-          <p>Sometimes he talked to her of the Records Department and the impudent
+        <p>Sometimes he talked to her of the Records Department and the impudent
           forgeries that he committed there. Such things did not appear to horrify
           her. She did not feel the abyss opening beneath her feet at the thought
           of lies becoming truths. He told her the story of Jones, Aaronson, and
@@ -5475,16 +5491,16 @@ include '../../src/header.php';
           his fingers. It did not make much impression on her. At first, indeed, she
           failed to grasp the point of the story.</p>
 
-          <p>'Were they friends of yours?' she said.</p>
+        <p>'Were they friends of yours?' she said.</p>
 
-          <p>'No, I never knew them. They were Inner Party members. Besides, they were
+        <p>'No, I never knew them. They were Inner Party members. Besides, they were
           far older men than I was. They belonged to the old days, before the
           Revolution. I barely knew them by sight.'</p>
 
-          <p>'Then what was there to worry about? People are being killed off all the
+        <p>'Then what was there to worry about? People are being killed off all the
           time, aren't they?'</p>
 
-          <p>He tried to make her understand. 'This was an exceptional case. It wasn't
+        <p>He tried to make her understand. 'This was an exceptional case. It wasn't
           just a question of somebody being killed. Do you realize that the past,
           starting from yesterday, has been actually abolished? If it survives
           anywhere, it's in a few solid objects with no words attached to them, like
@@ -5502,16 +5518,16 @@ include '../../src/header.php';
           that one instance, in my whole life, I did possess actual concrete evidence
           after the event--years after it.'</p>
 
-          <p>'And what good was that?'</p>
+        <p>'And what good was that?'</p>
 
-          <p>'It was no good, because I threw it away a few minutes later. But if the
+        <p>'It was no good, because I threw it away a few minutes later. But if the
           same thing happened today, I should keep it.'</p>
 
-          <p>'Well, I wouldn't!' said Julia. 'I'm quite ready to take risks, but only
+        <p>'Well, I wouldn't!' said Julia. 'I'm quite ready to take risks, but only
           for something worth while, not for bits of old newspaper. What could you
           have done with it even if you had kept it?'</p>
 
-          <p>'Not much, perhaps. But it was evidence. It might have planted a few doubts
+        <p>'Not much, perhaps. But it was evidence. It might have planted a few doubts
           here and there, supposing that I'd dared to show it to anybody. I don't
           imagine that we can alter anything in our own lifetime. But one can imagine
           little knots of resistance springing up here and there--small groups of
@@ -5519,15 +5535,16 @@ include '../../src/header.php';
           a few records behind, so that the next generations can carry on where we
           leave off.'</p>
 
-          <p>'I'm not interested in the next generation, dear. I'm interested in US.'</p>
+        <p>'I'm not interested in the next generation, dear. I'm interested in US.'</p>
 
-          <p>'You're only a rebel from the waist downwards,' he told her.</p>
+        <p>'You're only a rebel from the waist downwards,' he told her.</p>
 
-          <p>She thought this brilliantly witty and flung her arms round him in delight.</p>
+        <p>She thought this brilliantly witty and flung her arms round him in delight.</p>
 
-          <p>In the ramifications of party doctrine she had not the faintest interest.
+        <p>In the ramifications of party doctrine she had not the faintest interest.
           Whenever he began to talk of the principles of Ingsoc, doublethink, the
-          <span class="tooltip"><strong>mutability</strong><span class="tooltiptext">Liability or tendency to change</span></span> of the past, and the denial of objective reality, and to use
+          <span class="tooltip"><strong>mutability</strong><span class="tooltiptext">Liability or tendency to
+              change</span></span> of the past, and the denial of objective reality, and to use
           Newspeak words, she became bored and confused and said that she never paid
           any attention to that kind of thing. One knew that it was all rubbish, so
           why let oneself be worried by it? She knew when to cheer and when to boo,
@@ -5543,7 +5560,8 @@ include '../../src/header.php';
           notice what was happening. By lack of understanding they remained sane.
           They simply swallowed everything, and what they swallowed did them no harm,
           because it left no residue behind, just as a grain of corn will pass
-          undigested through the body of a bird.</p>
+          undigested through the body of a bird.
+        </p>
 
 
         </p>
@@ -5556,32 +5574,32 @@ include '../../src/header.php';
           It had happened at last. The expected message had come. All his life, it
           seemed to him, he had been waiting for this to happen.
 
-          <p>He was walking down the long corridor at the Ministry and he was almost
+        <p>He was walking down the long corridor at the Ministry and he was almost
           at the spot where Julia had slipped the note into his hand when he became
           aware that someone larger than himself was walking just behind him. The
           person, whoever it was, gave a small cough, evidently as a prelude to
           speaking. Winston stopped abruptly and turned. It was O'Brien.</p>
 
-          <p>At last they were face to face, and it seemed that his only impulse was
+        <p>At last they were face to face, and it seemed that his only impulse was
           to run away. His heart bounded violently. He would have been incapable of
           speaking. O'Brien, however, had continued forward in the same movement,
           laying a friendly hand for a moment on Winston's arm, so that the two of
           them were walking side by side. He began speaking with the peculiar grave
           courtesy that differentiated him from the majority of Inner Party members.</p>
 
-          <p>'I had been hoping for an opportunity of talking to you,' he said. 'I was
+        <p>'I had been hoping for an opportunity of talking to you,' he said. 'I was
           reading one of your Newspeak articles in 'The Times' the other day. You
           take a scholarly interest in Newspeak, I believe?'</p>
 
-          <p>Winston had recovered part of his self-possession. 'Hardly scholarly,' he
+        <p>Winston had recovered part of his self-possession. 'Hardly scholarly,' he
           said. 'I'm only an amateur. It's not my subject. I have never had anything
           to do with the actual construction of the language.'</p>
 
-          <p>'But you write it very elegantly,' said O'Brien. 'That is not only my own
+        <p>'But you write it very elegantly,' said O'Brien. 'That is not only my own
           opinion. I was talking recently to a friend of yours who is certainly an
           expert. His name has slipped my memory for the moment.'</p>
 
-          <p>Again Winston's heart stirred painfully. It was inconceivable that this
+        <p>Again Winston's heart stirred painfully. It was inconceivable that this
           was anything other than a reference to Syme. But Syme was not only dead,
           he was abolished, an unperson. Any identifiable reference to him would have
           been mortally dangerous. O'Brien's remark must obviously have been intended
@@ -5591,43 +5609,44 @@ include '../../src/header.php';
           disarming friendliness that he always managed to put in to the gesture he
           resettled his spectacles on his nose. Then he went on:</p>
 
-          <p>'What I had really intended to say was that in your article I noticed you
-          had used two words which have become <span class="tooltip"><strong>obsolete</strong><span class="tooltiptext">No longer produced or used; out of date</span></span>. But they have only become
+        <p>'What I had really intended to say was that in your article I noticed you
+          had used two words which have become <span class="tooltip"><strong>obsolete</strong><span
+              class="tooltiptext">No longer produced or used; out of date</span></span>. But they have only become
           so very recently. Have you seen the tenth edition of the Newspeak
           Dictionary?'</p>
 
-          <p>'No,' said Winston. 'I didn't think it had been issued yet. We are still
+        <p>'No,' said Winston. 'I didn't think it had been issued yet. We are still
           using the ninth in the Records Department.'</p>
 
-          <p>'The tenth edition is not due to appear for some months, I believe. But a
+        <p>'The tenth edition is not due to appear for some months, I believe. But a
           few advance copies have been circulated. I have one myself. It might
           interest you to look at it, perhaps?'</p>
 
-          <p>'Very much so,' said Winston, immediately seeing where this tended.</p>
+        <p>'Very much so,' said Winston, immediately seeing where this tended.</p>
 
-          <p>'Some of the new developments are most ingenious. The reduction in the
+        <p>'Some of the new developments are most ingenious. The reduction in the
           number of verbs--that is the point that will appeal to you, I think. Let
           me see, shall I send a messenger to you with the dictionary? But I am
           afraid I invariably forget anything of that kind. Perhaps you could pick
           it up at my flat at some time that suited you? Wait. Let me give you my
           address.'</p>
 
-          <p>They were standing in front of a telescreen. Somewhat absent-mindedly
+        <p>They were standing in front of a telescreen. Somewhat absent-mindedly
           O'Brien felt two of his pockets and then produced a small leather-covered
           notebook and a gold ink-pencil. Immediately beneath the telescreen, in
           such a position that anyone who was watching at the other end of the
           instrument could read what he was writing, he scribbled an address, tore
           out the page and handed it to Winston.</p>
 
-          <p>'I am usually at home in the evenings,' he said. 'If not, my servant will
+        <p>'I am usually at home in the evenings,' he said. 'If not, my servant will
           give you the dictionary.'</p>
 
-          <p>He was gone, leaving Winston holding the scrap of paper, which this time
+        <p>He was gone, leaving Winston holding the scrap of paper, which this time
           there was no need to conceal. Nevertheless he carefully memorized what was
           written on it, and some hours later dropped it into the memory hole along
           with a mass of other papers.</p>
 
-          <p>They had been talking to one another for a couple of minutes at the most.
+        <p>They had been talking to one another for a couple of minutes at the most.
           There was only one meaning that the episode could possibly have. It had
           been contrived as a way of letting Winston know O'Brien's address. This
           was necessary, because except by direct enquiry it was never possible to
@@ -5638,7 +5657,7 @@ include '../../src/header.php';
           conspiracy that he had dreamed of did exist, and he had reached the outer
           edges of it.</p>
 
-          <p>He knew that sooner or later he would obey O'Brien's summons. Perhaps
+        <p>He knew that sooner or later he would obey O'Brien's summons. Perhaps
           tomorrow, perhaps after a long delay--he was not certain. What was
           happening was only the working-out of a process that had started years
           ago. The first step had been a secret, involuntary thought, the second
@@ -5663,11 +5682,11 @@ include '../../src/header.php';
           Winston had woken up with his eyes full of tears. Julia rolled sleepily
           against him, murmuring something that might have been 'What's the matter?'
 
-          <p>'I dreamt--' he began, and stopped short. It was too complex to be put
+        <p>'I dreamt--' he began, and stopped short. It was too complex to be put
           into words. There was the dream itself, and there was a memory connected
           with it that had swum into his mind in the few seconds after waking.</p>
 
-          <p>He lay back with his eyes shut, still sodden in the atmosphere of the
+        <p>He lay back with his eyes shut, still sodden in the atmosphere of the
           dream. It was a vast, luminous dream in which his whole life seemed to
           stretch out before him like a landscape on a summer evening after rain.
           It had all occurred inside the glass paperweight, but the surface of the
@@ -5679,26 +5698,27 @@ include '../../src/header.php';
           trying to shelter the small boy from the bullets, before the helicopter
           blew them both to pieces.</p>
 
-          <p>'Do you know,' he said, 'that until this moment I believed I had murdered
+        <p>'Do you know,' he said, 'that until this moment I believed I had murdered
           my mother?'</p>
 
-          <p>'Why did you murder her?' said Julia, almost asleep.</p>
+        <p>'Why did you murder her?' said Julia, almost asleep.</p>
 
-          <p>'I didn't murder her. Not physically.'</p>
+        <p>'I didn't murder her. Not physically.'</p>
 
-          <p>In the dream he had remembered his last glimpse of his mother, and within
+        <p>In the dream he had remembered his last glimpse of his mother, and within
           a few moments of waking the cluster of small events surrounding it had all
           come back. It was a memory that he must have deliberately pushed out of
           his consciousness over many years. He was not certain of the date, but he
           could not have been less than ten years old, possibly twelve, when it had
           happened.</p>
 
-          <p>His father had disappeared some time earlier, how much earlier he could
+        <p>His father had disappeared some time earlier, how much earlier he could
           not remember. He remembered better the rackety, uneasy circumstances of
           the time: the periodical panics about air-raids and the sheltering in Tube
           stations, the piles of rubble everywhere, the unintelligible proclamations
           posted at street corners, the gangs of youths in shirts all the same
-          colour, the enormous queues outside the bakeries, the <span class="tooltip"><strong>intermittent</strong><span class="tooltiptext">Occurring at irregular intervals; not continuous or steady</span></span>
+          colour, the enormous queues outside the bakeries, the <span class="tooltip"><strong>intermittent</strong><span
+              class="tooltiptext">Occurring at irregular intervals; not continuous or steady</span></span>
           machine-gun fire in the distance--above all, the fact that there was
           never enough to eat. He remembered long afternoons spent with other boys
           in scrounging round dustbins and rubbish heaps, picking out the ribs of
@@ -5708,12 +5728,14 @@ include '../../src/header.php';
           known to carry cattle feed, and which, when they jolted over the bad
           patches in the road, sometimes spilt a few fragments of oil-cake.</p>
 
-          <p>When his father disappeared, his mother did not show any surprise or any
+        <p>When his father disappeared, his mother did not show any surprise or any
           violent grief, but a sudden change came over her. She seemed to have
           become completely spiritless. It was evident even to Winston that she was
           waiting for something that she knew must happen. She did everything that
           was needed--cooked, washed, mended, made the bed, swept the floor, dusted
-          the mantelpiece--always very slowly and with a curious lack of <span class="tooltip"><strong>superfluous</strong><span class="tooltiptext">Unnecessary, especially through being more than enough</span></span>
+          the mantelpiece--always very slowly and with a curious lack of <span
+            class="tooltip"><strong>superfluous</strong><span class="tooltiptext">Unnecessary, especially through being
+              more than enough</span></span>
           motion, like an artist's lay-figure moving of its own accord. Her large
           shapely body seemed to relapse naturally into stillness. For hours at a
           time she would sit almost immobile on the bed, nursing his young sister,
@@ -5723,7 +5745,7 @@ include '../../src/header.php';
           aware, in spite of his youthfulness and selfishness, that this was somehow
           connected with the never-mentioned thing that was about to happen.</p>
 
-          <p>He remembered the room where they lived, a dark, close-smelling room that
+        <p>He remembered the room where they lived, a dark, close-smelling room that
           seemed half filled by a bed with a white counterpane. There was a gas ring
           in the fender, and a shelf where food was kept, and on the landing outside
           there was a brown earthenware sink, common to several rooms. He remembered
@@ -5746,7 +5768,7 @@ include '../../src/header.php';
           seemed to justify him. Between meals, if his mother did not stand guard,
           he was constantly pilfering at the wretched store of food on the shelf.</p>
 
-          <p>One day a chocolate ration was issued. There had been no such issue for
+        <p>One day a chocolate ration was issued. There had been no such issue for
           weeks or months past. He remembered quite clearly that precious little
           morsel of chocolate. It was a two-ounce slab (they still talked about
           ounces in those days) between the three of them. It was obvious that it
@@ -5764,10 +5786,10 @@ include '../../src/header.php';
           snatched the piece of chocolate out of his sister's hand and was fleeing
           for the door.</p>
 
-          <p>'Winston, Winston!' his mother called after him. 'Come back! Give your
+        <p>'Winston, Winston!' his mother called after him. 'Come back! Give your
           sister back her chocolate!'</p>
 
-          <p>He stopped, but did not come back. His mother's anxious eyes were fixed on
+        <p>He stopped, but did not come back. His mother's anxious eyes were fixed on
           his face. Even now he was thinking about the thing, he did not know what
           it was that was on the point of happening. His sister, conscious of having
           been robbed of something, had set up a feeble wail. His mother drew her
@@ -5775,7 +5797,7 @@ include '../../src/header.php';
           the gesture told him that his sister was dying. He turned and fled down
           the stairs, with the chocolate growing sticky in his hand.</p>
 
-          <p>He never saw his mother again. After he had devoured the chocolate he felt
+        <p>He never saw his mother again. After he had devoured the chocolate he felt
           somewhat ashamed of himself and hung about in the streets for several
           hours, until hunger drove him home. When he came back his mother had
           disappeared. This was already becoming normal at that time. Nothing was
@@ -5789,22 +5811,22 @@ include '../../src/header.php';
           labour camp along with his mother, or simply left somewhere or other
           to die.</p>
 
-          <p>The dream was still vivid in his mind, especially the enveloping protecting
+        <p>The dream was still vivid in his mind, especially the enveloping protecting
           gesture of the arm in which its whole meaning seemed to be contained. His
           mind went back to another dream of two months ago. Exactly as his mother
           had sat on the dingy white-quilted bed, with the child clinging to her, so
           she had sat in the sunken ship, far underneath him, and drowning deeper
           every minute, but still looking up at him through the darkening water.</p>
 
-          <p>He told Julia the story of his mother's disappearance. Without opening her
+        <p>He told Julia the story of his mother's disappearance. Without opening her
           eyes she rolled over and settled herself into a more comfortable position.</p>
 
-          <p>'I expect you were a beastly little swine in those days,' she said
+        <p>'I expect you were a beastly little swine in those days,' she said
           indistinctly. 'All children are swine.'</p>
 
-          <p>'Yes. But the real point of the story----'</p>
+        <p>'Yes. But the real point of the story----'</p>
 
-          <p>From her breathing it was evident that she was going off to sleep again.
+        <p>From her breathing it was evident that she was going off to sleep again.
           He would have liked to continue talking about his mother. He did not
           suppose, from what he could remember of her, that she had been an unusual
           woman, still less an intelligent one; and yet she had possessed a kind of
@@ -5841,25 +5863,25 @@ include '../../src/header.php';
           weeks ago he had seen a severed hand lying on the pavement and had kicked
           it into the gutter as though it had been a cabbage-stalk.</p>
 
-          <p>'The proles are human beings,' he said aloud. 'We are not human.'</p>
+        <p>'The proles are human beings,' he said aloud. 'We are not human.'</p>
 
-          <p>'Why not?' said Julia, who had woken up again.</p>
+        <p>'Why not?' said Julia, who had woken up again.</p>
 
-          <p>He thought for a little while. 'Has it ever occurred to you,' he said,
+        <p>He thought for a little while. 'Has it ever occurred to you,' he said,
           'that the best thing for us to do would be simply to walk out of here
           before it's too late, and never see each other again?'</p>
 
-          <p>'Yes, dear, it has occurred to me, several times. But I'm not going to do
+        <p>'Yes, dear, it has occurred to me, several times. But I'm not going to do
           it, all the same.'</p>
 
-          <p>'We've been lucky,' he said 'but it can't last much longer. You're young.
+        <p>'We've been lucky,' he said 'but it can't last much longer. You're young.
           You look normal and innocent. If you keep clear of people like me, you
           might stay alive for another fifty years.'</p>
 
-          <p>'No. I've thought it all out. What you do, I'm going to do. And don't be
+        <p>'No. I've thought it all out. What you do, I'm going to do. And don't be
           too downhearted. I'm rather good at staying alive.'</p>
 
-          <p>'We may be together for another six months--a year--there's no knowing.
+        <p>'We may be together for another six months--a year--there's no knowing.
           At the end we're certain to be apart. Do you realize how utterly alone we
           shall be? When once they get hold of us there will be nothing, literally
           nothing, that either of us can do for the other. If I confess, they'll
@@ -5870,22 +5892,22 @@ include '../../src/header.php';
           any kind. The one thing that matters is that we shouldn't betray one
           another, although even that can't make the slightest difference.'</p>
 
-          <p>'If you mean confessing,' she said, 'we shall do that, right enough.
+        <p>'If you mean confessing,' she said, 'we shall do that, right enough.
           Everybody always confesses. You can't help it. They torture you.'</p>
 
-          <p>'I don't mean confessing. Confession is not betrayal. What you say or do
+        <p>'I don't mean confessing. Confession is not betrayal. What you say or do
           doesn't matter: only feelings matter. If they could make me stop loving
           you--that would be the real betrayal.'</p>
 
-          <p>She thought it over. 'They can't do that,' she said finally. 'It's the one
+        <p>She thought it over. 'They can't do that,' she said finally. 'It's the one
           thing they can't do. They can make you say anything--ANYTHING--but they
           can't make you believe it. They can't get inside you.'</p>
 
-          <p>'No,' he said a little more hopefully, 'no; that's quite true. They can't
+        <p>'No,' he said a little more hopefully, 'no; that's quite true. They can't
           get inside you. If you can FEEL that staying human is worth while, even
           when it can't have any result whatever, you've beaten them.'</p>
 
-          <p>He thought of the telescreen with its never-sleeping ear. They could spy
+        <p>He thought of the telescreen with its never-sleeping ear. They could spy
           upon you night and day, but if you kept your head you could still outwit
           them. With all their cleverness they had never mastered the secret of
           finding out what another human being was thinking. Perhaps that was less
@@ -5900,7 +5922,9 @@ include '../../src/header.php';
           alter them yourself, even if you wanted to. They could lay bare in the
           utmost detail everything that you had done or said or thought; but the
           inner heart, whose workings were mysterious even to yourself, remained
-          <span class="tooltip"><strong>impregnable</strong><span class="tooltiptext">Unable to be captured or broken into</span></span>.</p>
+          <span class="tooltip"><strong>impregnable</strong><span class="tooltiptext">Unable to be captured or broken
+              into</span></span>.
+        </p>
 
 
 
@@ -5913,14 +5937,14 @@ include '../../src/header.php';
         <p>
           They had done it, they had done it at last!
 
-          <p>The room they were standing in was long-shaped and softly lit. The
+        <p>The room they were standing in was long-shaped and softly lit. The
           telescreen was dimmed to a low murmur; the richness of the dark-blue carpet
           gave one the impression of treading on velvet. At the far end of the room
           O'Brien was sitting at a table under a green-shaded lamp, with a mass of
           papers on either side of him. He had not bothered to look up when the
           servant showed Julia and Winston in.</p>
 
-          <p>Winston's heart was thumping so hard that he doubted whether he would be
+        <p>Winston's heart was thumping so hard that he doubted whether he would be
           able to speak. They had done it, they had done it at last, was all he
           could think. It had been a rash act to come here at all, and sheer folly
           to arrive together; though it was true that they had come by different
@@ -5943,18 +5967,18 @@ include '../../src/header.php';
           could not remember ever to have seen a passageway whose walls were not
           grimy from the contact of human bodies.</p>
 
-          <p>O'Brien had a slip of paper between his fingers and seemed to be studying
+        <p>O'Brien had a slip of paper between his fingers and seemed to be studying
           it intently. His heavy face, bent down so that one could see the line of
           the nose, looked both formidable and intelligent. For perhaps twenty
           seconds he sat without stirring. Then he pulled the speakwrite towards
           him and rapped out a message in the hybrid jargon of the Ministries:</p>
 
-          <p>'Items one comma five comma seven approved fullwise stop suggestion
+        <p>'Items one comma five comma seven approved fullwise stop suggestion
           contained item six doubleplus ridiculous verging crimethink cancel stop
           unproceed constructionwise antegetting plusfull estimates machinery
           overheads stop end message.'</p>
 
-          <p>He rose deliberately from his chair and came towards them across the
+        <p>He rose deliberately from his chair and came towards them across the
           soundless carpet. A little of the official atmosphere seemed to have fallen
           away from him with the Newspeak words, but his expression was grimmer than
           usual, as though he were not pleased at being disturbed. The terror that
@@ -5969,15 +5993,15 @@ include '../../src/header.php';
           him. He stopped, turned aside and pressed a switch on the wall. There was
           a sharp snap. The voice had stopped.</p>
 
-          <p>Julia uttered a tiny sound, a sort of squeak of surprise. Even in the midst
+        <p>Julia uttered a tiny sound, a sort of squeak of surprise. Even in the midst
           of his panic, Winston was too much taken aback to be able to hold his
           tongue.</p>
 
-          <p>'You can turn it off!' he said.</p>
+        <p>'You can turn it off!' he said.</p>
 
-          <p>'Yes,' said O'Brien, 'we can turn it off. We have that privilege.'</p>
+        <p>'Yes,' said O'Brien, 'we can turn it off. We have that privilege.'</p>
 
-          <p>He was opposite them now. His solid form towered over the pair of them,
+        <p>He was opposite them now. His solid form towered over the pair of them,
           and the expression on his face was still indecipherable. He was waiting,
           somewhat sternly, for Winston to speak, but about what? Even now it was
           quite conceivable that he was simply a busy man wondering irritably why he
@@ -5988,21 +6012,21 @@ include '../../src/header.php';
           of a smile. With his characteristic gesture O'Brien resettled his
           spectacles on his nose.</p>
 
-          <p>'Shall I say it, or will you?' he said.</p>
+        <p>'Shall I say it, or will you?' he said.</p>
 
-          <p>'I will say it,' said Winston promptly. 'That thing is really turned off?'</p>
+        <p>'I will say it,' said Winston promptly. 'That thing is really turned off?'</p>
 
-          <p>'Yes, everything is turned off. We are alone.'</p>
+        <p>'Yes, everything is turned off. We are alone.'</p>
 
-          <p>'We have come here because----'</p>
+        <p>'We have come here because----'</p>
 
-          <p>He paused, realizing for the first time the vagueness of
+        <p>He paused, realizing for the first time the vagueness of
           his own motives. Since he did not in fact know what kind of
           help he expected from O'Brien, it was not easy to say why he
           had come here. He went on, conscious that what he was saying
           must sound both feeble and pretentious:</p>
 
-          <p>'We believe that there is some kind of conspiracy, some kind of secret
+        <p>'We believe that there is some kind of conspiracy, some kind of secret
           organization working against the Party, and that you are involved in it.
           We want to join it and work for it. We are enemies of the Party. We
           disbelieve in the principles of Ingsoc. We are thought-criminals. We are
@@ -6010,18 +6034,18 @@ include '../../src/header.php';
           mercy. If you want us to incriminate ourselves in any other way, we are
           ready.'</p>
 
-          <p>He stopped and glanced over his shoulder, with the feeling that the door
+        <p>He stopped and glanced over his shoulder, with the feeling that the door
           had opened. Sure enough, the little yellow-faced servant had come in
           without knocking. Winston saw that he was carrying a tray with a decanter
           and glasses.</p>
 
-          <p>'Martin is one of us,' said O'Brien impassively. 'Bring the drinks over
+        <p>'Martin is one of us,' said O'Brien impassively. 'Bring the drinks over
           here, Martin. Put them on the round table. Have we enough chairs? Then
           we may as well sit down and talk in comfort. Bring a chair for yourself,
           Martin. This is business. You can stop being a servant for the next ten
           minutes.'</p>
 
-          <p>The little man sat down, quite at his ease, and yet still with a
+        <p>The little man sat down, quite at his ease, and yet still with a
           servant-like air, the air of a valet enjoying a privilege. Winston
           regarded him out of the corner of his eye. It struck him that the man's
           whole life was playing a part, and that he felt it to be dangerous to
@@ -6034,13 +6058,13 @@ include '../../src/header.php';
           It had a sour-sweet smell. He saw Julia pick up her glass and sniff at
           it with frank curiosity.</p>
 
-          <p>'It is called wine,' said O'Brien with a faint smile. 'You will have read
+        <p>'It is called wine,' said O'Brien with a faint smile. 'You will have read
           about it in books, no doubt. Not much of it gets to the Outer Party, I am
           afraid.' His face grew solemn again, and he raised his glass: 'I think it
           is fitting that we should begin by drinking a health. To our Leader: To
           Emmanuel Goldstein.'</p>
 
-          <p>Winston took up his glass with a certain eagerness. Wine was a thing he
+        <p>Winston took up his glass with a certain eagerness. Wine was a thing he
           had read and dreamed about. Like the glass paperweight or Mr Charrington's
           half-remembered rhymes, it belonged to the vanished, romantic past, the
           olden time as he liked to call it in his secret thoughts. For some reason
@@ -6050,14 +6074,14 @@ include '../../src/header.php';
           truth was that after years of gin-drinking he could barely taste it. He
           set down the empty glass.</p>
 
-          <p>'Then there is such a person as Goldstein?' he said.</p>
+        <p>'Then there is such a person as Goldstein?' he said.</p>
 
-          <p>'Yes, there is such a person, and he is alive. Where, I do not know.'</p>
+        <p>'Yes, there is such a person, and he is alive. Where, I do not know.'</p>
 
-          <p>'And the conspiracy--the organization? Is it real? It is not simply an
+        <p>'And the conspiracy--the organization? Is it real? It is not simply an
           invention of the Thought Police?'</p>
 
-          <p>'No, it is real. The Brotherhood, we call it. You will never learn much
+        <p>'No, it is real. The Brotherhood, we call it. You will never learn much
           more about the Brotherhood than that it exists and that you belong to it.
           I will come back to that presently.' He looked at his wrist-watch. 'It is
           unwise even for members of the Inner Party to turn off the telescreen for
@@ -6067,96 +6091,97 @@ include '../../src/header.php';
           You will understand that I must start by asking you certain questions.
           In general terms, what are you prepared to do?'</p>
 
-          <p>'Anything that we are capable of,' said Winston.</p>
+        <p>'Anything that we are capable of,' said Winston.</p>
 
-          <p>O'Brien had turned himself a little in his chair so that he was facing
+        <p>O'Brien had turned himself a little in his chair so that he was facing
           Winston. He almost ignored Julia, seeming to take it for granted that
           Winston could speak for her. For a moment the lids flitted down over his
           eyes. He began asking his questions in a low, expressionless voice, as
           though this were a routine, a sort of catechism, most of whose answers
           were known to him already.</p>
 
-          <p>'You are prepared to give your lives?'</p>
+        <p>'You are prepared to give your lives?'</p>
 
-          <p>'Yes.'</p>
+        <p>'Yes.'</p>
 
-          <p>'You are prepared to commit murder?'</p>
+        <p>'You are prepared to commit murder?'</p>
 
-          <p>'Yes.'</p>
+        <p>'Yes.'</p>
 
-          <p>'To commit acts of <span class="tooltip"><strong>sabotage</strong><span class="tooltiptext">Deliberately destroy, damage, or obstruct</span></span> which may cause the death of hundreds of
+        <p>'To commit acts of <span class="tooltip"><strong>sabotage</strong><span class="tooltiptext">Deliberately
+              destroy, damage, or obstruct</span></span> which may cause the death of hundreds of
           innocent people?'</p>
 
-          <p>'Yes.'</p>
+        <p>'Yes.'</p>
 
-          <p>'To betray your country to foreign powers?'</p>
+        <p>'To betray your country to foreign powers?'</p>
 
-          <p>'Yes.'</p>
+        <p>'Yes.'</p>
 
-          <p>'You are prepared to cheat, to forge, to blackmail, to corrupt the minds
+        <p>'You are prepared to cheat, to forge, to blackmail, to corrupt the minds
           of children, to distribute habit-forming drugs, to encourage prostitution,
           to disseminate venereal diseases--to do anything which is likely to cause
           demoralization and weaken the power of the Party?'</p>
 
-          <p>'Yes.'</p>
+        <p>'Yes.'</p>
 
-          <p>'If, for example, it would somehow serve our interests to throw sulphuric
+        <p>'If, for example, it would somehow serve our interests to throw sulphuric
           acid in a child's face--are you prepared to do that?'</p>
 
-          <p>'Yes.'</p>
+        <p>'Yes.'</p>
 
-          <p>'You are prepared to lose your identity and live out the rest of your life
+        <p>'You are prepared to lose your identity and live out the rest of your life
           as a waiter or a dock-worker?'</p>
 
-          <p>'Yes.'</p>
+        <p>'Yes.'</p>
 
-          <p>'You are prepared to commit suicide, if and when we order you to do so?'</p>
+        <p>'You are prepared to commit suicide, if and when we order you to do so?'</p>
 
-          <p>'Yes.'</p>
+        <p>'Yes.'</p>
 
-          <p>'You are prepared, the two of you, to separate and never see one another
+        <p>'You are prepared, the two of you, to separate and never see one another
           again?'</p>
 
-          <p>'No!' broke in Julia.</p>
+        <p>'No!' broke in Julia.</p>
 
-          <p>It appeared to Winston that a long time passed before he answered. For a
+        <p>It appeared to Winston that a long time passed before he answered. For a
           moment he seemed even to have been deprived of the power of speech. His
           tongue worked soundlessly, forming the opening syllables first of one word,
           then of the other, over and over again. Until he had said it, he did not
           know which word he was going to say. 'No,' he said finally.</p>
 
-          <p>'You did well to tell me,' said O'Brien. 'It is necessary for us to know
+        <p>'You did well to tell me,' said O'Brien. 'It is necessary for us to know
           everything.'</p>
 
-          <p>He turned himself toward Julia and added in a voice with somewhat more
+        <p>He turned himself toward Julia and added in a voice with somewhat more
           expression in it:</p>
 
-          <p>'Do you understand that even if he survives, it may be as a different
+        <p>'Do you understand that even if he survives, it may be as a different
           person? We may be obliged to give him a new identity. His face, his
           movements, the shape of his hands, the colour of his hair--even his voice
           would be different. And you yourself might have become a different person.
           Our surgeons can alter people beyond recognition. Sometimes it is
           necessary. Sometimes we even amputate a limb.'</p>
 
-          <p>Winston could not help snatching another sidelong glance at Martin's
+        <p>Winston could not help snatching another sidelong glance at Martin's
           Mongolian face. There were no scars that he could see. Julia had turned a
           shade paler, so that her freckles were showing, but she faced O'Brien
           boldly. She murmured something that seemed to be assent.</p>
 
-          <p>'Good. Then that is settled.'</p>
+        <p>'Good. Then that is settled.'</p>
 
-          <p>There was a silver box of cigarettes on the table. With a rather
+        <p>There was a silver box of cigarettes on the table. With a rather
           absent-minded air O'Brien pushed them towards the others, took one himself,
           then stood up and began to pace slowly to and fro, as though he could think
           better standing. They were very good cigarettes, very thick and
           well-packed, with an unfamiliar silkiness in the paper. O'Brien looked at
           his wrist-watch again.</p>
 
-          <p>'You had better go back to your Pantry, Martin,' he said. 'I shall switch
+        <p>'You had better go back to your Pantry, Martin,' he said. 'I shall switch
           on in a quarter of an hour. Take a good look at these comrades' faces
           before you go. You will be seeing them again. I may not.'</p>
 
-          <p>Exactly as they had done at the front door, the little man's dark eyes
+        <p>Exactly as they had done at the front door, the little man's dark eyes
           flickered over their faces. There was not a trace of friendliness in his
           manner. He was memorizing their appearance, but he felt no interest in
           them, or appeared to feel none. It occurred to Winston that a synthetic
@@ -6165,7 +6190,7 @@ include '../../src/header.php';
           silently behind him. O'Brien was strolling up and down, one hand in the
           pocket of his black overalls, the other holding his cigarette.</p>
 
-          <p>'You understand,' he said, 'that you will be fighting in the dark. You
+        <p>'You understand,' he said, 'that you will be fighting in the dark. You
           will always be in the dark. You will receive orders and you will obey them,
           without knowing why. Later I shall send you a book from which you will
           learn the true nature of the society we live in, and the strategy by which
@@ -6185,14 +6210,16 @@ include '../../src/header.php';
           even betray me. By that time I may be dead, or I shall have become a
           different person, with a different face.'</p>
 
-          <p>He continued to move to and fro over the soft carpet. In spite of the
+        <p>He continued to move to and fro over the soft carpet. In spite of the
           bulkiness of his body there was a remarkable grace in his movements. It
           came out even in the gesture with which he thrust a hand into his pocket,
           or manipulated a cigarette. More even than of strength, he gave an
           impression of confidence and of an understanding tinged by irony. However
           much in earnest he might be, he had nothing of the single-mindedness that
           belongs to a fanatic. When he spoke of murder, suicide, venereal disease,
-          amputated limbs, and altered faces, it was with a faint air of <span class="tooltip"><strong>persiflage</strong><span class="tooltiptext">Light and slightly contemptuous mockery or banter</span></span>.
+          amputated limbs, and altered faces, it was with a faint air of <span
+            class="tooltip"><strong>persiflage</strong><span class="tooltiptext">Light and slightly contemptuous mockery
+              or banter</span></span>.
           'This is unavoidable,' his voice seemed to say; 'this is what we have got
           to do, unflinchingly. But this is not what we shall be doing when life is
           worth living again.' A wave of admiration, almost of worship, flowed out
@@ -6204,7 +6231,7 @@ include '../../src/header.php';
           be impressed. She had let her cigarette go out and was listening intently.
           O'Brien went on:</p>
 
-          <p>'You will have heard rumours of the existence of the Brotherhood. No doubt
+        <p>'You will have heard rumours of the existence of the Brotherhood. No doubt
           you have formed your own picture of it. You have imagined, probably, a
           huge underworld of conspirators, meeting secretly in cellars, scribbling
           messages on walls, recognizing one another by codewords or by special
@@ -6233,34 +6260,34 @@ include '../../src/header.php';
           individual, generation after generation. In the face of the Thought Police
           there is no other way.'</p>
 
-          <p>He halted and looked for the third time at his wrist-watch.</p>
+        <p>He halted and looked for the third time at his wrist-watch.</p>
 
-          <p>'It is almost time for you to leave, comrade,' he said to Julia. 'Wait.
+        <p>'It is almost time for you to leave, comrade,' he said to Julia. 'Wait.
           The decanter is still half full.'</p>
 
-          <p>He filled the glasses and raised his own glass by the stem.</p>
+        <p>He filled the glasses and raised his own glass by the stem.</p>
 
-          <p>'What shall it be this time?' he said, still with the same faint
+        <p>'What shall it be this time?' he said, still with the same faint
           suggestion of irony. 'To the confusion of the Thought Police? To the
           death of Big Brother? To humanity? To the future?'</p>
 
-          <p>'To the past,' said Winston.</p>
+        <p>'To the past,' said Winston.</p>
 
-          <p>'The past is more important,' agreed O'Brien gravely.</p>
+        <p>'The past is more important,' agreed O'Brien gravely.</p>
 
-          <p>They emptied their glasses, and a moment later Julia stood up to go.
+        <p>They emptied their glasses, and a moment later Julia stood up to go.
           O'Brien took a small box from the top of a cabinet and handed her a flat
           white tablet which he told her to place on her tongue. It was important,
           he said, not to go out smelling of wine: the lift attendants were very
           observant. As soon as the door had shut behind her he appeared to forget
           her existence. He took another pace or two up and down, then stopped.</p>
 
-          <p>'There are details to be settled,' he said. 'I assume that you have a
+        <p>'There are details to be settled,' he said. 'I assume that you have a
           hiding-place of some kind?'</p>
 
-          <p>Winston explained about the room over Mr Charrington's shop.</p>
+        <p>Winston explained about the room over Mr Charrington's shop.</p>
 
-          <p>'That will do for the moment. Later we will arrange something else for you.
+        <p>'That will do for the moment. Later we will arrange something else for you.
           It is important to change one's hiding-place frequently. Meanwhile I shall
           send you a copy of THE BOOK'--even O'Brien, Winston noticed, seemed to
           pronounce the words as though they were in italics--'Goldstein's book, you
@@ -6271,13 +6298,13 @@ include '../../src/header.php';
           the last copy were gone, we could reproduce it almost word for word. Do
           you carry a brief-case to work with you?' he added.</p>
 
-          <p>'As a rule, yes.'</p>
+        <p>'As a rule, yes.'</p>
 
-          <p>'What is it like?'</p>
+        <p>'What is it like?'</p>
 
-          <p>'Black, very shabby. With two straps.'</p>
+        <p>'Black, very shabby. With two straps.'</p>
 
-          <p>'Black, two straps, very shabby--good. One day in the fairly near
+        <p>'Black, two straps, very shabby--good. One day in the fairly near
           future--I cannot give a date--one of the messages among your morning's
           work will contain a misprinted word, and you will have to ask for a
           repeat. On the following day you will go to work without your brief-case.
@@ -6286,20 +6313,20 @@ include '../../src/header.php';
           you will contain a copy of Goldstein's book. You will return it within
           fourteen days.'</p>
 
-          <p>They were silent for a moment.</p>
+        <p>They were silent for a moment.</p>
 
-          <p>'There are a couple of minutes before you need go,' said O'Brien. 'We
+        <p>'There are a couple of minutes before you need go,' said O'Brien. 'We
           shall meet again--if we do meet again----'</p>
 
-          <p>Winston looked up at him. 'In the place where there is no darkness?'
+        <p>Winston looked up at him. 'In the place where there is no darkness?'
           he said hesitantly.</p>
 
-          <p>O'Brien nodded without appearance of surprise. 'In the place where there
+        <p>O'Brien nodded without appearance of surprise. 'In the place where there
           is no darkness,' he said, as though he had recognized the allusion. 'And
           in the meantime, is there anything that you wish to say before you leave?
           Any message? Any question?.'</p>
 
-          <p>Winston thought. There did not seem to be any further question that he
+        <p>Winston thought. There did not seem to be any further question that he
           wanted to ask: still less did he feel any impulse to utter high-sounding
           generalities. Instead of anything directly connected with O'Brien or the
           Brotherhood, there came into his mind a sort of composite picture of the
@@ -6307,23 +6334,23 @@ include '../../src/header.php';
           over Mr Charrington's shop, and the glass paperweight, and the steel
           engraving in its rosewood frame. Almost at random he said:</p>
 
-          <p>'Did you ever happen to hear an old rhyme that begins "Oranges and lemons,
+        <p>'Did you ever happen to hear an old rhyme that begins "Oranges and lemons,
           say the bells of St Clement's"?'</p>
 
-          <p>Again O'Brien nodded. With a sort of grave courtesy he completed the
+        <p>Again O'Brien nodded. With a sort of grave courtesy he completed the
           stanza:</p>
 
-<p>'Oranges and lemons, say the bells of St Clement's,
+        <p>'Oranges and lemons, say the bells of St Clement's,
           You owe me three farthings, say the bells of St Martin's,
           When will you pay me? say the bells of Old Bailey,
           When I grow rich, say the bells of Shoreditch.'</p>
 
-<p>'You knew the last line!' said Winston.</p>
+        <p>'You knew the last line!' said Winston.</p>
 
-          <p>'Yes, I knew the last line. And now, I am afraid, it is time for you to go.
+        <p>'Yes, I knew the last line. And now, I am afraid, it is time for you to go.
           But wait. You had better let me give you one of these tablets.'</p>
 
-          <p>As Winston stood up O'Brien held out a hand. His powerful grip crushed
+        <p>As Winston stood up O'Brien held out a hand. His powerful grip crushed
           the bones of Winston's palm. At the door Winston looked back, but O'Brien
           seemed already to be in process of putting him out of mind. He was waiting
           with his hand on the switch that controlled the telescreen. Beyond him
@@ -6332,7 +6359,8 @@ include '../../src/header.php';
           closed. Within thirty seconds, it occurred to him, O'Brien would be back
           at his interrupted and important work on behalf of the Party.
         </p>
-      </div></p>
+      </div>
+      </p>
 
       <!-- Chapter 18 -->
       <div id="chapter-18" class="chapter-section">
@@ -6348,7 +6376,7 @@ include '../../src/header.php';
           his feet, even the opening and closing of a hand was an effort that made
           his joints creak.
 
-          <p>He had worked more than ninety hours in five days. So had everyone else in
+        <p>He had worked more than ninety hours in five days. So had everyone else in
           the Ministry. Now it was all over, and he had literally nothing to do, no
           Party work of any description, until tomorrow morning. He could spend six
           hours in the hiding-place and another nine in his own bed. Slowly, in
@@ -6360,7 +6388,7 @@ include '../../src/header.php';
           the skin of his leg. Inside it was the book, which he had now had in his
           possession for six days and had not yet opened, nor even looked at.</p>
 
-          <p>On the sixth day of Hate Week, after the processions, the speeches, the
+        <p>On the sixth day of Hate Week, after the processions, the speeches, the
           shouting, the singing, the banners, the posters, the films, the waxworks,
           the rolling of drums and squealing of trumpets, the tramp of marching feet,
           the grinding of the caterpillars of tanks, the roar of massed planes,
@@ -6373,7 +6401,7 @@ include '../../src/header.php';
           after all at war with Eurasia. Oceania was at war with Eastasia. Eurasia
           was an ally.</p>
 
-          <p>There was, of course, no admission that any change had taken place. Merely
+        <p>There was, of course, no admission that any change had taken place. Merely
           it became known, with extreme suddenness and everywhere at once, that
           Eastasia and not Eurasia was the enemy. Winston was taking part in a
           demonstration in one of the central London squares at the moment when it
@@ -6402,7 +6430,8 @@ include '../../src/header.php';
           Oceania was at war with Eastasia! The next moment there was a tremendous
           commotion. The banners and posters with which the square was decorated
           were all wrong! Quite half of them had the wrong faces on them. It was
-          <span class="tooltip"><strong>sabotage</strong><span class="tooltiptext">Deliberately destroy, damage, or obstruct</span></span>! The agents of Goldstein had been at work! There was a riotous
+          <span class="tooltip"><strong>sabotage</strong><span class="tooltiptext">Deliberately destroy, damage, or
+              obstruct</span></span>! The agents of Goldstein had been at work! There was a riotous
           interlude while posters were ripped from the walls, banners torn to shreds
           and trampled underfoot. The Spies performed prodigies of activity in
           clambering over the rooftops and cutting the streamers that fluttered from
@@ -6411,9 +6440,10 @@ include '../../src/header.php';
           his free hand clawing at the air, had gone straight on with his speech.
           One minute more, and the feral roars of rage were again bursting from the
           crowd. The Hate continued exactly as before, except that the target had
-          been changed.</p>
+          been changed.
+        </p>
 
-          <p>The thing that impressed Winston in looking back was that the speaker had
+        <p>The thing that impressed Winston in looking back was that the speaker had
           switched from one line to the other actually in midsentence, not only
           without a pause, but without even breaking the syntax. But at the moment
           he had other things to preoccupy him. It was during the moment of disorder
@@ -6427,9 +6457,10 @@ include '../../src/header.php';
           The orders already issuing from the telescreen, recalling them to their
           posts, were hardly necessary.</p>
 
-          <p>Oceania was at war with Eastasia: Oceania had always been at war with
+        <p>Oceania was at war with Eastasia: Oceania had always been at war with
           Eastasia. A large part of the political literature of five years was now
-          completely <span class="tooltip"><strong>obsolete</strong><span class="tooltiptext">No longer produced or used; out of date</span></span>. Reports and records of all kinds, newspapers, books,
+          completely <span class="tooltip"><strong>obsolete</strong><span class="tooltiptext">No longer produced or
+              used; out of date</span></span>. Reports and records of all kinds, newspapers, books,
           pamphlets, films, sound-tracks, photographs--all had to be rectified at
           lightning speed. Although no directive was ever issued, it was known that
           the chiefs of the Department intended that within one week no reference
@@ -6452,7 +6483,7 @@ include '../../src/header.php';
           geographical knowledge that one needed in transferring the war from one
           part of the world to another was considerable.</p>
 
-          <p>By the third day his eyes ached unbearably and his spectacles needed wiping
+        <p>By the third day his eyes ached unbearably and his spectacles needed wiping
           every few minutes. It was like struggling with some crushing physical task,
           something which one had the right to refuse and which one was nevertheless
           neurotically anxious to accomplish. In so far as he had time to remember
@@ -6472,28 +6503,30 @@ include '../../src/header.php';
           body while he slept, went home, shaved himself, and almost fell asleep in
           his bath, although the water was barely more than tepid.</p>
 
-          <p>With a sort of voluptuous creaking in his joints he climbed the stair above
+        <p>With a sort of voluptuous creaking in his joints he climbed the stair above
           Mr Charrington's shop. He was tired, but not sleepy any longer. He opened
           the window, lit the dirty little oilstove and put on a pan of water for
           coffee. Julia would arrive presently: meanwhile there was the book. He
           sat down in the sluttish armchair and undid the straps of the brief-case.</p>
 
-          <p>A heavy black volume, amateurishly bound, with no name or title on the
+        <p>A heavy black volume, amateurishly bound, with no name or title on the
           cover. The print also looked slightly irregular. The pages were worn at
           the edges, and fell apart, easily, as though the book had passed through
           many hands. The inscription on the title-page ran:</p>
 
-<p>THE THEORY AND PRACTICE OF
-          <span class="tooltip"><strong>OLIGARCHICAL</strong><span class="tooltiptext">Relating to an oligarchy (a small group having control)</span></span> COLLECTIVISM
+        <p>THE THEORY AND PRACTICE OF
+          <span class="tooltip"><strong>OLIGARCHICAL</strong><span class="tooltiptext">Relating to an oligarchy (a small
+              group having control)</span></span> COLLECTIVISM
           by
-          Emmanuel Goldstein</p>
+          Emmanuel Goldstein
+        </p>
 
-<p>Winston began reading:</p>
+        <p>Winston began reading:</p>
 
-<p>Chapter I
+        <p>Chapter I
           Ignorance is Strength</p>
 
-          <p>Throughout recorded time, and probably since the end of the Neolithic Age,
+        <p>Throughout recorded time, and probably since the end of the Neolithic Age,
           there have been three kinds of people in the world, the High, the Middle,
           and the Low. They have been subdivided in many ways, they have borne
           countless different names, and their relative numbers, as well as their
@@ -6503,9 +6536,9 @@ include '../../src/header.php';
           reasserted itself, just as a gyroscope will always return to equilibrium,
           however far it is pushed one way or the other.</p>
 
-          <p>The aims of these groups are entirely irreconcilable...</p>
+        <p>The aims of these groups are entirely irreconcilable...</p>
 
-<p>Winston stopped reading, chiefly in order to appreciate the fact that he
+        <p>Winston stopped reading, chiefly in order to appreciate the fact that he
           was reading, in comfort and safety. He was alone: no telescreen, no ear at
           the keyhole, no nervous impulse to glance over his shoulder or cover the
           page with his hand. The sweet summer air played against his cheek. From
@@ -6516,10 +6549,10 @@ include '../../src/header.php';
           knows that one will ultimately read and re-read every word, he opened it
           at a different place and found himself at Chapter III. He went on reading:</p>
 
-<p>Chapter III
+        <p>Chapter III
           War is Peace</p>
 
-          <p>The splitting up of the world into three great super-states was an event
+        <p>The splitting up of the world into three great super-states was an event
           which could be and indeed was foreseen before the middle of the twentieth
           century. With the absorption of Europe by Russia and of the British Empire
           by the United States, two of the three existing powers, Eurasia and
@@ -6535,7 +6568,7 @@ include '../../src/header.php';
           comprises China and the countries to the south of it, the Japanese islands
           and a large but fluctuating portion of Manchuria, Mongolia, and Tibet.</p>
 
-          <p>In one combination or another, these three super-states are permanently at
+        <p>In one combination or another, these three super-states are permanently at
           war, and have been so for the past twenty-five years. War, however, is no
           longer the desperate, annihilating struggle that it was in the early
           decades of the twentieth century. It is a warfare of limited aims between
@@ -6561,7 +6594,7 @@ include '../../src/header.php';
           great wars of the early twentieth century have now become dominant and
           are consciously recognized and acted upon.</p>
 
-          <p>To understand the nature of the present war--for in spite of the regrouping
+        <p>To understand the nature of the present war--for in spite of the regrouping
           which occurs every few years, it is always the same war--one must realize
           in the first place that it is impossible for it to be decisive. None of
           the three super-states could be definitively conquered even by the other
@@ -6587,7 +6620,7 @@ include '../../src/header.php';
           chance of seizing this or that fragment by a sudden stroke of treachery
           that dictates the endless changes of alignment.</p>
 
-          <p>All of the disputed territories contain valuable minerals, and some of
+        <p>All of the disputed territories contain valuable minerals, and some of
           them yield important vegetable products such as rubber which in colder
           climates it is necessary to synthesize by comparatively expensive methods.
           But above all they contain a bottomless reserve of cheap labour. Whichever
@@ -6617,7 +6650,7 @@ include '../../src/header.php';
           structure of world society, and the process by which it maintains itself,
           would not be essentially different.</p>
 
-          <p>The primary aim of modern warfare (in accordance with the principles of
+        <p>The primary aim of modern warfare (in accordance with the principles of
           DOUBLETHINK, this aim is simultaneously recognized and not recognized by
           the directing brains of the Inner Party) is to use up the products of the
           machine without raising the general standard of living. Ever since the end
@@ -6654,7 +6687,7 @@ include '../../src/header.php';
           average human being very greatly over a period of about fifty years at
           the end of the nineteenth and the beginning of the twentieth centuries.</p>
 
-          <p>But it was also clear that an all-round increase in wealth threatened the
+        <p>But it was also clear that an all-round increase in wealth threatened the
           destruction--indeed, in some sense was the destruction--of a hierarchical
           society. In a world in which everyone worked short hours, had enough to
           eat, lived in a house with a bathroom and a refrigerator, and possessed
@@ -6678,7 +6711,7 @@ include '../../src/header.php';
           backward was helpless in a military sense and was bound to be dominated,
           directly or indirectly, by its more advanced rivals.</p>
 
-          <p>Nor was it a satisfactory solution to keep the masses in poverty by
+        <p>Nor was it a satisfactory solution to keep the masses in poverty by
           restricting the output of goods. This happened to a great extent during
           the final phase of capitalism, roughly between 1920 and 1940. The economy
           of many countries was allowed to stagnate, land went out of cultivation,
@@ -6691,7 +6724,7 @@ include '../../src/header.php';
           distributed. And in practice the only way of achieving this was by
           continuous warfare.</p>
 
-          <p>The essential act of war is destruction, not necessarily of human lives,
+        <p>The essential act of war is destruction, not necessarily of human lives,
           but of the products of human labour. War is a way of shattering to pieces,
           or pouring into the stratosphere, or sinking in the depths of the sea,
           materials which might otherwise be used to make the masses too comfortable,
@@ -6700,7 +6733,8 @@ include '../../src/header.php';
           expending labour power without producing anything that can be consumed.
           A Floating Fortress, for example, has locked up in it the labour that
           would build several hundred cargo-ships. Ultimately it is scrapped as
-          <span class="tooltip"><strong>obsolete</strong><span class="tooltiptext">No longer produced or used; out of date</span></span>, never having brought any material benefit to anybody, and with
+          <span class="tooltip"><strong>obsolete</strong><span class="tooltiptext">No longer produced or used; out of
+              date</span></span>, never having brought any material benefit to anybody, and with
           further enormous labours another Floating Fortress is built. In principle
           the war effort is always so planned as to eat up any surplus that might
           exist after meeting the bare needs of the population. In practice the needs
@@ -6721,9 +6755,10 @@ include '../../src/header.php';
           possession of a lump of horseflesh makes the difference between wealth and
           poverty. And at the same time the consciousness of being at war, and
           therefore in danger, makes the handing-over of all power to a small caste
-          seem the natural, unavoidable condition of survival.</p>
+          seem the natural, unavoidable condition of survival.
+        </p>
 
-          <p>War, it will be seen, accomplishes the necessary destruction, but
+        <p>War, it will be seen, accomplishes the necessary destruction, but
           accomplishes it in a psychologically acceptable way. In principle it would
           be quite simple to waste the surplus labour of the world by building
           temples and pyramids, by digging holes and filling them up again, or even
@@ -6753,7 +6788,7 @@ include '../../src/header.php';
           the war is real, and that it is bound to end victoriously, with Oceania
           the undisputed master of the entire world.</p>
 
-          <p>All members of the Inner Party believe in this coming conquest as an
+        <p>All members of the Inner Party believe in this coming conquest as an
           article of faith. It is to be achieved either by gradually acquiring more
           and more territory and so building up an overwhelming preponderance of
           power, or by the discovery of some new and unanswerable weapon. The search
@@ -6798,7 +6833,7 @@ include '../../src/header.php';
           producing artificial earthquakes and tidal waves by tapping the heat at
           the earth's centre.</p>
 
-          <p>But none of these projects ever comes anywhere near realization, and none
+        <p>But none of these projects ever comes anywhere near realization, and none
           of the three super-states ever gains a significant lead on the others.
           What is more remarkable is that all three powers already possess, in the
           atomic bomb, a weapon far more powerful than any that their present
@@ -6824,7 +6859,7 @@ include '../../src/header.php';
           in which hundreds of thousands or even millions of men were often killed
           in a few weeks, have never been repeated.</p>
 
-          <p>None of the three super-states ever attempts any manoeuvre which involves
+        <p>None of the three super-states ever attempts any manoeuvre which involves
           the risk of serious defeat. When any large operation is undertaken, it is
           usually a surprise attack against an ally. The strategy that all three
           powers are following, or pretend to themselves that they are following,
@@ -6865,7 +6900,7 @@ include '../../src/header.php';
           or Egypt, or Java, or Ceylon may change hands, the main frontiers must
           never be crossed by anything except bombs.</p>
 
-          <p>Under this lies a fact never mentioned aloud, but tacitly understood and
+        <p>Under this lies a fact never mentioned aloud, but tacitly understood and
           acted upon: namely, that the conditions of life in all three super-states
           are very much the same. In Oceania the prevailing philosophy is called
           Ingsoc, in Eurasia it is called Neo-Bolshevism, and in Eastasia it is
@@ -6889,7 +6924,7 @@ include '../../src/header.php';
           thought. Here it is necessary to repeat what has been said earlier, that
           by becoming continuous war has fundamentally changed its character.</p>
 
-          <p>In past ages, a war, almost by definition, was something that sooner or
+        <p>In past ages, a war, almost by definition, was something that sooner or
           later came to an end, usually in unmistakable victory or defeat. In the
           past, also, war was one of the main instruments by which human societies
           were kept in touch with physical reality. All rulers in all ages have tried
@@ -6910,7 +6945,7 @@ include '../../src/header.php';
           it was probably the most important of all safeguards. While wars could be
           won or lost, no ruling class could be completely irresponsible.</p>
 
-          <p>But when war becomes literally continuous, it also ceases to be dangerous.
+        <p>But when war becomes literally continuous, it also ceases to be dangerous.
           When war is continuous there is no such thing as military necessity.
           Technical progress can cease and the most palpable facts can be denied or
           disregarded. As we have seen, researches that could be called scientific
@@ -6934,7 +6969,7 @@ include '../../src/header.php';
           once that minimum is achieved, they can twist reality into whatever shape
           they choose.</p>
 
-          <p>The war, therefore, if we judge it by the standards of previous wars, is
+        <p>The war, therefore, if we judge it by the standards of previous wars, is
           merely an imposture. It is like the battles between certain ruminant
           animals whose horns are set at such an angle that they are incapable of
           hurting one another. But though it is unreal it is not meaningless. It
@@ -6960,7 +6995,7 @@ include '../../src/header.php';
           majority of Party members understand it only in a shallower sense--is the
           inner meaning of the Party slogan: WAR IS PEACE.</p>
 
-<p>Winston stopped reading for a moment. Somewhere in remote distance a
+        <p>Winston stopped reading for a moment. Somewhere in remote distance a
           rocket bomb thundered. The blissful feeling of being alone with the
           forbidden book, in a room with no telescreen, had not worn off. Solitude
           and safety were physical sensations, mixed up somehow with the tiredness
@@ -6976,12 +7011,12 @@ include '../../src/header.php';
           to meet her. She dumped her brown tool-bag on the floor and flung herself
           into his arms. It was more than a week since they had seen one another.</p>
 
-          <p>'I've got THE BOOK,' he said as they disentangled themselves.</p>
+        <p>'I've got THE BOOK,' he said as they disentangled themselves.</p>
 
-          <p>'Oh, you've got it? Good,' she said without much interest, and almost
+        <p>'Oh, you've got it? Good,' she said without much interest, and almost
           immediately knelt down beside the oil stove to make the coffee.</p>
 
-          <p>They did not return to the subject until they had been in bed for half an
+        <p>They did not return to the subject until they had been in bed for half an
           hour. The evening was just cool enough to make it worth while to pull up
           the counterpane. From below came the familiar sound of singing and the
           scrape of boots on the flagstones. The brawny red-armed woman whom Winston
@@ -6993,19 +7028,19 @@ include '../../src/header.php';
           out for the book, which was lying on the floor, and sat up against the
           bedhead.</p>
 
-          <p>'We must read it,' he said. 'You too. All members of the Brotherhood have
+        <p>'We must read it,' he said. 'You too. All members of the Brotherhood have
           to read it.'</p>
 
-          <p>'You read it,' she said with her eyes shut. 'Read it aloud. That's the
+        <p>'You read it,' she said with her eyes shut. 'Read it aloud. That's the
           best way. Then you can explain it to me as you go.'</p>
 
-          <p>The clock's hands said six, meaning eighteen. They had three or four hours
+        <p>The clock's hands said six, meaning eighteen. They had three or four hours
           ahead of them. He propped the book against his knees and began reading:</p>
 
-<p>Chapter I
+        <p>Chapter I
           Ignorance is Strength</p>
 
-          <p>Throughout recorded time, and probably since the end of the Neolithic Age,
+        <p>Throughout recorded time, and probably since the end of the Neolithic Age,
           there have been three kinds of people in the world, the High, the Middle,
           and the Low. They have been subdivided in many ways, they have borne
           countless different names, and their relative numbers, as well as their
@@ -7015,13 +7050,13 @@ include '../../src/header.php';
           reasserted itself, just as a gyroscope will always return to equilibrium,
           however far it is pushed one way or the other</p>
 
-<p>'Julia, are you awake?' said Winston.</p>
+        <p>'Julia, are you awake?' said Winston.</p>
 
-          <p>'Yes, my love, I'm listening. Go on. It's marvellous.'</p>
+        <p>'Yes, my love, I'm listening. Go on. It's marvellous.'</p>
 
-          <p>He continued reading:</p>
+        <p>He continued reading:</p>
 
-<p>The aims of these three groups are entirely irreconcilable. The aim of
+        <p>The aims of these three groups are entirely irreconcilable. The aim of
           the High is to remain where they are. The aim of the Middle is to change
           places with the High. The aim of the Low, when they have an aim--for it
           is an abiding characteristic of the Low that they are too much crushed
@@ -7047,7 +7082,7 @@ include '../../src/header.php';
           the Low, no historic change has ever meant much more than a change in the
           name of their masters.</p>
 
-          <p>By the late nineteenth century the recurrence of this pattern had become
+        <p>By the late nineteenth century the recurrence of this pattern had become
           obvious to many observers. There then rose schools of thinkers who
           interpreted history as a cyclical process and claimed to show that
           inequality was the unalterable law of human life. This doctrine, of course,
@@ -7074,13 +7109,15 @@ include '../../src/header.php';
           it is commonly called, in Eastasia, had the conscious aim of perpetuating
           UNfreedom and INequality. These new movements, of course, grew out of the
           old ones and tended to keep their names and pay lip-service to their
-          <span class="tooltip"><strong>ideology</strong><span class="tooltiptext">A system of ideas and ideals</span></span>. But the purpose of all of them was to arrest progress and freeze
+          <span class="tooltip"><strong>ideology</strong><span class="tooltiptext">A system of ideas and
+              ideals</span></span>. But the purpose of all of them was to arrest progress and freeze
           history at a chosen moment. The familiar pendulum swing was to happen once
           more, and then stop. As usual, the High were to be turned out by the
           Middle, who would then become the High; but this time, by conscious
-          strategy, the High would be able to maintain their position permanently.</p>
+          strategy, the High would be able to maintain their position permanently.
+        </p>
 
-          <p>The new doctrines arose partly because of the accumulation of historical
+        <p>The new doctrines arose partly because of the accumulation of historical
           knowledge, and the growth of the historical sense, which had hardly existed
           before the nineteenth century. The cyclical movement of history was now
           intelligible, or appeared to be so; and if it was intelligible, then it
@@ -7110,7 +7147,9 @@ include '../../src/header.php';
           twentieth century all the main currents of political thought were
           authoritarian. The earthly paradise had been discredited at exactly the
           moment when it became realizable. Every new political theory, by whatever
-          name it called itself, led back to <span class="tooltip"><strong>hierarchy</strong><span class="tooltiptext">A system or organization in which people or groups are ranked one above the other according to status or authority</span></span> and regimentation. And in the
+          name it called itself, led back to <span class="tooltip"><strong>hierarchy</strong><span class="tooltiptext">A
+              system or organization in which people or groups are ranked one above the other according to status or
+              authority</span></span> and regimentation. And in the
           general hardening of outlook that set in round about 1930, practices which
           had been long abandoned, in some cases for hundreds of years--imprisonment
           without trial, the use of war prisoners as slaves, public executions,
@@ -7119,10 +7158,12 @@ include '../../src/header.php';
           and even defended by people who considered themselves enlightened and
           progressive.</p>
 
-          <p>It was only after a decade of national wars, civil wars, revolutions, and
+        <p>It was only after a decade of national wars, civil wars, revolutions, and
           counter-revolutions in all parts of the world that Ingsoc and its rivals
           emerged as fully worked-out political theories. But they had been
-          foreshadowed by the various systems, generally called <span class="tooltip"><strong>totalitarian</strong><span class="tooltiptext">Relating to a system of government that is centralized and dictatorial and requires complete subservience to the state</span></span>, which
+          foreshadowed by the various systems, generally called <span class="tooltip"><strong>totalitarian</strong><span
+              class="tooltiptext">Relating to a system of government that is centralized and dictatorial and requires
+              complete subservience to the state</span></span>, which
           had appeared earlier in the century, and the main outlines of the world
           which would emerge from the prevailing chaos had long been obvious. What
           kind of people would control this world had been equally obvious. The new
@@ -7142,7 +7183,8 @@ include '../../src/header.php';
           uninterested in what their subjects were thinking. Even the Catholic Church
           of the Middle Ages was tolerant by modern standards. Part of the reason
           for this was that in the past no government had the power to keep its
-          citizens under constant <span class="tooltip"><strong>surveillance</strong><span class="tooltiptext">Close observation, especially of a suspected spy or criminal</span></span>. The invention of print, however,
+          citizens under constant <span class="tooltip"><strong>surveillance</strong><span class="tooltiptext">Close
+              observation, especially of a suspected spy or criminal</span></span>. The invention of print, however,
           made it easier to manipulate public opinion, and the film and the radio
           carried the process further. With the development of television, and
           the technical advance which made it possible to receive and transmit
@@ -7154,11 +7196,13 @@ include '../../src/header.php';
           obedience to the will of the State, but complete uniformity of opinion
           on all subjects, now existed for the first time.</p>
 
-          <p>After the revolutionary period of the fifties and sixties, society
+        <p>After the revolutionary period of the fifties and sixties, society
           regrouped itself, as always, into High, Middle, and Low. But the new High
           group, unlike all its forerunners, did not act upon instinct but knew what
           was needed to safeguard its position. It had long been realized that the
-          only secure basis for <span class="tooltip"><strong>oligarchy</strong><span class="tooltiptext">A small group of people having control of a country, organization, or institution</span></span> is collectivism. Wealth and privilege
+          only secure basis for <span class="tooltip"><strong>oligarchy</strong><span class="tooltiptext">A small group
+              of people having control of a country, organization, or institution</span></span> is collectivism. Wealth
+          and privilege
           are most easily defended when they are possessed jointly. The so-called
           'abolition of private property' which took place in the middle years of
           the century meant, in effect, the concentration of property in far fewer
@@ -7179,7 +7223,7 @@ include '../../src/header.php';
           the Socialist programme; with the result, foreseen and intended beforehand,
           that economic inequality has been made permanent.</p>
 
-          <p>But the problems of perpetuating a hierarchical society go deeper than
+        <p>But the problems of perpetuating a hierarchical society go deeper than
           this. There are only four ways in which a ruling group can fall from power.
           Either it is conquered from without, or it governs so inefficiently that
           the masses are stirred to revolt, or it allows a strong and discontented
@@ -7189,7 +7233,7 @@ include '../../src/header.php';
           guard against all of them would remain in power permanently. Ultimately
           the determining factor is the mental attitude of the ruling class itself.</p>
 
-          <p>After the middle of the present century, the first danger had in reality
+        <p>After the middle of the present century, the first danger had in reality
           disappeared. Each of the three powers which now divide the world is in
           fact unconquerable, and could only become conquerable through slow
           demographic changes which a government with wide powers can easily avert.
@@ -7213,7 +7257,7 @@ include '../../src/header.php';
           below it. The consciousness of the masses needs only to be influenced in
           a negative way.</p>
 
-          <p>Given this background, one could infer, if one did not know it already,
+        <p>Given this background, one could infer, if one did not know it already,
           the general structure of Oceanic society. At the apex of the pyramid comes
           Big Brother. Big Brother is infallible and all-powerful. Every success,
           every achievement, every victory, every scientific discovery, all
@@ -7235,7 +7279,7 @@ include '../../src/header.php';
           population of the equatorial lands who pass constantly from conqueror
           to conqueror, are not a permanent or necessary part of the structure.</p>
 
-          <p>In principle, membership of these three groups is not hereditary. The
+        <p>In principle, membership of these three groups is not hereditary. The
           child of Inner Party parents is in theory not born into the Inner Party.
           Admission to either branch of the Party is by examination, taken at the
           age of sixteen. Nor is there any racial discrimination, or any marked
@@ -7263,22 +7307,27 @@ include '../../src/header.php';
           not aim at transmitting power to its own children, as such; and if there
           were no other way of keeping the ablest people at the top, it would be
           perfectly prepared to recruit an entire new generation from the ranks of
-          the <span class="tooltip"><strong>proletariat</strong><span class="tooltiptext">Workers or working-class people</span></span>. In the crucial years, the fact that the Party was not a
+          the <span class="tooltip"><strong>proletariat</strong><span class="tooltiptext">Workers or working-class
+              people</span></span>. In the crucial years, the fact that the Party was not a
           hereditary body did a great deal to neutralize opposition. The older kind
           of Socialist, who had been trained to fight against something called
           'class privilege' assumed that what is not hereditary cannot be permanent.
-          He did not see that the continuity of an <span class="tooltip"><strong>oligarchy</strong><span class="tooltiptext">A small group of people having control of a country, organization, or institution</span></span> need not be physical,
+          He did not see that the continuity of an <span class="tooltip"><strong>oligarchy</strong><span
+              class="tooltiptext">A small group of people having control of a country, organization, or
+              institution</span></span> need not be physical,
           nor did he pause to reflect that hereditary aristocracies have always been
           shortlived, whereas adoptive organizations such as the Catholic Church
           have sometimes lasted for hundreds or thousands of years. The essence of
-          <span class="tooltip"><strong>oligarchical</strong><span class="tooltiptext">Relating to an oligarchy (a small group having control)</span></span> rule is not father-to-son inheritance, but the persistence of
+          <span class="tooltip"><strong>oligarchical</strong><span class="tooltiptext">Relating to an oligarchy (a small
+              group having control)</span></span> rule is not father-to-son inheritance, but the persistence of
           a certain world-view and a certain way of life, imposed by the dead upon
           the living. A ruling group is a ruling group so long as it can nominate
           its successors. The Party is not concerned with perpetuating its blood but
           with perpetuating itself. WHO wields power is not important, provided that
-          the hierarchical structure remains always the same.</p>
+          the hierarchical structure remains always the same.
+        </p>
 
-          <p>All the beliefs, habits, tastes, emotions, mental attitudes that
+        <p>All the beliefs, habits, tastes, emotions, mental attitudes that
           characterize our time are really designed to sustain the mystique of
           the Party and prevent the true nature of present-day society from being
           perceived. Physical rebellion, or any preliminary move towards rebellion,
@@ -7295,7 +7344,7 @@ include '../../src/header.php';
           member, on the other hand, not even the smallest deviation of opinion on
           the most unimportant subject can be tolerated.</p>
 
-          <p>A Party member lives from birth to death under the eye of the Thought
+        <p>A Party member lives from birth to death under the eye of the Thought
           Police. Even when he is alone he can never be sure that he is alone.
           Wherever he may be, asleep or awake, working or resting, in his bath or in
           bed, he can be inspected without warning and without knowing that he is
@@ -7316,14 +7365,16 @@ include '../../src/header.php';
           future. A Party member is required to have not only the right opinions,
           but the right instincts. Many of the beliefs and attitudes demanded of him
           are never plainly stated, and could not be stated without laying bare the
-          contradictions inherent in Ingsoc. If he is a person naturally <span class="tooltip"><strong>orthodox</strong><span class="tooltiptext">Conforming to what is generally accepted as right or true</span></span>
+          contradictions inherent in Ingsoc. If he is a person naturally <span
+            class="tooltip"><strong>orthodox</strong><span class="tooltiptext">Conforming to what is generally accepted
+              as right or true</span></span>
           (in Newspeak a GOODTHINKER), he will in all circumstances know, without
           taking thought, what is the true belief or the desirable emotion. But in
           any case an elaborate mental training, undergone in childhood and grouping
           itself round the Newspeak words CRIMESTOP, BLACKWHITE, and DOUBLETHINK,
           makes him unwilling and unable to think too deeply on any subject whatever.</p>
 
-          <p>A Party member is expected to have no private emotions and no respites
+        <p>A Party member is expected to have no private emotions and no respites
           from enthusiasm. He is supposed to live in a continuous frenzy of hatred
           of foreign enemies and internal traitors, triumph over victories, and
           self-abasement before the power and wisdom of the Party. The discontents
@@ -7356,7 +7407,7 @@ include '../../src/header.php';
           system of thought which really embraces all the rest, and which is known
           in Newspeak as DOUBLETHINK.</p>
 
-          <p>The alteration of the past is necessary for two reasons, one of which is
+        <p>The alteration of the past is necessary for two reasons, one of which is
           subsidiary and, so to speak, precautionary. The subsidiary reason is that
           the Party member, like the proletarian, tolerates present-day conditions
           partly because he has no standards of comparison. He must be cut off from
@@ -7377,7 +7428,8 @@ include '../../src/header.php';
           necessary to the stability of the regime as the work of repression and
           espionage carried out by the Ministry of Love.</p>
 
-          <p>The <span class="tooltip"><strong>mutability</strong><span class="tooltiptext">Liability or tendency to change</span></span> of the past is the central tenet of Ingsoc. Past events,
+        <p>The <span class="tooltip"><strong>mutability</strong><span class="tooltiptext">Liability or tendency to
+              change</span></span> of the past is the central tenet of Ingsoc. Past events,
           it is argued, have no objective existence, but survive only in written
           records and in human memories. The past is whatever the records and the
           memories agree upon. And since the Party is in full control of all records
@@ -7398,11 +7450,12 @@ include '../../src/header.php';
           records, then it is necessary to FORGET that one has done so. The trick of
           doing this can be learned like any other mental technique. It is learned
           by the majority of Party members, and certainly by all who are intelligent
-          as well as <span class="tooltip"><strong>orthodox</strong><span class="tooltiptext">Conforming to what is generally accepted as right or true</span></span>. In Oldspeak it is called, quite frankly, 'reality
+          as well as <span class="tooltip"><strong>orthodox</strong><span class="tooltiptext">Conforming to what is
+              generally accepted as right or true</span></span>. In Oldspeak it is called, quite frankly, 'reality
           control'. In Newspeak it is called DOUBLETHINK, though DOUBLETHINK
           comprises much else as well.</p>
 
-          <p>DOUBLETHINK means the power of holding two contradictory beliefs in one's
+        <p>DOUBLETHINK means the power of holding two contradictory beliefs in one's
           mind simultaneously, and accepting both of them. The Party intellectual
           knows in which direction his memories must be altered; he therefore knows
           that he is playing tricks with reality; but by the exercise of DOUBLETHINK
@@ -7425,7 +7478,7 @@ include '../../src/header.php';
           continue to be able for thousands of years--to arrest the course of
           history.</p>
 
-          <p>All past oligarchies have fallen from power either because they ossified
+        <p>All past oligarchies have fallen from power either because they ossified
           or because they grew soft. Either they became stupid and arrogant, failed
           to adjust themselves to changing circumstances, and were overthrown; or
           they became liberal and cowardly, made concessions when they should have
@@ -7438,7 +7491,7 @@ include '../../src/header.php';
           For the secret of rulership is to combine a belief in one's own
           infallibility with the Power to learn from past mistakes.</p>
 
-          <p>It need hardly be said that the subtlest practitioners of DOUBLETHINK are
+        <p>It need hardly be said that the subtlest practitioners of DOUBLETHINK are
           those who invented DOUBLETHINK and know that it is a vast system of mental
           cheating. In our society, those who have the best knowledge of what is
           happening are also those who are furthest from seeing the world as it is.
@@ -7460,7 +7513,8 @@ include '../../src/header.php';
           World-conquest is believed in most firmly by those who know it to be
           impossible. This peculiar linking-together of opposites--knowledge with
           ignorance, cynicism with fanaticism--is one of the chief distinguishing
-          marks of Oceanic society. The official <span class="tooltip"><strong>ideology</strong><span class="tooltiptext">A system of ideas and ideals</span></span> abounds with contradictions
+          marks of Oceanic society. The official <span class="tooltip"><strong>ideology</strong><span
+              class="tooltiptext">A system of ideas and ideals</span></span> abounds with contradictions
           even when there is no practical reason for them. Thus, the Party rejects
           and vilifies every principle for which the Socialist movement originally
           stood, and it chooses to do this in the name of Socialism. It preaches
@@ -7481,35 +7535,35 @@ include '../../src/header.php';
           their places permanently--then the prevailing mental condition must be
           controlled insanity.</p>
 
-          <p>But there is one question which until this moment we have almost ignored.
+        <p>But there is one question which until this moment we have almost ignored.
           It is; WHY should human equality be averted? Supposing that the mechanics
           of the process have been rightly described, what is the motive for this
           huge, accurately planned effort to freeze history at a particular moment
           of time?</p>
 
-          <p>Here we reach the central secret. As we have seen. the mystique of the
+        <p>Here we reach the central secret. As we have seen. the mystique of the
           Party, and above all of the Inner Party, depends upon DOUBLETHINK But
           deeper than this lies the original motive, the never-questioned instinct
           that first led to the seizure of power and brought DOUBLETHINK, the
           Thought Police, continuous warfare, and all the other necessary
           paraphernalia into existence afterwards. This motive really consists...</p>
 
-<p>Winston became aware of silence, as one becomes aware of a new sound. It
+        <p>Winston became aware of silence, as one becomes aware of a new sound. It
           seemed to him that Julia had been very still for some time past. She was
           lying on her side, naked from the waist upwards, with her cheek pillowed
           on her hand and one dark lock tumbling across her eyes. Her breast rose
           and fell slowly and regularly.</p>
 
-          <p>'Julia.'</p>
+        <p>'Julia.'</p>
 
-          <p>No answer.</p>
+        <p>No answer.</p>
 
-          <p>'Julia, are you awake?'</p>
+        <p>'Julia, are you awake?'</p>
 
-          <p>No answer. She was asleep. He shut the book, put it carefully on the floor,
+        <p>No answer. She was asleep. He shut the book, put it carefully on the floor,
           lay down, and pulled the coverlet over both of them.</p>
 
-          <p>He had still, he reflected, not learned the ultimate secret. He understood
+        <p>He had still, he reflected, not learned the ultimate secret. He understood
           HOW; he did not understand WHY. Chapter I, like Chapter III, had not
           actually told him anything that he did not know, it had merely systematized
           the knowledge that he possessed already. But after reading it he knew
@@ -7523,39 +7577,39 @@ include '../../src/header.php';
           murmuring 'Sanity is not statistical,' with the feeling that this remark
           contained in it a profound wisdom.</p>
 
-          <p>*****</p>
+        <p>*****</p>
 
-          <p>When he woke it was with the sensation of having slept for a long time,
+        <p>When he woke it was with the sensation of having slept for a long time,
           but a glance at the old-fashioned clock told him that it was only
           twenty-thirty. He lay dozing for a while; then the usual deep-lunged
           singing struck up from the yard below:</p>
 
-<p>'It was only an 'opeless fancy,
+        <p>'It was only an 'opeless fancy,
           It passed like an Ipril dye,
           But a look an' a word an' the dreams they stirred
           They 'ave stolen my 'eart awye!'</p>
 
-<p>The drivelling song seemed to have kept its popularity. You still heard it
+        <p>The drivelling song seemed to have kept its popularity. You still heard it
           all over the place. It had outlived the Hate Song. Julia woke at the
           sound, stretched herself luxuriously, and got out of bed.</p>
 
-          <p>'I'm hungry,' she said. 'Let's make some more coffee. Damn! The stove's
+        <p>'I'm hungry,' she said. 'Let's make some more coffee. Damn! The stove's
           gone out and the water's cold.' She picked the stove up and shook it.
           'There's no oil in it.'</p>
 
-          <p>'We can get some from old Charrington, I expect.'</p>
+        <p>'We can get some from old Charrington, I expect.'</p>
 
-          <p>'The funny thing is I made sure it was full. I'm going to put my clothes
+        <p>'The funny thing is I made sure it was full. I'm going to put my clothes
           on,' she added. 'It seems to have got colder.'</p>
 
-          <p>Winston also got up and dressed himself. The indefatigable voice sang on:</p>
+        <p>Winston also got up and dressed himself. The indefatigable voice sang on:</p>
 
-<p>'They sye that time 'eals all things,
+        <p>'They sye that time 'eals all things,
           They sye you can always forget;
           But the smiles an' the tears acrorss the years
           They twist my 'eart-strings yet!'</p>
 
-<p>As he fastened the belt of his overalls he strolled across to the window.
+        <p>As he fastened the belt of his overalls he strolled across to the window.
           The sun must have gone down behind the houses; it was not shining into the
           yard any longer. The flagstones were wet as though they had just been
           washed, and he had the feeling that the sky had been washed too, so fresh
@@ -7576,13 +7630,13 @@ include '../../src/header.php';
           of a girl as the rose-hip to the rose. Why should the fruit be held
           inferior to the flower?</p>
 
-          <p>'She's beautiful,' he murmured.</p>
+        <p>'She's beautiful,' he murmured.</p>
 
-          <p>'She's a metre across the hips, easily,' said Julia.</p>
+        <p>'She's a metre across the hips, easily,' said Julia.</p>
 
-          <p>'That is her style of beauty,' said Winston.</p>
+        <p>'That is her style of beauty,' said Winston.</p>
 
-          <p>He held Julia's supple waist easily encircled by his arm. From the hip to
+        <p>He held Julia's supple waist easily encircled by his arm. From the hip to
           the knee her flank was against his. Out of their bodies no child would
           ever come. That was the one thing they could never do. Only by word of
           mouth, from mind to mind, could they pass on the secret. The woman down
@@ -7617,13 +7671,13 @@ include '../../src/header.php';
           passing on from body to body the vitality which the Party did not share
           and could not kill.</p>
 
-          <p>'Do you remember,' he said, 'the thrush that sang to us, that first day,
+        <p>'Do you remember,' he said, 'the thrush that sang to us, that first day,
           at the edge of the wood?'</p>
 
-          <p>'He wasn't singing to us,' said Julia. 'He was singing to please himself.
+        <p>'He wasn't singing to us,' said Julia. 'He was singing to please himself.
           Not even that. He was just singing.'</p>
 
-          <p>The birds sang, the proles sang. the Party did not sing. All round the
+        <p>The birds sang, the proles sang. the Party did not sing. All round the
           world, in London and New York, in Africa and Brazil, and in the mysterious,
           forbidden lands beyond the frontiers, in the streets of Paris and Berlin,
           in the villages of the endless Russian plain, in the bazaars of China and
@@ -7634,38 +7688,38 @@ include '../../src/header.php';
           future if you kept alive the mind as they kept alive the body, and passed
           on the secret doctrine that two plus two make four.</p>
 
-          <p>'We are the dead,' he said.</p>
+        <p>'We are the dead,' he said.</p>
 
-          <p>'We are the dead,' echoed Julia dutifully.</p>
+        <p>'We are the dead,' echoed Julia dutifully.</p>
 
-          <p>'You are the dead,' said an iron voice behind them.</p>
+        <p>'You are the dead,' said an iron voice behind them.</p>
 
-          <p>They sprang apart. Winston's entrails seemed to have turned into ice. He
+        <p>They sprang apart. Winston's entrails seemed to have turned into ice. He
           could see the white all round the irises of Julia's eyes. Her face had
           turned a milky yellow. The smear of rouge that was still on each cheekbone
           stood out sharply, almost as though unconnected with the skin beneath.</p>
 
-          <p>'You are the dead,' repeated the iron voice.</p>
+        <p>'You are the dead,' repeated the iron voice.</p>
 
-          <p>'It was behind the picture,' breathed Julia.</p>
+        <p>'It was behind the picture,' breathed Julia.</p>
 
-          <p>'It was behind the picture,' said the voice. 'Remain exactly where you
+        <p>'It was behind the picture,' said the voice. 'Remain exactly where you
           are. Make no movement until you are ordered.'</p>
 
-          <p>It was starting, it was starting at last! They could do nothing except
+        <p>It was starting, it was starting at last! They could do nothing except
           stand gazing into one another's eyes. To run for life, to get out of the
           house before it was too late--no such thought occurred to them. Unthinkable
           to disobey the iron voice from the wall. There was a snap as though a catch
           had been turned back, and a crash of breaking glass. The picture had fallen
           to the floor uncovering the telescreen behind it.</p>
 
-          <p>'Now they can see us,' said Julia.</p>
+        <p>'Now they can see us,' said Julia.</p>
 
-          <p>'Now we can see you,' said the voice. 'Stand out in the middle of the
+        <p>'Now we can see you,' said the voice. 'Stand out in the middle of the
           room. Stand back to back. Clasp your hands behind your heads. Do not touch
           one another.'</p>
 
-          <p>They were not touching, but it seemed to him that he could feel Julia's
+        <p>They were not touching, but it seemed to him that he could feel Julia's
           body shaking. Or perhaps it was merely the shaking of his own. He could
           just stop his teeth from chattering, but his knees were beyond his control.
           There was a sound of trampling boots below, inside the house and outside.
@@ -7674,26 +7728,26 @@ include '../../src/header.php';
           clang, as though the washtub had been flung across the yard, and then a
           confusion of angry shouts which ended in a yell of pain.</p>
 
-          <p>'The house is surrounded,' said Winston.</p>
+        <p>'The house is surrounded,' said Winston.</p>
 
-          <p>'The house is surrounded,' said the voice.</p>
+        <p>'The house is surrounded,' said the voice.</p>
 
-          <p>He heard Julia snap her teeth together. 'I suppose we may as well say
+        <p>He heard Julia snap her teeth together. 'I suppose we may as well say
           good-bye,' she said.</p>
 
-          <p>'You may as well say good-bye,' said the voice. And then another quite
+        <p>'You may as well say good-bye,' said the voice. And then another quite
           different voice, a thin, cultivated voice which Winston had the impression
           of having heard before, struck in; 'And by the way, while we are on the
           subject, "Here comes a candle to light you to bed, here comes a chopper to
           chop off your head"!'</p>
 
-          <p>Something crashed on to the bed behind Winston's back. The head of a ladder
+        <p>Something crashed on to the bed behind Winston's back. The head of a ladder
           had been thrust through the window and had burst in the frame. Someone was
           climbing through the window. There was a stampede of boots up the stairs.
           The room was full of solid men in black uniforms, with iron-shod boots on
           their feet and truncheons in their hands.</p>
 
-          <p>Winston was not trembling any longer. Even his eyes he barely moved. One
+        <p>Winston was not trembling any longer. Even his eyes he barely moved. One
           thing alone mattered; to keep still, to keep still and not give them an
           excuse to hit you! A man with a smooth prize-fighter's jowl in which the
           mouth was only a slit paused opposite him balancing his truncheon
@@ -7704,7 +7758,7 @@ include '../../src/header.php';
           then passed on. There was another crash. Someone had picked up the glass
           paperweight from the table and smashed it to pieces on the hearth-stone.</p>
 
-          <p>The fragment of coral, a tiny crinkle of pink like a sugar rosebud from
+        <p>The fragment of coral, a tiny crinkle of pink like a sugar rosebud from
           a cake, rolled across the mat. How small, thought Winston, how small it
           always was! There was a gasp and a thump behind him, and he received a
           violent kick on the ankle which nearly flung him off his balance. One of
@@ -7722,7 +7776,7 @@ include '../../src/header.php';
           the eyes shut, and still with a smear of rouge on either cheek; and that
           was the last he saw of her.</p>
 
-          <p>He stood dead still. No one had hit him yet. Thoughts which came of their
+        <p>He stood dead still. No one had hit him yet. Thoughts which came of their
           own accord but seemed totally uninteresting began to flit through his
           mind. He wondered whether they had got Mr Charrington. He wondered what
           they had done to the woman in the yard. He noticed that he badly wanted
@@ -7735,14 +7789,14 @@ include '../../src/header.php';
           on the following morning. But he did not pursue the thought further.
           It was not interesting.</p>
 
-          <p>There was another, lighter step in the passage. Mr Charrington came into
+        <p>There was another, lighter step in the passage. Mr Charrington came into
           the room. The demeanour of the black-uniformed men suddenly became more
           subdued. Something had also changed in Mr Charrington's appearance. His
           eye fell on the fragments of the glass paperweight.</p>
 
-          <p>'Pick up those pieces,' he said sharply.</p>
+        <p>'Pick up those pieces,' he said sharply.</p>
 
-          <p>A man stooped to obey. The cockney accent had disappeared; Winston suddenly
+        <p>A man stooped to obey. The cockney accent had disappeared; Winston suddenly
           realized whose voice it was that he had heard a few moments ago on the
           telescreen. Mr Charrington was still wearing his old velvet jacket, but
           his hair, which had been almost white, had turned black. Also he was not
@@ -7777,14 +7831,14 @@ include '../../src/header.php';
           door and, at the end opposite the door, a lavatory pan with no wooden
           seat. There were four telescreens, one in each wall.
 
-          <p>There was a dull aching in his belly. It had been there ever since they
+        <p>There was a dull aching in his belly. It had been there ever since they
           had bundled him into the closed van and driven him away. But he was also
           hungry, with a gnawing, unwholesome kind of hunger. It might be twenty-four
           hours since he had eaten, it might be thirty-six. He still did not know,
           probably never would know, whether it had been morning or evening when
           they arrested him. Since he was arrested he had not been fed.</p>
 
-          <p>He sat as still as he could on the narrow bench, with his hands crossed
+        <p>He sat as still as he could on the narrow bench, with his hands crossed
           on his knee. He had already learned to sit still. If you made unexpected
           movements they yelled at you from the telescreen. But the craving for food
           was growing upon him. What he longed for above all was a piece of bread.
@@ -7794,10 +7848,10 @@ include '../../src/header.php';
           crust there. In the end the temptation to find out overcame his fear; he
           slipped a hand into his pocket.</p>
 
-          <p>'Smith!' yelled a voice from the telescreen. '6079 Smith W.! Hands out of
+        <p>'Smith!' yelled a voice from the telescreen. '6079 Smith W.! Hands out of
           pockets in the cells!'</p>
 
-          <p>He sat still again, his hands crossed on his knee. Before being brought
+        <p>He sat still again, his hands crossed on his knee. Before being brought
           here he had been taken to another place which must have been an ordinary
           prison or a temporary lock-up used by the patrols. He did not know how
           long he had been there; some hours at any rate; with no clocks and no
@@ -7827,7 +7881,7 @@ include '../../src/header.php';
           criminals, especially the gangsters and the murderers, who formed a sort
           of aristocracy. All the dirty jobs were done by the politicals.</p>
 
-          <p>There was a constant come-and-go of prisoners of every description:
+        <p>There was a constant come-and-go of prisoners of every description:
           drug-peddlers, thieves, bandits, black-marketeers, drunks, prostitutes.
           Some of the drunks were so violent that the other prisoners had to combine
           to suppress them. An enormous wreck of a woman, aged about sixty, with
@@ -7840,31 +7894,31 @@ include '../../src/header.php';
           noticing that she was sitting on something uneven, she slid off Winston's
           knees on to the bench.</p>
 
-          <p>'Beg pardon, dearie,' she said. 'I wouldn't 'a sat on you, only the buggers
+        <p>'Beg pardon, dearie,' she said. 'I wouldn't 'a sat on you, only the buggers
           put me there. They dono 'ow to treat a lady, do they?' She paused, patted
           her breast, and belched. 'Pardon,' she said, 'I ain't meself, quite.'</p>
 
-          <p>She leant forward and vomited copiously on the floor.</p>
+        <p>She leant forward and vomited copiously on the floor.</p>
 
-          <p>'Thass better,' she said, leaning back with closed eyes. 'Never keep it
+        <p>'Thass better,' she said, leaning back with closed eyes. 'Never keep it
           down, thass what I say. Get it up while it's fresh on your stomach, like.'</p>
 
-          <p>She revived, turned to have another look at Winston and seemed immediately
+        <p>She revived, turned to have another look at Winston and seemed immediately
           to take a fancy to him. She put a vast arm round his shoulder and drew him
           towards her, breathing beer and vomit into his face.</p>
 
-          <p>'Wass your name, dearie?' she said.</p>
+        <p>'Wass your name, dearie?' she said.</p>
 
-          <p>'Smith,' said Winston.</p>
+        <p>'Smith,' said Winston.</p>
 
-          <p>'Smith?' said the woman. 'Thass funny. My name's Smith too. Why,' she
+        <p>'Smith?' said the woman. 'Thass funny. My name's Smith too. Why,' she
           added sentimentally, 'I might be your mother!'</p>
 
-          <p>She might, thought Winston, be his mother. She was about the right age and
+        <p>She might, thought Winston, be his mother. She was about the right age and
           physique, and it was probable that people changed somewhat after twenty
           years in a forced-labour camp.</p>
 
-          <p>No one else had spoken to him. To a surprising extent the ordinary
+        <p>No one else had spoken to him. To a surprising extent the ordinary
           criminals ignored the Party prisoners. 'The polITS,' they called them,
           with a sort of uninterested contempt. The Party prisoners seemed terrified
           of speaking to anybody, and above all of speaking to one another. Only
@@ -7873,7 +7927,7 @@ include '../../src/header.php';
           words; and in particular a reference to something called 'room one-oh-one',
           which he did not understand.</p>
 
-          <p>It might be two or three hours ago that they had brought him here. The
+        <p>It might be two or three hours ago that they had brought him here. The
           dull pain in his belly never went away, but sometimes it grew better and
           sometimes worse, and his thoughts expanded or contracted accordingly. When
           it grew worse he thought only of the pain itself, and of his desire for
@@ -7897,7 +7951,7 @@ include '../../src/header.php';
           from moment to moment, accepting another ten minutes' life even with the
           certainty that there was torture at the end of it.</p>
 
-          <p>Sometimes he tried to calculate the number of porcelain bricks in the
+        <p>Sometimes he tried to calculate the number of porcelain bricks in the
           walls of the cell. It should have been easy, but he always lost count at
           some point or another. More often he wondered where he was, and what time
           of day it was. At one moment he felt certain that it was broad daylight
@@ -7910,14 +7964,14 @@ include '../../src/header.php';
           mentally from place to place, and tried to determine by the feeling of his
           body whether he was perched high in the air or buried deep underground.</p>
 
-          <p>There was a sound of marching boots outside. The steel door opened with
+        <p>There was a sound of marching boots outside. The steel door opened with
           a clang. A young officer, a trim black-uniformed figure who seemed to
           glitter all over with polished leather, and whose pale, straight-featured
           face was like a wax mask, stepped smartly through the doorway. He motioned
           to the guards outside to bring in the prisoner they were leading. The
           poet Ampleforth shambled into the cell. The door clanged shut again.</p>
 
-          <p>Ampleforth made one or two uncertain movements from side to side, as
+        <p>Ampleforth made one or two uncertain movements from side to side, as
           though having some idea that there was another door to go out of, and then
           began to wander up and down the cell. He had not yet noticed Winston's
           presence. His troubled eyes were gazing at the wall about a metre above
@@ -7927,30 +7981,30 @@ include '../../src/header.php';
           him an air of ruffianism that went oddly with his large weak frame and
           nervous movements.</p>
 
-          <p>Winston roused himself a little from his lethargy. He must speak
+        <p>Winston roused himself a little from his lethargy. He must speak
           to Ampleforth, and risk the yell from the telescreen. It was even
           conceivable that Ampleforth was the bearer of the razor blade.</p>
 
-          <p>'Ampleforth,' he said.</p>
+        <p>'Ampleforth,' he said.</p>
 
-          <p>There was no yell from the telescreen. Ampleforth paused, mildly startled.
+        <p>There was no yell from the telescreen. Ampleforth paused, mildly startled.
           His eyes focused themselves slowly on Winston.</p>
 
-          <p>'Ah, Smith!' he said. 'You too!'</p>
+        <p>'Ah, Smith!' he said. 'You too!'</p>
 
-          <p>'What are you in for?'</p>
+        <p>'What are you in for?'</p>
 
-          <p>'To tell you the truth--' He sat down awkwardly on the bench opposite
+        <p>'To tell you the truth--' He sat down awkwardly on the bench opposite
           Winston. 'There is only one offence, is there not?' he said.</p>
 
-          <p>'And have you committed it?'</p>
+        <p>'And have you committed it?'</p>
 
-          <p>'Apparently I have.'</p>
+        <p>'Apparently I have.'</p>
 
-          <p>He put a hand to his forehead and pressed his temples for a moment, as
+        <p>He put a hand to his forehead and pressed his temples for a moment, as
           though trying to remember something.</p>
 
-          <p>'These things happen,' he began vaguely. 'I have been able to recall one
+        <p>'These things happen,' he began vaguely. 'I have been able to recall one
           instance--a possible instance. It was an indiscretion, undoubtedly. We
           were producing a definitive edition of the poems of Kipling. I allowed the
           word "God" to remain at the end of a line. I could not help it!' he added
@@ -7959,27 +8013,27 @@ include '../../src/header.php';
           twelve rhymes to "rod" in the entire language? For days I had racked my
           brains. There WAS no other rhyme.'</p>
 
-          <p>The expression on his face changed. The annoyance passed out of it and for
+        <p>The expression on his face changed. The annoyance passed out of it and for
           a moment he looked almost pleased. A sort of intellectual warmth, the joy
           of the pedant who has found out some useless fact, shone through the dirt
           and scrubby hair.</p>
 
-          <p>'Has it ever occurred to you,' he said, 'that the whole history of English
+        <p>'Has it ever occurred to you,' he said, 'that the whole history of English
           poetry has been determined by the fact that the English language lacks
           rhymes?'</p>
 
-          <p>No, that particular thought had never occurred to Winston. Nor, in the
+        <p>No, that particular thought had never occurred to Winston. Nor, in the
           circumstances, did it strike him as very important or interesting.</p>
 
-          <p>'Do you know what time of day it is?' he said.</p>
+        <p>'Do you know what time of day it is?' he said.</p>
 
-          <p>Ampleforth looked startled again. 'I had hardly thought about it. They
+        <p>Ampleforth looked startled again. 'I had hardly thought about it. They
           arrested me--it could be two days ago--perhaps three.' His eyes flitted
           round the walls, as though he half expected to find a window somewhere.
           'There is no difference between night and day in this place. I do not see
           how one can calculate the time.'</p>
 
-          <p>They talked desultorily for some minutes, then, without apparent reason,
+        <p>They talked desultorily for some minutes, then, without apparent reason,
           a yell from the telescreen bade them be silent. Winston sat quietly, his
           hands crossed. Ampleforth, too large to sit in comfort on the narrow
           bench, fidgeted from side to side, clasping his lank hands first round one
@@ -7989,15 +8043,15 @@ include '../../src/header.php';
           very soon, perhaps in five minutes, perhaps now, the tramp of boots would
           mean that his own turn had come.</p>
 
-          <p>The door opened. The cold-faced young officer stepped into the cell. With
+        <p>The door opened. The cold-faced young officer stepped into the cell. With
           a brief movement of the hand he indicated Ampleforth.</p>
 
-          <p>'Room 101,' he said.</p>
+        <p>'Room 101,' he said.</p>
 
-          <p>Ampleforth marched clumsily out between the guards, his face vaguely
+        <p>Ampleforth marched clumsily out between the guards, his face vaguely
           perturbed, but uncomprehending.</p>
 
-          <p>What seemed like a long time passed. The pain in Winston's belly had
+        <p>What seemed like a long time passed. The pain in Winston's belly had
           revived. His mind sagged round and round on the same trick, like a ball
           falling again and again into the same series of slots. He had only six
           thoughts. The pain in his belly; a piece of bread; the blood and the
@@ -8006,20 +8060,20 @@ include '../../src/header.php';
           of air that it created brought in a powerful smell of cold sweat. Parsons
           walked into the cell. He was wearing khaki shorts and a sports-shirt.</p>
 
-          <p>This time Winston was startled into self-forgetfulness.</p>
+        <p>This time Winston was startled into self-forgetfulness.</p>
 
-          <p>'YOU here!' he said.</p>
+        <p>'YOU here!' he said.</p>
 
-          <p>Parsons gave Winston a glance in which there was neither interest nor
+        <p>Parsons gave Winston a glance in which there was neither interest nor
           surprise, but only misery. He began walking jerkily up and down, evidently
           unable to keep still. Each time he straightened his pudgy knees it was
           apparent that they were trembling. His eyes had a wide-open, staring look,
           as though he could not prevent himself from gazing at something in the
           middle distance.</p>
 
-          <p>'What are you in for?' said Winston.</p>
+        <p>'What are you in for?' said Winston.</p>
 
-          <p>'Thoughtcrime!' said Parsons, almost blubbering. The tone of his voice
+        <p>'Thoughtcrime!' said Parsons, almost blubbering. The tone of his voice
           implied at once a complete admission of his guilt and a sort of incredulous
           horror that such a word could be applied to himself. He paused opposite
           Winston and began eagerly appealing to him: 'You don't think they'll shoot
@@ -8032,9 +8086,9 @@ include '../../src/header.php';
           could make himself pretty useful in a labour-camp. They wouldn't shoot me
           for going off the rails just once?'</p>
 
-          <p>'Are you guilty?' said Winston.</p>
+        <p>'Are you guilty?' said Winston.</p>
 
-          <p>'Of course I'm guilty!' cried Parsons with a servile glance at the
+        <p>'Of course I'm guilty!' cried Parsons with a servile glance at the
           telescreen. 'You don't think the Party would arrest an innocent man,
           do you?' His frog-like face grew calmer, and even took on a slightly
           sanctimonious expression. 'Thoughtcrime is a dreadful thing, old man,'
@@ -8044,40 +8098,40 @@ include '../../src/header.php';
           I had any bad stuff in my mind at all. And then I started talking in my
           sleep. Do you know what they heard me saying?'</p>
 
-          <p>He sank his voice, like someone who is obliged for medical reasons to
+        <p>He sank his voice, like someone who is obliged for medical reasons to
           utter an obscenity.</p>
 
-          <p>'"Down with Big Brother!" Yes, I said that! Said it over and over again,
+        <p>'"Down with Big Brother!" Yes, I said that! Said it over and over again,
           it seems. Between you and me, old man, I'm glad they got me before it went
           any further. Do you know what I'm going to say to them when I go up before
           the tribunal? "Thank you," I'm going to say, "thank you for saving me
           before it was too late."'</p>
 
-          <p>'Who denounced you?' said Winston.</p>
+        <p>'Who denounced you?' said Winston.</p>
 
-          <p>'It was my little daughter,' said Parsons with a sort of doleful pride.
+        <p>'It was my little daughter,' said Parsons with a sort of doleful pride.
           'She listened at the keyhole. Heard what I was saying, and nipped off to
           the patrols the very next day. Pretty smart for a nipper of seven, eh?
           I don't bear her any grudge for it. In fact I'm proud of her. It shows I
           brought her up in the right spirit, anyway.'</p>
 
-          <p>He made a few more jerky movements up and down, several times, casting a
+        <p>He made a few more jerky movements up and down, several times, casting a
           longing glance at the lavatory pan. Then he suddenly ripped down his
           shorts.</p>
 
-          <p>'Excuse me, old man,' he said. 'I can't help it. It's the waiting.'</p>
+        <p>'Excuse me, old man,' he said. 'I can't help it. It's the waiting.'</p>
 
-          <p>He plumped his large posterior into the lavatory pan. Winston covered his
+        <p>He plumped his large posterior into the lavatory pan. Winston covered his
           face with his hands.</p>
 
-          <p>'Smith!' yelled the voice from the telescreen. '6079 Smith W.! Uncover your
+        <p>'Smith!' yelled the voice from the telescreen. '6079 Smith W.! Uncover your
           face. No faces covered in the cells.'</p>
 
-          <p>Winston uncovered his face. Parsons used the lavatory, loudly and
+        <p>Winston uncovered his face. Parsons used the lavatory, loudly and
           abundantly. It then turned out that the plug was defective and the cell
           stank abominably for hours afterwards.</p>
 
-          <p>Parsons was removed. More prisoners came and went, mysteriously. One, a
+        <p>Parsons was removed. More prisoners came and went, mysteriously. One, a
           woman, was consigned to 'Room 101', and, Winston noticed, seemed to shrivel
           and turn a different colour when she heard the words. A time came when, if
           it had been morning when he was brought here, it would be afternoon; or if
@@ -8089,7 +8143,7 @@ include '../../src/header.php';
           tucked away there. His pale-grey eyes flitted timorously from face to face
           and turned quickly away again when he caught anyone's eye.</p>
 
-          <p>The door opened, and another prisoner was brought in whose appearance sent
+        <p>The door opened, and another prisoner was brought in whose appearance sent
           a momentary chill through Winston. He was a commonplace, mean-looking man
           who might have been an engineer or technician of some kind. But what was
           startling was the emaciation of his face. It was like a skull. Because of
@@ -8097,7 +8151,7 @@ include '../../src/header.php';
           eyes seemed filled with a murderous, unappeasable hatred of somebody or
           something.</p>
 
-          <p>The man sat down on the bench at a little distance from Winston. Winston
+        <p>The man sat down on the bench at a little distance from Winston. Winston
           did not look at him again, but the tormented, skull-like face was as
           vivid in his mind as though it had been straight in front of his eyes.
           Suddenly he realized what was the matter. The man was dying of starvation.
@@ -8110,20 +8164,20 @@ include '../../src/header.php';
           and, with an abashed air, held out a grimy piece of bread to the
           skull-faced man.</p>
 
-          <p>There was a furious, deafening roar from the telescreen. The chinless man
+        <p>There was a furious, deafening roar from the telescreen. The chinless man
           jumped in his tracks. The skull-faced man had quickly thrust his hands
           behind his back, as though demonstrating to all the world that he refused
           the gift.</p>
 
-          <p>'Bumstead!' roared the voice. '2713 Bumstead J.! Let fall that piece of
+        <p>'Bumstead!' roared the voice. '2713 Bumstead J.! Let fall that piece of
           bread!'</p>
 
-          <p>The chinless man dropped the piece of bread on the floor.</p>
+        <p>The chinless man dropped the piece of bread on the floor.</p>
 
-          <p>'Remain standing where you are,' said the voice. 'Face the door. Make no
+        <p>'Remain standing where you are,' said the voice. 'Face the door. Make no
           movement.'</p>
 
-          <p>The chinless man obeyed. His large pouchy cheeks were quivering
+        <p>The chinless man obeyed. His large pouchy cheeks were quivering
           uncontrollably. The door clanged open. As the young officer entered and
           stepped aside, there emerged from behind him a short stumpy guard with
           enormous arms and shoulders. He took his stand opposite the chinless man,
@@ -8137,36 +8191,36 @@ include '../../src/header.php';
           unsteadily on hands and knees. Amid a stream of blood and saliva, the two
           halves of a dental plate fell out of his mouth.</p>
 
-          <p>The prisoners sat very still, their hands crossed on their knees. The
+        <p>The prisoners sat very still, their hands crossed on their knees. The
           chinless man climbed back into his place. Down one side of his face the
           flesh was darkening. His mouth had swollen into a shapeless cherry-coloured
           mass with a black hole in the middle of it.</p>
 
-          <p>From time to time a little blood dripped on to the breast of his overalls.
+        <p>From time to time a little blood dripped on to the breast of his overalls.
           His grey eyes still flitted from face to face, more guiltily than ever,
           as though he were trying to discover how much the others despised him for
           his humiliation.</p>
 
-          <p>The door opened. With a small gesture the officer indicated the
+        <p>The door opened. With a small gesture the officer indicated the
           skull-faced man.</p>
 
-          <p>'Room 101,' he said.</p>
+        <p>'Room 101,' he said.</p>
 
-          <p>There was a gasp and a flurry at Winston's side. The man had actually
+        <p>There was a gasp and a flurry at Winston's side. The man had actually
           flung himself on his knees on the floor, with his hand clasped together.</p>
 
-          <p>'Comrade! Officer!' he cried. 'You don't have to take me to that place!
+        <p>'Comrade! Officer!' he cried. 'You don't have to take me to that place!
           Haven't I told you everything already? What else is it you want to know?
           There's nothing I wouldn't confess, nothing! Just tell me what it is and
           I'll confess straight off. Write it down and I'll sign it--anything!
           Not room 101!'</p>
 
-          <p>'Room 101,' said the officer.</p>
+        <p>'Room 101,' said the officer.</p>
 
-          <p>The man's face, already very pale, turned a colour Winston would not have
+        <p>The man's face, already very pale, turned a colour Winston would not have
           believed possible. It was definitely, unmistakably, a shade of green.</p>
 
-          <p>'Do anything to me!' he yelled. 'You've been starving me for weeks. Finish
+        <p>'Do anything to me!' he yelled. 'You've been starving me for weeks. Finish
           it off and let me die. Shoot me. Hang me. Sentence me to twenty-five
           years. Is there somebody else you want me to give away? Just say who it is
           and I'll tell you anything you want. I don't care who it is or what you do
@@ -8174,20 +8228,20 @@ include '../../src/header.php';
           years old. You can take the whole lot of them and cut their throats in
           front of my eyes, and I'll stand by and watch it. But not Room 101!'</p>
 
-          <p>'Room 101,' said the officer.</p>
+        <p>'Room 101,' said the officer.</p>
 
-          <p>The man looked frantically round at the other prisoners, as though with
+        <p>The man looked frantically round at the other prisoners, as though with
           some idea that he could put another victim in his own place. His eyes
           settled on the smashed face of the chinless man. He flung out a lean arm.</p>
 
-          <p>'That's the one you ought to be taking, not me!' he shouted. 'You didn't
+        <p>'That's the one you ought to be taking, not me!' he shouted. 'You didn't
           hear what he was saying after they bashed his face. Give me a chance and
           I'll tell you every word of it. HE'S the one that's against the Party, not
           me.' The guards stepped forward. The man's voice rose to a shriek. 'You
           didn't hear him!' he repeated. 'Something went wrong with the telescreen.
           HE'S the one you want. Take him, not me!'</p>
 
-          <p>The two sturdy guards had stooped to take him by the arms. But just at
+        <p>The two sturdy guards had stooped to take him by the arms. But just at
           this moment he flung himself across the floor of the cell and grabbed one
           of the iron legs that supported the bench. He had set up a wordless
           howling, like an animal. The guards took hold of him to wrench him loose,
@@ -8198,12 +8252,12 @@ include '../../src/header.php';
           different kind of cry. A kick from a guard's boot had broken the fingers
           of one of his hands. They dragged him to his feet.</p>
 
-          <p>'Room 101,' said the officer.</p>
+        <p>'Room 101,' said the officer.</p>
 
-          <p>The man was led out, walking unsteadily, with head sunken, nursing his
+        <p>The man was led out, walking unsteadily, with head sunken, nursing his
           crushed hand, all the fight had gone out of him.</p>
 
-          <p>A long time passed. If it had been midnight when the skull-faced man was
+        <p>A long time passed. If it had been midnight when the skull-faced man was
           taken away, it was morning: if morning, it was afternoon. Winston was
           alone, and had been alone for hours. The pain of sitting on the narrow
           bench was such that often he got up and walked about, unreproved by the
@@ -8227,27 +8281,27 @@ include '../../src/header.php';
           were actually suffering it, to wish for any reason that your own pain
           should increase? But that question was not answerable yet.</p>
 
-          <p>The boots were approaching again. The door opened. O'Brien came in.</p>
+        <p>The boots were approaching again. The door opened. O'Brien came in.</p>
 
-          <p>Winston started to his feet. The shock of the sight had driven all
+        <p>Winston started to his feet. The shock of the sight had driven all
           caution out of him. For the first time in many years he forgot the
           presence of the telescreen.</p>
 
-          <p>'They've got you too!' he cried.</p>
+        <p>'They've got you too!' he cried.</p>
 
-          <p>'They got me a long time ago,' said O'Brien with a mild, almost regretful
+        <p>'They got me a long time ago,' said O'Brien with a mild, almost regretful
           irony. He stepped aside. From behind him there emerged a broad-chested
           guard with a long black truncheon in his hand.</p>
 
-          <p>'You know this, Winston,' said O'Brien. 'Don't deceive yourself. You did
+        <p>'You know this, Winston,' said O'Brien. 'Don't deceive yourself. You did
           know it--you have always known it.'</p>
 
-          <p>Yes, he saw now, he had always known it. But there was no time to think of
+        <p>Yes, he saw now, he had always known it. But there was no time to think of
           that. All he had eyes for was the truncheon in the guard's hand. It might
           fall anywhere; on the crown, on the tip of the ear, on the upper arm, on
           the elbow----</p>
 
-          <p>The elbow! He had slumped to his knees, almost paralysed, clasping the
+        <p>The elbow! He had slumped to his knees, almost paralysed, clasping the
           stricken elbow with his other hand. Everything had exploded into yellow
           light. Inconceivable, inconceivable that one blow could cause such pain!
           The light cleared and he could see the other two looking down at him. The
@@ -8273,7 +8327,7 @@ include '../../src/header.php';
           the other side of him stood a man in a white coat, holding a hypodermic
           syringe.
 
-          <p>Even after his eyes were open he took in his surroundings only gradually.
+        <p>Even after his eyes were open he took in his surroundings only gradually.
           He had the impression of swimming up into this room from some quite
           different world, a sort of underwater world far beneath it. How long he
           had been down there he did not know. Since the moment when they arrested
@@ -8283,10 +8337,12 @@ include '../../src/header.php';
           after a blank interval. But whether the intervals were of days or weeks
           or only seconds, there was no way of knowing.</p>
 
-          <p>With that first blow on the elbow the nightmare had started. Later he was
+        <p>With that first blow on the elbow the nightmare had started. Later he was
           to realize that all that then happened was merely a preliminary, a routine
           interrogation to which nearly all prisoners were subjected. There was a
-          long range of crimes--espionage, <span class="tooltip"><strong>sabotage</strong><span class="tooltiptext">Deliberately destroy, damage, or obstruct</span></span>, and the like--to which everyone
+          long range of crimes--espionage, <span class="tooltip"><strong>sabotage</strong><span
+              class="tooltiptext">Deliberately destroy, damage, or obstruct</span></span>, and the like--to which
+          everyone
           had to confess as a matter of course. The confession was a formality,
           though the torture was real. How many times he had been beaten, how long
           the beatings had continued, he could not remember. Always there were five
@@ -8321,7 +8377,7 @@ include '../../src/header.php';
           him in search for broken bones, and shooting needles into his arm to make
           him sleep.</p>
 
-          <p>The beatings grew less frequent, and became mainly a threat, a horror
+        <p>The beatings grew less frequent, and became mainly a threat, a horror
           to which he could be sent back at any moment when his answers were
           unsatisfactory. His questioners now were not ruffians in black uniforms
           but Party intellectuals, little rotund men with quick movements and
@@ -8350,7 +8406,9 @@ include '../../src/header.php';
           what they wanted him to confess, and then confess it quickly, before the
           bullying started anew. He confessed to the assassination of eminent Party
           members, the distribution of seditious pamphlets, embezzlement of public
-          funds, sale of military secrets, <span class="tooltip"><strong>sabotage</strong><span class="tooltiptext">Deliberately destroy, damage, or obstruct</span></span> of every kind. He confessed that
+          funds, sale of military secrets, <span class="tooltip"><strong>sabotage</strong><span
+              class="tooltiptext">Deliberately destroy, damage, or obstruct</span></span> of every kind. He confessed
+          that
           he had been a spy in the pay of the Eastasian government as far back as
           1968. He confessed that he was a religious believer, an admirer of
           capitalism, and a sexual pervert. He confessed that he had murdered his
@@ -8362,26 +8420,26 @@ include '../../src/header.php';
           true. It was true that he had been the enemy of the Party, and in the eyes
           of the Party there was no distinction between the thought and the deed.</p>
 
-          <p>There were also memories of another kind. They stood out in his mind
+        <p>There were also memories of another kind. They stood out in his mind
           disconnectedly, like pictures with blackness all round them.</p>
 
-          <p>He was in a cell which might have been either dark or light, because he
+        <p>He was in a cell which might have been either dark or light, because he
           could see nothing except a pair of eyes. Near at hand some kind of
           instrument was ticking slowly and regularly. The eyes grew larger and more
           luminous. Suddenly he floated out of his seat, dived into the eyes, and
           was swallowed up.</p>
 
-          <p>He was strapped into a chair surrounded by dials, under dazzling lights.
+        <p>He was strapped into a chair surrounded by dials, under dazzling lights.
           A man in a white coat was reading the dials. There was a tramp of heavy
           boots outside. The door clanged open. The waxed-faced officer marched in,
           followed by two guards.</p>
 
-          <p>'Room 101,' said the officer.</p>
+        <p>'Room 101,' said the officer.</p>
 
-          <p>The man in the white coat did not turn round. He did not look at Winston
+        <p>The man in the white coat did not turn round. He did not look at Winston
           either; he was looking only at the dials.</p>
 
-          <p>He was rolling down a mighty corridor, a kilometre wide, full of glorious,
+        <p>He was rolling down a mighty corridor, a kilometre wide, full of glorious,
           golden light, roaring with laughter and shouting out confessions at the
           top of his voice. He was confessing everything, even the things he had
           succeeded in holding back under the torture. He was relating the entire
@@ -8393,7 +8451,7 @@ include '../../src/header.php';
           there was no more pain, the last detail of his life was laid bare,
           understood, forgiven.</p>
 
-          <p>He was starting up from the plank bed in the half-certainty that he had
+        <p>He was starting up from the plank bed in the half-certainty that he had
           heard O'Brien's voice. All through his interrogation, although he had
           never seen him, he had had the feeling that O'Brien was at his elbow, just
           out of sight. It was O'Brien who was directing everything. It was he who
@@ -8411,7 +8469,7 @@ include '../../src/header.php';
           that had said to him, 'We shall meet in the place where there is no
           darkness,' in that other dream, seven years ago.</p>
 
-          <p>He did not remember any ending to his interrogation. There was a period of
+        <p>He did not remember any ending to his interrogation. There was a period of
           blackness and then the cell, or room, in which he now was had gradually
           materialized round him. He was almost flat on his back, and unable to move.
           His body was held down at every essential point. Even the back of his head
@@ -8422,11 +8480,11 @@ include '../../src/header.php';
           his hand there was a dial with a lever on top and figures running round
           the face.</p>
 
-          <p>'I told you,' said O'Brien, 'that if we met again it would be here.'</p>
+        <p>'I told you,' said O'Brien, 'that if we met again it would be here.'</p>
 
-          <p>'Yes,' said Winston.</p>
+        <p>'Yes,' said Winston.</p>
 
-          <p>Without any warning except a slight movement of O'Brien's hand, a wave of
+        <p>Without any warning except a slight movement of O'Brien's hand, a wave of
           pain flooded his body. It was a frightening pain, because he could not see
           what was happening, and he had the feeling that some mortal injury was
           being done to him. He did not know whether the thing was really happening,
@@ -8436,16 +8494,16 @@ include '../../src/header.php';
           the fear that his backbone was about to snap. He set his teeth and
           breathed hard through his nose, trying to keep silent as long as possible.</p>
 
-          <p>'You are afraid,' said O'Brien, watching his face, 'that in another moment
+        <p>'You are afraid,' said O'Brien, watching his face, 'that in another moment
           something is going to break. Your especial fear is that it will be your
           backbone. You have a vivid mental picture of the vertebrae snapping apart
           and the spinal fluid dripping out of them. That is what you are thinking,
           is it not, Winston?'</p>
 
-          <p>Winston did not answer. O'Brien drew back the lever on the dial. The wave
+        <p>Winston did not answer. O'Brien drew back the lever on the dial. The wave
           of pain receded almost as quickly as it had come.</p>
 
-          <p>'That was forty,' said O'Brien. 'You can see that the numbers on this dial
+        <p>'That was forty,' said O'Brien. 'You can see that the numbers on this dial
           run up to a hundred. Will you please remember, throughout our conversation,
           that I have it in my power to inflict pain on you at any moment and to
           whatever degree I choose? If you tell me any lies, or attempt to
@@ -8453,14 +8511,14 @@ include '../../src/header.php';
           intelligence, you will cry out with pain, instantly. Do you understand
           that?'</p>
 
-          <p>'Yes,' said Winston.</p>
+        <p>'Yes,' said Winston.</p>
 
-          <p>O'Brien's manner became less severe. He resettled his spectacles
+        <p>O'Brien's manner became less severe. He resettled his spectacles
           thoughtfully, and took a pace or two up and down. When he spoke his voice
           was gentle and patient. He had the air of a doctor, a teacher, even a
           priest, anxious to explain and persuade rather than to punish.</p>
 
-          <p>'I am taking trouble with you, Winston,' he said, 'because you are worth
+        <p>'I am taking trouble with you, Winston,' he said, 'because you are worth
           trouble. You know perfectly well what is the matter with you. You have
           known it for years, though you have fought against the knowledge. You are
           mentally deranged. You suffer from a defective memory. You are unable to
@@ -8472,34 +8530,36 @@ include '../../src/header.php';
           a virtue. Now we will take an example. At this moment, which power is
           Oceania at war with?'</p>
 
-          <p>'When I was arrested, Oceania was at war with Eastasia.'</p>
+        <p>'When I was arrested, Oceania was at war with Eastasia.'</p>
 
-          <p>'With Eastasia. Good. And Oceania has always been at war with Eastasia,
+        <p>'With Eastasia. Good. And Oceania has always been at war with Eastasia,
           has it not?'</p>
 
-          <p>Winston drew in his breath. He opened his mouth to speak and then did not
+        <p>Winston drew in his breath. He opened his mouth to speak and then did not
           speak. He could not take his eyes away from the dial.</p>
 
-          <p>'The truth, please, Winston. YOUR truth. Tell me what you think you
+        <p>'The truth, please, Winston. YOUR truth. Tell me what you think you
           remember.'</p>
 
-          <p>'I remember that until only a week before I was arrested, we were not at
+        <p>'I remember that until only a week before I was arrested, we were not at
           war with Eastasia at all. We were in alliance with them. The war was
           against Eurasia. That had lasted for four years. Before that----'</p>
 
-          <p>O'Brien stopped him with a movement of the hand.</p>
+        <p>O'Brien stopped him with a movement of the hand.</p>
 
-          <p>'Another example,' he said. 'Some years ago you had a very serious delusion
+        <p>'Another example,' he said. 'Some years ago you had a very serious delusion
           indeed. You believed that three men, three one-time Party members named
           Jones, Aaronson, and Rutherford--men who were executed for treachery and
-          <span class="tooltip"><strong>sabotage</strong><span class="tooltiptext">Deliberately destroy, damage, or obstruct</span></span> after making the fullest possible confession--were not guilty of
+          <span class="tooltip"><strong>sabotage</strong><span class="tooltiptext">Deliberately destroy, damage, or
+              obstruct</span></span> after making the fullest possible confession--were not guilty of
           the crimes they were charged with. You believed that you had seen
           unmistakable documentary evidence proving that their confessions were
           false. There was a certain photograph about which you had a hallucination.
           You believed that you had actually held it in your hands. It was a
-          photograph something like this.'</p>
+          photograph something like this.'
+        </p>
 
-          <p>An oblong slip of newspaper had appeared between O'Brien's fingers. For
+        <p>An oblong slip of newspaper had appeared between O'Brien's fingers. For
           perhaps five seconds it was within the angle of Winston's vision. It was
           a photograph, and there was no question of its identity. It was THE
           photograph. It was another copy of the photograph of Jones, Aaronson, and
@@ -8512,24 +8572,24 @@ include '../../src/header.php';
           dial. All he wanted was to hold the photograph in his fingers again, or at
           least to see it.</p>
 
-          <p>'It exists!' he cried.</p>
+        <p>'It exists!' he cried.</p>
 
-          <p>'No,' said O'Brien.</p>
+        <p>'No,' said O'Brien.</p>
 
-          <p>He stepped across the room. There was a memory hole in the opposite wall.
+        <p>He stepped across the room. There was a memory hole in the opposite wall.
           O'Brien lifted the grating. Unseen, the frail slip of paper was whirling
           away on the current of warm air; it was vanishing in a flash of flame.
           O'Brien turned away from the wall.</p>
 
-          <p>'Ashes,' he said. 'Not even identifiable ashes. Dust. It does not exist.
+        <p>'Ashes,' he said. 'Not even identifiable ashes. Dust. It does not exist.
           It never existed.'</p>
 
-          <p>'But it did exist! It does exist! It exists in memory. I remember it.
+        <p>'But it did exist! It does exist! It exists in memory. I remember it.
           You remember it.'</p>
 
-          <p>'I do not remember it,' said O'Brien.</p>
+        <p>'I do not remember it,' said O'Brien.</p>
 
-          <p>Winston's heart sank. That was doublethink. He had a feeling of deadly
+        <p>Winston's heart sank. That was doublethink. He had a feeling of deadly
           helplessness. If he could have been certain that O'Brien was lying, it
           would not have seemed to matter. But it was perfectly possible that O'Brien
           had really forgotten the photograph. And if so, then already he would have
@@ -8538,50 +8598,50 @@ include '../../src/header.php';
           that lunatic dislocation in the mind could really happen: that was the
           thought that defeated him.</p>
 
-          <p>O'Brien was looking down at him speculatively. More than ever he had the
+        <p>O'Brien was looking down at him speculatively. More than ever he had the
           air of a teacher taking pains with a wayward but promising child.</p>
 
-          <p>'There is a Party slogan dealing with the control of the past,' he said.
+        <p>'There is a Party slogan dealing with the control of the past,' he said.
           'Repeat it, if you please.'</p>
 
-          <p>'"Who controls the past controls the future: who controls the present
+        <p>'"Who controls the past controls the future: who controls the present
           controls the past,"' repeated Winston obediently.</p>
 
-          <p>'"Who controls the present controls the past,"' said O'Brien, nodding his
+        <p>'"Who controls the present controls the past,"' said O'Brien, nodding his
           head with slow approval. 'Is it your opinion, Winston, that the past has
           real existence?'</p>
 
-          <p>Again the feeling of helplessness descended upon Winston. His eyes flitted
+        <p>Again the feeling of helplessness descended upon Winston. His eyes flitted
           towards the dial. He not only did not know whether 'yes' or 'no' was the
           answer that would save him from pain; he did not even know which answer he
           believed to be the true one.</p>
 
-          <p>O'Brien smiled faintly. 'You are no metaphysician, Winston,' he said.
+        <p>O'Brien smiled faintly. 'You are no metaphysician, Winston,' he said.
           'Until this moment you had never considered what is meant by existence. I
           will put it more precisely. Does the past exist concretely, in space? Is
           there somewhere or other a place, a world of solid objects, where the past
           is still happening?'</p>
 
-          <p>'No.'</p>
+        <p>'No.'</p>
 
-          <p>'Then where does the past exist, if at all?'</p>
+        <p>'Then where does the past exist, if at all?'</p>
 
-          <p>'In records. It is written down.'</p>
+        <p>'In records. It is written down.'</p>
 
-          <p>'In records. And----?'</p>
+        <p>'In records. And----?'</p>
 
-          <p>'In the mind. In human memories.'</p>
+        <p>'In the mind. In human memories.'</p>
 
-          <p>'In memory. Very well, then. We, the Party, control all records, and we
+        <p>'In memory. Very well, then. We, the Party, control all records, and we
           control all memories. Then we control the past, do we not?'</p>
 
-          <p>'But how can you stop people remembering things?' cried Winston again
+        <p>'But how can you stop people remembering things?' cried Winston again
           momentarily forgetting the dial. 'It is involuntary. It is outside oneself.
           How can you control memory? You have not controlled mine!'</p>
 
-          <p>O'Brien's manner grew stern again. He laid his hand on the dial.</p>
+        <p>O'Brien's manner grew stern again. He laid his hand on the dial.</p>
 
-          <p>'On the contrary,' he said, 'YOU have not controlled it. That is what has
+        <p>'On the contrary,' he said, 'YOU have not controlled it. That is what has
           brought you here. You are here because you have failed in humility, in
           self-discipline. You would not make the act of submission which is the
           price of sanity. You preferred to be a lunatic, a minority of one. Only the
@@ -8598,61 +8658,61 @@ include '../../src/header.php';
           to relearn, Winston. It needs an act of self-destruction, an effort of the
           will. You must humble yourself before you can become sane.'</p>
 
-          <p>He paused for a few moments, as though to allow what he had been saying to
+        <p>He paused for a few moments, as though to allow what he had been saying to
           sink in.</p>
 
-          <p>'Do you remember,' he went on, 'writing in your diary, "Freedom is the
+        <p>'Do you remember,' he went on, 'writing in your diary, "Freedom is the
           freedom to say that two plus two make four"?'</p>
 
-          <p>'Yes,' said Winston.</p>
+        <p>'Yes,' said Winston.</p>
 
-          <p>O'Brien held up his left hand, its back towards Winston, with the thumb
+        <p>O'Brien held up his left hand, its back towards Winston, with the thumb
           hidden and the four fingers extended.</p>
 
-          <p>'How many fingers am I holding up, Winston?'</p>
+        <p>'How many fingers am I holding up, Winston?'</p>
 
-          <p>'Four.'</p>
+        <p>'Four.'</p>
 
-          <p>'And if the party says that it is not four but five--then how many?'</p>
+        <p>'And if the party says that it is not four but five--then how many?'</p>
 
-          <p>'Four.'</p>
+        <p>'Four.'</p>
 
-          <p>The word ended in a gasp of pain. The needle of the dial had shot up to
+        <p>The word ended in a gasp of pain. The needle of the dial had shot up to
           fifty-five. The sweat had sprung out all over Winston's body. The air tore
           into his lungs and issued again in deep groans which even by clenching his
           teeth he could not stop. O'Brien watched him, the four fingers still
           extended. He drew back the lever. This time the pain was only slightly
           eased.</p>
 
-          <p>'How many fingers, Winston?'</p>
+        <p>'How many fingers, Winston?'</p>
 
-          <p>'Four.'</p>
+        <p>'Four.'</p>
 
-          <p>The needle went up to sixty.</p>
+        <p>The needle went up to sixty.</p>
 
-          <p>'How many fingers, Winston?'</p>
+        <p>'How many fingers, Winston?'</p>
 
-          <p>'Four! Four! What else can I say? Four!'</p>
+        <p>'Four! Four! What else can I say? Four!'</p>
 
-          <p>The needle must have risen again, but he did not look at it. The heavy,
+        <p>The needle must have risen again, but he did not look at it. The heavy,
           stern face and the four fingers filled his vision. The fingers stood up
           before his eyes like pillars, enormous, blurry, and seeming to vibrate,
           but unmistakably four.</p>
 
-          <p>'How many fingers, Winston?'</p>
+        <p>'How many fingers, Winston?'</p>
 
-          <p>'Four! Stop it, stop it! How can you go on? Four! Four!'</p>
+        <p>'Four! Stop it, stop it! How can you go on? Four! Four!'</p>
 
-          <p>'How many fingers, Winston?'</p>
+        <p>'How many fingers, Winston?'</p>
 
-          <p>'Five! Five! Five!'</p>
+        <p>'Five! Five! Five!'</p>
 
-          <p>'No, Winston, that is no use. You are lying. You still think there are
+        <p>'No, Winston, that is no use. You are lying. You still think there are
           four. How many fingers, please?'</p>
 
-          <p>'Four! five! Four! Anything you like. Only stop it, stop the pain!'</p>
+        <p>'Four! five! Four! Anything you like. Only stop it, stop the pain!'</p>
 
-          <p>Abruptly he was sitting up with O'Brien's arm round his shoulders. He had
+        <p>Abruptly he was sitting up with O'Brien's arm round his shoulders. He had
           perhaps lost consciousness for a few seconds. The bonds that had held his
           body down were loosened. He felt very cold, he was shaking uncontrollably,
           his teeth were chattering, the tears were rolling down his cheeks. For a
@@ -8661,16 +8721,16 @@ include '../../src/header.php';
           that the pain was something that came from outside, from some other source,
           and that it was O'Brien who would save him from it.</p>
 
-          <p>'You are a slow learner, Winston,' said O'Brien gently.</p>
+        <p>'You are a slow learner, Winston,' said O'Brien gently.</p>
 
-          <p>'How can I help it?' he blubbered. 'How can I help seeing what is in front
+        <p>'How can I help it?' he blubbered. 'How can I help seeing what is in front
           of my eyes? Two and two are four.'</p>
 
-          <p>'Sometimes, Winston. Sometimes they are five. Sometimes they are three.
+        <p>'Sometimes, Winston. Sometimes they are five. Sometimes they are three.
           Sometimes they are all of them at once. You must try harder. It is not
           easy to become sane.'</p>
 
-          <p>He laid Winston down on the bed. The grip of his limbs tightened again,
+        <p>He laid Winston down on the bed. The grip of his limbs tightened again,
           but the pain had ebbed away and the trembling had stopped, leaving him
           merely weak and cold. O'Brien motioned with his head to the man in the
           white coat, who had stood immobile throughout the proceedings. The man in
@@ -8678,28 +8738,28 @@ include '../../src/header.php';
           pulse, laid an ear against his chest, tapped here and there, then he
           nodded to O'Brien.</p>
 
-          <p>'Again,' said O'Brien.</p>
+        <p>'Again,' said O'Brien.</p>
 
-          <p>The pain flowed into Winston's body. The needle must be at seventy,
+        <p>The pain flowed into Winston's body. The needle must be at seventy,
           seventy-five. He had shut his eyes this time. He knew that the fingers
           were still there, and still four. All that mattered was somehow to stay
           alive until the spasm was over. He had ceased to notice whether he was
           crying out or not. The pain lessened again. He opened his eyes. O'Brien
           had drawn back the lever.</p>
 
-          <p>'How many fingers, Winston?'</p>
+        <p>'How many fingers, Winston?'</p>
 
-          <p>'Four. I suppose there are four. I would see five if I could. I am trying
+        <p>'Four. I suppose there are four. I would see five if I could. I am trying
           to see five.'</p>
 
-          <p>'Which do you wish: to persuade me that you see five, or really to see
+        <p>'Which do you wish: to persuade me that you see five, or really to see
           them?'</p>
 
-          <p>'Really to see them.'</p>
+        <p>'Really to see them.'</p>
 
-          <p>'Again,' said O'Brien.</p>
+        <p>'Again,' said O'Brien.</p>
 
-          <p>Perhaps the needle was eighty--ninety. Winston could not intermittently
+        <p>Perhaps the needle was eighty--ninety. Winston could not intermittently
           remember why the pain was happening. Behind his screwed-up eyelids a
           forest of fingers seemed to be moving in a sort of dance, weaving in and
           out, disappearing behind one another and reappearing again. He was trying
@@ -8710,14 +8770,14 @@ include '../../src/header.php';
           Innumerable fingers, like moving trees, were still streaming past in
           either direction, crossing and recrossing. He shut his eyes again.</p>
 
-          <p>'How many fingers am I holding up, Winston?'</p>
+        <p>'How many fingers am I holding up, Winston?'</p>
 
-          <p>'I don't know. I don't know. You will kill me if you do that again. Four,
+        <p>'I don't know. I don't know. You will kill me if you do that again. Four,
           five, six--in all honesty I don't know.'</p>
 
-          <p>'Better,' said O'Brien.</p>
+        <p>'Better,' said O'Brien.</p>
 
-          <p>A needle slid into Winston's arm. Almost in the same instant a blissful,
+        <p>A needle slid into Winston's arm. Almost in the same instant a blissful,
           healing warmth spread all through his body. The pain was already
           half-forgotten. He opened his eyes and looked up gratefully at O'Brien.
           At sight of the heavy, lined face, so ugly and so intelligent, his heart
@@ -8735,23 +8795,23 @@ include '../../src/header.php';
           expression which suggested that the same thought might be in his own mind.
           When he spoke it was in an easy, conversational tone.</p>
 
-          <p>'Do you know where you are, Winston?' he said.</p>
+        <p>'Do you know where you are, Winston?' he said.</p>
 
-          <p>'I don't know. I can guess. In the Ministry of Love.'</p>
+        <p>'I don't know. I can guess. In the Ministry of Love.'</p>
 
-          <p>'Do you know how long you have been here?'</p>
+        <p>'Do you know how long you have been here?'</p>
 
-          <p>'I don't know. Days, weeks, months--I think it is months.'</p>
+        <p>'I don't know. Days, weeks, months--I think it is months.'</p>
 
-          <p>'And why do you imagine that we bring people to this place?'</p>
+        <p>'And why do you imagine that we bring people to this place?'</p>
 
-          <p>'To make them confess.'</p>
+        <p>'To make them confess.'</p>
 
-          <p>'No, that is not the reason. Try again.'</p>
+        <p>'No, that is not the reason. Try again.'</p>
 
-          <p>'To punish them.'</p>
+        <p>'To punish them.'</p>
 
-          <p>'No!' exclaimed O'Brien. His voice had changed extraordinarily, and his
+        <p>'No!' exclaimed O'Brien. His voice had changed extraordinarily, and his
           face had suddenly become both stern and animated. 'No! Not merely to
           extract your confession, not to punish you. Shall I tell you why we have
           brought you here? To cure you! To make you sane! Will you understand,
@@ -8761,7 +8821,7 @@ include '../../src/header.php';
           all we care about. We do not merely destroy our enemies, we change them.
           Do you understand what I mean by that?'</p>
 
-          <p>He was bending over Winston. His face looked enormous because of its
+        <p>He was bending over Winston. His face looked enormous because of its
           nearness, and hideously ugly because it was seen from below. Moreover it
           was filled with a sort of exaltation, a lunatic intensity. Again Winston's
           heart shrank. If it had been possible he would have cowered deeper into
@@ -8769,10 +8829,12 @@ include '../../src/header.php';
           sheer wantonness. At this moment, however, O'Brien turned away. He took a
           pace or two up and down. Then he continued less vehemently:</p>
 
-          <p>'The first thing for you to understand is that in this place there are no
+        <p>'The first thing for you to understand is that in this place there are no
           martyrdoms. You have read of the religious persecutions of the past. In
           the Middle Ages there was the Inquisition. It was a failure. It set out
-          to eradicate <span class="tooltip"><strong>heresy</strong><span class="tooltiptext">Belief or opinion contrary to orthodox religious (especially Christian) doctrine</span></span>, and ended by perpetuating it. For every heretic it
+          to eradicate <span class="tooltip"><strong>heresy</strong><span class="tooltiptext">Belief or opinion contrary
+              to orthodox religious (especially Christian) doctrine</span></span>, and ended by perpetuating it. For
+          every heretic it
           burned at the stake, thousands of others rose up. Why was that? Because
           the Inquisition killed its enemies in the open, and killed them while
           they were still unrepentant: in fact, it killed them because they were
@@ -8780,7 +8842,9 @@ include '../../src/header.php';
           beliefs. Naturally all the glory belonged to the victim and all the shame
           to the Inquisitor who burned him. Later, in the twentieth century, there
           were the totalitarians, as they were called. There were the German Nazis
-          and the Russian Communists. The Russians persecuted <span class="tooltip"><strong>heresy</strong><span class="tooltiptext">Belief or opinion contrary to orthodox religious (especially Christian) doctrine</span></span> more cruelly
+          and the Russian Communists. The Russians persecuted <span class="tooltip"><strong>heresy</strong><span
+              class="tooltiptext">Belief or opinion contrary to orthodox religious (especially Christian)
+              doctrine</span></span> more cruelly
           than the Inquisition had done. And they imagined that they had learned
           from the mistakes of the past; they knew, at any rate, that one must not
           make martyrs. Before they exposed their victims to public trial, they
@@ -8801,19 +8865,19 @@ include '../../src/header.php';
           a memory in a living brain. You will be annihilated in the past as well
           as in the future. You will never have existed.'</p>
 
-          <p>Then why bother to torture me? thought Winston, with a momentary
+        <p>Then why bother to torture me? thought Winston, with a momentary
           bitterness. O'Brien checked his step as though Winston had uttered the
           thought aloud. His large ugly face came nearer, with the eyes a little
           narrowed.</p>
 
-          <p>'You are thinking,' he said, 'that since we intend to destroy you utterly,
+        <p>'You are thinking,' he said, 'that since we intend to destroy you utterly,
           so that nothing that you say or do can make the smallest difference--in
           that case, why do we go to the trouble of interrogating you first? That is
           what you were thinking, was it not?'</p>
 
-          <p>'Yes,' said Winston.</p>
+        <p>'Yes,' said Winston.</p>
 
-          <p>O'Brien smiled slightly. 'You are a flaw in the pattern, Winston. You are
+        <p>O'Brien smiled slightly. 'You are a flaw in the pattern, Winston. You are
           a stain that must be wiped out. Did I not tell you just now that we are
           different from the persecutors of the past? We are not content with
           negative obedience, nor even with the most abject submission. When finally
@@ -8826,7 +8890,9 @@ include '../../src/header.php';
           thought should exist anywhere in the world, however secret and powerless
           it may be. Even in the instant of death we cannot permit any deviation. In
           the old days the heretic walked to the stake still a heretic, proclaiming
-          his <span class="tooltip"><strong>heresy</strong><span class="tooltiptext">Belief or opinion contrary to orthodox religious (especially Christian) doctrine</span></span>, exulting in it. Even the victim of the Russian purges could
+          his <span class="tooltip"><strong>heresy</strong><span class="tooltiptext">Belief or opinion contrary to
+              orthodox religious (especially Christian) doctrine</span></span>, exulting in it. Even the victim of the
+          Russian purges could
           carry rebellion locked up in his skull as he walked down the passage
           waiting for the bullet. But we make the brain perfect before we blow it
           out. The command of the old despotisms was "Thou shalt not". The command
@@ -8842,7 +8908,7 @@ include '../../src/header.php';
           how they loved him. They begged to be shot quickly, so that they could die
           while their minds were still clean.'</p>
 
-          <p>His voice had grown almost dreamy. The exaltation, the lunatic enthusiasm,
+        <p>His voice had grown almost dreamy. The exaltation, the lunatic enthusiasm,
           was still in his face. He is not pretending, thought Winston, he is not a
           hypocrite, he believes every word he says. What most oppressed him was the
           consciousness of his own intellectual inferiority. He watched the heavy
@@ -8854,7 +8920,7 @@ include '../../src/header.php';
           Winston, who was mad. O'Brien halted and looked down at him. His voice had
           grown stern again.</p>
 
-          <p>'Do not imagine that you will save yourself, Winston, however completely
+        <p>'Do not imagine that you will save yourself, Winston, however completely
           you surrender to us. No one who has once gone astray is ever spared. And
           even if we chose to let you live out the natural term of your life, still
           you would never escape from us. What happens to you here is for ever.
@@ -8866,21 +8932,21 @@ include '../../src/header.php';
           or laughter, or curiosity, or courage, or integrity. You will be hollow.
           We shall squeeze you empty, and then we shall fill you with ourselves.'</p>
 
-          <p>He paused and signed to the man in the white coat. Winston was aware of
+        <p>He paused and signed to the man in the white coat. Winston was aware of
           some heavy piece of apparatus being pushed into place behind his head.
           O'Brien had sat down beside the bed, so that his face was almost on a
           level with Winston's.</p>
 
-          <p>'Three thousand,' he said, speaking over Winston's head to the man in the
+        <p>'Three thousand,' he said, speaking over Winston's head to the man in the
           white coat.</p>
 
-          <p>Two soft pads, which felt slightly moist, clamped themselves against
+        <p>Two soft pads, which felt slightly moist, clamped themselves against
           Winston's temples. He quailed. There was pain coming, a new kind of pain.
           O'Brien laid a hand reassuringly, almost kindly, on his.</p>
 
-          <p>'This time it will not hurt,' he said. 'Keep your eyes fixed on mine.'</p>
+        <p>'This time it will not hurt,' he said. 'Keep your eyes fixed on mine.'</p>
 
-          <p>At this moment there was a devastating explosion, or what seemed like an
+        <p>At this moment there was a devastating explosion, or what seemed like an
           explosion, though it was not certain whether there was any noise. There
           was undoubtedly a blinding flash of light. Winston was not hurt, only
           prostrated. Although he had already been lying on his back when the thing
@@ -8891,47 +8957,47 @@ include '../../src/header.php';
           gazing into his own; but somewhere or other there was a large patch of
           emptiness, as though a piece had been taken out of his brain.</p>
 
-          <p>'It will not last,' said O'Brien. 'Look me in the eyes. What country is
+        <p>'It will not last,' said O'Brien. 'Look me in the eyes. What country is
           Oceania at war with?'</p>
 
-          <p>Winston thought. He knew what was meant by Oceania and that he himself was
+        <p>Winston thought. He knew what was meant by Oceania and that he himself was
           a citizen of Oceania. He also remembered Eurasia and Eastasia; but who was
           at war with whom he did not know. In fact he had not been aware that there
           was any war.</p>
 
-          <p>'I don't remember.'</p>
+        <p>'I don't remember.'</p>
 
-          <p>'Oceania is at war with Eastasia. Do you remember that now?'</p>
+        <p>'Oceania is at war with Eastasia. Do you remember that now?'</p>
 
-          <p>'Yes.'</p>
+        <p>'Yes.'</p>
 
-          <p>'Oceania has always been at war with Eastasia. Since the beginning of your
+        <p>'Oceania has always been at war with Eastasia. Since the beginning of your
           life, since the beginning of the Party, since the beginning of history,
           the war has continued without a break, always the same war. Do you
           remember that?'</p>
 
-          <p>'Yes.'</p>
+        <p>'Yes.'</p>
 
-          <p>'Eleven years ago you created a legend about three men who had been
+        <p>'Eleven years ago you created a legend about three men who had been
           condemned to death for treachery. You pretended that you had seen a piece
           of paper which proved them innocent. No such piece of paper ever existed.
           You invented it, and later you grew to believe in it. You remember now the
           very moment at which you first invented it. Do you remember that?'</p>
 
-          <p>'Yes.'</p>
+        <p>'Yes.'</p>
 
-          <p>'Just now I held up the fingers of my hand to you. You saw five fingers.
+        <p>'Just now I held up the fingers of my hand to you. You saw five fingers.
           Do you remember that?'</p>
 
-          <p>'Yes.'</p>
+        <p>'Yes.'</p>
 
-          <p>O'Brien held up the fingers of his left hand, with the thumb concealed.</p>
+        <p>O'Brien held up the fingers of his left hand, with the thumb concealed.</p>
 
-          <p>'There are five fingers there. Do you see five fingers?'</p>
+        <p>'There are five fingers there. Do you see five fingers?'</p>
 
-          <p>'Yes.'</p>
+        <p>'Yes.'</p>
 
-          <p>And he did see them, for a fleeting instant, before the scenery of his
+        <p>And he did see them, for a fleeting instant, before the scenery of his
           mind changed. He saw five fingers, and there was no deformity. Then
           everything was normal again, and the old fear, the hatred, and the
           bewilderment came crowding back again. But there had been a moment--he did
@@ -8943,88 +9009,88 @@ include '../../src/header.php';
           could remember it, as one remembers a vivid experience at some period of
           one's life when one was in effect a different person.</p>
 
-          <p>'You see now,' said O'Brien, 'that it is at any rate possible.'</p>
+        <p>'You see now,' said O'Brien, 'that it is at any rate possible.'</p>
 
-          <p>'Yes,' said Winston.</p>
+        <p>'Yes,' said Winston.</p>
 
-          <p>O'Brien stood up with a satisfied air. Over to his left Winston saw the
+        <p>O'Brien stood up with a satisfied air. Over to his left Winston saw the
           man in the white coat break an ampoule and draw back the plunger of a
           syringe. O'Brien turned to Winston with a smile. In almost the old manner
           he resettled his spectacles on his nose.</p>
 
-          <p>'Do you remember writing in your diary,' he said, 'that it did not matter
+        <p>'Do you remember writing in your diary,' he said, 'that it did not matter
           whether I was a friend or an enemy, since I was at least a person who
           understood you and could be talked to? You were right. I enjoy talking to
           you. Your mind appeals to me. It resembles my own mind except that you
           happen to be insane. Before we bring the session to an end you can ask me
           a few questions, if you choose.'</p>
 
-          <p>'Any question I like?'</p>
+        <p>'Any question I like?'</p>
 
-          <p>'Anything.' He saw that Winston's eyes were upon the dial. 'It is switched
+        <p>'Anything.' He saw that Winston's eyes were upon the dial. 'It is switched
           off. What is your first question?'</p>
 
-          <p>'What have you done with Julia?' said Winston.</p>
+        <p>'What have you done with Julia?' said Winston.</p>
 
-          <p>O'Brien smiled again. 'She betrayed you, Winston. Immediately--unreservedly.
+        <p>O'Brien smiled again. 'She betrayed you, Winston. Immediately--unreservedly.
           I have seldom seen anyone come over to us so promptly. You would hardly
           recognize her if you saw her. All her rebelliousness, her deceit, her
           folly, her dirty-mindedness--everything has been burned out of her. It was
           a perfect conversion, a textbook case.'</p>
 
-          <p>'You tortured her?'</p>
+        <p>'You tortured her?'</p>
 
-          <p>O'Brien left this unanswered. 'Next question,' he said.</p>
+        <p>O'Brien left this unanswered. 'Next question,' he said.</p>
 
-          <p>'Does Big Brother exist?'</p>
+        <p>'Does Big Brother exist?'</p>
 
-          <p>'Of course he exists. The Party exists. Big Brother is the embodiment of
+        <p>'Of course he exists. The Party exists. Big Brother is the embodiment of
           the Party.'</p>
 
-          <p>'Does he exist in the same way as I exist?'</p>
+        <p>'Does he exist in the same way as I exist?'</p>
 
-          <p>'You do not exist,' said O'Brien.</p>
+        <p>'You do not exist,' said O'Brien.</p>
 
-          <p>Once again the sense of helplessness assailed him. He knew, or he could
+        <p>Once again the sense of helplessness assailed him. He knew, or he could
           imagine, the arguments which proved his own nonexistence; but they were
           nonsense, they were only a play on words. Did not the statement, 'You do
           not exist', contain a logical absurdity? But what use was it to say so?
           His mind shrivelled as he thought of the unanswerable, mad arguments with
           which O'Brien would demolish him.</p>
 
-          <p>'I think I exist,' he said wearily. 'I am conscious of my own identity.
+        <p>'I think I exist,' he said wearily. 'I am conscious of my own identity.
           I was born and I shall die. I have arms and legs. I occupy a particular
           point in space. No other solid object can occupy the same point
           simultaneously. In that sense, does Big Brother exist?'</p>
 
-          <p>'It is of no importance. He exists.'</p>
+        <p>'It is of no importance. He exists.'</p>
 
-          <p>'Will Big Brother ever die?'</p>
+        <p>'Will Big Brother ever die?'</p>
 
-          <p>'Of course not. How could he die? Next question.'</p>
+        <p>'Of course not. How could he die? Next question.'</p>
 
-          <p>'Does the Brotherhood exist?'</p>
+        <p>'Does the Brotherhood exist?'</p>
 
-          <p>'That, Winston, you will never know. If we choose to set you free when we
+        <p>'That, Winston, you will never know. If we choose to set you free when we
           have finished with you, and if you live to be ninety years old, still you
           will never learn whether the answer to that question is Yes or No. As long
           as you live it will be an unsolved riddle in your mind.'</p>
 
-          <p>Winston lay silent. His breast rose and fell a little faster. He still had
+        <p>Winston lay silent. His breast rose and fell a little faster. He still had
           not asked the question that had come into his mind the first. He had got
           to ask it, and yet it was as though his tongue would not utter it. There
           was a trace of amusement in O'Brien's face. Even his spectacles seemed to
           wear an ironical gleam. He knows, thought Winston suddenly, he knows what
           I am going to ask! At the thought the words burst out of him:</p>
 
-          <p>'What is in Room 101?'</p>
+        <p>'What is in Room 101?'</p>
 
-          <p>The expression on O'Brien's face did not change. He answered drily:</p>
+        <p>The expression on O'Brien's face did not change. He answered drily:</p>
 
-          <p>'You know what is in Room 101, Winston. Everyone knows what is in
+        <p>'You know what is in Room 101, Winston. Everyone knows what is in
           Room 101.'</p>
 
-          <p>He raised a finger to the man in the white coat. Evidently the session was
+        <p>He raised a finger to the man in the white coat. Evidently the session was
           at an end. A needle jerked into Winston's arm. He sank almost instantly
           into deep sleep.</p>
 
@@ -9041,7 +9107,7 @@ include '../../src/header.php';
           learning, there is understanding, and there is acceptance. It is time for
           you to enter upon the second stage.'
 
-          <p>As always, Winston was lying flat on his back. But of late his bonds were
+        <p>As always, Winston was lying flat on his back. But of late his bonds were
           looser. They still held him to the bed, but he could move his knees a
           little and could turn his head from side to side and raise his arms from
           the elbow. The dial, also, had grown to be less of a terror. He could
@@ -9052,7 +9118,7 @@ include '../../src/header.php';
           long, indefinite time--weeks, possibly--and the intervals between the
           sessions might sometimes have been days, sometimes only an hour or two.</p>
 
-          <p>'As you lie there,' said O'Brien, 'you have often wondered--you have even
+        <p>'As you lie there,' said O'Brien, 'you have often wondered--you have even
           asked me--why the Ministry of Love should expend so much time and trouble
           on you. And when you were free you were puzzled by what was essentially
           the same question. You could grasp the mechanics of the Society you lived
@@ -9062,14 +9128,14 @@ include '../../src/header.php';
           Goldstein's book, or parts of it, at least. Did it tell you anything that
           you did not know already?'</p>
 
-          <p>'You have read it?' said Winston.</p>
+        <p>'You have read it?' said Winston.</p>
 
-          <p>'I wrote it. That is to say, I collaborated in writing it. No book is
+        <p>'I wrote it. That is to say, I collaborated in writing it. No book is
           produced individually, as you know.'</p>
 
-          <p>'Is it true, what it says?'</p>
+        <p>'Is it true, what it says?'</p>
 
-          <p>'As description, yes. The programme it sets forth is nonsense. The secret
+        <p>'As description, yes. The programme it sets forth is nonsense. The secret
           accumulation of knowledge--a gradual spread of enlightenment--ultimately
           a proletarian rebellion--the overthrow of the Party. You foresaw yourself
           that that was what it would say. It is all nonsense. The proletarians will
@@ -9079,13 +9145,13 @@ include '../../src/header.php';
           is no way in which the Party can be overthrown. The rule of the Party is
           for ever. Make that the starting-point of your thoughts.'</p>
 
-          <p>He came closer to the bed. 'For ever!' he repeated. 'And now let us get
+        <p>He came closer to the bed. 'For ever!' he repeated. 'And now let us get
           back to the question of "how" and "why". You understand well enough HOW
           the Party maintains itself in power. Now tell me WHY we cling to power.
           What is our motive? Why should we want power? Go on, speak,' he added as
           Winston remained silent.</p>
 
-          <p>Nevertheless Winston did not speak for another moment or two. A feeling of
+        <p>Nevertheless Winston did not speak for another moment or two. A feeling of
           weariness had overwhelmed him. The faint, mad gleam of enthusiasm had come
           back into O'Brien's face. He knew in advance what O'Brien would say. That
           the Party did not seek power for its own ends, but only for the good of
@@ -9106,18 +9172,18 @@ include '../../src/header.php';
           against the lunatic who is more intelligent than yourself, who gives your
           arguments a fair hearing and then simply persists in his lunacy?</p>
 
-          <p>'You are ruling over us for our own good,' he said feebly. 'You believe
+        <p>'You are ruling over us for our own good,' he said feebly. 'You believe
           that human beings are not fit to govern themselves, and therefore----'</p>
 
-          <p>He started and almost cried out. A pang of pain had shot through his body.
+        <p>He started and almost cried out. A pang of pain had shot through his body.
           O'Brien had pushed the lever of the dial up to thirty-five.</p>
 
-          <p>'That was stupid, Winston, stupid!' he said. 'You should know better than
+        <p>'That was stupid, Winston, stupid!' he said. 'You should know better than
           to say a thing like that.'</p>
 
-          <p>He pulled the lever back and continued:</p>
+        <p>He pulled the lever back and continued:</p>
 
-          <p>'Now I will tell you the answer to my question. It is this. The Party
+        <p>'Now I will tell you the answer to my question. It is this. The Party
           seeks power entirely for its own sake. We are not interested in the good
           of others; we are interested solely in power. Not wealth or luxury or long
           life or happiness: only power, pure power. What pure power means you will
@@ -9136,23 +9202,23 @@ include '../../src/header.php';
           torture is torture. The object of power is power. Now do you begin to
           understand me?'</p>
 
-          <p>Winston was struck, as he had been struck before, by the tiredness of
+        <p>Winston was struck, as he had been struck before, by the tiredness of
           O'Brien's face. It was strong and fleshy and brutal, it was full of
           intelligence and a sort of controlled passion before which he felt himself
           helpless; but it was tired. There were pouches under the eyes, the skin
           sagged from the cheekbones. O'Brien leaned over him, deliberately bringing
           the worn face nearer.</p>
 
-          <p>'You are thinking,' he said, 'that my face is old and tired. You are
+        <p>'You are thinking,' he said, 'that my face is old and tired. You are
           thinking that I talk of power, and yet I am not even able to prevent the
           decay of my own body. Can you not understand, Winston, that the individual
           is only a cell? The weariness of the cell is the vigour of the organism.
           Do you die when you cut your fingernails?'</p>
 
-          <p>He turned away from the bed and began strolling up and down again, one hand
+        <p>He turned away from the bed and began strolling up and down again, one hand
           in his pocket.</p>
 
-          <p>'We are the priests of power,' he said. 'God is power. But at present
+        <p>'We are the priests of power,' he said. 'God is power. But at present
           power is only a word so far as you are concerned. It is time for you to
           gather some idea of what power means. The first thing you must realize
           is that power is collective. The individual only has power in so far as
@@ -9167,14 +9233,14 @@ include '../../src/header.php';
           all, over the mind. Power over matter--external reality, as you would call
           it--is not important. Already our control over matter is absolute.'</p>
 
-          <p>For a moment Winston ignored the dial. He made a violent effort to raise
+        <p>For a moment Winston ignored the dial. He made a violent effort to raise
           himself into a sitting position, and merely succeeded in wrenching his
           body painfully.</p>
 
-          <p>'But how can you control matter?' he burst out. 'You don't even control
+        <p>'But how can you control matter?' he burst out. 'You don't even control
           the climate or the law of gravity. And there are disease, pain, death----'</p>
 
-          <p>O'Brien silenced him by a movement of his hand. 'We control matter because
+        <p>O'Brien silenced him by a movement of his hand. 'We control matter because
           we control the mind. Reality is inside the skull. You will learn by
           degrees, Winston. There is nothing that we could not do. Invisibility,
           levitation--anything. I could float off this floor like a soap bubble if
@@ -9182,41 +9248,41 @@ include '../../src/header.php';
           get rid of those nineteenth-century ideas about the laws of Nature. We
           make the laws of Nature.'</p>
 
-          <p>'But you do not! You are not even masters of this planet. What about
+        <p>'But you do not! You are not even masters of this planet. What about
           Eurasia and Eastasia? You have not conquered them yet.'</p>
 
-          <p>'Unimportant. We shall conquer them when it suits us. And if we did not,
+        <p>'Unimportant. We shall conquer them when it suits us. And if we did not,
           what difference would it make? We can shut them out of existence. Oceania
           is the world.'</p>
 
-          <p>'But the world itself is only a speck of dust. And man is tiny--helpless!
+        <p>'But the world itself is only a speck of dust. And man is tiny--helpless!
           How long has he been in existence? For millions of years the earth was
           uninhabited.'</p>
 
-          <p>'Nonsense. The earth is as old as we are, no older. How could it be older?
+        <p>'Nonsense. The earth is as old as we are, no older. How could it be older?
           Nothing exists except through human consciousness.'</p>
 
-          <p>'But the rocks are full of the bones of extinct animals--mammoths and
+        <p>'But the rocks are full of the bones of extinct animals--mammoths and
           mastodons and enormous reptiles which lived here long before man was ever
           heard of.'</p>
 
-          <p>'Have you ever seen those bones, Winston? Of course not. Nineteenth-century
+        <p>'Have you ever seen those bones, Winston? Of course not. Nineteenth-century
           biologists invented them. Before man there was nothing. After man, if he
           could come to an end, there would be nothing. Outside man there is
           nothing.'</p>
 
-          <p>'But the whole universe is outside us. Look at the stars! Some of them are
+        <p>'But the whole universe is outside us. Look at the stars! Some of them are
           a million light-years away. They are out of our reach for ever.'</p>
 
-          <p>'What are the stars?' said O'Brien indifferently. 'They are bits of fire
+        <p>'What are the stars?' said O'Brien indifferently. 'They are bits of fire
           a few kilometres away. We could reach them if we wanted to. Or we could
           blot them out. The earth is the centre of the universe. The sun and the
           stars go round it.'</p>
 
-          <p>Winston made another convulsive movement. This time he did not say
+        <p>Winston made another convulsive movement. This time he did not say
           anything. O'Brien continued as though answering a spoken objection:</p>
 
-          <p>'For certain purposes, of course, that is not true. When we navigate the
+        <p>'For certain purposes, of course, that is not true. When we navigate the
           ocean, or when we predict an eclipse, we often find it convenient to
           assume that the earth goes round the sun and that the stars are millions
           upon millions of kilometres away. But what of it? Do you suppose it is
@@ -9224,7 +9290,7 @@ include '../../src/header.php';
           or distant, according as we need them. Do you suppose our mathematicians
           are unequal to that? Have you forgotten doublethink?'</p>
 
-          <p>Winston shrank back upon the bed. Whatever he said, the swift answer
+        <p>Winston shrank back upon the bed. Whatever he said, the swift answer
           crushed him like a bludgeon. And yet he knew, he KNEW, that he was in the
           right. The belief that nothing exists outside your own mind--surely there
           must be some way of demonstrating that it was false? Had it not been
@@ -9232,7 +9298,7 @@ include '../../src/header.php';
           had forgotten. A faint smile twitched the corners of O'Brien's mouth as
           he looked down at him.</p>
 
-          <p>'I told you, Winston,' he said, 'that metaphysics is not your strong
+        <p>'I told you, Winston,' he said, 'that metaphysics is not your strong
           point. The word you are trying to think of is solipsism. But you are
           mistaken. This is not solipsism. Collective solipsism, if you like. But
           that is a different thing: in fact, the opposite thing. All this is a
@@ -9242,9 +9308,9 @@ include '../../src/header.php';
           questioning a promising pupil: 'How does one man assert his power over
           another, Winston?'</p>
 
-          <p>Winston thought. 'By making him suffer,' he said.</p>
+        <p>Winston thought. 'By making him suffer,' he said.</p>
 
-          <p>'Exactly. By making him suffer. Obedience is not enough. Unless he is
+        <p>'Exactly. By making him suffer. Obedience is not enough. Unless he is
           suffering, how can you be sure that he is obeying your will and not his
           own? Power is in inflicting pain and humiliation. Power is in tearing
           human minds to pieces and putting them together again in new shapes of
@@ -9277,11 +9343,11 @@ include '../../src/header.php';
           the sensation of trampling on an enemy who is helpless. If you want a
           picture of the future, imagine a boot stamping on a human face--for ever.'</p>
 
-          <p>He paused as though he expected Winston to speak. Winston had tried to
+        <p>He paused as though he expected Winston to speak. Winston had tried to
           shrink back into the surface of the bed again. He could not say anything.
           His heart seemed to be frozen. O'Brien went on:</p>
 
-          <p>'And remember that it is for ever. The face will always be there to be
+        <p>'And remember that it is for ever. The face will always be there to be
           stamped upon. The heretic, the enemy of society, will always be there, so
           that he can be defeated and humiliated over again. Everything that you
           have undergone since you have been in our hands--all that will continue,
@@ -9303,41 +9369,41 @@ include '../../src/header.php';
           will do more than understand it. You will accept it, welcome it, become
           part of it.'</p>
 
-          <p>Winston had recovered himself sufficiently to speak. 'You can't!' he said
+        <p>Winston had recovered himself sufficiently to speak. 'You can't!' he said
           weakly.</p>
 
-          <p>'What do you mean by that remark, Winston?'</p>
+        <p>'What do you mean by that remark, Winston?'</p>
 
-          <p>'You could not create such a world as you have just described. It is a
+        <p>'You could not create such a world as you have just described. It is a
           dream. It is impossible.'</p>
 
-          <p>'Why?'</p>
+        <p>'Why?'</p>
 
-          <p>'It is impossible to found a civilization on fear and hatred and cruelty.
+        <p>'It is impossible to found a civilization on fear and hatred and cruelty.
           It would never endure.'</p>
 
-          <p>'Why not?'</p>
+        <p>'Why not?'</p>
 
-          <p>'It would have no vitality. It would disintegrate. It would commit
+        <p>'It would have no vitality. It would disintegrate. It would commit
           suicide.'</p>
 
-          <p>'Nonsense. You are under the impression that hatred is more exhausting
+        <p>'Nonsense. You are under the impression that hatred is more exhausting
           than love. Why should it be? And if it were, what difference would that
           make? Suppose that we choose to wear ourselves out faster. Suppose that we
           quicken the tempo of human life till men are senile at thirty. Still what
           difference would it make? Can you not understand that the death of the
           individual is not death? The party is immortal.'</p>
 
-          <p>As usual, the voice had battered Winston into helplessness. Moreover he
+        <p>As usual, the voice had battered Winston into helplessness. Moreover he
           was in dread that if he persisted in his disagreement O'Brien would twist
           the dial again. And yet he could not keep silent. Feebly, without
           arguments, with nothing to support him except his inarticulate horror of
           what O'Brien had said, he returned to the attack.</p>
 
-          <p>'I don't know--I don't care. Somehow you will fail. Something will defeat
+        <p>'I don't know--I don't care. Somehow you will fail. Something will defeat
           you. Life will defeat you.'</p>
 
-          <p>'We control life, Winston, at all its levels. You are imagining that there
+        <p>'We control life, Winston, at all its levels. You are imagining that there
           is something called human nature which will be outraged by what we do and
           will turn against us. But we create human nature. Men are infinitely
           malleable. Or perhaps you have returned to your old idea that the
@@ -9345,37 +9411,37 @@ include '../../src/header.php';
           mind. They are helpless, like the animals. Humanity is the Party. The
           others are outside--irrelevant.'</p>
 
-          <p>'I don't care. In the end they will beat you. Sooner or later they will
+        <p>'I don't care. In the end they will beat you. Sooner or later they will
           see you for what you are, and then they will tear you to pieces.'</p>
 
-          <p>'Do you see any evidence that that is happening? Or any reason why it
+        <p>'Do you see any evidence that that is happening? Or any reason why it
           should?'</p>
 
-          <p>'No. I believe it. I KNOW that you will fail. There is something in the
+        <p>'No. I believe it. I KNOW that you will fail. There is something in the
           universe--I don't know, some spirit, some principle--that you will never
           overcome.'</p>
 
-          <p>'Do you believe in God, Winston?'</p>
+        <p>'Do you believe in God, Winston?'</p>
 
-          <p>'No.'</p>
+        <p>'No.'</p>
 
-          <p>'Then what is it, this principle that will defeat us?'</p>
+        <p>'Then what is it, this principle that will defeat us?'</p>
 
-          <p>'I don't know. The spirit of Man.'</p>
+        <p>'I don't know. The spirit of Man.'</p>
 
-          <p>'And do you consider yourself a man?'</p>
+        <p>'And do you consider yourself a man?'</p>
 
-          <p>'Yes.'</p>
+        <p>'Yes.'</p>
 
-          <p>'If you are a man, Winston, you are the last man. Your kind is extinct; we
+        <p>'If you are a man, Winston, you are the last man. Your kind is extinct; we
           are the inheritors. Do you understand that you are ALONE? You are outside
           history, you are non-existent.' His manner changed and he said more
           harshly: 'And you consider yourself morally superior to us, with our lies
           and our cruelty?'</p>
 
-          <p>'Yes, I consider myself superior.'</p>
+        <p>'Yes, I consider myself superior.'</p>
 
-          <p>O'Brien did not speak. Two other voices were speaking. After a moment
+        <p>O'Brien did not speak. Two other voices were speaking. After a moment
           Winston recognized one of them as his own. It was a sound-track of the
           conversation he had had with O'Brien, on the night when he had enrolled
           himself in the Brotherhood. He heard himself promising to lie, to steal,
@@ -9384,15 +9450,15 @@ include '../../src/header.php';
           made a small impatient gesture, as though to say that the demonstration
           was hardly worth making. Then he turned a switch and the voices stopped.</p>
 
-          <p>'Get up from that bed,' he said.</p>
+        <p>'Get up from that bed,' he said.</p>
 
-          <p>The bonds had loosened themselves. Winston lowered himself to the floor
+        <p>The bonds had loosened themselves. Winston lowered himself to the floor
           and stood up unsteadily.</p>
 
-          <p>'You are the last man,' said O'Brien. 'You are the guardian of the human
+        <p>'You are the last man,' said O'Brien. 'You are the guardian of the human
           spirit. You shall see yourself as you are. Take off your clothes.'</p>
 
-          <p>Winston undid the bit of string that held his overalls together. The zip
+        <p>Winston undid the bit of string that held his overalls together. The zip
           fastener had long since been wrenched out of them. He could not remember
           whether at any time since his arrest he had taken off all his clothes at
           one time. Beneath the overalls his body was looped with filthy yellowish
@@ -9401,10 +9467,10 @@ include '../../src/header.php';
           end of the room. He approached it, then stopped short. An involuntary cry
           had broken out of him.</p>
 
-          <p>'Go on,' said O'Brien. 'Stand between the wings of the mirror. You shall
+        <p>'Go on,' said O'Brien. 'Stand between the wings of the mirror. You shall
           see the side view as well.'</p>
 
-          <p>He had stopped because he was frightened. A bowed, grey-coloured,
+        <p>He had stopped because he was frightened. A bowed, grey-coloured,
           skeleton-like thing was coming towards him. Its actual appearance was
           frightening, and not merely the fact that he knew it to be himself. He
           moved closer to the glass. The creature's face seemed to be protruded,
@@ -9429,13 +9495,13 @@ include '../../src/header.php';
           would have said that it was the body of a man of sixty, suffering from
           some malignant disease.</p>
 
-          <p>'You have thought sometimes,' said O'Brien, 'that my face--the face of a
+        <p>'You have thought sometimes,' said O'Brien, 'that my face--the face of a
           member of the Inner Party--looks old and worn. What do you think of your
           own face?'</p>
 
-          <p>He seized Winston's shoulder and spun him round so that he was facing him.</p>
+        <p>He seized Winston's shoulder and spun him round so that he was facing him.</p>
 
-          <p>'Look at the condition you are in!' he said. 'Look at this filthy grime
+        <p>'Look at the condition you are in!' he said. 'Look at this filthy grime
           all over your body. Look at the dirt between your toes. Look at that
           disgusting running sore on your leg. Do you know that you stink like a
           goat? Probably you have ceased to notice it. Look at your emaciation. Do
@@ -9447,17 +9513,17 @@ include '../../src/header.php';
           when you came to us? And the few you have left are dropping out of your
           head. Look here!'</p>
 
-          <p>He seized one of Winston's remaining front teeth between his powerful
+        <p>He seized one of Winston's remaining front teeth between his powerful
           thumb and forefinger. A twinge of pain shot through Winston's jaw. O'Brien
           had wrenched the loose tooth out by the roots. He tossed it across the
           cell.</p>
 
-          <p>'You are rotting away,' he said; 'you are falling to pieces. What are you?
+        <p>'You are rotting away,' he said; 'you are falling to pieces. What are you?
           A bag of filth. Now turn around and look into that mirror again. Do you
           see that thing facing you? That is the last man. If you are human, that is
           humanity. Now put your clothes on again.'</p>
 
-          <p>Winston began to dress himself with slow stiff movements. Until now he had
+        <p>Winston began to dress himself with slow stiff movements. Until now he had
           not seemed to notice how thin and weak he was. Only one thought stirred in
           his mind: that he must have been in this place longer than he had imagined.
           Then suddenly as he fixed the miserable rags round himself a feeling of
@@ -9468,18 +9534,18 @@ include '../../src/header.php';
           he could not stop himself. O'Brien laid a hand on his shoulder, almost
           kindly.</p>
 
-          <p>'It will not last for ever,' he said. 'You can escape from it whenever you
+        <p>'It will not last for ever,' he said. 'You can escape from it whenever you
           choose. Everything depends on yourself.'</p>
 
-          <p>'You did it!' sobbed Winston. 'You reduced me to this state.'</p>
+        <p>'You did it!' sobbed Winston. 'You reduced me to this state.'</p>
 
-          <p>'No, Winston, you reduced yourself to it. This is what you accepted when
+        <p>'No, Winston, you reduced yourself to it. This is what you accepted when
           you set yourself up against the Party. It was all contained in that first
           act. Nothing has happened that you did not foresee.'</p>
 
-          <p>He paused, and then went on:</p>
+        <p>He paused, and then went on:</p>
 
-          <p>'We have beaten you, Winston. We have broken you up. You have seen what
+        <p>'We have beaten you, Winston. We have broken you up. You have seen what
           your body is like. Your mind is in the same state. I do not think there
           can be much pride left in you. You have been kicked and flogged and
           insulted, you have screamed with pain, you have rolled on the floor in
@@ -9487,15 +9553,15 @@ include '../../src/header.php';
           everybody and everything. Can you think of a single degradation that has
           not happened to you?'</p>
 
-          <p>Winston had stopped weeping, though the tears were still oozing out of his
+        <p>Winston had stopped weeping, though the tears were still oozing out of his
           eyes. He looked up at O'Brien.</p>
 
-          <p>'I have not betrayed Julia,' he said.</p>
+        <p>'I have not betrayed Julia,' he said.</p>
 
-          <p>O'Brien looked down at him thoughtfully. 'No,' he said; 'no; that is
+        <p>O'Brien looked down at him thoughtfully. 'No,' he said; 'no; that is
           perfectly true. You have not betrayed Julia.'</p>
 
-          <p>The peculiar reverence for O'Brien, which nothing seemed able to destroy,
+        <p>The peculiar reverence for O'Brien, which nothing seemed able to destroy,
           flooded Winston's heart again. How intelligent, he thought, how
           intelligent! Never did O'Brien fail to understand what was said to him.
           Anyone else on earth would have answered promptly that he HAD betrayed
@@ -9509,9 +9575,9 @@ include '../../src/header.php';
           loving her; his feelings towards her had remained the same. O'Brien had
           seen what he meant without the need for explanation.</p>
 
-          <p>'Tell me,' he said, 'how soon will they shoot me?'</p>
+        <p>'Tell me,' he said, 'how soon will they shoot me?'</p>
 
-          <p>'It might be a long time,' said O'Brien. 'You are a difficult case. But
+        <p>'It might be a long time,' said O'Brien. 'You are a difficult case. But
           don't give up hope. Everyone is cured sooner or later. In the end we shall
           shoot you.'</p>
 
@@ -9525,7 +9591,7 @@ include '../../src/header.php';
           He was much better. He was growing fatter and stronger every day, if it
           was proper to speak of days.
 
-          <p>The white light and the humming sound were the same as ever, but the cell
+        <p>The white light and the humming sound were the same as ever, but the cell
           was a little more comfortable than the others he had been in. There was a
           pillow and a mattress on the plank bed, and a stool to sit on. They had
           given him a bath, and they allowed him to wash himself fairly frequently
@@ -9534,7 +9600,7 @@ include '../../src/header.php';
           varicose ulcer with soothing ointment. They had pulled out the remnants
           of his teeth and given him a new set of dentures.</p>
 
-          <p>Weeks or months must have passed. It would have been possible now to keep
+        <p>Weeks or months must have passed. It would have been possible now to keep
           count of the passage of time, if he had felt any interest in doing so,
           since he was being fed at what appeared to be regular intervals. He was
           getting, he judged, three meals in the twenty-four hours; sometimes he
@@ -9545,7 +9611,7 @@ include '../../src/header.php';
           smoke it made him sick, but he persevered, and spun the packet out for
           a long time, smoking half a cigarette after each meal.</p>
 
-          <p>They had given him a white slate with a stump of pencil tied to the
+        <p>They had given him a white slate with a stump of pencil tied to the
           corner. At first he made no use of it. Even when he was awake he was
           completely torpid. Often he would lie from one meal to the next almost
           without stirring, sometimes asleep, sometimes waking into vague reveries
@@ -9563,7 +9629,7 @@ include '../../src/header.php';
           or questioned, to have enough to eat, and to be clean all over, was
           completely satisfying.</p>
 
-          <p>By degrees he came to spend less time in sleep, but he still felt no
+        <p>By degrees he came to spend less time in sleep, but he still felt no
           impulse to get off the bed. All he cared for was to lie quiet and feel the
           strength gathering in his body. He would finger himself here and there,
           trying to make sure that it was not an illusion that his muscles were
@@ -9581,16 +9647,17 @@ include '../../src/header.php';
           by his hands. It was hopeless, he could not raise himself a centimetre.
           But after a few more days--a few more mealtimes--even that feat was
           accomplished. A time came when he could do it six times running. He began
-          to grow actually proud of his body, and to cherish an <span class="tooltip"><strong>intermittent</strong><span class="tooltiptext">Occurring at irregular intervals; not continuous or steady</span></span> belief
+          to grow actually proud of his body, and to cherish an <span class="tooltip"><strong>intermittent</strong><span
+              class="tooltiptext">Occurring at irregular intervals; not continuous or steady</span></span> belief
           that his face also was growing back to normal. Only when he chanced to put
           his hand on his bald scalp did he remember the seamed, ruined face that
           had looked back at him out of the mirror.</p>
 
-          <p>His mind grew more active. He sat down on the plank bed, his back against
+        <p>His mind grew more active. He sat down on the plank bed, his back against
           the wall and the slate on his knees, and set to work deliberately at the
           task of re-educating himself.</p>
 
-          <p>He had capitulated, that was agreed. In reality, as he saw now, he had
+        <p>He had capitulated, that was agreed. In reality, as he saw now, he had
           been ready to capitulate long before he had taken the decision. From the
           moment when he was inside the Ministry of Love--and yes, even during those
           minutes when he and Julia had stood helpless while the iron voice from the
@@ -9608,25 +9675,25 @@ include '../../src/header.php';
           its judgements? Sanity was statistical. It was merely a question of
           learning to think as they thought. Only----!</p>
 
-          <p>The pencil felt thick and awkward in his fingers. He began to write down
+        <p>The pencil felt thick and awkward in his fingers. He began to write down
           the thoughts that came into his head. He wrote first in large clumsy
           capitals:</p>
 
-<p>FREEDOM IS SLAVERY</p>
+        <p>FREEDOM IS SLAVERY</p>
 
-<p>Then almost without a pause he wrote beneath it:</p>
+        <p>Then almost without a pause he wrote beneath it:</p>
 
-<p>TWO AND TWO MAKE FIVE</p>
+        <p>TWO AND TWO MAKE FIVE</p>
 
-<p>But then there came a sort of check. His mind, as though shying away from
+        <p>But then there came a sort of check. His mind, as though shying away from
           something, seemed unable to concentrate. He knew that he knew what came
           next, but for the moment he could not recall it. When he did recall it,
           it was only by consciously reasoning out what it must be: it did not come
           of its own accord. He wrote:</p>
 
-<p>GOD IS POWER</p>
+        <p>GOD IS POWER</p>
 
-<p>He accepted everything. The past was alterable. The past never had been
+        <p>He accepted everything. The past was alterable. The past never had been
           altered. Oceania was at war with Eastasia. Oceania had always been at war
           with Eastasia. Jones, Aaronson, and Rutherford were guilty of the crimes
           they were charged with. He had never seen the photograph that disproved
@@ -9639,7 +9706,7 @@ include '../../src/header.php';
           your own attitude: the predestined thing happened in any case. He hardly
           knew why he had ever rebelled. Everything was easy, except----!</p>
 
-          <p>Anything could be true. The so-called laws of Nature were nonsense. The
+        <p>Anything could be true. The so-called laws of Nature were nonsense. The
           law of gravity was nonsense. 'If I wished,' O'Brien had said, 'I could
           float off this floor like a soap bubble.' Winston worked it out. 'If he
           THINKS he floats off the floor, and if I simultaneously THINK I see him
@@ -9652,13 +9719,13 @@ include '../../src/header.php';
           anything, save through our own minds? All happenings are in the mind.
           Whatever happens in all minds, truly happens.</p>
 
-          <p>He had no difficulty in disposing of the fallacy, and he was in no danger
+        <p>He had no difficulty in disposing of the fallacy, and he was in no danger
           of succumbing to it. He realized, nevertheless, that it ought never to
           have occurred to him. The mind should develop a blind spot whenever a
           dangerous thought presented itself. The process should be automatic,
           instinctive. CRIMESTOP, they called it in Newspeak.</p>
 
-          <p>He set to work to exercise himself in crimestop. He presented himself with
+        <p>He set to work to exercise himself in crimestop. He presented himself with
           propositions--'the Party says the earth is flat', 'the party says that
           ice is heavier than water'--and trained himself in not seeing or not
           understanding the arguments that contradicted them. It was not easy.
@@ -9670,7 +9737,7 @@ include '../../src/header.php';
           errors. Stupidity was as necessary as intelligence, and as difficult to
           attain.</p>
 
-          <p>All the while, with one part of his mind, he wondered how soon they would
+        <p>All the while, with one part of his mind, he wondered how soon they would
           shoot him. 'Everything depends on yourself,' O'Brien had said; but he knew
           that there was no conscious act by which he could bring it nearer. It
           might be ten minutes hence, or ten years. They might keep him for years in
@@ -9683,7 +9750,7 @@ include '../../src/header.php';
           you from behind; always in the back of the head, without warning, as you
           walked down a corridor from cell to cell.</p>
 
-          <p>One day--but 'one day' was not the right expression; just as probably it
+        <p>One day--but 'one day' was not the right expression; just as probably it
           was in the middle of the night: once--he fell into a strange, blissful
           reverie. He was walking down the corridor, waiting for the bullet. He knew
           that it was coming in another moment. Everything was settled, smoothed
@@ -9699,21 +9766,21 @@ include '../../src/header.php';
           and somewhere beyond that was the stream where the dace lay in the green
           pools under the willows.</p>
 
-          <p>Suddenly he started up with a shock of horror. The sweat broke out on his
+        <p>Suddenly he started up with a shock of horror. The sweat broke out on his
           backbone. He had heard himself cry aloud:</p>
 
-          <p>'Julia! Julia! Julia, my love! Julia!'</p>
+        <p>'Julia! Julia! Julia, my love! Julia!'</p>
 
-          <p>For a moment he had had an overwhelming hallucination of her presence. She
+        <p>For a moment he had had an overwhelming hallucination of her presence. She
           had seemed to be not merely with him, but inside him. It was as though she
           had got into the texture of his skin. In that moment he had loved her far
           more than he had ever done when they were together and free. Also he knew
           that somewhere or other she was still alive and needed his help.</p>
 
-          <p>He lay back on the bed and tried to compose himself. What had he done? How
+        <p>He lay back on the bed and tried to compose himself. What had he done? How
           many years had he added to his servitude by that moment of weakness?</p>
 
-          <p>In another moment he would hear the tramp of boots outside. They could not
+        <p>In another moment he would hear the tramp of boots outside. They could not
           let such an outburst go unpunished. They would know now, if they had not
           known before, that he was breaking the agreement he had made with them.
           He obeyed the Party, but he still hated the Party. In the old days he had
@@ -9723,7 +9790,7 @@ include '../../src/header.php';
           he preferred to be in the wrong. They would understand that--O'Brien would
           understand it. It was all confessed in that single foolish cry.</p>
 
-          <p>He would have to start all over again. It might take years. He ran a hand
+        <p>He would have to start all over again. It might take years. He ran a hand
           over his face, trying to familiarize himself with the new shape. There
           were deep furrows in the cheeks, the cheekbones felt sharp, the nose
           flattened. Besides, since last seeing himself in the glass he had been
@@ -9738,7 +9805,7 @@ include '../../src/header.php';
           locked up inside him like a ball of matter which was part of himself and
           yet unconnected with the rest of him, a kind of cyst.</p>
 
-          <p>One day they would decide to shoot him. You could not tell when it would
+        <p>One day they would decide to shoot him. You could not tell when it would
           happen, but a few seconds beforehand it should be possible to guess. It
           was always from behind, walking down a corridor. Ten seconds would be
           enough. In that time the world inside him could turn over. And then
@@ -9751,7 +9818,7 @@ include '../../src/header.php';
           unrepented, out of their reach for ever. They would have blown a hole in
           their own perfection. To die hating them, that was freedom.</p>
 
-          <p>He shut his eyes. It was more difficult than accepting an intellectual
+        <p>He shut his eyes. It was more difficult than accepting an intellectual
           discipline. It was a question of degrading himself, mutilating himself. He
           had got to plunge into the filthiest of filth. What was the most horrible,
           sickening thing of all? He thought of Big Brother. The enormous face
@@ -9760,34 +9827,34 @@ include '../../src/header.php';
           followed you to and fro, seemed to float into his mind of its own accord.
           What were his true feelings towards Big Brother?</p>
 
-          <p>There was a heavy tramp of boots in the passage. The steel door swung open
+        <p>There was a heavy tramp of boots in the passage. The steel door swung open
           with a clang. O'Brien walked into the cell. Behind him were the waxen-faced
           officer and the black-uniformed guards.</p>
 
-          <p>'Get up,' said O'Brien. 'Come here.'</p>
+        <p>'Get up,' said O'Brien. 'Come here.'</p>
 
-          <p>Winston stood opposite him. O'Brien took Winston's shoulders between his
+        <p>Winston stood opposite him. O'Brien took Winston's shoulders between his
           strong hands and looked at him closely.</p>
 
-          <p>'You have had thoughts of deceiving me,' he said. 'That was stupid.
+        <p>'You have had thoughts of deceiving me,' he said. 'That was stupid.
           Stand up straighter. Look me in the face.'</p>
 
-          <p>He paused, and went on in a gentler tone:</p>
+        <p>He paused, and went on in a gentler tone:</p>
 
-          <p>'You are improving. Intellectually there is very little wrong with you.
+        <p>'You are improving. Intellectually there is very little wrong with you.
           It is only emotionally that you have failed to make progress. Tell me,
           Winston--and remember, no lies: you know that I am always able to detect
           a lie--tell me, what are your true feelings towards Big Brother?'</p>
 
-          <p>'I hate him.'</p>
+        <p>'I hate him.'</p>
 
-          <p>'You hate him. Good. Then the time has come for you to take the last step.
+        <p>'You hate him. Good. Then the time has come for you to take the last step.
           You must love Big Brother. It is not enough to obey him: you must love
           him.'</p>
 
-          <p>He released Winston with a little push towards the guards.</p>
+        <p>He released Winston with a little push towards the guards.</p>
 
-          <p>'Room 101,' he said.</p>
+        <p>'Room 101,' he said.</p>
 
         </p>
       </div>
@@ -9803,7 +9870,7 @@ include '../../src/header.php';
           O'Brien was high up near the roof. This place was many metres underground,
           as deep down as it was possible to go.
 
-          <p>It was bigger than most of the cells he had been in. But he hardly noticed
+        <p>It was bigger than most of the cells he had been in. But he hardly noticed
           his surroundings. All he noticed was that there were two small tables
           straight in front of him, each covered with green baize. One was only a
           metre or two from him, the other was further away, near the door. He was
@@ -9811,23 +9878,23 @@ include '../../src/header.php';
           even his head. A sort of pad gripped his head from behind, forcing him to
           look straight in front of him.</p>
 
-          <p>For a moment he was alone, then the door opened and O'Brien came in.</p>
+        <p>For a moment he was alone, then the door opened and O'Brien came in.</p>
 
-          <p>'You asked me once,' said O'Brien, 'what was in Room 101. I told you that
+        <p>'You asked me once,' said O'Brien, 'what was in Room 101. I told you that
           you knew the answer already. Everyone knows it. The thing that is in
           Room 101 is the worst thing in the world.'</p>
 
-          <p>The door opened again. A guard came in, carrying something made of wire,
+        <p>The door opened again. A guard came in, carrying something made of wire,
           a box or basket of some kind. He set it down on the further table. Because
           of the position in which O'Brien was standing. Winston could not see what
           the thing was.</p>
 
-          <p>'The worst thing in the world,' said O'Brien, 'varies from individual to
+        <p>'The worst thing in the world,' said O'Brien, 'varies from individual to
           individual. It may be burial alive, or death by fire, or by drowning, or
           by impalement, or fifty other deaths. There are cases where it is some
           quite trivial thing, not even fatal.'</p>
 
-          <p>He had moved a little to one side, so that Winston had a better view of
+        <p>He had moved a little to one side, so that Winston had a better view of
           the thing on the table. It was an oblong wire cage with a handle on top
           for carrying it by. Fixed to the front of it was something that looked
           like a fencing mask, with the concave side outwards. Although it was three
@@ -9835,32 +9902,32 @@ include '../../src/header.php';
           lengthways into two compartments, and that there was some kind of creature
           in each. They were rats.</p>
 
-          <p>'In your case,' said O'Brien, 'the worst thing in the world happens to be
+        <p>'In your case,' said O'Brien, 'the worst thing in the world happens to be
           rats.'</p>
 
-          <p>A sort of premonitory tremor, a fear of he was not certain what, had
+        <p>A sort of premonitory tremor, a fear of he was not certain what, had
           passed through Winston as soon as he caught his first glimpse of the cage.
           But at this moment the meaning of the mask-like attachment in front of it
           suddenly sank into him. His bowels seemed to turn to water.</p>
 
-          <p>'You can't do that!' he cried out in a high cracked voice. 'You couldn't,
+        <p>'You can't do that!' he cried out in a high cracked voice. 'You couldn't,
           you couldn't! It's impossible.'</p>
 
-          <p>'Do you remember,' said O'Brien, 'the moment of panic that used to occur
+        <p>'Do you remember,' said O'Brien, 'the moment of panic that used to occur
           in your dreams? There was a wall of blackness in front of you, and a
           roaring sound in your ears. There was something terrible on the other side
           of the wall. You knew that you knew what it was, but you dared not drag it
           into the open. It was the rats that were on the other side of the wall.'</p>
 
-          <p>'O'Brien!' said Winston, making an effort to control his voice. 'You know
+        <p>'O'Brien!' said Winston, making an effort to control his voice. 'You know
           this is not necessary. What is it that you want me to do?'</p>
 
-          <p>O'Brien made no direct answer. When he spoke it was in the schoolmasterish
+        <p>O'Brien made no direct answer. When he spoke it was in the schoolmasterish
           manner that he sometimes affected. He looked thoughtfully into the
           distance, as though he were addressing an audience somewhere behind
           Winston's back.</p>
 
-          <p>'By itself,' he said, 'pain is not always enough. There are occasions when
+        <p>'By itself,' he said, 'pain is not always enough. There are occasions when
           a human being will stand out against pain, even to the point of death.
           But for everyone there is something unendurable--something that cannot be
           contemplated. Courage and cowardice are not involved. If you are falling
@@ -9871,9 +9938,9 @@ include '../../src/header.php';
           cannot withstand, even if you wished to. You will do what is required of
           you.'</p>
 
-          <p>'But what is it, what is it? How can I do it if I don't know what it is?'</p>
+        <p>'But what is it, what is it? How can I do it if I don't know what it is?'</p>
 
-          <p>O'Brien picked up the cage and brought it across to the nearer table.
+        <p>O'Brien picked up the cage and brought it across to the nearer table.
           He set it down carefully on the baize cloth. Winston could hear the blood
           singing in his ears. He had the feeling of sitting in utter loneliness.
           He was in the middle of a great empty plain, a flat desert drenched with
@@ -9882,7 +9949,7 @@ include '../../src/header.php';
           enormous rats. They were at the age when a rat's muzzle grows blunt and
           fierce and his fur brown instead of grey.</p>
 
-          <p>'The rat,' said O'Brien, still addressing his invisible audience,
+        <p>'The rat,' said O'Brien, still addressing his invisible audience,
           'although a rodent, is carnivorous. You are aware of that. You will have
           heard of the things that happen in the poor quarters of this town. In some
           streets a woman dare not leave her baby alone in the house, even for five
@@ -9890,18 +9957,18 @@ include '../../src/header.php';
           will strip it to the bones. They also attack sick or dying people. They
           show astonishing intelligence in knowing when a human being is helpless.'</p>
 
-          <p>There was an outburst of squeals from the cage. It seemed to reach Winston
+        <p>There was an outburst of squeals from the cage. It seemed to reach Winston
           from far away. The rats were fighting; they were trying to get at each
           other through the partition. He heard also a deep groan of despair.
           That, too, seemed to come from outside himself.</p>
 
-          <p>O'Brien picked up the cage, and, as he did so, pressed something in it.
+        <p>O'Brien picked up the cage, and, as he did so, pressed something in it.
           There was a sharp click. Winston made a frantic effort to tear himself
           loose from the chair. It was hopeless; every part of him, even his head,
           was held immovably. O'Brien moved the cage nearer. It was less than a
           metre from Winston's face.</p>
 
-          <p>'I have pressed the first lever,' said O'Brien. 'You understand the
+        <p>'I have pressed the first lever,' said O'Brien. 'You understand the
           construction of this cage. The mask will fit over your head, leaving no
           exit. When I press this other lever, the door of the cage will slide up.
           These starving brutes will shoot out of it like bullets. Have you ever
@@ -9909,7 +9976,7 @@ include '../../src/header.php';
           straight into it. Sometimes they attack the eyes first. Sometimes they
           burrow through the cheeks and devour the tongue.'</p>
 
-          <p>The cage was nearer; it was closing in. Winston heard a succession of
+        <p>The cage was nearer; it was closing in. Winston heard a succession of
           shrill cries which appeared to be occurring in the air above his head. But
           he fought furiously against his panic. To think, to think, even with a
           split second left--to think was the only hope. Suddenly the foul musty
@@ -9920,7 +9987,7 @@ include '../../src/header.php';
           himself. He must interpose another human being, the BODY of another human
           being, between himself and the rats.</p>
 
-          <p>The circle of the mask was large enough now to shut out the vision of
+        <p>The circle of the mask was large enough now to shut out the vision of
           anything else. The wire door was a couple of hand-spans from his face. The
           rats knew what was coming now. One of them was leaping up and down, the
           other, an old scaly grandfather of the sewers, stood up, with his pink
@@ -9928,20 +9995,20 @@ include '../../src/header.php';
           the whiskers and the yellow teeth. Again the black panic took hold of him.
           He was blind, helpless, mindless.</p>
 
-          <p>'It was a common punishment in Imperial China,' said O'Brien as
+        <p>'It was a common punishment in Imperial China,' said O'Brien as
           didactically as ever.</p>
 
-          <p>The mask was closing on his face. The wire brushed his cheek. And then--no,
+        <p>The mask was closing on his face. The wire brushed his cheek. And then--no,
           it was not relief, only hope, a tiny fragment of hope. Too late, perhaps
           too late. But he had suddenly understood that in the whole world there was
           just ONE person to whom he could transfer his punishment--ONE body that he
           could thrust between himself and the rats. And he was shouting frantically,
           over and over.</p>
 
-          <p>'Do it to Julia! Do it to Julia! Not me! Julia! I don't care what you do
+        <p>'Do it to Julia! Do it to Julia! Not me! Julia! I don't care what you do
           to her. Tear her face off, strip her to the bones. Not me! Julia! Not me!'</p>
 
-          <p>He was falling backwards, into enormous depths, away from the rats. He was
+        <p>He was falling backwards, into enormous depths, away from the rats. He was
           still strapped in the chair, but he had fallen through the floor, through
           the walls of the building, through the earth, through the oceans, through
           the atmosphere, into outer space, into the gulfs between the stars--always
@@ -9965,14 +10032,14 @@ include '../../src/header.php';
           window fell on dusty table-tops. It was the lonely hour of fifteen. A
           tinny music trickled from the telescreens.
 
-          <p>Winston sat in his usual corner, gazing into an empty glass. Now and again
+        <p>Winston sat in his usual corner, gazing into an empty glass. Now and again
           he glanced up at a vast face which eyed him from the opposite wall.
           BIG BROTHER IS WATCHING YOU, the caption said. Unbidden, a waiter came and
           filled his glass up with Victory Gin, shaking into it a few drops from
           another bottle with a quill through the cork. It was saccharine flavoured
           with cloves, the speciality of the cafe.</p>
 
-          <p>Winston was listening to the telescreen. At present only music was coming
+        <p>Winston was listening to the telescreen. At present only music was coming
           out of it, but there was a possibility that at any moment there might be
           a special bulletin from the Ministry of Peace. The news from the African
           front was disquieting in the extreme. On and off he had been worrying
@@ -9985,7 +10052,7 @@ include '../../src/header.php';
           losing Central Africa: for the first time in the whole war, the territory
           of Oceania itself was menaced.</p>
 
-          <p>A violent emotion, not fear exactly but a sort of undifferentiated
+        <p>A violent emotion, not fear exactly but a sort of undifferentiated
           excitement, flared up in him, then faded again. He stopped thinking about
           the war. In these days he could never fix his mind on any one subject for
           more than a few moments at a time. He picked up his glass and drained it
@@ -9996,7 +10063,7 @@ include '../../src/header.php';
           night and day, was inextricably mixed up in his mind with the smell of
           those----</p>
 
-          <p>He never named them, even in his thoughts, and so far as it was possible
+        <p>He never named them, even in his thoughts, and so far as it was possible
           he never visualized them. They were something that he was half-aware of,
           hovering close to his face, a smell that clung to his nostrils. As the gin
           rose in him he belched through purple lips. He had grown fatter since they
@@ -10016,13 +10083,13 @@ include '../../src/header.php';
           had always plenty of money nowadays. He even had a job, a sinecure, more
           highly-paid than his old job had been.</p>
 
-          <p>The music from the telescreen stopped and a voice took over. Winston raised
+        <p>The music from the telescreen stopped and a voice took over. Winston raised
           his head to listen. No bulletins from the front, however. It was merely a
           brief announcement from the Ministry of Plenty. In the preceding quarter,
           it appeared, the Tenth Three-Year Plan's quota for bootlaces had been
           overfulfilled by 98 per cent.</p>
 
-          <p>He examined the chess problem and set out the pieces. It was a tricky
+        <p>He examined the chess problem and set out the pieces. It was a tricky
           ending, involving a couple of knights. 'White to play and mate in two
           moves.' Winston looked up at the portrait of Big Brother. White always
           mates, he thought with a sort of cloudy mysticism. Always, without
@@ -10031,13 +10098,13 @@ include '../../src/header.php';
           triumph of Good over Evil? The huge face gazed back at him, full of calm
           power. White always mates.</p>
 
-          <p>The voice from the telescreen paused and added in a different and much
+        <p>The voice from the telescreen paused and added in a different and much
           graver tone: 'You are warned to stand by for an important announcement at
           fifteen-thirty. Fifteen-thirty! This is news of the highest importance.
           Take care not to miss it. Fifteen-thirty!' The tinkling music struck up
           again.</p>
 
-          <p>Winston's heart stirred. That was the bulletin from the front; instinct
+        <p>Winston's heart stirred. That was the bulletin from the front; instinct
           told him that it was bad news that was coming. All day, with little spurts
           of excitement, the thought of a smashing defeat in Africa had been in and
           out of his mind. He seemed actually to see the Eurasian army swarming
@@ -10057,19 +10124,19 @@ include '../../src/header.php';
           layers of feeling, in which one could not say which layer was
           undermost--struggled inside him.</p>
 
-          <p>The spasm passed. He put the white knight back in its place, but for the
+        <p>The spasm passed. He put the white knight back in its place, but for the
           moment he could not settle down to serious study of the chess problem.
           His thoughts wandered again. Almost unconsciously he traced with his
           finger in the dust on the table:</p>
 
-          <p>2+2=5</p>
+        <p>2+2=5</p>
 
-          <p>'They can't get inside you,' she had said. But they could get inside you.
+        <p>'They can't get inside you,' she had said. But they could get inside you.
           'What happens to you here is FOR EVER,' O'Brien had said. That was a true
           word. There were things, your own acts, from which you could never recover.
           Something was killed in your breast: burnt out, cauterized out.</p>
 
-          <p>He had seen her; he had even spoken to her. There was no danger in it. He
+        <p>He had seen her; he had even spoken to her. There was no danger in it. He
           knew as though instinctively that they now took almost no interest in his
           doings. He could have arranged to meet her a second time if either of them
           had wanted to. Actually it was by chance that they had met. It was in the
@@ -10088,7 +10155,7 @@ include '../../src/header.php';
           cold. The wind whistled through the twigs and fretted the occasional,
           dirty-looking crocuses. He put his arm round her waist.</p>
 
-          <p>There was no telescreen, but there must be hidden microphones: besides,
+        <p>There was no telescreen, but there must be hidden microphones: besides,
           they could be seen. It did not matter, nothing mattered. They could have
           lain down on the ground and done THAT if they had wanted to. His flesh
           froze with horror at the thought of it. She made no response whatever to
@@ -10103,7 +10170,7 @@ include '../../src/header.php';
           than flesh. Her body felt like that. It occurred to him that the texture
           of her skin would be quite different from what it had once been.</p>
 
-          <p>He did not attempt to kiss her, nor did they speak. As they walked back
+        <p>He did not attempt to kiss her, nor did they speak. As they walked back
           across the grass, she looked directly at him for the first time. It
           was only a momentary glance, full of contempt and dislike. He wondered
           whether it was a dislike that came purely out of the past or whether it
@@ -10113,13 +10180,13 @@ include '../../src/header.php';
           her clumsy shoe a few centimetres and deliberately crushed a twig. Her
           feet seemed to have grown broader, he noticed.</p>
 
-          <p>'I betrayed you,' she said baldly.</p>
+        <p>'I betrayed you,' she said baldly.</p>
 
-          <p>'I betrayed you,' he said.</p>
+        <p>'I betrayed you,' he said.</p>
 
-          <p>She gave him another quick look of dislike.</p>
+        <p>She gave him another quick look of dislike.</p>
 
-          <p>'Sometimes,' she said, 'they threaten you with something something you
+        <p>'Sometimes,' she said, 'they threaten you with something something you
           can't stand up to, can't even think about. And then you say, "Don't do it
           to me, do it to somebody else, do it to so-and-so." And perhaps you might
           pretend, afterwards, that it was only a trick and that you just said it to
@@ -10129,23 +10196,23 @@ include '../../src/header.php';
           happen to the other person. You don't give a damn what they suffer. All
           you care about is yourself.'</p>
 
-          <p>'All you care about is yourself,' he echoed.</p>
+        <p>'All you care about is yourself,' he echoed.</p>
 
-          <p>'And after that, you don't feel the same towards the other person any
+        <p>'And after that, you don't feel the same towards the other person any
           longer.'</p>
 
-          <p>'No,' he said, 'you don't feel the same.'</p>
+        <p>'No,' he said, 'you don't feel the same.'</p>
 
-          <p>There did not seem to be anything more to say. The wind plastered their
+        <p>There did not seem to be anything more to say. The wind plastered their
           thin overalls against their bodies. Almost at once it became embarrassing
           to sit there in silence: besides, it was too cold to keep still. She said
           something about catching her Tube and stood up to go.</p>
 
-          <p>'We must meet again,' he said.</p>
+        <p>'We must meet again,' he said.</p>
 
-          <p>'Yes,' she said, 'we must meet again.'</p>
+        <p>'Yes,' she said, 'we must meet again.'</p>
 
-          <p>He followed irresolutely for a little distance, half a pace behind her.
+        <p>He followed irresolutely for a little distance, half a pace behind her.
           They did not speak again. She did not actually try to shake him off, but
           walked at just such a speed as to prevent his keeping abreast of her.
           He had made up his mind that he would accompany her as far as the Tube
@@ -10163,22 +10230,22 @@ include '../../src/header.php';
           might have been hers. Perhaps her thickened, stiffened body was no longer
           recognizable from behind.</p>
 
-          <p>'At the time when it happens,' she had said, 'you do mean it.' He had
+        <p>'At the time when it happens,' she had said, 'you do mean it.' He had
           meant it. He had not merely said it, he had wished it. He had wished that
           she and not he should be delivered over to the----</p>
 
-          <p>Something changed in the music that trickled from the telescreen. A
+        <p>Something changed in the music that trickled from the telescreen. A
           cracked and jeering note, a yellow note, came into it. And then--perhaps
           it was not happening, perhaps it was only a memory taking on the semblance
           of sound--a voice was singing:</p>
 
-<p>'Under the spreading chestnut tree
+        <p>'Under the spreading chestnut tree
           I sold you and you sold me----'</p>
 
-<p>The tears welled up in his eyes. A passing waiter noticed that his glass
+        <p>The tears welled up in his eyes. A passing waiter noticed that his glass
           was empty and came back with the gin bottle.</p>
 
-          <p>He took up his glass and sniffed at it. The stuff grew not less but more
+        <p>He took up his glass and sniffed at it. The stuff grew not less but more
           horrible with every mouthful he drank. But it had become the element he
           swam in. It was his life, his death, and his resurrection. It was gin that
           sank him into stupor every night, and gin that revived him every morning.
@@ -10211,7 +10278,7 @@ include '../../src/header.php';
           they would sit round the table looking at one another with extinct eyes,
           like ghosts fading at cock-crow.</p>
 
-          <p>The telescreen was silent for a moment. Winston raised his head again. The
+        <p>The telescreen was silent for a moment. Winston raised his head again. The
           bulletin! But no, they were merely changing the music. He had the map of
           Africa behind his eyelids. The movement of the armies was a diagram: a
           black arrow tearing vertically southward, and a white arrow horizontally
@@ -10219,16 +10286,16 @@ include '../../src/header.php';
           looked up at the imperturbable face in the portrait. Was it conceivable
           that the second arrow did not even exist?</p>
 
-          <p>His interest flagged again. He drank another mouthful of gin, picked up
+        <p>His interest flagged again. He drank another mouthful of gin, picked up
           the white knight and made a tentative move. Check. But it was evidently
           not the right move, because----</p>
 
-          <p>Uncalled, a memory floated into his mind. He saw a candle-lit room with a
+        <p>Uncalled, a memory floated into his mind. He saw a candle-lit room with a
           vast white-counterpaned bed, and himself, a boy of nine or ten, sitting on
           the floor, shaking a dice-box, and laughing excitedly. His mother was
           sitting opposite him and also laughing.</p>
 
-          <p>It must have been about a month before she disappeared. It was a moment of
+        <p>It must have been about a month before she disappeared. It was a moment of
           reconciliation, when the nagging hunger in his belly was forgotten and his
           earlier affection for her had temporarily revived. He remembered the day
           well, a pelting, drenching day when the water streamed down the window-pane
@@ -10253,19 +10320,19 @@ include '../../src/header.php';
           laughing because the others were laughing. For a whole afternoon they had
           all been happy together, as in his earlier childhood.</p>
 
-          <p>He pushed the picture out of his mind. It was a false memory. He was
+        <p>He pushed the picture out of his mind. It was a false memory. He was
           troubled by false memories occasionally. They did not matter so long as
           one knew them for what they were. Some things had happened, others had not
           happened. He turned back to the chessboard and picked up the white knight
           again. Almost in the same instant it dropped on to the board with a
           clatter. He had started as though a pin had run into him.</p>
 
-          <p>A shrill trumpet-call had pierced the air. It was the bulletin! Victory!
+        <p>A shrill trumpet-call had pierced the air. It was the bulletin! Victory!
           It always meant victory when a trumpet-call preceded the news. A sort of
           electric drill ran through the cafe. Even the waiters had started and
           pricked up their ears.</p>
 
-          <p>The trumpet-call had let loose an enormous volume of noise. Already an
+        <p>The trumpet-call had let loose an enormous volume of noise. Already an
           excited voice was gabbling from the telescreen, but even as it started
           it was almost drowned by a roar of cheering from outside. The news had
           run round the streets like magic. He could hear just enough of what was
@@ -10278,7 +10345,7 @@ include '../../src/header.php';
           the war within measurable distance of its end--victory--greatest victory
           in human history--victory, victory, victory!'</p>
 
-          <p>Under the table Winston's feet made convulsive movements. He had not
+        <p>Under the table Winston's feet made convulsive movements. He had not
           stirred from his seat, but in his mind he was running, swiftly running,
           he was with the crowds outside, cheering himself deaf. He looked up again
           at the portrait of Big Brother. The colossus that bestrode the world!
@@ -10290,7 +10357,7 @@ include '../../src/header.php';
           of Love, but the final, indispensable, healing change had never happened,
           until this moment.</p>
 
-          <p>The voice from the telescreen was still pouring forth its tale of prisoners
+        <p>The voice from the telescreen was still pouring forth its tale of prisoners
           and booty and slaughter, but the shouting outside had died down a little.
           The waiters were turning back to their work. One of them approached with
           the gin bottle. Winston, sitting in a blissful dream, paid no attention
@@ -10301,7 +10368,7 @@ include '../../src/header.php';
           of walking in sunlight, and an armed guard at his back. The long-hoped-for
           bullet was entering his brain.</p>
 
-          <p>He gazed up at the enormous face. Forty years it had taken him to learn
+        <p>He gazed up at the enormous face. Forty years it had taken him to learn
           what kind of smile was hidden beneath the dark moustache. O cruel, needless
           misunderstanding! O stubborn, self-willed exile from the loving breast!
           Two gin-scented tears trickled down the sides of his nose. But it was all
@@ -10319,11 +10386,11 @@ include '../../src/header.php';
         <p>
           APPENDIX.
 
-          <p>The Principles of Newspeak</p>
+        <p>The Principles of Newspeak</p>
 
 
 
-          <p>Newspeak was the official language of Oceania and had been devised to meet
+        <p>Newspeak was the official language of Oceania and had been devised to meet
           the ideological needs of Ingsoc, or English Socialism. In the year 1984
           there was not as yet anyone who used Newspeak as his sole means of
           communication, either in speech or writing. The leading articles in
@@ -10334,12 +10401,13 @@ include '../../src/header.php';
           Party members tending to use Newspeak words and grammatical constructions
           more and more in their everyday speech. The version in use in 1984, and
           embodied in the Ninth and Tenth Editions of the Newspeak Dictionary, was
-          a provisional one, and contained many <span class="tooltip"><strong>superfluous</strong><span class="tooltiptext">Unnecessary, especially through being more than enough</span></span> words and archaic
+          a provisional one, and contained many <span class="tooltip"><strong>superfluous</strong><span
+              class="tooltiptext">Unnecessary, especially through being more than enough</span></span> words and archaic
           formations which were due to be suppressed later. It is with the final,
           perfected version, as embodied in the Eleventh Edition of the Dictionary,
           that we are concerned here.</p>
 
-          <p>The purpose of Newspeak was not only to provide a medium of expression
+        <p>The purpose of Newspeak was not only to provide a medium of expression
           for the world-view and mental habits proper to the devotees of Ingsoc,
           but to make all other modes of thought impossible. It was intended that
           when Newspeak had been adopted once and for all and Oldspeak forgotten,
@@ -10363,7 +10431,7 @@ include '../../src/header.php';
           but to DIMINISH the range of thought, and this purpose was indirectly
           assisted by cutting the choice of words down to a minimum.</p>
 
-          <p>Newspeak was founded on the English language as we now know it, though
+        <p>Newspeak was founded on the English language as we now know it, though
           many Newspeak sentences, even when not containing newly-created words,
           would be barely intelligible to an English-speaker of our own day. Newspeak
           words were divided into three distinct classes, known as the A vocabulary,
@@ -10372,7 +10440,7 @@ include '../../src/header.php';
           peculiarities of the language can be dealt with in the section devoted to
           the A vocabulary, since the same rules held good for all three categories.</p>
 
-<p>THE A VOCABULARY. The A vocabulary consisted of the words needed for the
+        <p>THE A VOCABULARY. The A vocabulary consisted of the words needed for the
           business of everyday life--for such things as eating, drinking, working,
           putting on one's clothes, going up and down stairs, riding in vehicles,
           gardening, cooking, and the like. It was composed almost entirely of words
@@ -10387,7 +10455,7 @@ include '../../src/header.php';
           only to express simple, purposive thoughts, usually involving concrete
           objects or physical actions.</p>
 
-          <p>The grammar of Newspeak had two outstanding peculiarities. The first of
+        <p>The grammar of Newspeak had two outstanding peculiarities. The first of
           these was an almost complete interchangeability between different parts of
           speech. Any word in the language (in principle this applied even to very
           abstract words such as IF or WHEN) could be used either as verb, noun,
@@ -10410,7 +10478,7 @@ include '../../src/header.php';
           except for a very few already ending in -WISE: the -WISE termination was
           invariable. The word WELL, for example, was replaced by GOODWISE.</p>
 
-          <p>In addition, any word--this again applied in principle to every word in
+        <p>In addition, any word--this again applied in principle to every word in
           the language--could be negatived by adding the affix UN-, or could be
           strengthened by the affix PLUS-, or, for still greater emphasis,
           DOUBLEPLUS-. Thus, for example, UNCOLD meant 'warm', while PLUSCOLD and
@@ -10425,7 +10493,7 @@ include '../../src/header.php';
           which of them to suppress. DARK, for example, could be replaced by UNLIGHT,
           or LIGHT by UNDARK, according to preference.</p>
 
-          <p>The second distinguishing mark of Newspeak grammar was its regularity.
+        <p>The second distinguishing mark of Newspeak grammar was its regularity.
           Subject to a few exceptions which are mentioned below all inflexions
           followed the same rules. Thus, in all verbs the preterite and the past
           participle were the same and ended in -ED. The preterite of STEAL was
@@ -10436,7 +10504,7 @@ include '../../src/header.php';
           adjectives was invariably made by adding -ER, -EST (GOOD, GOODER, GOODEST),
           irregular forms and the MORE, MOST formation being suppressed.</p>
 
-          <p>The only classes of words that were still allowed to inflect irregularly
+        <p>The only classes of words that were still allowed to inflect irregularly
           were the pronouns, the relatives, the demonstrative adjectives, and the
           auxiliary verbs. All of these followed their ancient usage, except that
           WHOM had been scrapped as unnecessary, and the SHALL, SHOULD tenses had
@@ -10449,7 +10517,7 @@ include '../../src/header.php';
           chiefly in connexion with the B vocabulary. WHY so great an importance was
           attached to ease of pronunciation will be made clear later in this essay.</p>
 
-<p>THE B VOCABULARY. The B vocabulary consisted of words which had been
+        <p>THE B VOCABULARY. The B vocabulary consisted of words which had been
           deliberately constructed for political purposes: words, that is to say,
           which not only had in every case a political implication, but were intended
           to impose a desirable mental attitude upon the person using them. Without
@@ -10461,19 +10529,20 @@ include '../../src/header.php';
           whole ranges of ideas into a few syllables, and at the same time more
           accurate and forcible than ordinary language.</p>
 
-          <p>The B words were in all cases compound words. [Compound words such as
+        <p>The B words were in all cases compound words. [Compound words such as
           SPEAKWRITE, were of course to be found in the A vocabulary, but these were
           merely convenient abbreviations and had no special ideological colour.]
           They consisted of two or more words, or portions of words, welded together
           in an easily pronounceable form. The resulting amalgam was always a
           noun-verb, and inflected according to the ordinary rules. To take a single
           example: the word GOODTHINK, meaning, very roughly, 'orthodoxy', or, if
-          one chose to regard it as a verb, 'to think in an <span class="tooltip"><strong>orthodox</strong><span class="tooltiptext">Conforming to what is generally accepted as right or true</span></span> manner'. This
+          one chose to regard it as a verb, 'to think in an <span class="tooltip"><strong>orthodox</strong><span
+              class="tooltiptext">Conforming to what is generally accepted as right or true</span></span> manner'. This
           inflected as follows: noun-verb, GOODTHINK; past tense and past participle,
           GOODTHINKED; present participle, GOOD-THINKING; adjective, GOODTHINKFUL;
           adverb, GOODTHINKWISE; verbal noun, GOODTHINKER.</p>
 
-          <p>The B words were not constructed on any etymological plan. The words of
+        <p>The B words were not constructed on any etymological plan. The words of
           which they were made up could be any parts of speech, and could be placed
           in any order and mutilated in any way which made them easy to pronounce
           while indicating their derivation. In the word CRIMETHINK (thoughtcrime),
@@ -10487,7 +10556,7 @@ include '../../src/header.php';
           however, all B words could inflect, and all inflected in exactly the
           same way.</p>
 
-          <p>Some of the B words had highly subtilized meanings, barely intelligible to
+        <p>Some of the B words had highly subtilized meanings, barely intelligible to
           anyone who had not mastered the language as a whole. Consider, for example,
           such a typical sentence from a 'Times' leading article as OLDTHINKERS
           UNBELLYFEEL INGSOC. The shortest rendering that one could make of this
@@ -10510,7 +10579,7 @@ include '../../src/header.php';
           sure what they meant: to make sure, that is to say, what ranges of words
           they cancelled by their existence.</p>
 
-          <p>As we have already seen in the case of the word FREE, words which had
+        <p>As we have already seen in the case of the word FREE, words which had
           once borne a heretical meaning were sometimes retained for the sake of
           convenience, but only with the undesirable meanings purged out of them.
           Countless other words such as HONOUR, JUSTICE, MORALITY, INTERNATIONALISM,
@@ -10545,7 +10614,7 @@ include '../../src/header.php';
           than the perception that it WAS heretical: beyond that point the necessary
           words were nonexistent.</p>
 
-          <p>No word in the B vocabulary was ideologically neutral. A great many were
+        <p>No word in the B vocabulary was ideologically neutral. A great many were
           euphemisms. Such words, for instance, as JOYCAMP (forced-labour camp) or
           MINIPAX (Ministry of Peace, i.e. Ministry of War) meant almost the exact
           opposite of what they appeared to mean. Some words, on the other hand,
@@ -10558,7 +10627,7 @@ include '../../src/header.php';
           to be mere abbreviations and which derived their ideological colour not
           from their meaning, but from their structure.</p>
 
-          <p>So far as it could be contrived, everything that had or might have
+        <p>So far as it could be contrived, everything that had or might have
           political significance of any kind was fitted into the B vocabulary. The
           name of every organization, or body of people, or doctrine, or country, or
           institution, or public building, was invariably cut down into the familiar
@@ -10571,7 +10640,11 @@ include '../../src/header.php';
           the twentieth century, telescoped words and phrases had been one of the
           characteristic features of political language; and it had been noticed
           that the tendency to use abbreviations of this kind was most marked in
-          <span class="tooltip"><strong>totalitarian</strong><span class="tooltiptext">Relating to a system of government that is centralized and dictatorial and requires complete subservience to the state</span></span> countries and <span class="tooltip"><strong>totalitarian</strong><span class="tooltiptext">Relating to a system of government that is centralized and dictatorial and requires complete subservience to the state</span></span> organizations. Examples were such
+          <span class="tooltip"><strong>totalitarian</strong><span class="tooltiptext">Relating to a system of
+              government that is centralized and dictatorial and requires complete subservience to the
+              state</span></span> countries and <span class="tooltip"><strong>totalitarian</strong><span
+              class="tooltiptext">Relating to a system of government that is centralized and dictatorial and requires
+              complete subservience to the state</span></span> organizations. Examples were such
           words as NAZI, GESTAPO, COMINTERN, INPRECORR, AGITPROP. In the beginning
           the practice had been adopted as it were instinctively, but in Newspeak
           it was used with a conscious purpose. It was perceived that in thus
@@ -10589,9 +10662,10 @@ include '../../src/header.php';
           controllable than those called up by MINISTRY OF TRUTH. This accounted not
           only for the habit of abbreviating whenever possible, but also for the
           almost exaggerated care that was taken to make every word easily
-          pronounceable.</p>
+          pronounceable.
+        </p>
 
-          <p>In Newspeak, euphony outweighed every consideration other than exactitude
+        <p>In Newspeak, euphony outweighed every consideration other than exactitude
           of meaning. Regularity of grammar was always sacrificed to it when it
           seemed necessary. And rightly so, since what was required, above all for
           political purposes, was short clipped words of unmistakable meaning which
@@ -10614,7 +10688,7 @@ include '../../src/header.php';
           and a certain wilful ugliness which was in accord with the spirit of
           Ingsoc, assisted the process still further.</p>
 
-          <p>So did the fact of having very few words to choose from. Relative to our
+        <p>So did the fact of having very few words to choose from. Relative to our
           own, the Newspeak vocabulary was tiny, and new ways of reducing it were
           constantly being devised. Newspeak, indeed, differed from most all other
           languages in that its vocabulary grew smaller instead of larger every
@@ -10624,11 +10698,13 @@ include '../../src/header.php';
           brain centres at all. This aim was frankly admitted in the Newspeak word
           DUCKSPEAK, meaning 'to quack like a duck'. Like various other words in
           the B vocabulary, DUCKSPEAK was ambivalent in meaning. Provided that the
-          opinions which were quacked out were <span class="tooltip"><strong>orthodox</strong><span class="tooltiptext">Conforming to what is generally accepted as right or true</span></span> ones, it implied nothing but
+          opinions which were quacked out were <span class="tooltip"><strong>orthodox</strong><span
+              class="tooltiptext">Conforming to what is generally accepted as right or true</span></span> ones, it
+          implied nothing but
           praise, and when 'The Times' referred to one of the orators of the Party
           as a DOUBLEPLUSGOOD DUCKSPEAKER it was paying a warm and valued compliment.</p>
 
-<p>THE C VOCABULARY. The C vocabulary was supplementary to the others and
+        <p>THE C VOCABULARY. The C vocabulary was supplementary to the others and
           consisted entirely of scientific and technical terms. These resembled the
           scientific terms in use today, and were constructed from the same roots,
           but the usual care was taken to define them rigidly and strip them of
@@ -10643,11 +10719,12 @@ include '../../src/header.php';
           branches. There was, indeed, no word for 'Science', any meaning that it
           could possibly bear being already sufficiently covered by the word INGSOC.</p>
 
-          <p>From the foregoing account it will be seen that in Newspeak the expression
+        <p>From the foregoing account it will be seen that in Newspeak the expression
           of unorthodox opinions, above a very low level, was well-nigh impossible.
           It was of course possible to utter heresies of a very crude kind, a
           species of blasphemy. It would have been possible, for example, to say
-          BIG BROTHER IS UNGOOD. But this statement, which to an <span class="tooltip"><strong>orthodox</strong><span class="tooltiptext">Conforming to what is generally accepted as right or true</span></span> ear merely
+          BIG BROTHER IS UNGOOD. But this statement, which to an <span class="tooltip"><strong>orthodox</strong><span
+              class="tooltiptext">Conforming to what is generally accepted as right or true</span></span> ear merely
           conveyed a self-evident absurdity, could not have been sustained by
           reasoned argument, because the necessary words were not available. Ideas
           inimical to Ingsoc could only be entertained in a vague wordless form,
@@ -10678,7 +10755,7 @@ include '../../src/header.php';
           fewer and fewer, their meanings more and more rigid, and the chance of
           putting them to improper uses always diminishing.</p>
 
-          <p>When Oldspeak had been once and for all superseded, the last link with
+        <p>When Oldspeak had been once and for all superseded, the last link with
           the past would have been severed. History had already been rewritten,
           but fragments of the literature of the past survived here and there,
           imperfectly censored, and so long as one retained one's knowledge of
@@ -10686,14 +10763,15 @@ include '../../src/header.php';
           if they chanced to survive, would be unintelligible and untranslatable.
           It was impossible to translate any passage of Oldspeak into Newspeak unless
           it either referred to some technical process or some very simple everyday
-          action, or was already <span class="tooltip"><strong>orthodox</strong><span class="tooltiptext">Conforming to what is generally accepted as right or true</span></span> (GOODTHINKFUL would be the Newspeak
+          action, or was already <span class="tooltip"><strong>orthodox</strong><span class="tooltiptext">Conforming to
+              what is generally accepted as right or true</span></span> (GOODTHINKFUL would be the Newspeak
           expression) in tendency. In practice this meant that no book written before
           approximately 1960 could be translated as a whole. Pre-revolutionary
           literature could only be subjected to ideological translation--that is,
           alteration in sense as well as language. Take for example the well-known
           passage from the Declaration of Independence:</p>
 
-<p>WE HOLD THESE TRUTHS TO BE SELF-EVIDENT, THAT ALL MEN ARE CREATED EQUAL,
+        <p>WE HOLD THESE TRUTHS TO BE SELF-EVIDENT, THAT ALL MEN ARE CREATED EQUAL,
           THAT THEY ARE ENDOWED BY THEIR CREATOR WITH CERTAIN INALIENABLE RIGHTS,
           THAT AMONG THESE ARE LIFE, LIBERTY, AND THE PURSUIT OF HAPPINESS.
           THAT TO SECURE THESE RIGHTS, GOVERNMENTS ARE INSTITUTED AMONG MEN,
@@ -10701,13 +10779,13 @@ include '../../src/header.php';
           ANY FORM OF GOVERNMENT BECOMES DESTRUCTIVE OF THOSE ENDS, IT IS THE RIGHT
           OF THE PEOPLE TO ALTER OR ABOLISH IT, AND TO INSTITUTE NEW GOVERNMENT...</p>
 
-<p>It would have been quite impossible to render this into Newspeak while
+        <p>It would have been quite impossible to render this into Newspeak while
           keeping to the sense of the original. The nearest one could come to doing
           so would be to swallow the whole passage up in the single word CRIMETHINK.
           A full translation could only be an ideological translation, whereby
           Jefferson's words would be changed into a panegyric on absolute government.</p>
 
-          <p>A good deal of the literature of the past was, indeed, already being
+        <p>A good deal of the literature of the past was, indeed, already being
           transformed in this way. Considerations of prestige made it desirable to
           preserve the memory of certain historical figures, while at the same time
           bringing their achievements into line with the philosophy of Ingsoc.
@@ -10725,11 +10803,11 @@ include '../../src/header.php';
 
 
 
-          <p>THE END</p>
+        <p>THE END</p>
 
 
 
-<p>Project Gutenberg Australia</p>
+        <p>Project Gutenberg Australia</p>
 
         </p>
       </div>
@@ -10867,7 +10945,7 @@ include '../../src/header.php';
       const isTeacherMode = document.body.classList.contains('teacher-mode');
       const maxVal = isTeacherMode ? totalChapters : 22;
 
-    if (num < 1) num = 1;
+      if (num < 1) num = 1;
       if (num > maxVal) num = maxVal;
       currentChapter = num;
 
