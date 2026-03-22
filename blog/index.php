@@ -4,179 +4,30 @@
 // This single PHP array powers both the server-side meta tags
 // AND the client-side JavaScript rendering.
 
-$blogData = [
-    [
-      "id" => 1,
-      "publicId" => "gS8wP4nE", // NEW: Persistent public ID
-      "slug" => "getting-started-with-php",
-      "title" => "Getting Started with PHP for Web Development",
-      "author" => "Hesten Allison",
-      "publishDate" => "2025-11-10",
-      "category" => "Web Development",
-      "tags" => ["PHP", "Backend", "Tutorial", "Beginner"],
-      "excerpt" => "Learn the basics of PHP, a powerful server-side scripting language, and how to set up your first project.",
-      "imageUrl" => "https://placehold.co/600x400/6366F1/FFFFFF?text=PHP+Basics",
-      "content" => <<<HTML
-        <p class="mb-4">PHP, which stands for "Hypertext Preprocessor," is one of the most popular server-side scripting languages on the web. It's the engine behind massive platforms like WordPress, Facebook (originally), and Wikipedia. In this post, we'll dive into the absolute basics to get you started.</p>
-        <h3 class="text-2xl font-semibold text-primary mb-3">What is Server-Side Scripting?</h3>
-        <p class="mb-4">When you visit a static HTML website, your browser requests an <code>.html</code> file, and the server sends it exactly as-is. When you visit a PHP-powered site, the server doesn't just send a file. It executes the PHP code inside the file first. This code can do things like fetch data from a database, check if a user is logged in, or build the HTML page dynamically based on the request. After the code runs, the server sends the *resulting* HTML to your browser.</p>
-        <h3 class="text-2xl font-semibold text-primary mb-3">Your First PHP Script</h3>
-        <p class="mb-4">Creating a "Hello, World!" script in PHP is simple. Create a file named <code>index.php</code> and add the following code:</p>
-        <pre class="bg-gray-800 text-white p-4 rounded-lg overflow-x-auto mb-4 dark:bg-gray-900"><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-  &lt;title&gt;My First PHP Page&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;h1&gt;
-    &lt;?php
-      echo "Hello, World!";
-    ?&gt;
-  &lt;/h1&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-        <p>To run this, you can't just open the file in your browser. You need a local server environment like XAMPP, MAMP, or WAMP, or you can use PHP's built-in web server by running <code>php -S localhost:8000</code> in your terminal from the project's directory.</p>
-        <h3 class="text-2xl font-semibold text-primary mb-3">Key Takeaways</h3>
-        <ul class="list-disc list-inside mb-4 pl-4 space-y-2">
-          <li>PHP is a server-side language.</li>
-          <li>PHP code is executed on the server, not in the browser.</li>
-          <li>PHP files end with the <code>.php</code> extension.</li>
-          <li>PHP code blocks start with <code>&lt;?php</code> and end with <code>?&gt;</code>.</li>
-        </ul>
-        <p>This is just the tip of the iceberg, but it's a solid foundation for your journey into web development!</p>
-HTML
-    ],
-    [
-      "id" => 2,
-      "publicId" => "mTw9rBvK", // NEW: Persistent public ID
-      "slug" => "mastering-tailwind-css",
-      "title" => "Mastering Tailwind CSS for Rapid UI Development",
-      "author" => "Jane Doe",
-      "publishDate" => "2025-11-12",
-      "category" => "Web Development",
-      "tags" => ["Tailwind", "CSS", "Frontend", "UI/UX"],
-      "excerpt" => "A deep dive into utility-first CSS and how Tailwind CSS can transform your development workflow.",
-      "imageUrl" => "https://placehold.co/600x400/38BDF8/FFFFFF?text=Tailwind+CSS",
-      "content" => <<<HTML
-        <p class="mb-4">Tailwind CSS is a "utility-first" CSS framework. Unlike other frameworks like Bootstrap, it doesn't give you pre-built components like <code>.btn</code> or <code>.card</code>. Instead, it gives you low-level utility classes that let you build completely custom designs directly in your HTML.</p>
-        <h3 class="text-2xl font-semibold text-primary mb-3">The Utility-First Philosophy</h3>
-        <p class="mb-4">At first, this can look messy. Your HTML might look like this:</p>
-        <pre class="bg-gray-800 text-white p-4 rounded-lg overflow-x-auto mb-4 dark:bg-gray-900"><code>&lt;div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4"&gt;
-  ...
-&lt;/div&gt;
-</code></pre>
-        <p class="mb-4">The magic is that you are not context-switching between HTML and CSS files. You are not trying to come up with class names like <code>.user-profile-card-header</code>. You are just applying styles directly. This makes development incredibly fast and component-based design a breeze.</p>
-        <h3 class="text-2xl font-semibold text-primary mb-3">Key Advantages</h3>
-        <ul class="list-disc list-inside mb-4 pl-4 space-y-2">
-          <li><strong>Speed:</strong> Build custom designs without writing custom CSS.</li>
-          <li><strong>Consistency:</strong> Uses a built-in design system (spacing, colors) so your UI is consistent.</li>
-          <li><strong>Responsive Design:</strong> Responsive classes (e.g., <code>md:flex</code>) make mobile-first design easy.</li>
-          <li><strong>Performance:</strong> Purges unused styles at build time, resulting in tiny CSS files.</li>
-        </ul>
-        <p>This website itself is built using Tailwind CSS, including the light/dark mode functionality. It's a powerful tool for any modern web developer.</p>
-HTML
-    ],
-    [
-      "id" => 3,
-      "publicId" => "pLs7jXqZ", // NEW: Persistent public ID
-      "slug" => "personalized-learning-strategies",
-      "title" => "Personalized Learning Strategies for Students",
-      "author" => "Hesten Allison",
-      "publishDate" => "2025-11-05",
-      "category" => "Education",
-      "tags" => ["Learning", "Education", "Students", "Pedagogy"],
-      "excerpt" => "Exploring different strategies to tailor the educational experience to each student's unique needs.",
-      "imageUrl" => "https://placehold.co/600x400/34D399/FFFFFF?text=Learning",
-      "content" => <<<HTML
-        <p class="mb-4">Personalized learning isn't just about letting students use computers. It's a pedagogical approach that tailors instruction to meet the individual needs, strengths, and interests of each learner. The goal is to make learning more engaging and effective.</p>
-        <h3 class="text-2xl font-semibold text-primary mb-3">Core Components of Personalized Learning</h3>
-        <ul class="list-disc list-inside mb-4 pl-4 space-y-2">
-          <li><strong>Student Profiles:</strong> Understanding each student's skills, interests, and learning goals.</li>
-          <li><strong>Flexible Learning Paths:</strong> Allowing students to progress at their own pace and choose topics that interest them.</li>
-          <li><strong>Competency-Based Progression:</strong> Students advance based on demonstrating mastery of a subject, not just time spent in class.</li>
-          <li><strong>Technology Integration:</strong> Using tools like adaptive learning software to provide real-time feedback and customized content.</li>
-        </ul>
-        <h3 class="text-2xl font-semibold text-primary mb-3">Why It Matters</h3>
-        <p class="mb-4">The traditional "one-size-fits-all" model of education doesn't work for everyone. Students with learning disabilities, in particular, can be left behind. Personalized learning empowers these students by giving them the specific tools and support they need to succeed.</p>
-        <p>By focusing on the individual, we can foster a love of learning and build skills that last a lifetime.</p>
-HTML
-    ],
-    [
-      "id" => 4,
-      "publicId" => "nFp3yZqR", // NEW: Persistent public ID
-      "slug" => "new-post-slug",
-      "title" => "My New Blog Post Title",
-      "author" => "Your Name",
-      "publishDate" => "2025-11-14",
-      "category" => "New Category",
-      "tags" => ["New Tag", "Example"],
-      "excerpt" => "A short summary of this amazing new post.",
-      "imageUrl" => "https://placehold.co/600x400/F87171/FFFFFF?text=New+Post",
-      "content" => <<<HTML
-        <p class="mb-4">Start writing your new post content here using HTML.</p>
-        <h3 class="text-2xl font-semibold text-primary mb-3">A New Section</h3>
-        <p>More details...</p>
-HTML
-    ],
-    [
-      "id" => 5,
-      "publicId" => "aQ9bVwCj", // NEW: Persistent public ID
-      "slug" => "another-post",
-      "title" => "Another Great Article",
-      "author" => "Hesten Allison",
-      "publishDate" => "2025-11-15",
-      "category" => "Education",
-      "tags" => ["Learning", "Tips"],
-      "excerpt" => "This is another post to demonstrate pagination and related articles.",
-      "imageUrl" => "https://placehold.co/600x400/FACC15/FFFFFF?text=Post+5",
-      "content" => "<p>This is the full content for post 5.</p>"
-    ],
-    [
-      "id" => 6,
-      "publicId" => "kH6gLpYx", // NEW: Persistent public ID
-      "slug" => "web-accessibility",
-      "title" => "The Importance of Web Accessibility",
-      "author" => "Jane Doe",
-      "publishDate" => "2025-11-16",
-      "category" => "Web Development",
-      "tags" => ["Accessibility", "Frontend", "UI/UX"],
-      "excerpt" => "Making the web accessible to everyone is not just a good idea, it's essential.",
-      "imageUrl" => "https://placehold.co/600x400/A78BFA/FFFFFF?text=A11Y",
-      "content" => "<p>This is the full content for post 6.</p>"
-    ],
-    [
-      "id" => 7,
-      "publicId" => "zC1jR7sE", // NEW: Persistent public ID
-      "slug" => "getting-started-with-js",
-      "title" => "Getting Started with JavaScript",
-      "author" => "Hesten Allison",
-      "publishDate" => "2025-11-17",
-      "category" => "Web Development",
-      "tags" => ["JavaScript", "Frontend", "Tutorial", "Beginner"],
-      "excerpt" => "Learn the fundamentals of JavaScript, the language of the web.",
-      "imageUrl" => "https://placehold.co/600x400/FBCFE8/000000?text=JS+Basics",
-      "content" => "<p>This is the full content for post 7.</p>"
-    ]
-    // --- ADD NEW POSTS HERE ---
-    // This is the *only* place you need to add them!
-];
+require_once __DIR__ . '/data.php';
 
 // --- DYNAMIC METADATA LOGIC ---
 $pageTitle = "Hesten's Learning Blog";
 $pageDescription = "A blog about personalized learning, technology, and education.";
 $pageKeywords = "blog, education, learning, tailwind, php";
 $pageAuthor = "Hesten Allison";
+$pageOgImage = "/Images/6791421e-7ca7-40bd-83d3-06a479bf7f36.png"; // Default OG image
 $welcomeMessage = "Welcome to the Blog"; // Optional: For the popup
 $welcomeParagraph = "Explore articles on learning, technology, and more."; // Optional: For the popup
 
-if (isset($_GET['id'])) { // UPDATED: Was 'slug'
-    $currentId = $_GET['id']; // UPDATED: Was 'slug'
+if (isset($_GET['id'])) {
+    $currentId = $_GET['id'];
     foreach ($blogData as $post) {
-        if ($post['publicId'] === $currentId) { // UPDATED: Check 'publicId'
+        if ($post['publicId'] === $currentId) {
             $pageTitle = $post['title'] . " | Hesten's Learning Blog";
             $pageDescription = $post['excerpt'];
-            // You could also add post tags to $pageKeywords here
+            $pageAuthor = $post['author'];
+            if (!empty($post['imageUrl'])) {
+                $pageOgImage = $post['imageUrl'];
+            }
+            if (!empty($post['tags'])) {
+                $pageKeywords .= ", " . implode(", ", $post['tags']);
+            }
             break;
         }
     }
@@ -196,9 +47,9 @@ if (isset($_GET['id'])) { // UPDATED: Was 'slug'
 
   <!-- View: Blog Post List (Default View) -->
   <div id="blog-list-view">
-    <header class="mb-8">
-      <h1 class="text-4xl font-bold text-primary mb-4">Blog Posts</h1>
-      <p class="text-xl text-text-secondary">Explore articles, tutorials, and thoughts on education and technology.</p>
+    <header class="mb-12 text-center mt-8">
+      <h1 class="text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary mb-6 tracking-tight drop-shadow-sm">Explore Our Insights</h1>
+      <p class="text-xl md:text-2xl text-text-secondary max-w-2xl mx-auto leading-relaxed">Discover actionable articles, step-by-step tutorials, and deep thoughts on modern education and technology.</p>
     </header>
 
     <!-- Filters: Search, Category, and Tags -->
@@ -284,6 +135,30 @@ if (isset($_GET['id'])) { // UPDATED: Was 'slug'
   const postsPerPage = 6;
 
   document.addEventListener("DOMContentLoaded", () => {
+    // --- DEVELOPMENT VERIFICATION ---
+    // Double-checking for duplicate IDs on the frontend side
+    const seenPublicIds = new Set();
+    const seenIds = new Set();
+    let hasDuplicates = false;
+
+    blogData.forEach(post => {
+      if (seenIds.has(post.id)) {
+        console.error(`🚨 Duplicate numeric ID found in blogData: ${post.id}`);
+        hasDuplicates = true;
+      }
+      seenIds.add(post.id);
+
+      if (seenPublicIds.has(post.publicId)) {
+        console.error(`🚨 Duplicate publicId found in blogData: "${post.publicId}"`);
+        hasDuplicates = true;
+      }
+      seenPublicIds.add(post.publicId);
+    });
+
+    if (hasDuplicates) {
+      console.warn("Please fix the duplicate IDs in blog/data.php to avoid routing bugs!");
+    }
+
     // --- ELEMENT SELECTORS ---
     const blogListView = document.getElementById("blog-list-view");
     const blogPostView = document.getElementById("blog-post-view");
@@ -407,22 +282,28 @@ if (isset($_GET['id'])) { // UPDATED: Was 'slug'
       const postUrl = `?id=${post.publicId}`; // UPDATED: Was 'slug'
       const card = document.createElement("a");
       card.href = postUrl;
-      card.className = "flex flex-col bg-content-bg shadow-lg rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 group focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2";
+      card.className = "flex flex-col bg-content-bg/80 backdrop-blur-sm shadow-xl rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-800 hover:shadow-2xl hover:border-primary/50 transition-all duration-500 transform hover:-translate-y-2 group focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 relative";
 
       // Calculate reading time
       const readingTime = calculateReadingTime(post.content);
 
       card.innerHTML = `
-        <img class="w-full h-48 object-cover" src="${post.imageUrl}" alt="${post.title}" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/600x400/CBD5E0/FFFFFF?text=Image+Not+Found';">
-        <div class="p-6 flex-grow flex flex-col">
-          <span class="inline-block bg-primary bg-opacity-10 text-primary text-xs font-semibold px-3 py-1 rounded-full mb-2 self-start">${post.category}</span>
-          <h3 class="text-2xl font-bold text-text-default mb-2 group-hover:text-primary transition-colors duration-200">${post.title}</h3>
-          <p class="text-text-secondary mb-4 flex-grow">${post.excerpt}</p>
+        <div class="relative overflow-hidden">
+          <img class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" src="${post.imageUrl}" alt="${post.title}" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/600x400/CBD5E0/FFFFFF?text=Image+Not+Found';">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </div>
-        <div class="p-6 pt-0 flex justify-between items-center text-sm text-text-secondary">
-          <span>By ${post.author}</span>
-          <span class="flex items-center gap-1">
-            <i class="far fa-clock" aria-hidden="true"></i> ${readingTime} min read
+        <div class="p-6 flex-grow flex flex-col relative z-10">
+          <span class="inline-block bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full mb-4 self-start shadow-sm border border-primary/20">${post.category}</span>
+          <h3 class="text-2xl font-bold text-text-default mb-3 group-hover:text-primary transition-colors duration-300 line-clamp-2">${post.title}</h3>
+          <p class="text-text-secondary mb-6 flex-grow line-clamp-3 leading-relaxed">${post.excerpt}</p>
+        </div>
+        <div class="p-6 pt-0 flex justify-between items-center text-sm text-text-secondary mt-auto border-t border-gray-100 dark:border-gray-800/50 relative z-10">
+          <span class="font-medium flex items-center gap-2">
+            <div class="w-7 h-7 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white text-[10px] font-bold shadow-sm">${post.author.charAt(0)}</div>
+            ${post.author}
+          </span>
+          <span class="flex items-center gap-1.5 font-medium bg-gray-50 dark:bg-gray-800/80 px-2.5 py-1 rounded-md text-xs">
+            <i class="far fa-clock text-primary" aria-hidden="true"></i> ${readingTime} min read
           </span>
         </div>
       `;
@@ -446,20 +327,23 @@ if (isset($_GET['id'])) { // UPDATED: Was 'slug'
       const readingTime = calculateReadingTime(post.content);
 
       blogPostView.innerHTML = `
-        <article class="max-w-4xl mx-auto bg-content-bg shadow-lg rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700">
-          <header class="p-6 md:p-10">
-            <div class="mb-6">
-              <button id="back-to-list-btn" class="text-primary hover:underline focus:outline-none focus:ring-2 focus:ring-primary rounded">
-                <i class="fas fa-arrow-left mr-2"></i>Back to all posts
+        <article class="max-w-4xl mx-auto bg-content-bg shadow-2xl rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-800">
+          <header class="p-8 md:p-14 text-center bg-gradient-to-b from-gray-50 dark:from-gray-900/50 to-transparent relative">
+            <div class="mb-8 text-left absolute top-8 left-8">
+              <button id="back-to-list-btn" class="text-text-secondary hover:text-primary transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-primary rounded p-1 inline-flex items-center font-medium bg-white dark:bg-gray-800 px-4 py-2 border border-gray-200 dark:border-gray-700 shadow-sm rounded-full">
+                <i class="fas fa-arrow-left mr-2"></i> Back
               </button>
             </div>
-            <span class="block text-primary font-semibold mb-2">${post.category}</span>
-            <h1 class="text-4xl md:text-5xl font-extrabold text-text-default mb-4">${post.title}</h1>
-            <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-text-secondary">
-              <span><i class="fas fa-user mr-2"></i>By ${post.author}</span>
-              <span><i class="fas fa-calendar-alt mr-2"></i>${formatDate(post.publishDate)}</span>
-              <span class="flex items-center gap-1">
-                <i class="far fa-clock mr-1" aria-hidden="true"></i> ${readingTime} min read
+            <span class="inline-block bg-primary/10 text-primary text-sm font-bold px-4 py-1.5 rounded-full mb-6 mx-auto shadow-sm border border-primary/20 mt-12 md:mt-0">${post.category}</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary mb-8 leading-tight max-w-3xl mx-auto drop-shadow-sm">${post.title}</h1>
+            <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-sm md:text-base text-text-secondary font-medium">
+              <span class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white text-xs font-bold shadow-md">${post.author.charAt(0)}</div>
+                ${post.author}
+              </span>
+              <span class="flex items-center"><i class="fas fa-calendar-alt mr-2 text-primary"></i>${formatDate(post.publishDate)}</span>
+              <span class="flex items-center gap-1.5 bg-gray-100 dark:bg-gray-800 px-3 py-1.5 rounded-xl shadow-inner text-sm">
+                <i class="far fa-clock mr-1 text-primary" aria-hidden="true"></i> ${readingTime} min read
               </span>
             </div>
           </header>
@@ -630,13 +514,16 @@ if (isset($_GET['id'])) { // UPDATED: Was 'slug'
         const postUrl = `?id=${post.publicId}`; // UPDATED: Was 'slug'
         const card = document.createElement("a");
         card.href = postUrl;
-        card.className = "flex flex-col bg-base-bg dark:bg-gray-800 shadow-md rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all duration-300 group focus:outline-none focus:ring-2 focus:ring-primary";
+        card.className = "flex flex-col bg-content-bg shadow-md rounded-xl overflow-hidden border border-gray-100 dark:border-gray-800 hover:shadow-xl hover:border-primary/30 transition-all duration-300 transform hover:-translate-y-1 group focus:outline-none focus:ring-2 focus:ring-primary relative";
 
         card.innerHTML = `
-          <img class="w-full h-32 object-cover" src="${post.imageUrl}" alt="${post.title}" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/300x200/CBD5E0/FFFFFF?text=Image';">
-          <div class="p-4 flex-grow">
-            <h4 class="text-lg font-bold text-text-default mb-1 group-hover:text-primary transition-colors duration-200">${post.title}</h4>
-            <span class="text-sm text-text-secondary">${formatDate(post.publishDate)}</span>
+          <div class="relative overflow-hidden">
+            <img class="w-full h-36 object-cover group-hover:scale-105 transition-transform duration-500" src="${post.imageUrl}" alt="${post.title}" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/300x200/CBD5E0/FFFFFF?text=Image';">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
+          <div class="p-5 flex-grow relative z-10">
+            <h4 class="text-lg font-bold text-text-default mb-2 group-hover:text-primary transition-colors duration-200 line-clamp-2">${post.title}</h4>
+            <span class="text-xs font-medium text-text-secondary bg-gray-50 dark:bg-gray-800/80 px-2 py-1 rounded">${formatDate(post.publishDate)}</span>
           </div>
         `;
         card.addEventListener("click", (e) => {

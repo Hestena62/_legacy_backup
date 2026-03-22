@@ -341,7 +341,8 @@ $themeMap = [
             ?>
             <!-- LEVEL CARD -->
             <article class="level-card group relative flex flex-col h-full opacity-0 animate-fade-in-up"
-                style="animation-fill-mode: forwards;" data-category="<?php echo htmlspecialchars($level['category'], ENT_QUOTES); ?>"
+                style="animation-fill-mode: forwards;"
+                data-category="<?php echo htmlspecialchars($level['category'], ENT_QUOTES); ?>"
                 data-display-title="<?php echo htmlspecialchars($level['title'], ENT_QUOTES); ?>"
                 data-title="<?php echo strtolower(htmlspecialchars($level['title'], ENT_QUOTES)); ?>"
                 data-desc="<?php echo htmlspecialchars($level['description'], ENT_QUOTES); ?>"
@@ -390,7 +391,7 @@ $themeMap = [
                         <p class="text-text-secondary text-base leading-relaxed font-medium">
                             <?php echo htmlspecialchars($level['description']); ?>
                         </p>
-                        <button type="button" 
+                        <button type="button"
                             class="text-sm font-bold text-primary hover:text-secondary flex items-center gap-1.5 transition-colors hover:bg-primary/10 px-3 py-1.5 rounded-lg -ml-3"
                             onclick="openDocModal(this)">
                             <i class="fas fa-book-open text-xs"></i> Read More Documentation
@@ -439,39 +440,49 @@ $themeMap = [
     </div>
 
     <!-- Documentation Modal -->
-    <div id="doc-modal" class="fixed inset-0 z-50 hidden opacity-0 transition-opacity duration-300 flex items-center justify-center pointer-events-none p-4 sm:p-6" aria-modal="true" role="dialog">
+    <div id="doc-modal"
+        class="fixed inset-0 z-50 hidden opacity-0 transition-opacity duration-300 flex items-center justify-center pointer-events-none p-4 sm:p-6"
+        aria-modal="true" role="dialog">
         <!-- Backdrop -->
-        <div class="absolute inset-0 bg-gray-900/60 backdrop-blur-sm transition-opacity" onclick="closeDocModal()"></div>
-        
+        <div class="absolute inset-0 bg-gray-900/60 backdrop-blur-sm transition-opacity" onclick="closeDocModal()">
+        </div>
+
         <!-- Modal Content -->
-        <div class="bg-base-bg border border-gray-200 dark:border-gray-800 rounded-3xl shadow-2xl relative w-full max-w-2xl transform scale-95 opacity-0 transition-all duration-300 doc-modal-content pointer-events-auto flex flex-col max-h-[90vh]">
-            
+        <div
+            class="bg-base-bg border border-gray-200 dark:border-gray-800 rounded-3xl shadow-2xl relative w-full max-w-2xl transform scale-95 opacity-0 transition-all duration-300 doc-modal-content pointer-events-auto flex flex-col max-h-[90vh]">
+
             <!-- Header -->
-            <div class="px-6 py-5 border-b border-gray-100 dark:border-gray-800 flex justify-between items-center bg-gray-50/50 dark:bg-gray-900/50 rounded-t-3xl shrink-0">
+            <div
+                class="px-6 py-5 border-b border-gray-100 dark:border-gray-800 flex justify-between items-center bg-gray-50/50 dark:bg-gray-900/50 rounded-t-3xl shrink-0">
                 <h3 class="text-2xl font-bold font-outfit text-text-default flex items-center gap-3 m-0">
                     <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
                         <i id="modal-icon" class="fas fa-info-circle text-primary"></i>
                     </div>
                     <span id="modal-title">Level Documentation</span>
                 </h3>
-                <button onclick="closeDocModal()" class="w-10 h-10 rounded-full bg-gray-100 object-center dark:bg-gray-800 text-gray-500 hover:text-gray-900 dark:hover:text-white flex items-center justify-center transition-all hover:rotate-90">
+                <button onclick="closeDocModal()"
+                    class="w-10 h-10 rounded-full bg-gray-100 object-center dark:bg-gray-800 text-gray-500 hover:text-gray-900 dark:hover:text-white flex items-center justify-center transition-all hover:rotate-90">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
-            
+
             <!-- Body -->
             <div class="p-6 md:p-8 overflow-y-auto custom-scrollbar flex-grow">
                 <div class="prose dark:prose-invert max-w-none">
-                    <p id="modal-desc" class="text-lg text-text-secondary leading-relaxed mb-6 font-medium bg-primary/5 p-4 rounded-2xl border border-primary/10"></p>
+                    <p id="modal-desc"
+                        class="text-lg text-text-secondary leading-relaxed mb-6 font-medium bg-primary/5 p-4 rounded-2xl border border-primary/10">
+                    </p>
                     <div id="modal-docs" class="text-text-default space-y-4">
                         <!-- Detailed documentation injected here -->
                     </div>
                 </div>
             </div>
-            
+
             <!-- Footer -->
-            <div class="px-6 py-4 border-t border-gray-100 dark:border-gray-800 bg-gray-50/50 dark:bg-gray-900/50 flex justify-end rounded-b-3xl shrink-0">
-                <button onclick="closeDocModal()" class="px-6 py-2.5 rounded-full bg-primary text-white font-bold hover:bg-secondary hover:shadow-lg transition-all active:scale-95">
+            <div
+                class="px-6 py-4 border-t border-gray-100 dark:border-gray-800 bg-gray-50/50 dark:bg-gray-900/50 flex justify-end rounded-b-3xl shrink-0">
+                <button onclick="closeDocModal()"
+                    class="px-6 py-2.5 rounded-full bg-primary text-white font-bold hover:bg-secondary hover:shadow-lg transition-all active:scale-95">
                     Close Details
                 </button>
             </div>
@@ -541,55 +552,121 @@ $themeMap = [
         const desc = card.dataset.desc;
         const iconClass = card.dataset.icon;
         const docs = card.dataset.doc;
-        
+
         const modal = document.getElementById('doc-modal');
         const modalContent = modal.querySelector('.doc-modal-content');
-        
+
         document.getElementById('modal-title').textContent = title + ' Curriculum';
         document.getElementById('modal-icon').className = iconClass + ' text-primary';
         document.getElementById('modal-desc').textContent = desc;
-        
+
         const docsContainer = document.getElementById('modal-docs');
         if (docs && docs.trim() !== '') {
-            docsContainer.innerHTML = docs;
+            // Try to parse as tabs
+            const parser = new DOMParser();
+            const docEl = parser.parseFromString(docs, 'text/html');
+            const h4 = docEl.querySelector('h4');
+            const subjectsDiv = docEl.querySelector('div.space-y-4');
+
+            if (h4 && subjectsDiv) {
+                const titleText = h4.textContent;
+                const items = Array.from(subjectsDiv.children);
+
+                let tabHeaders = '<div class="flex overflow-x-auto border-b border-gray-200 dark:border-gray-800 mb-4 gap-2 pb-px hide-scrollbar">';
+                let tabContents = '<div class="relative">';
+
+                items.forEach((item, index) => {
+                    const h5 = item.querySelector('h5');
+                    const subjectName = h5 ? h5.textContent : `Section ${index + 1}`;
+                    let bodyHtml = item.innerHTML;
+                    if (h5) {
+                        bodyHtml = bodyHtml.replace(h5.outerHTML, '');
+                    }
+
+                    const isActive = index === 0;
+                    const btnClass = isActive
+                        ? 'border-b-2 border-primary text-primary font-bold bg-primary/5'
+                        : 'border-b-2 border-transparent text-text-secondary hover:text-text-default hover:bg-gray-50 dark:hover:bg-gray-800/50';
+
+                    tabHeaders += `<button type="button" class="modal-tab-btn px-4 py-2.5 rounded-t-lg transition-all whitespace-nowrap text-sm ${btnClass}" data-index="${index}" onclick="switchModalTab(this, ${index})">
+                        ${subjectName}
+                    </button>`;
+
+                    const contentClass = isActive ? 'block animate-fade-in-up' : 'hidden';
+                    tabContents += `<div class="modal-tab-pane ${contentClass}" data-index="${index}">
+                        ${bodyHtml}
+                    </div>`;
+                });
+
+                tabHeaders += '</div>';
+                tabContents += '</div>';
+
+                docsContainer.innerHTML = `<h4 class="text-xl font-bold mb-4 font-outfit text-text-default">${titleText}</h4>${tabHeaders}${tabContents}`;
+            } else {
+                docsContainer.innerHTML = docs;
+            }
         } else {
             docsContainer.innerHTML = '<div class="text-center py-8"><i class="fas fa-tools text-4xl text-gray-300 dark:text-gray-700 mb-4"></i><p class="text-gray-500 font-medium">Detailed curriculum documentation is currently being updated for this level. Please check back later.</p></div>';
         }
-        
+
         // Show modal
         modal.classList.remove('hidden');
         // trigger reflow
         void modal.offsetWidth;
-        
+
         // Animate backdrop and container
         modal.classList.remove('opacity-0', 'pointer-events-none');
         modal.classList.add('opacity-100');
-        
+
         // Animate modal content
         modalContent.classList.remove('scale-95', 'opacity-0');
         modalContent.classList.add('scale-100', 'opacity-100');
-        
+
         // Prevent body scrolling
         document.body.style.overflow = 'hidden';
     }
-    
+
     function closeDocModal() {
         const modal = document.getElementById('doc-modal');
         const modalContent = modal.querySelector('.doc-modal-content');
-        
+
         // Animate out
         modal.classList.remove('opacity-100');
         modal.classList.add('opacity-0');
-        
+
         modalContent.classList.remove('scale-100', 'opacity-100');
         modalContent.classList.add('scale-95', 'opacity-0');
-        
+
         // Wait for transition before hiding
         setTimeout(() => {
             modal.classList.add('hidden', 'pointer-events-none');
             // Re-enable body scrolling
             document.body.style.overflow = '';
         }, 300);
+    }
+
+    function switchModalTab(btn, index) {
+        const container = btn.closest('#modal-docs');
+        const btns = container.querySelectorAll('.modal-tab-btn');
+        const panes = container.querySelectorAll('.modal-tab-pane');
+
+        btns.forEach(b => {
+            b.classList.remove('border-primary', 'text-primary', 'font-bold', 'bg-primary/5');
+            b.classList.add('border-transparent', 'text-text-secondary');
+        });
+
+        btn.classList.remove('border-transparent', 'text-text-secondary');
+        btn.classList.add('border-primary', 'text-primary', 'font-bold', 'bg-primary/5');
+
+        panes.forEach(p => {
+            if (parseInt(p.dataset.index) === index) {
+                p.classList.remove('hidden');
+                p.classList.add('block', 'animate-fade-in-up');
+            } else {
+                p.classList.remove('block', 'animate-fade-in-up');
+                p.classList.add('hidden');
+            }
+        });
     }
 
     function toggleCompletion(id, btn) {

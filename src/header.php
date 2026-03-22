@@ -5,10 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-        content="Empowering students with learning disabilities through personalized, accessible learning experiences in Math, ELA, and Science." />
+        content="<?php echo isset($pageDescription) ? htmlspecialchars($pageDescription) : "Empowering students with learning disabilities through personalized, accessible learning experiences in Math, ELA, and Science."; ?>" />
     <meta name="keywords"
-        content="learning disabilities, personalized education, online learning, math, ELA, science, accessible education" />
-    <meta name="author" content="Hesten's Learning" />
+        content="<?php echo isset($pageKeywords) ? htmlspecialchars($pageKeywords) : "learning disabilities, personalized education, online learning, math, ELA, science, accessible education"; ?>" />
+    <meta name="author" content="<?php echo isset($pageAuthor) ? htmlspecialchars($pageAuthor) : "Hesten's Learning"; ?>" />
 
     <!-- PWA & Mobile Meta Tags -->
     <link rel="manifest" href="/manifest.json">
@@ -19,11 +19,14 @@
     <meta name="apple-mobile-web-app-title" content="Hesten's">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Hesten's Learning" />
-    <meta property="og:description" content="Personalized, accessible learning for everyone." />
+    <meta property="og:title" content="<?php echo isset($pageTitle) ? htmlspecialchars($pageTitle) : "Hesten's Learning"; ?>" />
+    <meta property="og:description" content="<?php echo isset($pageDescription) ? htmlspecialchars($pageDescription) : "Personalized, accessible learning for everyone."; ?>" />
     <meta property="og:type" content="website" />
+    <?php if (isset($pageOgImage)): ?>
+    <meta property="og:image" content="<?php echo htmlspecialchars($pageOgImage); ?>" />
+    <?php endif; ?>
 
-    <title><?php echo isset($pageTitle) ? $pageTitle : "Hesten's Learning"; ?></title>
+    <title><?php echo isset($pageTitle) ? htmlspecialchars($pageTitle) : "Hesten's Learning"; ?></title>
 
     <!-- Resource Hints -->
     <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>

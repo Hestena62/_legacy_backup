@@ -143,6 +143,7 @@
 <script src="https://cdn.gtranslate.net/widgets/latest/popup.js" defer></script>
 
 <!-- Footer Scripts -->
+<script src="/JS/error-handler.js"></script>
 <script>
     // Year
     document.addEventListener("DOMContentLoaded", () => {
