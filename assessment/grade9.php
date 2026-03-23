@@ -27,6 +27,20 @@ $conversionChart = [
     10=>40, 9=>37, 8=>34, 7=>31, 6=>27, 5=>23, 4=>19, 3=>15, 2=>10, 1=>5, 0=>0
 ];
 
+$rubrics = [
+    25 => "2 credits for x = 3/12 or 1/4 or equivalent.",
+    26 => "2 credits for a correct graph of f(x) = 3(2)^x over the interval -1 to 2.",
+    27 => "2 credits for -12x^3 - 8x^2 + 13x - 3.",
+    28 => "2 credits for a correct box plot with Min: 70, Q1: 83, Q2: 88, Q3: 94, Max: 98.",
+    29 => "2 credits for y = (2/3)x - 1.",
+    30 => "2 credits for 5, and correct algebraic work shown.",
+    31 => "4 credits for a correct sketch, and 2.5 and 100 are stated.",
+    32 => "4 credits for (4 +/- 2sqrt(10)) / 4 or equivalent.",
+    33 => "4 credits for y = -56.97x + 2352.22, r = -0.98, and strong is stated.",
+    34 => "4 credits for both inequalities graphed correctly, labeled S, and a correct explanation indicating a negative response.",
+    35 => "6 credits for 30x+10y=3700, 15x+20y=3575, a correct justification, and correct algebraic work finding x=85 and y=115."
+];
+
 // Process form submission
 if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST') {
     $isGrading = true;
@@ -60,6 +74,10 @@ include '..\src\header.php';
     .question-card { display: none; }
     .question-card.active { display: block; animation: fadeIn 0.3s ease-in-out; }
     @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* Teacher Grading Visibility */
+    body:not(.teacher-mode) .teacher-grading-btn-container { display: none !important; }
+    body.teacher-mode .teacher-grading-btn-container { display: block !important; }
 </style>
 
 
@@ -85,19 +103,6 @@ include '..\src\header.php';
             <h2 class="text-2xl text-blue-800 mb-6 border-b border-blue-200 pb-2 mt-12">Part II Grading (2 credits each)</h2>
             
             <?php 
-            $rubrics = [
-                25 => "2 credits for x = 3/12 or 1/4 or equivalent.",
-                26 => "2 credits for a correct graph of f(x) = 3(2)^x over the interval -1 to 2.",
-                27 => "2 credits for -12x^3 - 8x^2 + 13x - 3.",
-                28 => "2 credits for a correct box plot with Min: 70, Q1: 83, Q2: 88, Q3: 94, Max: 98.",
-                29 => "2 credits for y = (2/3)x - 1.",
-                30 => "2 credits for 5, and correct algebraic work shown.",
-                31 => "4 credits for a correct sketch, and 2.5 and 100 are stated.",
-                32 => "4 credits for (4 +/- 2sqrt(10)) / 4 or equivalent.",
-                33 => "4 credits for y = -56.97x + 2352.22, r = -0.98, and strong is stated.",
-                34 => "4 credits for both inequalities graphed correctly, labeled S, and a correct explanation indicating a negative response.",
-                35 => "6 credits for 30x+10y=3700, 15x+20y=3575, a correct justification, and correct algebraic work finding x=85 and y=115."
-            ];
             $maxScores = [25=>2, 26=>2, 27=>2, 28=>2, 29=>2, 30=>2, 31=>4, 32=>4, 33=>4, 34=>4, 35=>6];
             
             for ($i = 25; $i <= 35; $i++): 
@@ -604,6 +609,37 @@ include '..\src\header.php';
                             Submit Test
                         </button>
                     </div>
+
+                    <div class="mt-8 teacher-grading-btn-container">
+                        <button type="button" onclick="toggleTeacherGrading()" class="px-6 py-3 bg-purple-600 text-white font-bold rounded-xl shadow-lg hover:bg-purple-700 transition w-full sm:w-auto">
+                            <i class="fas fa-chalkboard-teacher mr-2"></i> Teacher Grading
+                        </button>
+                    </div>
+                    
+                    <div id="teacher-grading-section" class="hidden mt-8 bg-purple-50 p-6 rounded-2xl border-2 border-purple-500 text-left">
+                        <h3 class="text-2xl font-bold text-purple-800 mb-6 border-b border-purple-200 pb-2">Teacher Answer Key</h3>
+                        
+                        <h4 class="text-xl font-bold text-blue-800 mb-4">Part I (Multiple Choice)</h4>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                            <?php for($i = 1; $i <= 24; $i++): ?>
+                                <div class="bg-white p-3 rounded-xl border border-gray-200 shadow-sm text-center">
+                                    <span class="font-bold text-gray-700">Q<?php echo $i; ?>:</span> 
+                                    <span class="text-green-600 font-bold ml-2">(<?php echo $mcAnswerKey[$i]; ?>)</span>
+                                </div>
+                            <?php endfor; ?>
+                        </div>
+
+                        <h4 class="text-xl font-bold text-blue-800 mb-4">Parts II, III, IV (Constructed Response)</h4>
+                        <?php foreach($rubrics as $num => $rubric): ?>
+                            <div class="mb-5 bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+                                <p class="font-bold text-gray-800 mb-2">Q<?php echo $num; ?></p>
+                                <div class="bg-blue-50 p-3 rounded-lg border border-blue-100">
+                                    <p class="text-xs uppercase text-blue-600 font-bold mb-1">Official Rubric</p>
+                                    <p class="text-blue-900 text-sm"><?php echo $rubric; ?></p>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
                 </div>
 
             </div>
@@ -667,6 +703,15 @@ include '..\src\header.php';
                 if (currentIdx < 0) currentIdx = 0;
                 if (currentIdx >= questions.length) currentIdx = questions.length - 1;
                 showQuestion(currentIdx);
+            }
+
+            function toggleTeacherGrading() {
+                const section = document.getElementById('teacher-grading-section');
+                if (section.classList.contains('hidden')) {
+                    section.classList.remove('hidden');
+                } else {
+                    section.classList.add('hidden');
+                }
             }
 
             function downloadTxt() {

@@ -19,10 +19,10 @@ $pageAuthor = "[Your Name/Organization]";
 // Map from raw score to scale score. The grading script will automatically find 
 // the closest matching scale score based on the raw score total.
 // Leave the array empty [] if you do not want to display a scale score.
-$conversionChart = [
+// $conversionChart = [
     // Example: RawScore => ScaleScore
-    4 => 100, 3 => 85, 2 => 70, 1 => 55, 0 => 0
-];
+//     4 => 100, 3 => 85, 2 => 70, 1 => 55, 0 => 0
+// ];
 
 // =========================================================================
 // 3. QUESTION BANK CONFIGURATION
