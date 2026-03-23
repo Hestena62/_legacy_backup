@@ -30,6 +30,9 @@ $pageAuthor = "[Your Name/Organization]";
 /* 
  * Supported Question Types:
  *  - 'mc' : Multiple Choice (requires 'options' array and 'correctAnswer' key)
+ *  - 'tf' : True/False (requires 'correctAnswer' key: 1 for True, 2 for False)
+ *  - 'ms' : Multiple Select (requires 'options' array and 'correctAnswer' array)
+ *  - 'fb' : Fill-in-the-Blank (requires 'correctAnswer' string)
  *  - 'cr' : Constructed Response (requires 'rubric' text)
  * 
  * Ensure every question has a 'points' value.
@@ -48,6 +51,30 @@ $questionsConfig = [
         'points' => 2
     ],
     2 => [
+        'type' => 'tf',
+        'text' => 'True or False: The sky is blue on a clear day.',
+        'correctAnswer' => 1, // 1 for True, 2 for False
+        'points' => 1
+    ],
+    3 => [
+        'type' => 'ms',
+        'text' => 'Which of these are primary colors? (Select all that apply)',
+        'options' => [
+            1 => 'Red',
+            2 => 'Green',
+            3 => 'Blue',
+            4 => 'Yellow'
+        ],
+        'correctAnswer' => [1, 3, 4],
+        'points' => 3
+    ],
+    4 => [
+        'type' => 'fb',
+        'text' => 'The capital of France is ______.',
+        'correctAnswer' => 'Paris',
+        'points' => 1
+    ],
+    5 => [
         'type' => 'cr',
         'text' => 'This is a sample constructed response prompt. Describe your reasoning for the previous question.',
         'rubric' => '2 points: Clear and accurate reasoning. 1 point: Partial reasoning. 0 points: Blank or completely incorrect.',
@@ -59,7 +86,10 @@ $questionsConfig = [
 // =========================================================================
 // 4. ASSESSMENT OPTIONS
 // =========================================================================
-$shuffleQuestions = false; // Set to true if you want the questions to be presented in random order to the student
+$shuffleQuestions = false; // Set to true to present questions in random order
+$shuffleOptions = false;   // Set to true to shuffle multiple choice and multiple select options
+$timeLimitMinutes = 0;     // Set > 0 to enable a countdown timer (e.g., 30)
+$practiceMode = false;     // Set to true to allow students to check answers instantly
 
 // =========================================================================
 // STOP EDITING HERE - CORE LOGIC & RENDERING
@@ -86,10 +116,28 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST') {
     $assessmentDate = htmlspecialchars($_POST['assessment_date'] ?? date('Y-m-d'));
 
     foreach ($questionsConfig as $num => $q) {
-        if ($q['type'] === 'mc') {
+        if ($q['type'] === 'mc' || $q['type'] === 'tf') {
             $submittedAns = (int) ($_POST["q{$num}"] ?? 0);
             $studentAnswers[$num] = $submittedAns;
             if ($submittedAns === $q['correctAnswer']) {
+                $mcScore += $q['points'];
+            }
+        } elseif ($q['type'] === 'ms') {
+            $submittedAns = $_POST["q{$num}"] ?? [];
+            if (!is_array($submittedAns)) $submittedAns = [$submittedAns];
+            $submittedAns = array_map('intval', $submittedAns);
+            $studentAnswers[$num] = $submittedAns;
+            
+            $correct = $q['correctAnswer'];
+            sort($submittedAns);
+            sort($correct);
+            if ($submittedAns === $correct) {
+                $mcScore += $q['points'];
+            }
+        } elseif ($q['type'] === 'fb') {
+            $submittedAns = trim(htmlspecialchars($_POST["q{$num}"] ?? ''));
+            $studentAnswers[$num] = $submittedAns;
+            if (strcasecmp($submittedAns, $q['correctAnswer']) === 0) {
                 $mcScore += $q['points'];
             }
         } elseif ($q['type'] === 'cr') {
@@ -134,6 +182,28 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST') {
 
     body.teacher-mode .teacher-grading-btn-container {
         display: block !important;
+    }
+
+    @media print {
+        body { background: white !important; color: black !important; font-size: 11pt; }
+        .question-card, #quiz-container > div { 
+            display: block !important; 
+            page-break-inside: avoid; 
+            margin-bottom: 2rem; 
+            opacity: 1 !important; 
+            transform: none !important; 
+            animation: none !important; 
+            border: none !important;
+            box-shadow: none !important;
+        }
+        #nav-controls, #intro-card button, header button, .practice-feedback, .practice-btn, #submit-card button, .teacher-grading-btn-container { display: none !important; }
+        #progress-bar-fill, .bg-gray-200 { display: none !important; }
+        #submit-card h2, #submit-card p, #intro-card svg { display: none !important; }
+        label, input, textarea { page-break-inside: avoid; border-color: #999 !important; }
+        input[type="radio"], input[type="checkbox"] { border: 1px solid #777; appearance: none; -webkit-appearance: none; width: 14px; height: 14px; display: inline-block; vertical-align: middle; }
+        input[type="radio"] { border-radius: 50%; }
+        header { page-break-after: avoid; border-bottom: 2px solid #000 !important; }
+        .bg-gray-50, .bg-blue-50 { background: transparent !important; }
     }
 </style>
 
@@ -313,6 +383,18 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST') {
                 </div>
             </div>
 
+            <?php if ($timeLimitMinutes > 0): ?>
+                <div id="timer-banner" class="mb-6 bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-4 rounded-r-lg flex justify-between items-center hidden">
+                    <div class="flex items-center text-red-700 dark:text-red-400 font-bold">
+                        <i class="fas fa-clock text-xl mr-3"></i>
+                        <span>Time Remaining:</span>
+                    </div>
+                    <div id="timer-display" class="text-2xl font-black text-red-600 dark:text-red-300">
+                        <?php echo str_pad($timeLimitMinutes, 2, '0', STR_PAD_LEFT); ?>:00
+                    </div>
+                </div>
+            <?php endif; ?>
+
             <div class="mb-8">
                 <div class="flex justify-between text-sm text-gray-600 dark:text-gray-400 font-bold mb-2">
                     <span id="progress-text">Loading instructions...</span>
@@ -351,6 +433,18 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST') {
                             <p
                                 class="text-blue-500 dark:text-blue-400 font-bold mb-4 text-xs uppercase tracking-widest border-b border-gray-200 dark:border-gray-700 pb-2">
                                 Multiple Choice</p>
+                        <?php elseif ($q['type'] === 'tf'): ?>
+                            <p
+                                class="text-blue-500 dark:text-blue-400 font-bold mb-4 text-xs uppercase tracking-widest border-b border-gray-200 dark:border-gray-700 pb-2">
+                                True / False</p>
+                        <?php elseif ($q['type'] === 'ms'): ?>
+                            <p
+                                class="text-blue-500 dark:text-blue-400 font-bold mb-4 text-xs uppercase tracking-widest border-b border-gray-200 dark:border-gray-700 pb-2">
+                                Multiple Select</p>
+                        <?php elseif ($q['type'] === 'fb'): ?>
+                            <p
+                                class="text-blue-500 dark:text-blue-400 font-bold mb-4 text-xs uppercase tracking-widest border-b border-gray-200 dark:border-gray-700 pb-2">
+                                Fill in the Blank</p>
                         <?php elseif ($q['type'] === 'cr'): ?>
                             <p
                                 class="text-blue-500 dark:text-blue-400 font-bold mb-4 text-xs uppercase tracking-widest border-b border-gray-200 dark:border-gray-700 pb-2">
@@ -361,23 +455,46 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST') {
                             <span class="text-blue-600 dark:text-blue-400 mr-2 font-bold q-num"><?php echo $num; ?>.</span>
                             <span class="q-text"><?php echo $q['text']; ?></span></p>
 
-                        <?php if ($q['type'] === 'mc'): ?>
-                            <div class="space-y-4">
-                                <?php foreach ($q['options'] as $optNum => $optText): ?>
+                        <?php if ($q['type'] === 'mc' || $q['type'] === 'tf'): ?>
+                            <div class="space-y-4 options-container">
+                                <?php
+                                $options = $q['type'] === 'tf' ? [1 => 'True', 2 => 'False'] : $q['options'];
+                                foreach ($options as $optNum => $optText): ?>
                                     <label
                                         class="block p-4 md:p-5 rounded-xl cursor-pointer border-2 border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-500 bg-gray-50 dark:bg-gray-700/50 hover:bg-blue-50 dark:hover:bg-blue-900/30 transition duration-200 flex items-center shadow-sm">
                                         <input type="radio" name="q<?php echo $num; ?>" value="<?php echo $optNum; ?>"
                                             class="w-6 h-6 text-blue-600 dark:text-blue-500 mr-4 focus:ring-blue-500 dark:focus:ring-blue-400 border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800">
+                                        <span
+                                            class="text-gray-800 dark:text-gray-200 text-lg font-medium opt-text"><?php echo $q['type'] === 'mc' ? "($optNum) " : ""; ?><?php echo $optText; ?></span>
+                                    </label>
+                                <?php endforeach; ?>
+                            </div>
+                        <?php elseif ($q['type'] === 'ms'): ?>
+                            <div class="space-y-4 options-container">
+                                <?php foreach ($q['options'] as $optNum => $optText): ?>
+                                    <label
+                                        class="block p-4 md:p-5 rounded-xl cursor-pointer border-2 border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-500 bg-gray-50 dark:bg-gray-700/50 hover:bg-blue-50 dark:hover:bg-blue-900/30 transition duration-200 flex items-center shadow-sm">
+                                        <input type="checkbox" name="q<?php echo $num; ?>[]" value="<?php echo $optNum; ?>"
+                                            class="w-6 h-6 rounded text-blue-600 dark:text-blue-500 mr-4 focus:ring-blue-500 dark:focus:ring-blue-400 border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800">
                                         <span
                                             class="text-gray-800 dark:text-gray-200 text-lg font-medium opt-text">(<?php echo $optNum; ?>)
                                             <?php echo $optText; ?></span>
                                     </label>
                                 <?php endforeach; ?>
                             </div>
+                        <?php elseif ($q['type'] === 'fb'): ?>
+                            <input type="text" name="q<?php echo $num; ?>"
+                                class="fb-input w-full px-5 py-4 border-2 border-gray-300 dark:border-gray-600 rounded-xl bg-white dark:bg-gray-800 text-gray-800 dark:text-white focus:ring-4 focus:ring-blue-100 dark:focus:ring-blue-900/30 focus:border-blue-500 dark:focus:border-blue-400 focus:outline-none text-lg shadow-sm placeholder-gray-400 dark:placeholder-gray-500"
+                                placeholder="Type your answer here...">
                         <?php elseif ($q['type'] === 'cr'): ?>
                             <textarea name="q<?php echo $num; ?>" rows="8"
                                 class="cr-input w-full px-5 py-4 border-2 border-gray-300 dark:border-gray-600 rounded-xl bg-white dark:bg-gray-800 text-gray-800 dark:text-white focus:ring-4 focus:ring-blue-100 dark:focus:ring-blue-900/30 focus:border-blue-500 dark:focus:border-blue-400 focus:outline-none text-lg shadow-sm placeholder-gray-400 dark:placeholder-gray-500"
                                 placeholder="Type your answer here..."></textarea>
+                        <?php endif; ?>
+                        
+                        <?php if ($practiceMode): ?>
+                            <div class="mt-6 hidden practice-feedback" id="feedback-<?php echo $num; ?>"></div>
+                            <button type="button" onclick="checkAnswer(<?php echo $num; ?>, '<?php echo $q['type']; ?>', <?php echo htmlspecialchars(json_encode($q['correctAnswer'] ?? '')); ?>)" class="mt-4 px-6 py-2 bg-indigo-100 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300 font-bold rounded-lg hover:bg-indigo-200 dark:hover:bg-indigo-800/60 transition practice-btn">Check Answer</button>
                         <?php endif; ?>
                     </div>
                 <?php endforeach; ?>
@@ -427,6 +544,19 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST') {
                                     <p class="text-green-600 dark:text-green-400 font-semibold"><i
                                             class="fas fa-check-circle mr-1"></i> Answer: (<?php echo $q['correctAnswer']; ?>)
                                         <?php echo $q['options'][$q['correctAnswer']]; ?></p>
+                                <?php elseif ($q['type'] === 'tf'): ?>
+                                    <p class="text-green-600 dark:text-green-400 font-semibold"><i
+                                            class="fas fa-check-circle mr-1"></i> Answer: <?php echo $q['correctAnswer'] == 1 ? 'True' : 'False'; ?></p>
+                                <?php elseif ($q['type'] === 'ms'): ?>
+                                    <p class="text-green-600 dark:text-green-400 font-semibold"><i
+                                            class="fas fa-check-circle mr-1"></i> Answer: 
+                                        <?php 
+                                        $ansTexts = array_map(function($a) use ($q) { return "($a) " . $q['options'][$a]; }, $q['correctAnswer']);
+                                        echo implode(', ', $ansTexts); 
+                                        ?></p>
+                                <?php elseif ($q['type'] === 'fb'): ?>
+                                    <p class="text-green-600 dark:text-green-400 font-semibold"><i
+                                            class="fas fa-check-circle mr-1"></i> Answer: <?php echo htmlspecialchars($q['correctAnswer']); ?></p>
                                 <?php elseif ($q['type'] === 'cr'): ?>
                                     <div
                                         class="bg-blue-50 dark:bg-blue-900/30 p-3 rounded-lg border border-blue-100 dark:border-blue-800 mt-2">
@@ -456,8 +586,86 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST') {
         <script>
             let currentIdx = 0;
             let cards = [];
+            let timerInterval;
+            let timeRemaining = 0;
             const isStudentNameEmpty = () => document.getElementById('student-name').value.trim() === '';
+            
+            // PHP Configs
             const shouldShuffle = <?php echo json_encode($shuffleQuestions); ?>;
+            const shouldShuffleOptions = <?php echo json_encode($shuffleOptions); ?>;
+            const timeLimitMinutes = <?php echo (int)$timeLimitMinutes; ?>;
+            const practiceMode = <?php echo json_encode($practiceMode); ?>;
+            const testId = <?php echo json_encode(md5($pageTitle . ($_SERVER['REQUEST_URI'] ?? ''))); ?>;
+
+            function saveState() {
+                const studentName = document.getElementById('student-name').value;
+                const answers = {};
+                document.querySelectorAll('.actual-question').forEach(q => {
+                    const num = q.dataset.index;
+                    const inputs = Array.from(q.querySelectorAll('input, textarea'));
+                    answers[num] = inputs.filter(i => (i.type === 'radio' || i.type === 'checkbox') ? i.checked : true).map(i => i.value);
+                });
+                localStorage.setItem(`test_state_${testId}`, JSON.stringify({
+                    studentName,
+                    answers,
+                    timeRemaining: timeRemaining > 0 ? timeRemaining : null
+                }));
+            }
+
+            function restoreState() {
+                const stateStr = localStorage.getItem(`test_state_${testId}`);
+                if (!stateStr) return;
+                try {
+                    const state = JSON.parse(stateStr);
+                    if (state.studentName) document.getElementById('student-name').value = state.studentName;
+                    
+                    if (state.answers) {
+                        document.querySelectorAll('.actual-question').forEach(q => {
+                            const num = q.dataset.index;
+                            const savedAns = state.answers[num] || [];
+                            const inputs = q.querySelectorAll('input, textarea');
+                            inputs.forEach(i => {
+                                if (i.type === 'radio' || i.type === 'checkbox') {
+                                    if (savedAns.includes(i.value)) i.checked = true;
+                                } else {
+                                    if (savedAns[0]) i.value = savedAns[0];
+                                }
+                            });
+                        });
+                    }
+
+                    if (state.timeRemaining && timeLimitMinutes > 0) {
+                        timeRemaining = state.timeRemaining;
+                    }
+                } catch (e) {
+                    console.error("Failed to restore state", e);
+                }
+            }
+
+            function startTimer() {
+                if (timeLimitMinutes <= 0) return;
+                if (timeRemaining <= 0) timeRemaining = timeLimitMinutes * 60;
+                
+                const banner = document.getElementById('timer-banner');
+                const display = document.getElementById('timer-display');
+                if (banner) banner.classList.remove('hidden');
+
+                timerInterval = setInterval(() => {
+                    timeRemaining--;
+                    saveState();
+                    
+                    const m = Math.floor(timeRemaining / 60);
+                    const s = timeRemaining % 60;
+                    if (display) display.innerText = `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+                    
+                    if (timeRemaining <= 0) {
+                        clearInterval(timerInterval);
+                        alert("Time is up! Your test is being automatically submitted.");
+                        document.getElementById('assessment-form').submit();
+                        localStorage.removeItem(`test_state_${testId}`); // Clear state
+                    }
+                }, 1000);
+            }
 
             document.addEventListener("DOMContentLoaded", () => {
                 const container = document.getElementById('quiz-container');
@@ -466,20 +674,67 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST') {
 
                 let questionCards = Array.from(container.querySelectorAll('.actual-question'));
 
-                // Optional: Shuffle the questions independently of their DOM order initially
                 if (shouldShuffle) {
                     for (let i = questionCards.length - 1; i > 0; i--) {
                         const j = Math.floor(Math.random() * (i + 1));
                         [questionCards[i], questionCards[j]] = [questionCards[j], questionCards[i]];
+                        questionCards.forEach(card => container.insertBefore(card, submitCard));
                     }
-                    // Re-append to physical DOM to maintain flow when scrolling isn't used (we use show/hide anyway, but good for structure)
-                    questionCards.forEach(card => container.insertBefore(card, submitCard));
                 }
 
-                // Build our array of active cards
+                if (shouldShuffleOptions) {
+                    questionCards.forEach(card => {
+                        const optionsContainer = card.querySelector('.options-container');
+                        if (optionsContainer) {
+                            let labels = Array.from(optionsContainer.querySelectorAll('label'));
+                            for (let i = labels.length - 1; i > 0; i--) {
+                                const j = Math.floor(Math.random() * (i + 1));
+                                optionsContainer.insertBefore(labels[j], labels[i]);
+                            }
+                        }
+                    });
+                }
+
                 cards = [introCard, ...questionCards, submitCard].filter(Boolean);
+                restoreState();
+
+                // Listen for input changes to sub-save
+                document.getElementById('assessment-form').addEventListener('input', saveState);
+                document.getElementById('assessment-form').addEventListener('change', saveState);
 
                 showCard(0);
+
+                // Keyboard navigation
+                document.addEventListener('keydown', (e) => {
+                    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.tagName === 'SELECT') {
+                        return; // Do not interfere with typing
+                    }
+                    if (currentIdx > 0 && currentIdx < cards.length - 1) {
+                        if (e.key === 'ArrowRight') changeQuestion(1);
+                        if (e.key === 'ArrowLeft') changeQuestion(-1);
+                    }
+                });
+                
+                // Form submission hooking
+                document.getElementById('assessment-form').addEventListener('submit', (e) => {
+                    let unanswered = 0;
+                    questionCards.forEach(q => {
+                        const inputs = Array.from(q.querySelectorAll('input, textarea'));
+                        const hasAnswer = inputs.some(i => {
+                            if (i.type === 'radio' || i.type === 'checkbox') return i.checked;
+                            return i.value.trim() !== '';
+                        });
+                        if (!hasAnswer) unanswered++;
+                    });
+                    
+                    if (unanswered > 0) {
+                        if (!confirm(`Warning: You have ${unanswered} unanswered questions. Are you sure you want to submit?`)) {
+                            e.preventDefault();
+                            return;
+                        }
+                    }
+                    localStorage.removeItem(`test_state_${testId}`); // Done
+                });
             });
 
             function startTest() {
@@ -490,15 +745,13 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST') {
                 }
                 document.getElementById('nav-controls').classList.remove('hidden');
                 changeQuestion(1);
+                startTimer();
             }
 
             function showCard(idx) {
                 cards.forEach((c, i) => {
-                    if (i === idx) {
-                        c.classList.add('active');
-                    } else {
-                        c.classList.remove('active');
-                    }
+                    if (i === idx) c.classList.add('active');
+                    else c.classList.remove('active');
                 });
 
                 const isIntro = idx === 0;
@@ -519,7 +772,7 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST') {
                     document.getElementById('progress-text').innerText = "Ready to submit";
                     document.getElementById('progress-bar-fill').style.width = "100%";
                 } else {
-                    const totalQ = cards.length - 2; // exclude intro and submit
+                    const totalQ = cards.length - 2;
                     document.getElementById('progress-text').innerText = `Question ${idx} of ${totalQ}`;
                     const pct = (idx / totalQ) * 100;
                     document.getElementById('progress-bar-fill').style.width = `${pct}%`;
@@ -539,10 +792,42 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST') {
 
             function toggleTeacherGrading() {
                 const section = document.getElementById('teacher-grading-section');
-                if (section.classList.contains('hidden')) {
-                    section.classList.remove('hidden');
+                section.classList.toggle('hidden');
+            }
+
+            function checkAnswer(num, type, correctAnswer) {
+                const qCard = document.querySelector(`.actual-question[data-index="${num}"]`);
+                const feedbackDiv = document.getElementById(`feedback-${num}`);
+                if (!qCard || !feedbackDiv) return;
+                
+                let isCorrect = false;
+                let answered = true;
+
+                if (type === 'mc' || type === 'tf') {
+                    const checked = qCard.querySelector('input[type="radio"]:checked');
+                    if (!checked) answered = false;
+                    else if (parseInt(checked.value) === parseInt(correctAnswer)) isCorrect = true;
+                } else if (type === 'ms') {
+                    const checked = Array.from(qCard.querySelectorAll('input[type="checkbox"]:checked')).map(i => parseInt(i.value)).sort();
+                    const correctArr = Array.isArray(correctAnswer) ? correctAnswer.map(Number).sort() : [];
+                    if (checked.length === 0) answered = false;
+                    else if (JSON.stringify(checked) === JSON.stringify(correctArr)) isCorrect = true;
+                } else if (type === 'fb') {
+                    const input = qCard.querySelector('input[type="text"]');
+                    if (!input || input.value.trim() === '') answered = false;
+                    else if (input.value.trim().toLowerCase() === String(correctAnswer).toLowerCase()) isCorrect = true;
+                }
+
+                feedbackDiv.classList.remove('hidden');
+                if (!answered) {
+                    feedbackDiv.className = 'mt-6 p-4 rounded-lg bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-200 border border-yellow-300 font-bold';
+                    feedbackDiv.innerText = "Please answer the question before checking.";
+                } else if (isCorrect) {
+                    feedbackDiv.className = 'mt-6 p-4 rounded-lg bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-200 border border-green-300 font-bold';
+                    feedbackDiv.innerHTML = '<i class="fas fa-check-circle mr-2"></i> Correct!';
                 } else {
-                    section.classList.add('hidden');
+                    feedbackDiv.className = 'mt-6 p-4 rounded-lg bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-200 border border-red-300 font-bold';
+                    feedbackDiv.innerHTML = '<i class="fas fa-times-circle mr-2"></i> Incorrect. Try again!';
                 }
             }
 
@@ -564,18 +849,18 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST') {
                     const qText = qTextNode.innerText.replace(/\s+/g, ' ').trim();
 
                     let answer = "No answer provided";
-                    const textInput = q.querySelector('.cr-input');
-                    const radioChecked = q.querySelector('input[type="radio"]:checked');
+                    const textInput = q.querySelector('.cr-input') || q.querySelector('.fb-input');
+                    const checkedInputs = Array.from(q.querySelectorAll('input[type="radio"]:checked, input[type="checkbox"]:checked'));
 
-                    if (textInput && textInput.value.trim() !== '') {
+                    if (textInput && textInput.innerText.trim() !== '') {
+                        answer = textInput.innerText.trim();
+                    } else if (textInput && textInput.value.trim() !== '') {
                         answer = textInput.value.trim();
-                    } else if (radioChecked) {
-                        const spanOpt = radioChecked.parentElement.querySelector('.opt-text');
-                        if (spanOpt) {
-                            answer = spanOpt.innerText.trim();
-                        } else {
-                            answer = radioChecked.value;
-                        }
+                    } else if (checkedInputs.length > 0) {
+                        answer = checkedInputs.map(checkbox => {
+                            const spanOpt = checkbox.parentElement.querySelector('.opt-text');
+                            return spanOpt ? spanOpt.innerText.trim() : checkbox.value;
+                        }).join(', ');
                     }
 
                     content += `${qNumber} ${qText}\nYour Answer: ${answer}\n\n`;
@@ -617,10 +902,8 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST') {
             <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-4"><i
                     class="fas fa-info-circle text-blue-500 mr-2"></i> Resource Disclosure</h3>
             <div class="text-gray-600 dark:text-gray-300 space-y-4 text-lg">
-                <p>This assessment contains materials adapted from publicly available and open-source educational
-                    resources.</p>
-                <p>We believe in open education and have utilized these resources to provide accessible, high-quality
-                    learning experiences for all students.</p>
+                <p>This assessment contains materials adapted from publicly available, and or open-source educational resources.</p>
+                <p>We believe in open education and have utilized these resources to provide accessible, high-quality learning experiences for all students.</p>
                 <p>If you have any questions regarding the specific sources or licensing of the materials used in this module, please <a href="mailto:test@hestena62.com?subject=<?php echo rawurlencode($pageTitle ?? 'Assessment'); ?>&amp;body=Page%20URL:%20<?php echo rawurlencode('http' . (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 's' : '') . '://' . ($_SERVER['HTTP_HOST'] ?? 'localhost') . ($_SERVER['REQUEST_URI'] ?? '')); ?>" class="text-blue-600 dark:text-blue-400 hover:underline">contact us</a>.</p>
                     
             </div>
