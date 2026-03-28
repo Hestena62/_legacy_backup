@@ -1,14 +1,14 @@
  <!-- FULL FOOTER -->
-    <footer class="mt-auto bg-slate-900 text-slate-300 relative overflow-hidden font-sans border-t border-slate-800/50 w-full">
+    <footer class="mt-auto bg-slate-50 dark:bg-[#020617] text-slate-600 dark:text-slate-300 relative overflow-hidden font-sans border-t border-gray-200 dark:border-slate-800/50 w-full transition-colors duration-300 noise-filter">
         <!-- Decoration -->
-        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 shadow-[0_0_20px_rgba(79,70,229,0.5)]"></div>
-        <div class="absolute -top-[400px] -right-[400px] w-[800px] h-[800px] bg-blue-600/10 rounded-full blur-[100px] pointer-events-none overflow-hidden"></div>
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-emerald-400 shadow-[0_0_20px_rgba(79,70,229,0.5)]"></div>
+        <div class="absolute -top-[400px] -right-[400px] w-[800px] h-[800px] bg-blue-600/5 rounded-full blur-[100px] pointer-events-none overflow-hidden"></div>
 
         <div class="container mx-auto px-6 py-16 relative z-10">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
                 <!-- Column 1: About -->
                 <div class="space-y-6">
-                    <h4 class="text-white font-bold text-lg mb-6 flex items-center gap-2 uppercase tracking-wide text-sm opacity-90">
+                    <h4 class="text-slate-900 dark:text-white font-extrabold mb-6 flex items-center gap-2 uppercase tracking-wider text-sm">
                         <i class="fas fa-graduation-cap text-blue-500"></i> About
                     </h4>
                     <div class="flex items-center gap-3 group">
@@ -16,12 +16,12 @@
                             <img src="/Images/6791421e-7ca7-40bd-83d3-06a479bf7f36.png" alt="Logo" class="w-full h-full object-cover">
                         </div>
                         <div class="flex flex-col">
-                            <span class="text-lg font-bold text-white tracking-tight leading-none group-hover:text-blue-400 transition-colors">Hesten's Learning</span>
+                            <span class="text-lg font-bold text-slate-900 dark:text-white tracking-tight leading-none group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors">Hesten's Learning</span>
                             <span class="text-[10px] text-slate-500 uppercase tracking-widest font-semibold mt-1">Education for All</span>
                         </div>
                     </div>
-                    <p class="text-slate-400 leading-relaxed text-sm">
-                        Empowering students with learning disabilities through personalized learning experiences. <a href="/about.php" class="text-blue-400 hover:text-blue-300 underline decoration-blue-500/30 hover:decoration-blue-300">Learn more</a>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm font-medium">
+                        Empowering students with learning disabilities through personalized learning experiences. <a href="/about.php" class="text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 underline font-bold decoration-blue-500/30 hover:decoration-blue-500">Learn more</a>
                     </p>
                 </div>
 
@@ -65,17 +65,17 @@
                 </div>
             </div>
 
-            <div class="h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent my-10"></div>
+            <div class="h-px bg-gradient-to-r from-transparent via-gray-300 dark:via-slate-700 to-transparent my-10"></div>
 
-            <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-slate-500">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-slate-600 dark:text-slate-500 font-medium">
                 <div class="text-center md:text-left space-y-2">
                     <p>
-                        &copy; <span id="year">2025</span> <span class="text-slate-300 font-semibold">Hesten's Learning</span>. All rights reserved. | 
+                        &copy; <span id="year">2025</span> <span class="text-slate-900 dark:text-slate-300 font-bold">Hesten's Learning</span>. All rights reserved. | 
                         Made with <i class="fas fa-heart text-red-500 animate-pulse mx-1"></i> for education
                     </p>
                     <p class="text-xs">
-                        <a href="#" class="text-slate-400 hover:text-white transition-colors">Hesten's Learning</a> by Hesten Allison is licensed under 
-                        <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" class="inline-flex items-center gap-1 text-slate-400 hover:text-white transition-colors underline decoration-slate-600 hover:decoration-white underline-offset-2">
+                        <a href="#" class="text-slate-700 dark:text-slate-400 hover:text-primary dark:hover:text-white transition-colors">Hesten's Learning</a> by Hesten Allison is licensed under 
+                        <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" class="inline-flex items-center gap-1 text-slate-700 dark:text-slate-400 hover:text-primary dark:hover:text-white transition-colors underline hover:decoration-primary dark:hover:decoration-white underline-offset-2">
                             CC BY-NC-SA 4.0
                             <img style="height:16px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
                             <img style="height:16px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">

@@ -1,5 +1,13 @@
 <?php
-  // --- Page-Specific Variables ---
+  // ==========================================================================
+  // ABOUT ME PAGE
+  // ==========================================================================
+  // This page provides personal information about the creator of the website,
+  // Hesten Allison. It includes a profile photo, a short biography, contact
+  // information, and links to social/professional profiles.
+  //
+  
+  // --- PAGE-SPECIFIC VARIABLES ---
   // These variables are used by header.php to set the meta tags and title
   $pageTitle = "About Me - Hesten's Learning";
   $pageDescription = "Learn more about Hesten Allison, the creator of Hesten's Learning, and the mission to make education accessible.";

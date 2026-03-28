@@ -898,6 +898,15 @@ include '..\src\header.php';
             val = val.endsWith(',') ? val.slice(0, -1) : val; // Remove trailing comma
             return val;
         }
+        
+        // Helper function to prevent XSS when displaying user input
+        function escapeHTML(str) {
+            if (typeof str !== 'string') return str;
+            return str.replace(/[&<>'"]/g, function(tag) {
+                const charsToReplace = { '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' };
+                return charsToReplace[tag] || tag;
+            });
+        }
 
         function normalize_q25(val) {
             if (typeof val !== 'string') val = String(val);
@@ -1160,12 +1169,14 @@ include '..\src\header.php';
                     } else if (answers) {
                         keys.forEach(key => {
                             const userAnswer = answers[key] || "No Answer";
+                            const safeUserAnswer = escapeHTML(userAnswer);
                             const correctAnswer = answerKeyJS[key];
                             const isCorrect = (normalize(userAnswer) === normalize(correctAnswer)) || (key === 'q25' && normalize_q25(userAnswer) === normalize_q25(correctAnswer));
                             
                             answerHTML += `
                                 <div class="user-answer ${isCorrect ? 'correct-text' : 'incorrect-text'}">
                                     <strong>Your Answer (${key}):</strong> ${userAnswer}
+                                    <strong>Your Answer (${key}):</strong> ${safeUserAnswer}
                                 </div>
                                 ${!isCorrect ? `<div class="correct-text"><strong>Correct (${key}):</strong> ${correctAnswer}</div>` : ''}
                             `;

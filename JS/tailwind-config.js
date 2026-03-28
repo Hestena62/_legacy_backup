@@ -38,6 +38,8 @@ tailwind.config = {
                 'fade-in-up': 'fadeInUp 0.5s ease-out forwards',
                 'bounce-short': 'bounceShort 1s ease-in-out',
                 'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'float': 'float 6s ease-in-out infinite',
+                'reveal': 'revealUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
             },
             keyframes: {
                 fadeInUp: {
@@ -57,6 +59,14 @@ tailwind.config = {
                     '50%': {
                         transform: 'translateY(-10px)'
                     },
+                },
+                float: {
+                    '0%, 100%': { transform: 'translateY(0px)' },
+                    '50%': { transform: 'translateY(-10px)' },
+                },
+                revealUp: {
+                    'from': { opacity: '0', transform: 'translateY(30px)' },
+                    'to': { opacity: '1', transform: 'translateY(0)' },
                 }
             }
         },

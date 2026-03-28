@@ -128,9 +128,14 @@
         </div>
     </div>
 
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scroll-bar"></div>
+    </div>
+
     <!-- A11y Panel -->
     <div id="a11y-settings-panel"
-        class="fixed top-0 right-0 h-full w-full sm:w-96 bg-content-bg shadow-2xl z-[70] transform translate-x-full transition-transform duration-300 overflow-y-auto p-6 border-l border-white/20 backdrop-blur-xl">
+        class="fixed top-0 right-0 h-full w-full sm:w-96 glass-premium z-[70] transform translate-x-full transition-transform duration-500 overflow-y-auto p-6 border-l border-white/20">
         <div class="flex justify-between items-center mb-6">
             <h2 class="text-2xl font-bold text-primary flex items-center gap-2"><i class="fas fa-sliders-h"></i>
                 Settings</h2>
@@ -356,14 +361,14 @@
     </script>
 
     <header
-        class="glass-header sticky top-0 z-40 transition-colors duration-300 print:hidden shadow-sm">
+        class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md sticky top-0 z-40 transition-colors duration-300 print:hidden shadow-sm border-b border-gray-200/50 dark:border-slate-800/50">
         <div class="container mx-auto px-4 py-3">
             <nav class="flex items-center justify-between flex-wrap">
                 <a class="flex items-center flex-shrink-0 text-primary mr-8 group" href="/">
                     <div
-                        class="h-10 w-10 mr-3 bg-gradient-to-br from-primary to-secondary text-white rounded-xl flex items-center justify-center font-bold text-xl shadow-lg group-hover:rotate-12 transition-transform">
+                        class="h-10 w-10 mr-3 bg-gradient-to-br from-primary to-secondary text-white rounded-xl flex items-center justify-center font-bold text-xl shadow-lg group-hover:rotate-12 transition-transform animate-float">
                         H</div>
-                    <span class="font-bold text-xl tracking-tight text-text-default">Hesten's Learning</span>
+                    <span class="font-bold text-xl tracking-tight text-text-default font-outfit">Hesten's Learning</span>
                 </a>
                 <div class="block lg:hidden">
                     <button id="nav-toggle"
@@ -372,16 +377,12 @@
                 </div>
                 <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden transition-all duration-300 gap-4"
                     id="nav-content">
-                    <div class="text-sm lg:flex-grow flex flex-col lg:flex-row gap-2 lg:gap-6 mt-4 lg:mt-0 font-medium whitespace-nowrap">
-                        <a href="/" class="nav-link-animated block lg:inline-block text-text-default hover:text-primary transition-colors"><i
-                                class="fas fa-home mr-1"></i> Home</a>
-                       
-                           <!--     <a href="/learning.php"
-                            class="nav-link-animated block lg:inline-block text-text-default hover:text-primary transition-colors"><i
-                                class="fas fa-book mr-1"></i> Learning</a> -->
+                    <div class="text-sm lg:flex-grow flex flex-col lg:flex-row gap-2 lg:gap-6 mt-4 lg:mt-0 font-bold whitespace-nowrap">
+                        <a href="/" class="nav-link-animated px-3 py-2 rounded-lg block lg:inline-block text-text-default hover:text-primary transition-all"><i
+                                class="fas fa-home mr-1 text-primary/70"></i> Home</a>
 
-                        <a href="/assessment" class="nav-link-animated block lg:inline-block text-text-default hover:text-primary transition-colors"><i
-                                class="fas fa-tasks mr-1"></i> Assessment</a>
+                        <a href="/assessment" class="nav-link-animated px-3 py-2 rounded-lg block lg:inline-block text-text-default hover:text-primary transition-all"><i
+                                class="fas fa-tasks mr-1 text-primary/70"></i> Assessment</a>
                     </div>
                     <div class="flex items-center gap-4 mt-4 lg:mt-0 w-full lg:w-auto">
                         <form action="/search.php" method="GET" class="flex items-center group relative w-full lg:w-auto">
@@ -428,3 +429,47 @@
     </header>
 
     <script src="/JS/a11y.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // --- 1. Scroll Progress ---
+        window.addEventListener('scroll', () => {
+            const h = document.documentElement, 
+                  b = document.body,
+                  st = 'scrollTop',
+                  sh = 'scrollHeight';
+            const pct = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
+            const bar = document.getElementById('scroll-bar');
+            if (bar) bar.style.width = pct + '%';
+        });
+
+        // --- 3. Magnetic Buttons ---
+        const initMagnetic = () => {
+            document.querySelectorAll('.magnetic-wrap').forEach(item => {
+                item.addEventListener('mousemove', function(e) {
+                    const rect = this.getBoundingClientRect();
+                    const x = e.clientX - rect.left - rect.width / 2;
+                    const y = e.clientY - rect.top - rect.height / 2;
+                    
+                    this.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translate(0px, 0px)';
+                });
+            });
+        };
+        initMagnetic();
+
+        // --- 4. Personalization: Time Greetings ---
+        window.getGreeting = () => {
+            const hour = new Date().getHours();
+            if (hour < 12) return "Good Morning";
+            if (hour < 17) return "Good Afternoon";
+            return "Good Evening";
+        };
+        
+        const greetingEl = document.getElementById('dynamic-greeting');
+        if (greetingEl) greetingEl.textContent = window.getGreeting();
+    });
+</script>

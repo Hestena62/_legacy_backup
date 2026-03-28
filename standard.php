@@ -180,6 +180,7 @@ include 'src/header.php';
                 data-grade="<?php echo $std['grade']; ?>"
                 data-subject="<?php echo $std['subject']; ?>"
                 data-search="<?php echo strtolower($std['code'] . ' ' . $std['text'] . ' ' . $std['explanation']); ?>">
+                data-search="<?php echo htmlspecialchars(strtolower($std['code'] . ' ' . $std['text'] . ' ' . $std['explanation']), ENT_QUOTES, 'UTF-8'); ?>">
                 
                 <div class="p-6">
                     <!-- Header Row -->
@@ -233,6 +234,7 @@ include 'src/header.php';
                     <!-- Example Button -->
                     <div class="mt-4 pt-4 border-t border-gray-100 dark:border-gray-800 flex justify-end">
                         <button onclick="openExampleModal('<?php echo $std['code']; ?>', '<?php echo htmlspecialchars(addslashes($std['text'])); ?>', '<?php echo htmlspecialchars(addslashes(getStandardExample($std))); ?>')" class="text-sm font-bold text-primary hover:text-accent transition-colors flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-primary/5">
+                        <button onclick="openExampleModal('<?php echo htmlspecialchars($std['code'], ENT_QUOTES, 'UTF-8'); ?>', '<?php echo htmlspecialchars($std['text'], ENT_QUOTES, 'UTF-8'); ?>', '<?php echo htmlspecialchars(getStandardExample($std), ENT_QUOTES, 'UTF-8'); ?>')" class="text-sm font-bold text-primary hover:text-accent transition-colors flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-primary/5">
                             <i class="fas fa-chalkboard-teacher"></i> View Example
                         </button>
                     </div>
