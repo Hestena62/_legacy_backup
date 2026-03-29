@@ -68,7 +68,7 @@
             class="w-14 h-14 bg-indigo-600 text-white rounded-full shadow-2xl hover:scale-105 flex items-center justify-center transition-all"
             type="button"><i class="fas fa-pen text-xl"></i></button>
         <button id="a11y-toggle-button"
-            class="w-14 h-14 bg-primary text-white rounded-full shadow-2xl hover:bg-secondary transition-all transform hover:scale-105 flex items-center justify-center animate-bounce-short"
+            class="w-14 h-14 bg-primary text-white rounded-full shadow-2xl hover:bg-secondary transition-all transform hover:scale-105 flex items-center justify-center"
             type="button"><i class="fas fa-universal-access text-2xl"></i></button>
     </div>
 
@@ -366,7 +366,7 @@
             <nav class="flex items-center justify-between flex-wrap">
                 <a class="flex items-center flex-shrink-0 text-primary mr-8 group" href="/">
                     <div
-                        class="h-10 w-10 mr-3 bg-gradient-to-br from-primary to-secondary text-white rounded-xl flex items-center justify-center font-bold text-xl shadow-lg group-hover:rotate-12 transition-transform animate-float">
+                        class="h-10 w-10 mr-3 bg-gradient-to-br from-primary to-secondary text-white rounded-xl flex items-center justify-center font-bold text-xl shadow-lg transition-transform">
                         H</div>
                     <span class="font-bold text-xl tracking-tight text-text-default font-outfit">Hesten's Learning</span>
                 </a>

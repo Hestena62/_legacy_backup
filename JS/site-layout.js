@@ -43,17 +43,31 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     // Quick Notes Auto-save (Global Feature)
-    document
-        .getElementById("quick-notes-area")
-        ?.addEventListener("input", (e) => {
-            localStorage.setItem("hl_scratchpad", e.target.value);
+    const notesArea = document.getElementById("quick-notes-area");
+    if (notesArea) {
+        const saveNotes = debounce((val) => {
+            localStorage.setItem("hl_scratchpad", val);
             const status = document.getElementById("scratchpad-status");
-            status.textContent = "Saving...";
-            setTimeout(() => (status.textContent = "Saved"), 1000);
+            if (status) {
+                status.textContent = "Saving...";
+                setTimeout(() => (status.textContent = "Saved"), 1000);
+            }
+        }, 500);
+
+        notesArea.addEventListener("input", (e) => {
+            saveNotes(e.target.value);
         });
+    }
 });
 
 // --- UTILS ---
+function debounce(func, wait) {
+    let timeout;
+    return (...args) => {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(this, args), wait);
+    };
+}
 function setupPanelFocus(triggerId, panelId, closeId) {
     const trigger = document.getElementById(triggerId);
     const panel = document.getElementById(panelId);
