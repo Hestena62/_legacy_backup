@@ -1,15 +1,27 @@
     <!-- Announcement Bar -->
-    <div id="announcement-bar" class="hidden bg-primary text-white text-center py-2 px-12 sm:px-16 relative transition-colors duration-300 shadow-md z-40" role="status">
-        <button id="prev-announcement" class="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 text-white/80 hover:text-white p-1 sm:p-2 rounded-full transition-colors" aria-label="Previous announcement" type="button"><i class="fas fa-chevron-left"></i></button>
-        
-        <div id="announcement-content-container" class="overflow-hidden w-full flex justify-center items-center" style="min-height: 24px;">
-            <p id="announcement-content" class="text-xs sm:text-sm font-medium transition-opacity duration-300 w-full max-w-4xl mx-auto truncate sm:whitespace-normal">
-                <!-- Content will be injected by JS -->
-            </p>
-        </div>
+    <div id="announcement-bar" class="hidden bg-aurora-glass text-white text-center py-2.5 px-12 sm:px-16 relative z-50 shadow-2xl border-b border-white/10" role="region" aria-label="Important Site Announcements">
+        <div class="container mx-auto max-w-7xl flex items-center justify-center min-h-[32px]">
+            <!-- Navigation Buttons -->
+            <button id="prev-announcement" class="absolute left-2 sm:left-6 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white/90 transition-all active:scale-90 group focus:ring-2 focus:ring-white/30 outline-none" aria-label="Previous announcement" type="button">
+                <i class="fas fa-chevron-left text-xs group-hover:-translate-x-0.5 transition-transform"></i>
+            </button>
+            
+            <div id="announcement-content-container" class="w-full flex justify-center items-center overflow-hidden">
+                <p id="announcement-content" class="text-[11px] sm:text-[13px] font-bold tracking-tight text-white/95 w-full mx-auto max-w-4xl truncate sm:whitespace-normal drop-shadow-sm">
+                    <!-- Content will be injected by JS -->
+                </p>
+            </div>
 
-        <button id="next-announcement" class="absolute right-10 sm:right-14 top-1/2 transform -translate-y-1/2 text-white/80 hover:text-white p-1 sm:p-2 rounded-full transition-colors" aria-label="Next announcement" type="button"><i class="fas fa-chevron-right"></i></button>
-        <button id="close-announcement" class="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 text-white/80 hover:text-white p-1 sm:p-2 rounded-full transition-colors" aria-label="Close announcement" type="button"><i class="fas fa-times"></i></button>
+            <div class="absolute right-2 sm:right-6 top-1/2 -translate-y-1/2 flex items-center gap-2 sm:gap-4">
+                <button id="next-announcement" class="w-8 h-8 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white/90 transition-all active:scale-90 group focus:ring-2 focus:ring-white/30 outline-none" aria-label="Next announcement" type="button">
+                    <i class="fas fa-chevron-right text-xs group-hover:translate-x-0.5 transition-transform"></i>
+                </button>
+                <div class="w-px h-4 bg-white/20 hidden sm:block"></div>
+                <button id="close-announcement" class="w-8 h-8 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white/90 transition-all active:scale-95 hover:rotate-90 focus:ring-2 focus:ring-white/20 outline-none" aria-label="Close announcement" type="button">
+                    <i class="fas fa-times text-xs"></i>
+                </button>
+            </div>
+        </div>
     </div>
 
     <script src="/assets/js/announcements.js"></script>

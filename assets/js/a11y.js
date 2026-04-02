@@ -84,10 +84,11 @@ function applySettings(s) {
         'Open Dyslexic': 'font-dyslexic',
         'Lexend': 'font-lexend',
         'Comic Neue': 'font-comicneue',
+        'Comic Sans MS': 'font-comicsans',
         'Roboto Mono': 'font-mono'
     };
     
-    const allFontClasses = ['font-outfit', 'font-inter', 'font-dyslexic', 'font-lexend', 'font-comicneue', 'font-mono', 'font-sans'];
+    const allFontClasses = ['font-outfit', 'font-inter', 'font-dyslexic', 'font-lexend', 'font-comicneue', 'font-comicsans', 'font-mono', 'font-sans'];
     b.classList.remove(...allFontClasses);
     r.classList.remove(...allFontClasses);
 

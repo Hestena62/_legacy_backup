@@ -31,6 +31,7 @@
                     <option value="Open Dyslexic">Open Dyslexic</option>
                     <option value="Lexend">Lexend</option>
                     <option value="Comic Neue">Comic Neue</option>
+                    <option value="Comic Sans MS">Comic Sans MS</option>
                     <option value="Roboto Mono">Monospace</option>
                 </select>
             </div>
