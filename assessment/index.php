@@ -6,7 +6,7 @@ include '../src/header.php';
 <!-- Assessment Selection View (Hidden by default, shown if no grade selected) -->
 <div id="assessment-selection" class="container mx-auto px-4 py-16 hidden animate-fade-in-up">
     <div class="text-center mb-16">
-        <h1 class="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent mb-6 drop-shadow-sm">
+        <h1 class="text-4xl md:text-6xl font-extrabold text-primary mb-6 drop-shadow-sm">
             Select Your Assessment Level
         </h1>
         <p class="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
@@ -149,7 +149,20 @@ include '../src/header.php';
                             1<span class="text-xl text-text-secondary font-medium">/10</span>
                         </div>
                     </div>
-                    <div class="flex gap-2">
+                    <div class="flex flex-col items-end gap-2">
+                        <div class="flex items-center gap-3">
+                            <button id="sound-toggle-btn" class="text-text-secondary hover:text-primary transition-colors focus:outline-none" title="Toggle Sound">
+                                <i class="fas fa-volume-up text-xl w-6"></i>
+                            </button>
+                            <div class="flex items-center bg-base-bg rounded-lg p-1 border border-primary/20 shadow-inner">
+                                <button id="timer-toggle-btn" class="px-2 text-text-secondary hover:text-primary transition-colors focus:outline-none" title="Hide/Show Timer">
+                                    <i class="fas fa-eye text-sm"></i>
+                                </button>
+                                <span id="session-timer" class="font-mono text-lg font-bold text-primary px-2 min-w-[70px] text-center">
+                                    00:00
+                                </span>
+                            </div>
+                        </div>
                         <span id="streak-counter" class="px-3 py-1 bg-orange-100 text-orange-600 rounded-full text-sm font-bold hidden animate-pulse">
                             🔥 0 streak
                         </span>
@@ -178,9 +191,14 @@ include '../src/header.php';
                 </div>
 
                 <div class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-700">
-                    <button onclick="showHint()" class="text-secondary hover:bg-secondary/10 px-4 py-2 rounded-lg transition-colors font-medium text-sm flex items-center gap-2">
-                        <i class="far fa-lightbulb"></i> Need a Hint?
-                    </button>
+                    <div class="flex gap-2">
+                        <button onclick="showHint()" class="text-secondary hover:bg-secondary/10 px-4 py-2 rounded-lg transition-colors font-medium text-sm flex items-center gap-2">
+                            <i class="far fa-lightbulb"></i> Need a Hint?
+                        </button>
+                        <button id="skip-btn" onclick="skipQuestion()" class="text-amber-500 hover:bg-amber-500/10 px-4 py-2 rounded-lg transition-colors font-medium text-sm flex items-center gap-2">
+                            <i class="fas fa-forward"></i> Skip
+                        </button>
+                    </div>
 
                     <button id="next-btn" onclick="nextQuestionAdapter()" class="bg-primary hover:bg-secondary text-white px-8 py-3 rounded-xl font-bold shadow-lg transform hover:-translate-y-1 transition-all disabled:opacity-50 disabled:cursor-not-allowed hidden">
                         Next Question <i class="fas fa-arrow-right ml-2"></i>
@@ -192,10 +210,21 @@ include '../src/header.php';
                     <strong>Hint:</strong> <span id="hint-content"></span>
                 </div>
             </div>
+            
+            <!-- Review Mode Container (Hidden initially) -->
+            <div id="review-container" class="hidden glass rounded-3xl shadow-2xl p-8 md:p-10 mt-8 relative overflow-hidden ring-1 ring-white/50 dark:ring-white/5">
+                <h3 class="text-2xl font-bold mb-6 text-text-default flex items-center gap-2">
+                    <i class="fas fa-clipboard-list text-primary"></i> Assessment Review
+                </h3>
+                <div id="review-content" class="space-y-4 max-h-[500px] overflow-y-auto pr-2 custom-scrollbar">
+                    <!-- Review items injected by JS -->
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 <script src="/assets/js/p-12.js"></script>
 <script src="/assets/js/AP.js"></script>
 <script src="/assets/js/assessment-page.js"></script>

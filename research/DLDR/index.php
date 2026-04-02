@@ -10,23 +10,27 @@ include '../../src/header.php';
 ?>
 
 <!-- Hero Section -->
-<div class="relative bg-gradient-to-br from-blue-600 via-cyan-600 to-sky-600 dark:from-blue-900 dark:via-cyan-900 dark:to-sky-900 text-white pt-20 pb-20 px-4 rounded-b-[2.5rem] shadow-2xl overflow-hidden mb-12 border-b border-white/10">
+<div class="relative bg-gradient-to-br from-violet-600 via-purple-700 to-indigo-800 dark:from-violet-900 dark:via-purple-900 dark:to-teal-900 text-white pt-24 pb-24 px-4 rounded-b-[3rem] shadow-2xl overflow-hidden mb-12 border-b border-white/20">
     <!-- Animated Background -->
-    <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-10">
-        <i class="fas fa-brain absolute top-20 left-10 text-9xl animate-pulse text-blue-300"></i>
-        <i class="fas fa-puzzle-piece absolute bottom-10 right-20 text-[12rem] rotate-12 text-cyan-300"></i>
-        <i class="fas fa-book-open absolute top-1/3 right-1/4 text-8xl -rotate-12 text-sky-300"></i>
-        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white/5 rounded-full blur-3xl"></div>
+    <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-20">
+        <i class="fas fa-brain absolute top-20 left-10 text-[10rem] animate-pulse text-violet-300 opacity-50 drop-shadow-[0_0_30px_rgba(139,92,246,0.8)]"></i>
+        <i class="fas fa-puzzle-piece absolute bottom-10 right-20 text-[14rem] animate-pulse text-indigo-300 opacity-50 drop-shadow-[0_0_30px_rgba(99,102,241,0.8)]"></i>
+        <i class="fas fa-book-open absolute top-1/3 right-1/4 text-8xl -rotate-12 text-purple-300 opacity-60"></i>
+        
+        <!-- Glowing Orbs -->
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob"></div>
+        <div class="absolute top-0 right-1/4 w-96 h-96 bg-indigo-400 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob animation-delay-2000"></div>
+        <div class="absolute -bottom-32 left-1/2 w-96 h-96 bg-teal-400 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob animation-delay-4000"></div>
     </div>
 
     <div class="relative z-10 max-w-4xl mx-auto text-center">
-        <span class="inline-block py-2 px-4 rounded-full bg-white/10 border border-white/20 text-sm font-bold mb-6 uppercase tracking-wider backdrop-blur-md shadow-lg">
+        <span class="inline-block py-2 px-6 rounded-full bg-white/10 border border-white/20 text-sm font-bold mb-6 uppercase tracking-wider backdrop-blur-md shadow-lg">
             Research Journal
         </span>
-        <h1 class="text-4xl md:text-6xl font-extrabold mb-8 tracking-tight drop-shadow-lg">
-            Dyslexia & <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-cyan-200">Learning Disabilities</span>
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-8 tracking-tight mt-4 text-white">
+            <span class="drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">Dyslexia &</span> <span class="text-transparent bg-clip-text bg-gradient-to-r from-violet-200 to-teal-200">Learning Disabilities</span>
         </h1>
-        <p class="text-xl md:text-2xl text-blue-50 mb-10 font-light max-w-2xl mx-auto leading-relaxed">
+        <p class="text-xl md:text-2xl text-blue-50 mb-10 font-light max-w-2xl mx-auto leading-relaxed drop-shadow-md">
             Ongoing research exploring the educational journey of students with dyslexia.
         </p>
     </div>
@@ -37,6 +41,22 @@ include '../../src/header.php';
   Custom scrollbars and animation classes
 -->
 <style>
+  /* Custom animations for the hero background orbs */
+  @keyframes blob {
+    0% { transform: translate(0px, 0px) scale(1); }
+    33% { transform: translate(30px, -50px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.9); }
+    100% { transform: translate(0px, 0px) scale(1); }
+  }
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
   /* Custom scrollbar for content area */
   .content-scrollbar::-webkit-scrollbar {
     width: 8px;
@@ -103,23 +123,23 @@ include '../../src/header.php';
     <div class="mb-8 hidden"></div>
 
     <!-- Controls Bar: Search & Sort -->
-    <div class="bg-content-bg rounded-lg shadow-sm border border-slate-200 dark:border-slate-700 p-4 mb-8 flex flex-col md:flex-row gap-4 justify-between items-center sticky top-20 z-30">
+    <div class="bg-white/50 dark:bg-gray-800/50 backdrop-blur-xl rounded-[2rem] border border-white/20 dark:border-white/10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.2)] p-4 mb-8 flex flex-col md:flex-row gap-4 justify-between items-center sticky top-20 z-30">
       <!-- Search -->
       <div class="relative w-full md:w-96 group">
-        <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-text-secondary group-focus-within:text-primary transition-colors"></i>
+        <i class="fas fa-search absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 group-focus-within:text-primary transition-colors"></i>
         <input type="text" id="searchInput" placeholder="Search title, content, or tags..."
-          class="w-full pl-10 pr-4 py-2 bg-base-bg border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-text-default placeholder-text-secondary transition-all">
+          class="w-full pl-12 pr-6 py-3 bg-white dark:bg-gray-800 border-2 border-gray-100 dark:border-gray-700 rounded-full focus:outline-none focus:ring-4 focus:ring-primary/20 focus:border-primary text-gray-800 dark:text-gray-200 placeholder-gray-400 transition-all shadow-sm">
       </div>
 
       <!-- Sort & Filter Actions -->
       <div class="flex items-center gap-3 w-full md:w-auto">
         <div class="relative w-full md:w-48">
-          <select id="sortSelect" class="w-full appearance-none pl-4 pr-10 py-2 bg-base-bg border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-text-default cursor-pointer">
+          <select id="sortSelect" class="w-full appearance-none pl-6 pr-10 py-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-full focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-gray-800 dark:text-gray-200 cursor-pointer shadow-sm transition-all">
             <option value="newest">Newest First</option>
             <option value="oldest">Oldest First</option>
             <option value="az">Title (A-Z)</option>
           </select>
-          <i class="fas fa-chevron-down absolute right-3 top-1/2 transform -translate-y-1/2 text-text-secondary pointer-events-none"></i>
+          <i class="fas fa-chevron-down absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"></i>
         </div>
       </div>
     </button>
@@ -151,31 +171,31 @@ include '../../src/header.php';
   --- Modal for Full Entry ---
 -->
 <div id="entryModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 hidden transition-opacity duration-300 opacity-0" role="dialog" aria-modal="true">
-  <div class="bg-content-bg rounded-xl shadow-2xl w-full max-w-4xl transform transition-all duration-300 scale-95 opacity-0 flex flex-col max-h-[90vh] relative border border-slate-200 dark:border-slate-700" id="modalPanel">
+  <div class="bg-white/90 dark:bg-gray-900/90 backdrop-blur-2xl rounded-[2.5rem] shadow-2xl w-full max-w-4xl transform transition-all duration-300 scale-95 opacity-0 flex flex-col max-h-[90vh] relative border border-white/20 dark:border-white/10" id="modalPanel">
 
     <!-- Modal Header -->
-    <div class="flex justify-between items-start px-6 py-5 border-b border-slate-200 dark:border-slate-700 bg-base-bg/50 rounded-t-xl">
+    <div class="flex justify-between items-start px-8 py-6 border-b border-gray-200 dark:border-gray-800 bg-white/50 dark:bg-gray-800/50 rounded-t-[2.5rem]">
       <div class="pr-8">
-        <h3 class="text-xl sm:text-2xl font-bold text-text-default leading-tight" id="modalTitle"></h3>
-        <div class="flex flex-wrap items-center gap-3 mt-2 text-sm text-text-secondary">
-          <span class="flex items-center gap-1"><i class="far fa-user"></i> <span id="modalAuthor"></span></span>
-          <span class="flex items-center gap-1"><i class="far fa-calendar"></i> <span id="modalDate"></span></span>
+        <h3 class="text-2xl sm:text-3xl font-black text-gray-900 dark:text-white leading-tight" id="modalTitle"></h3>
+        <div class="flex flex-wrap items-center gap-4 mt-3 text-sm text-gray-500 dark:text-gray-400 font-medium">
+          <span class="flex items-center gap-1.5"><i class="fas fa-user-circle"></i> <span id="modalAuthor"></span></span>
+          <span class="flex items-center gap-1.5"><i class="far fa-calendar-alt"></i> <span id="modalDate"></span></span>
         </div>
       </div>
-      <button id="closeModalBtn" class="text-text-secondary hover:text-red-500 transition-colors p-1 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+      <button id="closeModalBtn" class="text-gray-400 hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-900/20 transition-all p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-primary">
         <i class="fas fa-times text-xl"></i>
       </button>
     </div>
 
     <!-- Modal Body -->
-    <div id="modalContentArea" class="p-6 sm:p-8 space-y-6 overflow-y-auto modal-scrollbar-hidden flex-1">
+    <div id="modalContentArea" class="p-8 space-y-8 overflow-y-auto modal-scrollbar-hidden flex-1">
       <!-- Tags in Modal -->
       <div id="modalTags" class="flex flex-wrap gap-2"></div>
 
       <!-- Summary Box -->
-      <div class="bg-primary/5 border-l-4 border-primary p-4 rounded-r-lg">
-        <h4 class="text-sm font-bold text-primary uppercase tracking-wide mb-1">Abstract</h4>
-        <p id="modalSummary" class="text-text-default italic leading-relaxed"></p>
+      <div class="bg-primary/5 dark:bg-primary/10 border-l-4 border-primary p-6 rounded-r-2xl">
+        <h4 class="text-sm font-bold text-primary uppercase tracking-widest mb-2"><i class="fas fa-info-circle mr-1"></i> Abstract</h4>
+        <p id="modalSummary" class="text-gray-700 dark:text-gray-300 italic leading-relaxed text-lg"></p>
       </div>
 
       <!-- Full Content -->
@@ -185,7 +205,7 @@ include '../../src/header.php';
     </div>
 
     <!-- Modal Footer (Actions) -->
-    <div class="px-6 py-4 bg-base-bg border-t border-slate-200 dark:border-slate-700 rounded-b-xl flex flex-col sm:flex-row justify-between items-center gap-4">
+    <div class="px-8 py-5 bg-white/50 dark:bg-gray-800/50 border-t border-gray-200 dark:border-gray-800 rounded-b-[2.5rem] flex flex-col sm:flex-row justify-between items-center gap-4">
 
       <!-- Navigation within Modal -->
       <div class="flex items-center gap-2 order-2 sm:order-1 w-full sm:w-auto justify-between sm:justify-start">
@@ -1142,37 +1162,39 @@ include '../../src/header.php';
     // Render Cards
     pageItems.forEach(entry => {
       const card = document.createElement('article');
-      card.className = 'group bg-content-bg rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col h-full fade-in';
+      card.className = 'group bg-white/50 dark:bg-gray-800/50 backdrop-blur-xl rounded-[2rem] border border-white/20 dark:border-white/10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.2)] overflow-hidden hover:shadow-[0_20px_40px_rgb(0,0,0,0.1)] hover:-translate-y-2 transition-all duration-500 flex flex-col h-full fade-in';
 
       // Generate Tag HTML
       const tagHtml = entry.tags.map(tag =>
-        `<span class="journal-tag inline-block px-3 py-1 text-xs font-bold bg-primary/10 text-primary rounded-full cursor-pointer hover:bg-primary hover:text-white transition-colors" data-tag="${tag}">${tag}</span>`
+        `<span class="journal-tag inline-block px-3 py-1 text-xs font-bold border border-primary/20 bg-primary/10 text-primary rounded-md cursor-pointer hover:bg-primary hover:text-white transition-colors backdrop-blur-sm" data-tag="${tag}">${tag}</span>`
       ).join('');
 
       card.innerHTML = `
-         <div class="p-8 flex-1 flex flex-col">
+         <div class="p-8 flex-1 flex flex-col relative bg-gradient-to-br from-white/60 to-white/30 dark:from-gray-800/60 dark:to-gray-900/40">
              <div class="flex justify-between items-center mb-6">
                   <div class="flex flex-wrap gap-2">${tagHtml}</div>
-                  <span class="text-xs font-medium text-text-secondary uppercase tracking-widest">${entry.date}</span>
+                  <span class="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest">${entry.date}</span>
              </div>
 
-             <h3 class="text-2xl font-bold text-text-default mb-4 group-hover:text-primary transition-colors cursor-pointer read-trigger" data-id="${entry.id}">
+             <h3 class="text-2xl font-black text-gray-900 dark:text-white mb-4 group-hover:text-primary transition-colors cursor-pointer read-trigger leading-tight" data-id="${entry.id}">
                  ${entry.title}
              </h3>
 
-             <div class="flex items-center gap-2 mb-6">
-                  <div class="w-8 h-8 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-text-secondary">
-                      <i class="fas fa-user text-xs"></i>
-                  </div>
-                  <span class="text-sm font-medium text-text-secondary">${entry.author}</span>
+             <div class="flex items-center gap-2 mb-6 text-sm text-gray-500 dark:text-gray-400 font-medium">
+                  <span class="flex items-center gap-1.5"><i class="fas fa-user-circle text-gray-400"></i> ${entry.author}</span>
              </div>
 
-             <p class="text-text-secondary leading-relaxed line-clamp-3 mb-6 flex-1">
+             <p class="text-gray-600 dark:text-gray-300 leading-relaxed line-clamp-3 mb-8 flex-1">
                  ${entry.summary}
              </p>
 
-             <button class="read-more-btn w-full py-3 rounded-xl bg-base-bg hover:bg-primary hover:text-white text-text-default font-bold transition-all flex items-center justify-center gap-2" data-id="${entry.id}">
-                 Read Article <i class="fas fa-arrow-right"></i>
+             <button class="read-more-btn mt-auto flex items-center justify-between group/btn w-full bg-transparent hover:bg-transparent" data-id="${entry.id}">
+                  <span class="text-primary font-bold tracking-wide uppercase text-sm group-hover/btn:text-indigo-600 dark:group-hover/btn:text-indigo-400 transition-colors">
+                      Read Article
+                  </span>
+                  <div class="w-10 h-10 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary group-hover/btn:bg-primary group-hover/btn:text-white transition-all duration-300">
+                      <i class="fas fa-arrow-right group-hover/btn:translate-x-1 transition-transform"></i>
+                  </div>
              </button>
          </div>
       `;

@@ -12,10 +12,10 @@ $journals = [
     [
         "id" => "dyslexia-Research",
         "title" => "Dyslexia & Learning Disabilities Research",
-        "cover" => "assets/dyslexia_cover.png",
+        "cover" => "Dyslexia Research",
         "description" => "A peer-reviewed journal focusing on the latest research in dyslexia, exploring innovative teaching methods, and validating new interventions.",
         "link" => "DLDR/index.php",
-        "author" => "Dr. Sarah Jenkins",
+        "author" => "Hesten Allison",
         "date" => "Oct 2025",
         "tags" => ["Dyslexia", "Intervention"],
         "isPeerReviewed" => true
@@ -52,8 +52,8 @@ $journals = [
         <span class="inline-flex items-center gap-2 py-2 px-6 rounded-full bg-white/10 border border-white/20 text-sm font-bold mb-8 uppercase tracking-widest backdrop-blur-md shadow-lg">
             <i class="fas fa-book-open text-violet-200"></i> Academic Journals
         </span>
-        <h1 class="text-5xl md:text-7xl font-extrabold mb-8 tracking-tight text-white drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
-            Explore Our <span class="text-transparent bg-clip-text bg-gradient-to-r from-violet-200 to-teal-200 drop-shadow-none">Research</span>
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-8 tracking-tight text-white mt-4">
+            <span class="drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">Explore Our</span> <span class="text-transparent bg-clip-text bg-gradient-to-r from-violet-200 to-teal-200">Research</span>
         </h1>
         <p class="text-xl md:text-2xl text-blue-50 mb-10 font-light max-w-3xl mx-auto leading-relaxed drop-shadow-md">
             Discover the latest peer-reviewed findings, methodologies, and advancements in learning disabilities and educational technology.
@@ -91,13 +91,20 @@ $journals = [
             <a href="<?php echo htmlspecialchars($journal['link']); ?>" class="group flex flex-col h-full bg-white/50 dark:bg-gray-800/50 backdrop-blur-xl rounded-[2rem] border border-white/20 dark:border-white/10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.2)] overflow-hidden hover:shadow-[0_20px_40px_rgb(0,0,0,0.1)] hover:-translate-y-2 transition-all duration-500">
                 
                 <!-- Card Image & Overlay -->
-                <div class="relative h-72 overflow-hidden bg-gray-100 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700">
-                    <img src="<?php echo htmlspecialchars($journal['cover']); ?>" 
-                         alt="<?php echo htmlspecialchars($journal['title']); ?> Cover" 
-                         class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
-                         onerror="this.onerror=null; this.src='https://placehold.co/400x500/6366F1/FFFFFF?text=Image+Error';">
-                    
-                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/20 to-transparent"></div>
+                <div class="relative h-72 overflow-hidden bg-gray-100 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 flex items-center justify-center bg-gradient-to-br from-violet-600 to-indigo-800">
+                    <?php if (preg_match('/\.(jpg|jpeg|png|gif|svg|webp)$/i', $journal['cover'])): ?>
+                        <img src="<?php echo htmlspecialchars($journal['cover']); ?>" 
+                             alt="<?php echo htmlspecialchars($journal['title']); ?> Cover" 
+                             class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                             onerror="this.onerror=null; this.src='https://placehold.co/400x500/6366F1/FFFFFF?text=Image+Error';">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/20 to-transparent"></div>
+                    <?php else: ?>
+                        <div class="absolute inset-0 w-full h-full flex flex-col items-center justify-center p-6 text-center transform group-hover:scale-105 transition-transform duration-700 ease-out">
+                            <i class="fas fa-book-open text-white/50 text-5xl mb-4 drop-shadow-md"></i>
+                            <h2 class="text-white text-2xl font-black drop-shadow-lg leading-tight uppercase tracking-wider"><?php echo htmlspecialchars($journal['cover']); ?></h2>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-transparent to-transparent"></div>
+                    <?php endif; ?>
                     
                     <!-- Peer Reviewed Badge -->
                     <?php if (isset($journal['isPeerReviewed']) && $journal['isPeerReviewed']): ?>

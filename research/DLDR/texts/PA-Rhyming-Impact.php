@@ -253,7 +253,7 @@ include '../../src/header.php';
   .page-specific-header,
   .toc-container,
   #paperContent {
-    background-color: var(--color-content-bg, #FFFFFF);
+    /* Backgrounds handled by Tailwind glassmorphism classes */
     color: var(--color-text-default, #334155);
   }
   
@@ -389,7 +389,7 @@ include '../../src/header.php';
 -->
 
 <!-- Page-Specific Header -->
-<header class="page-specific-header shadow-sm py-4 px-6 sticky top-0 z-40 rounded-b-lg w-full">
+<header class="page-specific-header shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.2)] bg-white/50 dark:bg-gray-800/50 backdrop-blur-xl border-b border-white/20 dark:border-white/10 py-4 px-6 sticky top-0 z-40 rounded-b-[2rem] w-full">
   <div class="max-w-7xl mx-auto flex justify-between items-center flex-wrap">
     <div>
       <h1 class="text-3xl font-bold">
@@ -434,7 +434,7 @@ include '../../src/header.php';
 <div class="flex-grow max-w-7xl mx-auto p-6 flex space-x-6 lg:flex-row flex-col">
   <!-- Table of Contents Sidebar -->
   <aside
-    class="w-full lg:w-1/4 p-6 rounded-lg shadow-md lg:sticky lg:top-24 lg:h-[calc(100vh-120px)] overflow-y-auto toc-container">
+    class="w-full lg:w-1/4 p-6 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.2)] border border-white/20 dark:border-white/10 bg-white/50 dark:bg-gray-800/50 backdrop-blur-xl lg:sticky lg:top-24 lg:h-[calc(100vh-120px)] overflow-y-auto toc-container">
     <h2 class="text-xl font-semibold mb-4">
       Table of Contents
     </h2>
@@ -450,7 +450,7 @@ include '../../src/header.php';
   </aside>
 
   <!-- Main Paper Content -->
-  <main id="paperContent" class="w-full lg:w-3/4 p-8 rounded-lg shadow-md prose prose-blue max-w-none">
+  <main id="paperContent" class="w-full lg:w-3/4 p-10 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.2)] border border-white/20 dark:border-white/10 bg-white/50 dark:bg-gray-800/50 backdrop-blur-xl prose prose-blue dark:prose-invert max-w-none">
     <h2 class="text-2xl font-bold mb-4" id="abstract">
       Abstract
     </h2>
