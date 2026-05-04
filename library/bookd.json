@@ -713,6 +713,38 @@
     ],
     "Fantasy": [
         {
+            "id": "lotr-collection",
+            "title": "The Lord of the Rings Collection",
+            "author": "J.R.R. Tolkien",
+            "isCollection": true,
+            "img": "https://covers.openlibrary.org/b/isbn/9780544003415-L.jpg",
+            "description": "The classic fantasy trilogy following the quest to destroy the One Ring.",
+            "lexile": "1000L",
+            "books": [
+                {
+                    "title": "The Fellowship of the Ring",
+                    "pdf-link": "#fellowship-pdf",
+                    "epub-link": "#fellowship-epub",
+                    "read-online-link": "#",
+                    "lexile": "920L"
+                },
+                {
+                    "title": "The Two Towers",
+                    "pdf-link": "#twotowers-pdf",
+                    "epub-link": "#twotowers-epub",
+                    "read-online-link": "#",
+                    "lexile": "940L"
+                },
+                {
+                    "title": "The Return of the King",
+                    "pdf-link": "#return-pdf",
+                    "epub-link": "#return-epub",
+                    "read-online-link": "#",
+                    "lexile": "960L"
+                }
+            ]
+        },
+        {
             "id": "the-hobbit",
             "title": "The Hobbit",
             "author": "J.R.R. Tolkien",

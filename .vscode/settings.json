@@ -1,0 +1,8 @@
+{
+    "editor.comments.ignoreEmptyLines": true,
+    "editor.wrapOnEscapedLineFeeds": true,
+    "editor.wordWrap": "on",
+    "workbench.editor.wrapTabs": true,
+    "files.autoSave": "afterDelay",
+    "editor.tabCompletion": "on"
+}
