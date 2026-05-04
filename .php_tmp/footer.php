@@ -27,40 +27,40 @@
 
                 <!-- Column 2: Quick Links -->
                 <div>
-                    <h4 class="text-slate-900 dark:text-white font-bold text-lg mb-6 flex items-center gap-2 uppercase tracking-wide text-sm opacity-90">
+                    <h4 class="text-white font-bold text-lg mb-6 flex items-center gap-2 uppercase tracking-wide text-sm opacity-90">
                         <i class="fas fa-link text-teal-500"></i> Quick Links
                     </h4>
                     <ul class="space-y-4 text-sm font-medium">
-                        <li><a href="/curriculum.php" class="text-slate-600 dark:text-slate-400 hover:text-teal-600 dark:hover:text-teal-400 transition-colors flex items-center gap-3 group"><i class="fas fa-book text-slate-400 dark:text-slate-500 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors"></i> Curriculum</a></li>
-                        <li><a href="/research/" class="text-slate-600 dark:text-slate-400 hover:text-teal-600 dark:hover:text-teal-400 transition-colors flex items-center gap-3 group"><i class="fas fa-flask text-slate-400 dark:text-slate-500 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors"></i> Research</a></li>
-                        <li><a href="/library/" class="text-slate-600 dark:text-slate-400 hover:text-teal-600 dark:hover:text-teal-400 transition-colors flex items-center gap-3 group"><i class="fas fa-book-open text-slate-400 dark:text-slate-500 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors"></i> Library</a></li>
-                        <li><a href="/help-center.php" class="text-slate-600 dark:text-slate-400 hover:text-teal-600 dark:hover:text-teal-400 transition-colors flex items-center gap-3 group"><i class="fas fa-question-circle text-slate-400 dark:text-slate-500 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors"></i> Help Center</a></li>
+                        <li><a href="/curriculum.php" class="text-slate-400 hover:text-teal-400 transition-colors flex items-center gap-3 group"><i class="fas fa-book text-slate-600 group-hover:text-teal-500 transition-colors"></i> Curriculum</a></li>
+                        <li><a href="/research/" class="text-slate-400 hover:text-teal-400 transition-colors flex items-center gap-3 group"><i class="fas fa-flask text-slate-600 group-hover:text-teal-500 transition-colors"></i> Research</a></li>
+                        <li><a href="/library/" class="text-slate-400 hover:text-teal-400 transition-colors flex items-center gap-3 group"><i class="fas fa-book-open text-slate-600 group-hover:text-teal-500 transition-colors"></i> Library</a></li>
+                        <li><a href="/help-center.php" class="text-slate-400 hover:text-teal-400 transition-colors flex items-center gap-3 group"><i class="fas fa-question-circle text-slate-600 group-hover:text-teal-500 transition-colors"></i> Help Center</a></li>
                     </ul>
                 </div>
 
                 <!-- Column 3: Support -->
                 <div>
-                    <h4 class="text-slate-900 dark:text-white font-bold text-lg mb-6 flex items-center gap-2 uppercase tracking-wide text-sm opacity-90">
+                    <h4 class="text-white font-bold text-lg mb-6 flex items-center gap-2 uppercase tracking-wide text-sm opacity-90">
                         <i class="fas fa-hand-holding-heart text-purple-500"></i> Support
                     </h4>
                     <ul class="space-y-4 text-sm font-medium">
-                        <li><a href="/contact.php" class="text-slate-600 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-400 transition-colors flex items-center gap-3 group"><i class="fas fa-envelope text-slate-400 dark:text-slate-500 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors"></i> Contact Us</a></li>
-                        <li><a href="#" class="text-slate-600 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-400 transition-colors flex items-center gap-3 group"><i class="fas fa-home text-slate-400 dark:text-slate-500 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors"></i> For Students</a></li>
-                        <li><a href="/parents.php" class="text-slate-600 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-400 transition-colors flex items-center gap-3 group"><i class="fas fa-users text-slate-400 dark:text-slate-500 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors"></i> For Parents</a></li>
-                        <li><a href="#" class="text-slate-600 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-400 transition-colors flex items-center gap-3 group"><i class="fas fa-chalkboard-teacher text-slate-400 dark:text-slate-500 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors"></i> For Teachers</a></li>
+                        <li><a href="/contact.php" class="text-slate-400 hover:text-purple-400 transition-colors flex items-center gap-3 group"><i class="fas fa-envelope text-slate-600 group-hover:text-purple-500 transition-colors"></i> Contact Us</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-purple-400 transition-colors flex items-center gap-3 group"><i class="fas fa-home text-slate-600 group-hover:text-purple-500 transition-colors"></i> For Students</a></li>
+                        <li><a href="/parents.php" class="text-slate-400 hover:text-purple-400 transition-colors flex items-center gap-3 group"><i class="fas fa-users text-slate-600 group-hover:text-purple-500 transition-colors"></i> For Parents</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-purple-400 transition-colors flex items-center gap-3 group"><i class="fas fa-chalkboard-teacher text-slate-600 group-hover:text-purple-500 transition-colors"></i> For Teachers</a></li>
                     </ul>
                 </div>
 
                 <!-- Column 4: Legal -->
                 <div>
-                    <h4 class="text-slate-900 dark:text-white font-bold text-lg mb-6 flex items-center gap-2 uppercase tracking-wide text-sm opacity-90">
+                    <h4 class="text-white font-bold text-lg mb-6 flex items-center gap-2 uppercase tracking-wide text-sm opacity-90">
                         <i class="fas fa-balance-scale text-rose-500"></i> Legal & Settings
                     </h4>
                     <ul class="space-y-4 text-sm font-medium">
-                        <li><a href="/privacy.php" class="text-slate-600 dark:text-slate-400 hover:text-rose-600 dark:hover:text-rose-400 transition-colors flex items-center gap-3 group"><i class="fas fa-shield-alt text-slate-400 dark:text-slate-500 group-hover:text-rose-600 dark:group-hover:text-rose-400 transition-colors"></i> Privacy Policy</a></li>
-                        <li><a href="/terms-of-use.php" class="text-slate-600 dark:text-slate-400 hover:text-rose-600 dark:hover:text-rose-400 transition-colors flex items-center gap-3 group"><i class="fas fa-file-contract text-slate-400 dark:text-slate-500 group-hover:text-rose-600 dark:group-hover:text-rose-400 transition-colors"></i> Terms of Use</a></li>
-                        <li><a href="/settings.php" class="text-slate-600 dark:text-slate-400 hover:text-rose-600 dark:hover:text-rose-400 transition-colors flex items-center gap-3 group"><i class="fas fa-universal-access text-slate-400 dark:text-slate-500 group-hover:text-rose-600 dark:group-hover:text-rose-400 transition-colors"></i> Accessibility</a></li>
-                        <li><a href="/about.php" class="text-slate-600 dark:text-slate-400 hover:text-rose-600 dark:hover:text-rose-400 transition-colors flex items-center gap-3 group"><i class="fas fa-info-circle text-slate-400 dark:text-slate-500 group-hover:text-rose-600 dark:group-hover:text-rose-400 transition-colors"></i> About Us</a></li>
+                        <li><a href="/privacy.php" class="text-slate-400 hover:text-rose-400 transition-colors flex items-center gap-3 group"><i class="fas fa-shield-alt text-slate-600 group-hover:text-rose-500 transition-colors"></i> Privacy Policy</a></li>
+                        <li><a href="/terms-of-use.php" class="text-slate-400 hover:text-rose-400 transition-colors flex items-center gap-3 group"><i class="fas fa-file-contract text-slate-600 group-hover:text-rose-500 transition-colors"></i> Terms of Use</a></li>
+                        <li><a href="/settings.php" class="text-slate-400 hover:text-rose-400 transition-colors flex items-center gap-3 group"><i class="fas fa-universal-access text-slate-600 group-hover:text-rose-500 transition-coors"></i> Accessibility</a></li>
+                        <li><a href="/about.php" class="text-slate-400 hover:text-rose-400 transition-colors flex items-center gap-3 group"><i class="fas fa-info-circle text-slate-600 group-hover:text-rose-500 transition-colors"></i> About Us</a></li>
                     </ul>
                 </div>
             </div>
