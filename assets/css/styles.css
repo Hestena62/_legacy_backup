@@ -1343,14 +1343,3 @@ html.is-animating main#main-content {
 .dark .stats-card:hover {
     background: rgba(255, 255, 255, 0.15);
 }
-
-.hero-blob {
-    filter: blur(80px);
-    opacity: 0.4;
-    mix-blend-mode: multiply;
-    transition: transform 0.2s ease-out;
-}
-
-.dark .hero-blob {
-    mix-blend-mode: overlay;
-}
