@@ -201,6 +201,27 @@
         setup('scratchpad-toggle', 'scratchpad-panel', 'scratchpad-close');
         setup('citation-toggle', 'citation-panel', 'citation-close');
 
+        // FAB Toggle
+        const fabMainToggle = document.getElementById('fab-main-toggle');
+        const fabMenu = document.getElementById('fab-menu');
+        const fabIcon = document.getElementById('fab-icon');
+        if (fabMainToggle && fabMenu && fabIcon) {
+            fabMainToggle.addEventListener('click', () => {
+                const isExpanded = fabMainToggle.getAttribute('aria-expanded') === 'true';
+                if (isExpanded) {
+                    fabMenu.classList.remove('scale-100', 'opacity-100', 'pointer-events-auto');
+                    fabMenu.classList.add('scale-0', 'opacity-0', 'pointer-events-none');
+                    fabIcon.classList.remove('rotate-45');
+                    fabMainToggle.setAttribute('aria-expanded', 'false');
+                } else {
+                    fabMenu.classList.remove('scale-0', 'opacity-0', 'pointer-events-none');
+                    fabMenu.classList.add('scale-100', 'opacity-100', 'pointer-events-auto');
+                    fabIcon.classList.add('rotate-45');
+                    fabMainToggle.setAttribute('aria-expanded', 'true');
+                }
+            });
+        }
+
         // Feature Inits
 
 

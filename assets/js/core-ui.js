@@ -3,11 +3,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     // --- 1. Scroll Progress ---
     window.addEventListener('scroll', () => {
-        const h = document.documentElement, 
-              b = document.body,
-              st = 'scrollTop',
-              sh = 'scrollHeight';
-        const pct = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
+        const h = document.documentElement,
+            b = document.body,
+            st = 'scrollTop',
+            sh = 'scrollHeight';
+        const pct = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
         const bar = document.getElementById('scroll-bar');
         if (bar) bar.style.width = pct + '%';
     });
@@ -15,15 +15,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- 2. Magnetic Buttons ---
     const initMagnetic = () => {
         document.querySelectorAll('.magnetic-wrap').forEach(item => {
-            item.addEventListener('mousemove', function(e) {
+            item.addEventListener('mousemove', function (e) {
                 const rect = this.getBoundingClientRect();
                 const x = e.clientX - rect.left - rect.width / 2;
                 const y = e.clientY - rect.top - rect.height / 2;
-                
+
                 this.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
             });
-            
-            item.addEventListener('mouseleave', function() {
+
+            item.addEventListener('mouseleave', function () {
                 this.style.transform = 'translate(0px, 0px)';
             });
         });
@@ -37,21 +37,21 @@ document.addEventListener('DOMContentLoaded', () => {
         if (hour < 17) return "Good Afternoon";
         return "Good Evening";
     };
-    
+
     const greetingEl = document.getElementById('dynamic-greeting');
     if (greetingEl) greetingEl.textContent = window.getGreeting();
 
     // --- 4. User Dropdown Toggle ---
     const userMenuButton = document.getElementById('user-menu-button');
     const userDropdown = document.getElementById('user-dropdown');
-    
+
     if (userMenuButton && userDropdown) {
         const arrow = document.getElementById('user-menu-arrow');
-        
+
         userMenuButton.addEventListener('click', (e) => {
             e.stopPropagation();
             const isHidden = userDropdown.classList.contains('hidden');
-            
+
             if (isHidden) {
                 userDropdown.classList.remove('hidden');
                 if (arrow) arrow.classList.add('rotate-180');

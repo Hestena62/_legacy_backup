@@ -270,7 +270,7 @@ function openDocModal(btn) {
             docsContainer.innerHTML = `<h4 class="text-xl font-black mb-6 font-outfit text-gray-900 dark:text-white flex items-center gap-3">
                 <span class="w-2 h-8 bg-indigo-500 rounded-full"></span> ${titleText}
             </h4>${tabHeaders}${tabContents}`;
-            
+
             // Initialize slider position
             setTimeout(() => {
                 const firstTab = document.querySelector('.modal-tab-pill');

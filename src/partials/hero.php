@@ -1,7 +1,7 @@
 <!-- AURORA HERO SECTION -->
 <div id="hero-section"
     class="relative min-h-screen pt-24 lg:pt-32 pb-24 flex items-center justify-center overflow-hidden bg-white dark:bg-gray-950 transition-colors duration-500">
-    
+
     <!-- Aurora Mesh Background -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none noise-grain" id="hero-bg">
         <div data-speed="0.05"
@@ -91,22 +91,28 @@
 </div>
 
 <script>
-document.addEventListener('mousemove', (e) => {
-    const section = document.getElementById('hero-section');
-    if (!section) return;
+    document.addEventListener('mousemove', (e) => {
+        const section = document.getElementById('hero-section');
+        if (!section) return;
 
-    const { clientX, clientY } = e;
-    const { width, height } = section.getBoundingClientRect();
-    
-    const xPos = (clientX / width) - 0.5;
-    const yPos = (clientY / height) - 0.5;
+        const {
+            clientX,
+            clientY
+        } = e;
+        const {
+            width,
+            height
+        } = section.getBoundingClientRect();
 
-    const blobs = document.querySelectorAll('.hero-blob');
-    blobs.forEach(blob => {
-        const speed = blob.getAttribute('data-speed');
-        const x = xPos * speed * 200;
-        const y = yPos * speed * 200;
-        blob.style.transform = `translate(${x}px, ${y}px)`;
+        const xPos = (clientX / width) - 0.5;
+        const yPos = (clientY / height) - 0.5;
+
+        const blobs = document.querySelectorAll('.hero-blob');
+        blobs.forEach(blob => {
+            const speed = blob.getAttribute('data-speed');
+            const x = xPos * speed * 200;
+            const y = yPos * speed * 200;
+            blob.style.transform = `translate(${x}px, ${y}px)`;
+        });
     });
-});
 </script>
