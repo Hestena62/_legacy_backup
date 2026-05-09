@@ -915,26 +915,6 @@ h3,
 
 /* --- Phase 3: Interactive Polish --- */
 
-
-/* Scroll Progress */
-.scroll-progress-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    z-index: 9999;
-    pointer-events: none;
-}
-
-.scroll-progress-bar {
-    height: 100%;
-    background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
-    width: 0%;
-    transition: width 0.1s ease-out;
-    box-shadow: 0 0 10px var(--color-primary);
-}
-
 /* Magnetic Button Utility */
 .magnetic-wrap {
     display: inline-block;
@@ -956,7 +936,6 @@ h3,
 }
 
 /* --- ODYSSEY REDESIGN: Premium Utilities --- */
-
 .odyssey-bg {
     background: radial-gradient(circle at 0% 0%, var(--color-primary) 0%, transparent 50%),
         radial-gradient(circle at 100% 100%, var(--color-secondary) 0%, transparent 50%),
@@ -1285,7 +1264,6 @@ html.is-animating main#main-content {
 }
 
 /* --- PREMIUM HERO EXTENSIONS --- */
-
 .hero-title-glow {
     text-shadow: 0 0 40px rgba(99, 102, 241, 0.2);
 }
@@ -1343,3 +1321,17 @@ html.is-animating main#main-content {
 .dark .stats-card:hover {
     background: rgba(255, 255, 255, 0.15);
 }
+
+/* --- Removing allows for colored circals to show --- */
+/* --- 
+.hero-blob {
+    filter: blur(80px);
+    opacity: 0.4;
+    mix-blend-mode: multiply;
+    transition: transform 0.2s ease-out;
+}
+
+.dark .hero-blob {
+    mix-blend-mode: overlay;
+}
+--- */
